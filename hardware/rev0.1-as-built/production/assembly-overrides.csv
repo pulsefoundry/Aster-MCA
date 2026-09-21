@@ -1,0 +1,7 @@
+Designator,Required action,Reason
+U8,Fit MCP6001T-I/OT instead of LMV321IDBVR,PCB net map requires 1 OUT 2 VSS 3 IN+ 4 IN- 5 VDD
+S1,DNP,Selected tactile switch contact pairing can hold RECONFIG_N low
+U6,Fit the original SGM2037-1.2XN5G/TR for new builds,AP2112K-1.2 was tested to start without extra capacitance; add parallel output capacitance only if measurements prove an overly fast +1V2 rise causes FPGA startup failure and then verify stability and overshoot
+J2,Hand fit a grounded low-voltage BNC,Not included in SMT placement
+R60,DNP unless input termination has been evaluated,Termination depends on the connected front end
+R66;R67,DNP for gain 10 or fit the same matched value at both positions,Each pad is parallel to its corresponding fitted 10k feedback resistor; validation used 4.99k 0.1% on both positions for gain about 3.33

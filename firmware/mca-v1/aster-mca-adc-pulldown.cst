@@ -1,0 +1,43 @@
+// Diagnostic constraints: identical to aster-mca.cst except that the ADC data
+// inputs use weak internal pull-downs.  Active ADC outputs override these
+// safely; tri-stated ADC outputs read as zero.
+
+IO_LOC "clk_10mhz" 11;
+IO_PORT "clk_10mhz" IO_TYPE=LVCMOS33 PULL_MODE=NONE;
+
+IO_LOC "adc_data[0]" 25;
+IO_LOC "adc_data[1]" 26;
+IO_LOC "adc_data[2]" 27;
+IO_LOC "adc_data[3]" 28;
+IO_LOC "adc_data[4]" 29;
+IO_LOC "adc_data[5]" 30;
+IO_LOC "adc_data[6]" 31;
+IO_LOC "adc_data[7]" 32;
+IO_LOC "adc_data[8]" 33;
+IO_LOC "adc_data[9]" 34;
+IO_LOC "adc_data[10]" 37;
+IO_LOC "adc_data[11]" 38;
+IO_PORT "adc_data[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[4]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[5]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[6]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[7]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[8]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[9]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[10]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+IO_PORT "adc_data[11]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC "uart_rx_pin" 68;
+IO_PORT "uart_rx_pin" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_LOC "uart_tx_pin" 69;
+IO_PORT "uart_tx_pin" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "adc_pd" 70;
+IO_PORT "adc_pd" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC "status_led" 71;
+IO_PORT "status_led" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_LOC "trig_out" 72;
+IO_PORT "trig_out" IO_TYPE=LVCMOS33 DRIVE=8;

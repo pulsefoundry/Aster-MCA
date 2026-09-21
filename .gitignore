@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+tmp/
+
+# FPGA intermediate products. Release bitstreams live in prebuilt/.
+**/build/
+*.json.tmp
+*.vvp
+
+# Editor and EDA recovery files
+*~
+*.bak
+*.autosave
+*.log

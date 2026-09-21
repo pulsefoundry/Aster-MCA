@@ -1,0 +1,14 @@
+* text=auto eol=lf
+*.csv text eol=lf
+*.tsv text eol=lf
+*.utf16 binary
+*.md text eol=lf
+*.py text eol=lf
+*.v text eol=lf
+*.cst text eol=lf
+*.fs text eol=lf -diff linguist-generated=true
+*.pdf binary
+*.png binary
+*.webp binary
+*.zip binary
+*.epro2 binary
