@@ -28,15 +28,30 @@ module top (
         if (!reset_count[7])
             reset_count <= reset_count + 1'b1;
 
-    // ADC12010 updates after the rising edge. Its datasheet recommends
-    // capturing the parallel bus on the falling edge of the conversion clock.
-    reg [11:0] adc_sample_falling = 12'd2048;
-    always @(negedge clk_10mhz)
-        adc_sample_falling <= adc_data;
+    // ADC12010 updates after the rising edge. Capture every bit on the falling
+    // edge in its dedicated IOLOGIC cell. Q1 is the falling-edge sample and is
+    // presented to the fabric on the following rising edge. Keeping this first
+    // register in the I/O cell prevents placement-dependent bus skew.
+    wire [11:0] adc_sample_rising_unused;
+    wire [11:0] adc_sample_iddr;
+    genvar adc_bit;
+    generate
+        for (adc_bit = 0; adc_bit < 12; adc_bit = adc_bit + 1) begin : adc_input
+            IDDR adc_iddr (
+                .D(adc_data[adc_bit]),
+                .CLK(clk_10mhz),
+                .Q0(adc_sample_rising_unused[adc_bit]),
+                .Q1(adc_sample_iddr[adc_bit])
+            );
+        end
+    endgenerate
 
+    // IDDR Q1 is transferred into the rising-edge domain at the clock edge.
+    // This extra stage consumes the already-stable value on the next edge and
+    // gives every bit a full 100 ns cycle for IOLOGIC-to-fabric routing.
     reg [11:0] adc_sample = 12'd2048;
     always @(posedge clk_10mhz)
-        adc_sample <= adc_sample_falling;
+        adc_sample <= adc_sample_iddr;
 
     assign adc_pd = 1'b0;
 
@@ -208,9 +223,9 @@ module top (
         begin
             case (index)
                 4'd0:  info_byte = 8'd1;    // firmware major
-                4'd1:  info_byte = 8'd3;    // firmware minor
+                4'd1:  info_byte = 8'd9;    // firmware minor
                 4'd2:  info_byte = 8'd12;   // ADC bits
-                4'd3:  info_byte = 8'h01;   // feature bit 0: peak histogram
+                4'd3:  info_byte = 8'h11;   // bit 0: histogram; bit 4: IOLOGIC ADC capture
                 4'd4:  info_byte = 8'h80;   // 10,000,000 samples/s, little-endian
                 4'd5:  info_byte = 8'h96;
                 4'd6:  info_byte = 8'h98;

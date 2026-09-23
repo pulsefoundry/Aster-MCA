@@ -20,6 +20,7 @@ FAMILY := GW1N-4
 TOP := top
 BUILD := build
 SOURCES := top.v mca_engine.v histogram.v uart_rx.v uart_tx.v
+SIM_SOURCES := $(SOURCES) gowin_iddr_sim.v
 PATCHER := tools/patch_gowin_id_crc.py
 
 .PHONY: all clean sim sim-core sim-protocol host-test detect load-sram load-adc-pulldown load-adc-pd-high
@@ -81,11 +82,11 @@ sim-protocol: $(BUILD)/tb_protocol.vvp
 host-test:
 	$(PYTHON) -m unittest -v test_astermca.py
 
-$(BUILD)/tb_mca.vvp: tb_mca.v $(SOURCES) | $(BUILD)
-	$(IVERILOG) -g2012 -s tb_mca -o $@ tb_mca.v $(SOURCES)
+$(BUILD)/tb_mca.vvp: tb_mca.v $(SIM_SOURCES) | $(BUILD)
+	$(IVERILOG) -g2012 -s tb_mca -o $@ tb_mca.v $(SIM_SOURCES)
 
-$(BUILD)/tb_protocol.vvp: tb_protocol.v $(SOURCES) | $(BUILD)
-	$(IVERILOG) -g2012 -s tb_protocol -o $@ tb_protocol.v $(SOURCES)
+$(BUILD)/tb_protocol.vvp: tb_protocol.v $(SIM_SOURCES) | $(BUILD)
+	$(IVERILOG) -g2012 -s tb_protocol -o $@ tb_protocol.v $(SIM_SOURCES)
 
 detect:
 	$(LOADER) -c ch347_jtag --freq 1000000 --detect

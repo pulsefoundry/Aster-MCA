@@ -26,7 +26,10 @@ CH347T USB/JTAG/UART 桥，单根 USB-C 完成供电、通信和 FPGA SRAM 配�
   丢失事件、有效采样时间和 UART 错误；
 - 修复后的两块首板均已完成 USB 枚举、FPGA 配置和 ADC 数据链路验证。
 
-当前固件版本为 **v1.3**。固件只加载进易失性 SRAM，断电后需要重新加载。
+当前经过实板和铯谱验证的固件版本为 **v1.9**。它保留 v1.3 的
+MCA 算法，但将 12 路 ADC 输入改为专用 IOLOGIC 下降沿采样，并在后面
+加入一级整周期寄存器。两份独立布局的镜像现已得到一致的 Cs-137 谱。
+固件只加载进易失性 SRAM，断电后需要重新加载。
 
 ## 原型实物照片
 
@@ -99,8 +102,11 @@ brew install libusb openfpgaloader iverilog
 ```sh
 cd firmware/mca-v1
 openFPGALoader -c ch347_jtag --freq 1000000 -m \
-  prebuilt/aster-mca-v1.3.fs
+  prebuilt/aster-mca-v1.9.fs
 ```
+
+原 v1.3 镜像仍作为回退版保留。ADC 采样问题、布局 seed 实测以及
+今后算法 A/B 测试的注意事项见 [算法改进记录](docs/algorithm-development.md)。
 
 读取状态并采集 10 分钟能谱：
 

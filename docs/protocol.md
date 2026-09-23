@@ -39,3 +39,19 @@ counter returned by `S`, divided by 10,000,000 samples/s.
 
 The Python implementation in `astermca.py` is the executable protocol
 reference. `tb_protocol.v` and `test_astermca.py` cover framing and CRC handling.
+
+## INFO feature byte
+
+The fourth byte of the 16-byte `I` payload is a feature bitmap:
+
+| Bit | Meaning |
+| ---: | --- |
+| 0 | Peak-height histogram is implemented. |
+| 1 | Triggering and peak extraction use a four-sample boxcar average. |
+| 2 | A trigger requires two consecutive above-threshold samples. |
+| 3 | Baseline IIR uses symmetric signed rounding. |
+| 4 | ADC inputs use falling-edge IOLOGIC capture plus a fabric pipeline. |
+
+Firmware v1.3 reports `0x01`; firmware v1.9 reports `0x11`. Bits 1 through 3
+were assigned to development experiments and remain reserved. Unknown set bits
+must be ignored by compatible host software.

@@ -1,8 +1,8 @@
-# FPGA firmware v1.3
+# FPGA firmware v1.9
 
-This directory contains the first physically validated MCA image for the
-Aster MCA v0.1 board. It is designed for the Gowin
-`GW1N-LV4QN88C6/I5` and a 10 MHz external clock.
+This directory contains the physically validated FPGA firmware for the Aster
+MCA v0.1 board. It is designed for the Gowin `GW1N-LV4QN88C6/I5` and a 10 MHz
+external ADC clock.
 
 The normal load target writes volatile FPGA SRAM only. It does not modify the
 device's non-volatile configuration memory.
@@ -14,8 +14,10 @@ See [`../../AI-DISCLOSURE.md`](../../AI-DISCLOSURE.md).
 
 ## Data path
 
-- Capture the ADC12010 12-bit offset-binary bus on the falling edge of the
-  10 MHz conversion clock.
+- Capture all 12 ADC12010 offset-binary inputs on the falling edge using the
+  Gowin IDDR cells physically located in IOLOGIC.
+- Re-register the IDDR output after one complete 10 MHz clock period before it
+  reaches the MCA engine, eliminating placement-dependent bus tearing.
 - Track the quiet baseline, initialized at midscale (2048).
 - Detect negative-going pulses by default with threshold and half-threshold
   release hysteresis.
@@ -53,7 +55,8 @@ make host-test
 make
 ```
 
-The final image is `build/aster-mca-v1.fs`. The packer output requires the
+The final image is `build/aster-mca-v1.fs`. A physically validated copy is
+checked in as `prebuilt/aster-mca-v1.9.fs`. The packer output requires the
 included revision-ID/first-frame CRC correction, which the Makefile applies
 with `tools/patch_gowin_id_crc.py`.
 
@@ -71,12 +74,23 @@ Load the newly built image into SRAM:
 make load-sram
 ```
 
-Or load the checked-in v1.3 image directly:
+Load the checked-in, physically validated v1.9 image directly:
+
+```sh
+openFPGALoader -c ch347_jtag --freq 1000000 -m \
+  prebuilt/aster-mca-v1.9.fs
+```
+
+The original v1.3 image remains available as a fallback:
 
 ```sh
 openFPGALoader -c ch347_jtag --freq 1000000 -m \
   prebuilt/aster-mca-v1.3.fs
 ```
+
+The v1.9 image was tested with two independently placed-and-routed builds. Both
+used 12 IOLOGIC input cells and produced matching 30-second Cs-137 spectra.
+See [`../../docs/algorithm-development.en.md`](../../docs/algorithm-development.en.md).
 
 After a power cycle, load the image again.
 

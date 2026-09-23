@@ -7,6 +7,7 @@ tmp/
 
 # FPGA intermediate products. Release bitstreams live in prebuilt/.
 **/build/
+**/build-*/
 *.json.tmp
 *.vvp
 

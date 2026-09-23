@@ -92,8 +92,10 @@ module tb_protocol;
             $fatal(1, "bad INFO response type/status");
         if (received[6] != 8'd16 || received[7] != 8'd0)
             $fatal(1, "bad INFO payload length");
-        if (received[8] != 8'd1 || received[9] != 8'd3 || received[10] != 8'd12)
+        if (received[8] != 8'd1 || received[9] != 8'd9 || received[10] != 8'd12)
             $fatal(1, "bad INFO firmware/ADC fields");
+        if (received[11] != 8'h11)
+            $fatal(1, "bad INFO feature bitmap");
 
         calculated_crc = 16'hffff;
         for (i = 0; i < 24; i = i + 1)

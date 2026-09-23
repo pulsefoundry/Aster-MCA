@@ -410,10 +410,26 @@ def save_histogram(path: Path, counts: Iterable[int]) -> None:
 
 
 def print_info(info: dict) -> None:
+    feature_names = []
+    if info["features"] & 0x01:
+        feature_names.append("峰高直方图")
+    if info["features"] & 0x02:
+        feature_names.append("4 点滑动平均")
+    if info["features"] & 0x04:
+        feature_names.append("2 点迟滞触发确认")
+    if info["features"] & 0x08:
+        feature_names.append("对称基线 IIR")
+    if info["features"] & 0x10:
+        feature_names.append("IOLOGIC ADC 下降沿采样")
+    unknown_features = info["features"] & ~0x1F
+    if unknown_features:
+        feature_names.append(f"未知特性 0x{unknown_features:02x}")
+
     print(f"固件版本: {info['version']}")
     print(f"ADC: {info['adc_bits']} bit @ {info['sample_rate']:,} sample/s")
     print(f"谱道数: {info['channels']}")
     print(f"UART: {info['baud']:,} baud")
+    print("算法特性: " + ("、".join(feature_names) if feature_names else "未报告"))
 
 
 def print_stats(stats: dict) -> None:

@@ -44,7 +44,7 @@ Connect the board to the host and check that the CH347T enumerates as USB
 ```sh
 make detect
 openFPGALoader -c ch347_jtag --freq 1000000 -m \
-  prebuilt/aster-mca-v1.3.fs
+  prebuilt/aster-mca-v1.9.fs
 python3 astermca.py info
 python3 astermca.py stats
 ```

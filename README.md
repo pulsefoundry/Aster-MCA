@@ -28,8 +28,11 @@ board.
   saturated events, histogram drops, live samples, and UART errors.
 - Repeatable source-versus-background separation on the first repaired boards.
 
-The current firmware is **v1.3**. FPGA configuration is volatile: the image
-must be loaded again after every power cycle.
+The current physically validated firmware is **v1.9**. It keeps the proven v1.3
+MCA algorithm but moves all 12 ADC inputs into dedicated falling-edge IOLOGIC
+registers, followed by a full-cycle fabric pipeline stage. Two independently
+placed images now produce matching Cs-137 spectra. FPGA configuration is
+volatile and must be reloaded after power loss.
 
 ## Prototype photographs
 
@@ -116,7 +119,7 @@ the [hardware errata](docs/hardware-errata-v0.1.md) before fabrication.
 - `hardware/rev0.1-as-built/` — EasyEDA Pro source, Gerbers, BOM, CPL,
   schematic, netlist, and pin/net reference for the manufactured prototype.
 - `firmware/mca-v1/` — synthesizable Verilog, constraints, simulations, host
-  utility, tests, and a prebuilt v1.3 SRAM image.
+  utility, tests, and validated v1.3 and v1.9 SRAM images.
 - `docs/` — bring-up procedure, protocol, hardware errata, and validation
   notes.
 - `examples/cs137/` — raw spectrum and background CSV files.
@@ -143,8 +146,13 @@ Load the tested prebuilt image into FPGA SRAM:
 ```sh
 cd firmware/mca-v1
 openFPGALoader -c ch347_jtag --freq 1000000 -m \
-  prebuilt/aster-mca-v1.3.fs
+  prebuilt/aster-mca-v1.9.fs
 ```
+
+The original v1.3 image remains available as a fallback. See
+[Algorithm development](docs/algorithm-development.en.md) for the ADC capture
+fault, physical placement-seed test, and the rules for future algorithm A/B
+comparisons.
 
 Read the board and acquire a spectrum:
 
