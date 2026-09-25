@@ -1,0 +1,44 @@
+Comment,Designator,Footprint,LCSC Part #,Manufacturer Part Number,Qty,Assembly,Purchase Notes
+RP2350 Pico 2 compatible 52x21mm,A1,Aster_Custom:RP2350_Clone_52x21mm_Castellated,,RP2350 Pico 2 compatible,1,MODULE/HAND,User-supplied module; castellated soldering; no confirmed LCSC part
+2.2nF C0G 50V,C2,Capacitor_SMD:C_0603_1608Metric,C343869,GCM1885C1H222JA16D,1,SMT,
+100nF X7R 25V,"C5,C7,C9,C10,C11,C12,C13,C14,C15,C16,C17,C18,C19,C20,C21,C22,C23,C24,C30,C31,C32,C33,C34,C35,C36,C37,C42",Capacitor_SMD:C_0603_1608Metric,C1853266,CC0603KPX7R8BB104,27,SMT,
+2.2uF X7R 16V,C6,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C28234,CL21B225KOFNNNE,1,SMT,
+1uF X7R 16V,C8,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C24123,CL21B105KOFNNNE,1,SMT,
+4.7uF X5R 16V,"C25,C26,C27,C29",Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C1746,CL21A475KOFNNNE,4,SMT,
+10uF X5R 16V,C28,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C77075,GRM21BR61C106KE15L,1,SMT,
+100nF X7R 16V,C38,Capacitor_SMD:C_0402_1005Metric,C1525,CL05B104KO5NNNC,1,SMT,
+10uF X7R 10V,C39,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,C165101,1206B106K100NT,1,SMT,
+22uF X5R 6.3V,"C40,C41",Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,C159759,CL31A226KQHNNNE,2,SMT,
+PWR green LED 3mm,D2,LED_THT:LED_D3.0mm,C3028822,MHL3014UGDGT,1,HAND,Long lead is anode
+RUN green LED 3mm,D3,LED_THT:LED_D3.0mm,C3028822,MHL3014UGDGT,1,HAND,Long lead is anode
+TRIG yellow LED 3mm,D4,LED_THT:LED_D3.0mm,C6402159,264-10UYD/S530-A3,1,HAND,Long lead is anode
+SAT red LED 3mm,D5,LED_THT:LED_D3.0mm,C84774,204-10SDRD/S530-A3-L,1,HAND,Long lead is anode
+SS14L Schottky,"D6,D7",Diode_SMD:D_SOD-123F,C190475,SS14L,2,SMT,Observe cathode stripe
+1.5A resettable fuse 24V,F1,Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder,C20627120,1206L150/24NR,1,SMT,
+600ohm@100MHz 1A ferrite bead,"FB1,FB2,FB3,FB4",Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder,C41556732,BLM21PG601SN1D,4,SMT,
+BNC input vertical,J1,Connector_Coaxial:BNC_Amphenol_031-5539_Vertical,C6634490,031-5539,1,HAND,Exact footprint part; may require external purchase if unavailable
+Intel JTAG 2x5 2.54mm,J2,Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical,C32713278,HX PZ2.54-2x5P ZZ,1,HAND,
+1x3 2.54mm pin header,"J3,JP2",Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,C32713269,HX PZ2.54-1x3P ZZ,2,HAND,
+1x2 2.54mm pin header,"J4,JP1",Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,C32713268,HX PZ2.54-1x2P ZZ,2,HAND,
+3.9uH power inductor,L1,Inductor_SMD:L_Changjiang_FNR6020S,C168006,FNR6020S3R9NT,1,SMT,Exact footprint part; current LCSC stock may be zero
+10k 1% 0805,"R11,R14,R33,R34,R35,R37,R38,R39,R40,R41",Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17414,0805W8F1002T5E,10,SMT,
+8.25k 1% 0805,R12,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C3000539,FRC0805F8251TS,1,SMT,
+4.99k 1% 0805,R13,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17677,0805W8F4991T5E,1,SMT,
+33ohm 1% 0805,"R15,R16",Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17634,0805W8F330JT5E,2,SMT,
+78.7ohm 0.1% 0805,"R2,R4",Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd,C2849344,PTFR0805B78R7P9,2,SMT,
+0ohm jumper 0805,R3,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17477,0805W8F0000T5E,1,SMT,
+1k 1% 0805,"R36,R42,R43,R44,R45",Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C17513,0805W8F1001T5E,5,SMT,
+3.92k 0.1% 0805,R5,Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd,C865470,RT0805BRD073K92L,1,SMT,
+4.00k 0.1% 0805,R6,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C1700252,MCU08050D4001BP500,1,SMT,Exact value; current LCSC stock may be zero
+2.00k 0.1% 0805,"R7,R8",Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,C706274,RT0805BRE072KL,2,SMT,
+22ohm 1% 0805,"R9,R10",Resistor_SMD:R_0805_2012Metric,C17561,0805W8F220JT5E,2,SMT,r8 ADC-driver damping value
+324ohm 0.1% 0805,R46,Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd,C2984390,AR05BTCW3240,1,SMT,
+402ohm 0.1% 0805,R47,Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd,C865474,RT0805BRD07402RL,1,SMT,
+33ohm x4 isolated resistor array,"RN1,RN2,RN3,RN4",Resistor_SMD:R_Array_Convex_4x0603,C102663,RTA03-4D330JTP,4,SMT,Four isolated resistors per package
+Gain switch DP3T right-angle,SW1,Aster_Production:Button_Switch_THT__SW_CK_JS203011AQN_DP3T_Angled__AsterProd,C221667,JS203011AQN,1,HAND,Verify physical slider order by continuity before assembly
+FPGA reconfigure pushbutton,SW2,Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS,C285523,PTS645VL39-2 LFS,1,HAND,Exact footprint part; may require external purchase if unavailable
+Intel MAX 10 FPGA,U1,Package_QFP:EQFP-144-1EP_20x20mm_P0.5mm_EP4x4mm,C1521931,10M16SAE144C8G,1,SMT,Exact part; currently expensive and stock-dependent
+16-bit 40MSPS ADC,U2,Package_DFN_QFN:Texas_RGZ0048A_VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm,C571255,ADS5560IRGZT,1,SMT,Exact part; currently expensive and stock-dependent
+Fully differential ADC driver,U3,Package_SO:VSSOP-8_3x3mm_P0.65mm,C2860660,THS4551IDGKT,1,SMT,
+3.3V buck regulator,U4,Package_TO_SOT_SMD:TSOT-23-6_HandSoldering,C780769,AP63203WU-7,1,SMT,
+40.000MHz CMOS oscillator,Y1,Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering,C1670009,ASE-40.000MHZ-L-C-T,1,SMT,Exact oscillator; stock may be limited

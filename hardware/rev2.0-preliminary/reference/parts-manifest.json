@@ -1,0 +1,2165 @@
+{
+  "A1": {
+    "reference": "A1",
+    "value": "RP2350 Pico 2 compatible 52x21mm",
+    "footprint": "Aster_Custom:RP2350_Clone_52x21mm_Castellated",
+    "x": 64.0,
+    "y": 12.0,
+    "rotation": -90.0,
+    "pins": {
+      "": "",
+      "1": "HOST_D0",
+      "2": "HOST_D1",
+      "3": "GND",
+      "4": "HOST_D2",
+      "5": "HOST_D3",
+      "6": "HOST_D4",
+      "7": "HOST_D5",
+      "8": "GND",
+      "9": "HOST_D6",
+      "10": "HOST_D7",
+      "11": "HOST_WR",
+      "12": "HOST_RD",
+      "13": "GND",
+      "14": "HOST_CS",
+      "15": "HOST_IRQ",
+      "16": "HOST_SCK",
+      "17": "HOST_MOSI",
+      "18": "GND",
+      "19": "HOST_MISO",
+      "20": "HOST_AUX",
+      "21": "FPGA_RESET_N",
+      "22": "EXT_TRIG",
+      "23": "GND",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "GND",
+      "29": "",
+      "30": "",
+      "31": "",
+      "32": "",
+      "33": "GND",
+      "34": "",
+      "35": "",
+      "36": "",
+      "37": "",
+      "38": "GND",
+      "39": "",
+      "40": "VBUS"
+    },
+    "mpn": "RP2350 Pico 2 compatible",
+    "lcsc": "",
+    "assembly": "MODULE/HAND",
+    "dnp": false,
+    "notes": "Direct castellated soldering; verified 40-pin Pico ordering, 2.54mm pitch, 52x21mm overall; USB overhangs right board edge"
+  },
+  "C1": {
+    "reference": "C1",
+    "value": "100n FILM DNP",
+    "footprint": "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm",
+    "x": 21.5,
+    "y": 31.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "AFE_IN",
+      "2": "AFE_AC"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": true,
+    "notes": "Optional AC-coupling path"
+  },
+  "C2": {
+    "reference": "C2",
+    "value": "2.2n C0G",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 34.2,
+    "y": 39.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_INP",
+      "2": "ADC_INM"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C5": {
+    "reference": "C5",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 33.0,
+    "y": 48.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5VA",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Place at U3 supply pin; ground pad gets an adjacent plane via"
+  },
+  "C6": {
+    "reference": "C6",
+    "value": "2.2u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 28.5,
+    "y": 48.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5VA",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C7": {
+    "reference": "C7",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 34.0,
+    "y": 43.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_VCM",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C8": {
+    "reference": "C8",
+    "value": "1u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 31.5,
+    "y": 52.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_VCM",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C9": {
+    "reference": "C9",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 35.5,
+    "y": 33.2,
+    "rotation": 90.0,
+    "pins": {
+      "1": "ADC_CLKM",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C10": {
+    "reference": "C10",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 38.25,
+    "y": 33.2,
+    "rotation": 90.0,
+    "pins": {
+      "1": "CLK40_RAW",
+      "2": "ADC_CLKP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C11": {
+    "reference": "C11",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 49.0,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C12": {
+    "reference": "C12",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 52.5,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C13": {
+    "reference": "C13",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 56.0,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C14": {
+    "reference": "C14",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 59.5,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C15": {
+    "reference": "C15",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 63.0,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C16": {
+    "reference": "C16",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 66.5,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C17": {
+    "reference": "C17",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 70.0,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C18": {
+    "reference": "C18",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 47.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C19": {
+    "reference": "C19",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 50.5,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C20": {
+    "reference": "C20",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 54.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C21": {
+    "reference": "C21",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 57.5,
+    "y": 59.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_FPGA_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C22": {
+    "reference": "C22",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 61.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_FPGA_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C23": {
+    "reference": "C23",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 64.5,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_FPGA_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C24": {
+    "reference": "C24",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 68.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_FPGA_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C25": {
+    "reference": "C25",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 51.0,
+    "y": 26.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C26": {
+    "reference": "C26",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 56.0,
+    "y": 26.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_FPGA_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C27": {
+    "reference": "C27",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 61.0,
+    "y": 26.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C28": {
+    "reference": "C28",
+    "value": "10u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 36.0,
+    "y": 53.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C29": {
+    "reference": "C29",
+    "value": "4.7u",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+    "x": 41.0,
+    "y": 53.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C30": {
+    "reference": "C30",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 44.0,
+    "y": 32.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C31": {
+    "reference": "C31",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 47.0,
+    "y": 32.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C32": {
+    "reference": "C32",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 36.5,
+    "y": 46.8,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C33": {
+    "reference": "C33",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 35.5,
+    "y": 55.3,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C34": {
+    "reference": "C34",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 38.7,
+    "y": 55.3,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C35": {
+    "reference": "C35",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 36.5,
+    "y": 49.3,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C36": {
+    "reference": "C36",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 41.9,
+    "y": 55.3,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C37": {
+    "reference": "C37",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 45.1,
+    "y": 55.3,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C38": {
+    "reference": "C38",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "x": 66.55,
+    "y": 64.55,
+    "rotation": 90.0,
+    "pins": {
+      "1": "BUCK_BST",
+      "2": "BUCK_SW"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C39": {
+    "reference": "C39",
+    "value": "10u 10V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+    "x": 76.5,
+    "y": 61.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "5V_FUSED",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C40": {
+    "reference": "C40",
+    "value": "22u 6.3V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+    "x": 55.5,
+    "y": 62.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C41": {
+    "reference": "C41",
+    "value": "22u 6.3V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",
+    "x": 55.5,
+    "y": 66.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "C42": {
+    "reference": "C42",
+    "value": "100n",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "x": 24.0,
+    "y": 28.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Dedicated Y1 bypass at pin 4"
+  },
+  "D1": {
+    "reference": "D1",
+    "value": "PESD5V0S1UL DNP",
+    "footprint": "Diode_SMD:D_SOD-323_HandSoldering",
+    "x": 20.0,
+    "y": 45.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "GND",
+      "2": "AFE_IN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": true,
+    "notes": "Optional low-capacitance protection; verify bidirectional variant before fit"
+  },
+  "D2": {
+    "reference": "D2",
+    "value": "PWR",
+    "footprint": "LED_THT:LED_D3.0mm",
+    "x": 85.5,
+    "y": 29.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "LED_R1",
+      "2": "3V3_D"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "3mm diffused through-hole indicator; long lead is anode"
+  },
+  "D3": {
+    "reference": "D3",
+    "value": "RUN",
+    "footprint": "LED_THT:LED_D3.0mm",
+    "x": 85.5,
+    "y": 35.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "LED_R2",
+      "2": "FPGA_RUN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "3mm diffused through-hole indicator; long lead is anode"
+  },
+  "D4": {
+    "reference": "D4",
+    "value": "TRIG",
+    "footprint": "LED_THT:LED_D3.0mm",
+    "x": 85.5,
+    "y": 41.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "LED_R3",
+      "2": "FPGA_TRIG"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "3mm diffused through-hole indicator; long lead is anode"
+  },
+  "D5": {
+    "reference": "D5",
+    "value": "SAT",
+    "footprint": "LED_THT:LED_D3.0mm",
+    "x": 85.5,
+    "y": 47.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "LED_R4",
+      "2": "FPGA_SAT"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "3mm diffused through-hole indicator; long lead is anode"
+  },
+  "D6": {
+    "reference": "D6",
+    "value": "SS14L USB OR",
+    "footprint": "Diode_SMD:D_SOD-123F",
+    "x": 77.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5V_FUSED",
+      "2": "USB_5V_PROTECTED"
+    },
+    "mpn": "SS14L",
+    "lcsc": "C190475",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Schottky ORing; cathode is the 5V_FUSED side"
+  },
+  "D7": {
+    "reference": "D7",
+    "value": "SS14L EXT OR",
+    "footprint": "Diode_SMD:D_SOD-123F",
+    "x": 76.0,
+    "y": 65.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5V_FUSED",
+      "2": "ALT_5V_IN"
+    },
+    "mpn": "SS14L",
+    "lcsc": "C190475",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Schottky ORing prevents external supply from backfeeding USB"
+  },
+  "F1": {
+    "reference": "F1",
+    "value": "1.5A RESETTABLE",
+    "footprint": "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder",
+    "x": 72.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "VBUS",
+      "2": "USB_5V_PROTECTED"
+    },
+    "mpn": "1206L150",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "FB1": {
+    "reference": "FB1",
+    "value": "600R@100MHz 1A",
+    "footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+    "x": 46.0,
+    "y": 61.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "3V3_D"
+    },
+    "mpn": "BLM21PG601SN1D",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "FB2": {
+    "reference": "FB2",
+    "value": "600R@100MHz 1A",
+    "footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+    "x": 42.0,
+    "y": 61.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "3V3_A"
+    },
+    "mpn": "BLM21PG601SN1D",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "FB3": {
+    "reference": "FB3",
+    "value": "600R@100MHz 1A",
+    "footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+    "x": 50.0,
+    "y": 61.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "3V3_FPGA_A"
+    },
+    "mpn": "BLM21PG601SN1D",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "FB4": {
+    "reference": "FB4",
+    "value": "600R@100MHz 1A",
+    "footprint": "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder",
+    "x": 38.0,
+    "y": 61.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5V_FUSED",
+      "2": "5VA"
+    },
+    "mpn": "BLM21PG601SN1D",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "H1": {
+    "reference": "H1",
+    "value": "MountingHole_3.2mm_M3",
+    "footprint": "",
+    "x": 4.0,
+    "y": 4.0,
+    "rotation": 0.0,
+    "pins": {
+      "": ""
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "H2": {
+    "reference": "H2",
+    "value": "MountingHole_3.2mm_M3",
+    "footprint": "",
+    "x": 34.0,
+    "y": 4.0,
+    "rotation": 0.0,
+    "pins": {
+      "": ""
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "H3": {
+    "reference": "H3",
+    "value": "MountingHole_3.2mm_M3",
+    "footprint": "",
+    "x": 4.0,
+    "y": 66.0,
+    "rotation": 0.0,
+    "pins": {
+      "": ""
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "H4": {
+    "reference": "H4",
+    "value": "MountingHole_3.2mm_M3",
+    "footprint": "",
+    "x": 82.0,
+    "y": 66.0,
+    "rotation": 0.0,
+    "pins": {
+      "": ""
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "J1": {
+    "reference": "J1",
+    "value": "BNC INPUT",
+    "footprint": "Connector_Coaxial:BNC_Amphenol_031-5539_Vertical",
+    "x": 8.5,
+    "y": 35.0,
+    "rotation": 0.0,
+    "pins": {
+      "": "",
+      "1": "PMT_IN",
+      "2": "GND"
+    },
+    "mpn": "031-5539",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "Low-voltage PMT/SiPM preamplifier output only"
+  },
+  "J2": {
+    "reference": "J2",
+    "value": "INTEL JTAG",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical",
+    "x": 14.0,
+    "y": 65.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "JTAG_TCK",
+      "2": "GND",
+      "3": "JTAG_TDO",
+      "4": "3V3_D",
+      "5": "JTAG_TMS",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "JTAG_TDI",
+      "10": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "J3": {
+    "reference": "J3",
+    "value": "EXT TRIG",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "x": 34.0,
+    "y": 62.8,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "EXT_TRIG",
+      "3": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "J4": {
+    "reference": "J4",
+    "value": "ALT 5V IN",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "x": 72.0,
+    "y": 68.2,
+    "rotation": 90.0,
+    "pins": {
+      "1": "ALT_5V_IN",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "Regulated 5 V input; Schottky-isolated from Pico USB VBUS"
+  },
+  "JP1": {
+    "reference": "JP1",
+    "value": "50R TERM",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "x": 13.0,
+    "y": 49.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "PMT_IN",
+      "2": "TERM_50"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "JP2": {
+    "reference": "JP2",
+    "value": "DC / AC",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "x": 21.5,
+    "y": 35.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "AFE_IN",
+      "2": "GAIN_SRC",
+      "3": "AFE_AC"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "L1": {
+    "reference": "L1",
+    "value": "3.9uH >=3A",
+    "footprint": "Inductor_SMD:L_Changjiang_FNR6020S",
+    "x": 62.5,
+    "y": 64.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "BUCK_SW",
+      "2": "3V3_RAW"
+    },
+    "mpn": "FNR6020S-3R9M",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "AP63203 fixed-3.3V recommendation; Isat >=3A, low DCR"
+  },
+  "R1": {
+    "reference": "R1",
+    "value": "49R9 0.1% DNP",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 20.0,
+    "y": 49.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "TERM_50",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": true,
+    "notes": "Fit only for a source that is specified to drive 50 ohm"
+  },
+  "R2": {
+    "reference": "R2",
+    "value": "78R7 0.1%",
+    "footprint": "Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",
+    "x": 17.8,
+    "y": 35.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "PMT_IN",
+      "2": "AFE_IN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Shared signal-side input resistor"
+  },
+  "R3": {
+    "reference": "R3",
+    "value": "0R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 25.5,
+    "y": 40.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GAIN_H_SIG",
+      "2": "FDA_INN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R4": {
+    "reference": "R4",
+    "value": "78R7 0.1%",
+    "footprint": "Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",
+    "x": 25.5,
+    "y": 35.2,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GAIN_H_GND",
+      "2": "FDA_INP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "25x reference-side input resistor"
+  },
+  "R5": {
+    "reference": "R5",
+    "value": "3k92 0.1%",
+    "footprint": "Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",
+    "x": 25.5,
+    "y": 42.4,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GAIN_L_SIG",
+      "2": "FDA_INN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "0.5x signal-side range resistor"
+  },
+  "R6": {
+    "reference": "R6",
+    "value": "4k00 0.1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 25.5,
+    "y": 37.6,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GAIN_L_GND",
+      "2": "FDA_INP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R7": {
+    "reference": "R7",
+    "value": "2k00 0.1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 30.0,
+    "y": 44.7,
+    "rotation": 180.0,
+    "pins": {
+      "1": "FDA_OUTP",
+      "2": "FDA_INN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R8": {
+    "reference": "R8",
+    "value": "2k00 0.1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 30.0,
+    "y": 32.8,
+    "rotation": 180.0,
+    "pins": {
+      "1": "FDA_OUTN",
+      "2": "FDA_INP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R9": {
+    "reference": "R9",
+    "value": "22R 1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "x": 33.5,
+    "y": 41.2,
+    "rotation": 0.0,
+    "pins": {
+      "1": "FDA_OUTP",
+      "2": "ADC_INM"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "ADC-driver output isolation; r8 value selected by THS4551 transient/AC damping sweep"
+  },
+  "R10": {
+    "reference": "R10",
+    "value": "22R 1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "x": 33.5,
+    "y": 35.8,
+    "rotation": 0.0,
+    "pins": {
+      "1": "FDA_OUTN",
+      "2": "ADC_INP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "ADC-driver output isolation; r8 value selected by THS4551 transient/AC damping sweep"
+  },
+  "R11": {
+    "reference": "R11",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 22.9,
+    "y": 46.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5VA",
+      "2": "FDA_PD"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R12": {
+    "reference": "R12",
+    "value": "8k25 1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 36.0,
+    "y": 29.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "ADC_DFS"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R13": {
+    "reference": "R13",
+    "value": "4k99 1%",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 41.0,
+    "y": 29.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_DFS",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "3/8 DRVDD selects 2s-complement parallel CMOS mode"
+  },
+  "R14": {
+    "reference": "R14",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 34.0,
+    "y": 24.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "CLK_OE"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "ASE pin 1 is Tri-State/OE; pull high enables the oscillator"
+  },
+  "R15": {
+    "reference": "R15",
+    "value": "33R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 32.8,
+    "y": 26.5,
+    "rotation": 0.0,
+    "pins": {
+      "1": "CLK40_RAW",
+      "2": "FPGA_REFCLK"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Source-series resistor; place beside Y1 output"
+  },
+  "R16": {
+    "reference": "R16",
+    "value": "33R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 40.75,
+    "y": 33.0,
+    "rotation": 90.0,
+    "pins": {
+      "1": "ADC_CLKOUT",
+      "2": "FPGA_ADCCLK"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "Source-series resistor; place beside U2 CLKOUT"
+  },
+  "R33": {
+    "reference": "R33",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 73.0,
+    "y": 26.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "JTAGEN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R34": {
+    "reference": "R34",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 78.0,
+    "y": 26.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "JTAG_TMS"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R35": {
+    "reference": "R35",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 30.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "JTAG_TDI"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R36": {
+    "reference": "R36",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 33.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "JTAG_TCK",
+      "2": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R37": {
+    "reference": "R37",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 49.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "NCONFIG"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R38": {
+    "reference": "R38",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 78.5,
+    "y": 50.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "NSTATUS"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R39": {
+    "reference": "R39",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 53.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "CONF_DONE"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R40": {
+    "reference": "R40",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 37.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "FPGA_RESET_N"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R41": {
+    "reference": "R41",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 74.5,
+    "y": 41.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D",
+      "2": "EXT_TRIG"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R42": {
+    "reference": "R42",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 79.5,
+    "y": 29.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GND",
+      "2": "LED_R1"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R43": {
+    "reference": "R43",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 79.5,
+    "y": 35.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GND",
+      "2": "LED_R2"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R44": {
+    "reference": "R44",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 79.5,
+    "y": 41.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GND",
+      "2": "LED_R3"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R45": {
+    "reference": "R45",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",
+    "x": 79.5,
+    "y": 47.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GND",
+      "2": "LED_R4"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "R46": {
+    "reference": "R46",
+    "value": "324R 0.1%",
+    "footprint": "Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",
+    "x": 25.8,
+    "y": 45.3,
+    "rotation": 90.0,
+    "pins": {
+      "1": "GAIN_M_SIG",
+      "2": "FDA_INN"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "5x signal-side range resistor"
+  },
+  "R47": {
+    "reference": "R47",
+    "value": "402R 0.1%",
+    "footprint": "Aster_Production:Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",
+    "x": 25.5,
+    "y": 32.799999,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GAIN_M_GND",
+      "2": "FDA_INP"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "5x reference-side range resistor"
+  },
+  "RN1": {
+    "reference": "RN1",
+    "value": "33R x4 isolated",
+    "footprint": "Resistor_SMD:R_Array_Convex_4x0603",
+    "x": 46.5,
+    "y": 37.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_D15",
+      "2": "ADC_D14",
+      "3": "ADC_D13",
+      "4": "ADC_D12",
+      "5": "FPGA_ADC_D12",
+      "6": "FPGA_ADC_D13",
+      "7": "FPGA_ADC_D14",
+      "8": "FPGA_ADC_D15"
+    },
+    "mpn": "RTA03-4D330JTP",
+    "lcsc": "C102663",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "0603x4 package, four isolated 33-ohm elements"
+  },
+  "RN2": {
+    "reference": "RN2",
+    "value": "33R x4 isolated",
+    "footprint": "Resistor_SMD:R_Array_Convex_4x0603",
+    "x": 46.5,
+    "y": 40.8,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_D11",
+      "2": "ADC_D10",
+      "3": "ADC_D9",
+      "4": "ADC_D8",
+      "5": "FPGA_ADC_D8",
+      "6": "FPGA_ADC_D9",
+      "7": "FPGA_ADC_D10",
+      "8": "FPGA_ADC_D11"
+    },
+    "mpn": "RTA03-4D330JTP",
+    "lcsc": "C102663",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "0603x4 package, four isolated 33-ohm elements"
+  },
+  "RN3": {
+    "reference": "RN3",
+    "value": "33R x4 isolated",
+    "footprint": "Resistor_SMD:R_Array_Convex_4x0603",
+    "x": 46.5,
+    "y": 44.6,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_D7",
+      "2": "ADC_D6",
+      "3": "ADC_D5",
+      "4": "ADC_D4",
+      "5": "FPGA_ADC_D4",
+      "6": "FPGA_ADC_D5",
+      "7": "FPGA_ADC_D6",
+      "8": "FPGA_ADC_D7"
+    },
+    "mpn": "RTA03-4D330JTP",
+    "lcsc": "C102663",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "0603x4 package, four isolated 33-ohm elements"
+  },
+  "RN4": {
+    "reference": "RN4",
+    "value": "33R x4 isolated",
+    "footprint": "Resistor_SMD:R_Array_Convex_4x0603",
+    "x": 46.5,
+    "y": 48.4,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_D3",
+      "2": "ADC_D2",
+      "3": "ADC_D1",
+      "4": "ADC_D0",
+      "5": "FPGA_ADC_D0",
+      "6": "FPGA_ADC_D1",
+      "7": "FPGA_ADC_D2",
+      "8": "FPGA_ADC_D3"
+    },
+    "mpn": "RTA03-4D330JTP",
+    "lcsc": "C102663",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": "0603x4 package, four isolated 33-ohm elements"
+  },
+  "SW1": {
+    "reference": "SW1",
+    "value": "GAIN 0.5x / 5x / 25x",
+    "footprint": "Aster_Production:Button_Switch_THT__SW_CK_JS203011AQN_DP3T_Angled__AsterProd",
+    "x": 28.0,
+    "y": 6.3,
+    "rotation": 180.0,
+    "pins": {
+      "1": "GAIN_H_SIG",
+      "2": "GAIN_M_SIG",
+      "3": "GAIN_SRC",
+      "4": "GAIN_L_SIG",
+      "5": "GAIN_H_GND",
+      "6": "GAIN_M_GND",
+      "7": "GND",
+      "8": "GAIN_L_GND"
+    },
+    "mpn": "JS203011AQN",
+    "lcsc": "C221667",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "Right-angle non-shorting DP3T; actuator faces top enclosure wall; verify physical slider order by continuity"
+  },
+  "SW2": {
+    "reference": "SW2",
+    "value": "FPGA RECONFIG",
+    "footprint": "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx39-2LFS",
+    "x": 84.5,
+    "y": 54.0,
+    "rotation": -90.0,
+    "pins": {
+      "": "",
+      "1": "NCONFIG",
+      "2": "GND"
+    },
+    "mpn": "PTS645VL39-2 LFS",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": "Right-angle pushbutton; actuator faces the right enclosure wall"
+  },
+  "TP1": {
+    "reference": "TP1",
+    "value": "TP_GND",
+    "footprint": "TestPoint:TestPoint_Plated_Hole_D2.0mm",
+    "x": 12.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "GND"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "TP2": {
+    "reference": "TP2",
+    "value": "TP_5V",
+    "footprint": "TestPoint:TestPoint_Plated_Hole_D2.0mm",
+    "x": 17.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "5V_FUSED"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "TP3": {
+    "reference": "TP3",
+    "value": "TP_3V3D",
+    "footprint": "TestPoint:TestPoint_Plated_Hole_D2.0mm",
+    "x": 22.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_D"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "TP4": {
+    "reference": "TP4",
+    "value": "TP_3V3A",
+    "footprint": "TestPoint:TestPoint_Plated_Hole_D2.0mm",
+    "x": 27.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "3V3_A"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "TP5": {
+    "reference": "TP5",
+    "value": "TP_VCM",
+    "footprint": "TestPoint:TestPoint_Plated_Hole_D2.0mm",
+    "x": 32.0,
+    "y": 57.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "ADC_VCM"
+    },
+    "mpn": "",
+    "lcsc": "",
+    "assembly": "HAND",
+    "dnp": false,
+    "notes": ""
+  },
+  "U1": {
+    "reference": "U1",
+    "value": "10M16SAE144C8G",
+    "footprint": "Package_QFP:EQFP-144-1EP_20x20mm_P0.5mm_EP4x4mm",
+    "x": 60.0,
+    "y": 44.0,
+    "rotation": -90.0,
+    "pins": {
+      "": "",
+      "1": "3V3_FPGA_A",
+      "2": "3V3_FPGA_A",
+      "3": "GND",
+      "4": "GND",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "3V3_D",
+      "10": "",
+      "11": "",
+      "12": "",
+      "13": "",
+      "14": "",
+      "15": "JTAGEN",
+      "16": "JTAG_TMS",
+      "17": "",
+      "18": "JTAG_TCK",
+      "19": "JTAG_TDI",
+      "20": "JTAG_TDO",
+      "21": "",
+      "22": "",
+      "23": "3V3_D",
+      "24": "",
+      "25": "",
+      "26": "",
+      "27": "",
+      "28": "",
+      "29": "",
+      "30": "",
+      "31": "3V3_D",
+      "32": "",
+      "33": "",
+      "34": "3V3_FPGA_A",
+      "35": "3V3_FPGA_A",
+      "36": "3V3_FPGA_A",
+      "37": "3V3_FPGA_A",
+      "38": "FPGA_ADC_D15",
+      "39": "FPGA_ADC_D14",
+      "40": "3V3_D",
+      "41": "FPGA_ADC_D13",
+      "42": "GND",
+      "43": "FPGA_ADC_D12",
+      "44": "FPGA_ADC_D11",
+      "45": "FPGA_ADC_D10",
+      "46": "FPGA_ADC_D9",
+      "47": "FPGA_ADC_D8",
+      "48": "",
+      "49": "3V3_D",
+      "50": "FPGA_ADC_D7",
+      "51": "3V3_FPGA_A",
+      "52": "FPGA_ADC_D6",
+      "53": "GND",
+      "54": "FPGA_ADC_D5",
+      "55": "",
+      "56": "FPGA_REFCLK",
+      "57": "",
+      "58": "FPGA_ADCCLK",
+      "59": "FPGA_ADC_D3",
+      "60": "FPGA_ADC_D2",
+      "61": "FPGA_ADC_D1",
+      "62": "FPGA_ADC_D0",
+      "63": "GND",
+      "64": "FPGA_ADC_D4",
+      "65": "",
+      "66": "",
+      "67": "3V3_D",
+      "68": "GND",
+      "69": "ADC_OVR",
+      "70": "",
+      "71": "3V3_FPGA_A",
+      "72": "3V3_FPGA_A",
+      "73": "3V3_FPGA_A",
+      "74": "HOST_D7",
+      "75": "HOST_D6",
+      "76": "HOST_D5",
+      "77": "HOST_D4",
+      "78": "HOST_D3",
+      "79": "HOST_D2",
+      "80": "HOST_D1",
+      "81": "HOST_D0",
+      "82": "3V3_D",
+      "83": "GND",
+      "84": "HOST_WR",
+      "85": "HOST_RD",
+      "86": "HOST_CS",
+      "87": "HOST_IRQ",
+      "88": "HOST_SCK",
+      "89": "HOST_MOSI",
+      "90": "HOST_MISO",
+      "91": "HOST_AUX",
+      "92": "FPGA_RESET_N",
+      "93": "EXT_TRIG",
+      "94": "3V3_D",
+      "95": "GND",
+      "96": "",
+      "97": "",
+      "98": "",
+      "99": "",
+      "100": "",
+      "101": "",
+      "102": "",
+      "103": "3V3_D",
+      "104": "GND",
+      "105": "",
+      "106": "",
+      "107": "3V3_FPGA_A",
+      "108": "3V3_FPGA_A",
+      "109": "3V3_FPGA_A",
+      "110": "FPGA_RUN",
+      "111": "FPGA_TRIG",
+      "112": "",
+      "113": "",
+      "114": "",
+      "115": "3V3_FPGA_A",
+      "116": "GND",
+      "117": "3V3_D",
+      "118": "",
+      "119": "",
+      "120": "FPGA_SAT",
+      "121": "",
+      "122": "",
+      "123": "",
+      "124": "",
+      "125": "GND",
+      "126": "",
+      "127": "",
+      "128": "3V3_D",
+      "129": "NCONFIG",
+      "130": "",
+      "131": "",
+      "132": "",
+      "133": "GND",
+      "134": "",
+      "135": "",
+      "136": "NSTATUS",
+      "137": "GND",
+      "138": "CONF_DONE",
+      "139": "3V3_D",
+      "140": "",
+      "141": "",
+      "142": "GND",
+      "143": "3V3_FPGA_A",
+      "144": "3V3_FPGA_A",
+      "145": "GND"
+    },
+    "mpn": "10M16SAE144C8G",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "U2": {
+    "reference": "U2",
+    "value": "ADS5560IRGZT",
+    "footprint": "Package_DFN_QFN:Texas_RGZ0048A_VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm",
+    "x": 40.0,
+    "y": 40.0,
+    "rotation": -90.0,
+    "pins": {
+      "": "",
+      "1": "GND",
+      "2": "3V3_D",
+      "3": "ADC_OVR",
+      "4": "",
+      "5": "ADC_CLKOUT",
+      "6": "ADC_DFS",
+      "7": "3V3_D",
+      "8": "3V3_A",
+      "9": "GND",
+      "10": "ADC_CLKP",
+      "11": "ADC_CLKM",
+      "12": "GND",
+      "13": "ADC_VCM",
+      "14": "GND",
+      "15": "ADC_INP",
+      "16": "ADC_INM",
+      "17": "GND",
+      "18": "3V3_A",
+      "19": "GND",
+      "20": "3V3_A",
+      "21": "",
+      "22": "3V3_A",
+      "23": "GND",
+      "24": "3V3_A",
+      "25": "GND",
+      "26": "3V3_A",
+      "27": "3V3_D",
+      "28": "GND",
+      "29": "GND",
+      "30": "3V3_D",
+      "31": "ADC_D0",
+      "32": "ADC_D1",
+      "33": "ADC_D2",
+      "34": "ADC_D3",
+      "35": "3V3_D",
+      "36": "GND",
+      "37": "ADC_D4",
+      "38": "ADC_D5",
+      "39": "ADC_D6",
+      "40": "ADC_D7",
+      "41": "ADC_D8",
+      "42": "ADC_D9",
+      "43": "ADC_D10",
+      "44": "ADC_D11",
+      "45": "ADC_D12",
+      "46": "ADC_D13",
+      "47": "ADC_D14",
+      "48": "ADC_D15",
+      "49": "GND"
+    },
+    "mpn": "ADS5560IRGZT",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "U3": {
+    "reference": "U3",
+    "value": "THS4551IDGKT",
+    "footprint": "Package_SO:VSSOP-8_3x3mm_P0.65mm",
+    "x": 30.0,
+    "y": 38.5,
+    "rotation": 90.0,
+    "pins": {
+      "1": "FDA_INN",
+      "2": "ADC_VCM",
+      "3": "5VA",
+      "4": "FDA_OUTP",
+      "5": "FDA_OUTN",
+      "6": "GND",
+      "7": "FDA_PD",
+      "8": "FDA_INP"
+    },
+    "mpn": "THS4551IDGKT",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "U4": {
+    "reference": "U4",
+    "value": "AP63203WU-7",
+    "footprint": "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering",
+    "x": 70.2,
+    "y": 64.0,
+    "rotation": 180.0,
+    "pins": {
+      "1": "3V3_RAW",
+      "2": "5V_FUSED",
+      "3": "5V_FUSED",
+      "4": "GND",
+      "5": "BUCK_SW",
+      "6": "BUCK_BST"
+    },
+    "mpn": "AP63203WU-7",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  },
+  "Y1": {
+    "reference": "Y1",
+    "value": "40.000 MHz CMOS",
+    "footprint": "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering",
+    "x": 28.0,
+    "y": 27.0,
+    "rotation": 0.0,
+    "pins": {
+      "1": "CLK_OE",
+      "2": "GND",
+      "3": "CLK40_RAW",
+      "4": "3V3_D"
+    },
+    "mpn": "ASE-40.000MHZ-L-C-T",
+    "lcsc": "",
+    "assembly": "SMT",
+    "dnp": false,
+    "notes": ""
+  }
+}

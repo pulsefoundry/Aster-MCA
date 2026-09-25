@@ -1,0 +1,318 @@
+{
+  "engine": "KiCad bundled ngspice 45.2 shared library",
+  "amplifier_model": "TI THS4551 PSpice model SBOMB92B Rev B package",
+  "model_translation": "3 TABLE sources to identical-point behavioural PWL; switch threshold syntax normalized",
+  "ranges": {
+    "0p5x": {
+      "resistors": {
+        "signal_input_ohm": 3998.7,
+        "reference_input_ohm": 4000.0,
+        "feedback_ohm": 2000.0
+      },
+      "small_signal": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567140204,
+        "plateau_diff_v": -0.0994443902,
+        "output_step_v": -0.100011530404,
+        "simulated_gain_v_per_v": 0.50005765202,
+        "overshoot_percent": 0.00045534749659736917,
+        "settling_1pct_us": 0.43867656000000005,
+        "adc_common_mode_min_v": 1.500934875,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49872299,
+        "outp_max_v": 1.5525616,
+        "outn_min_v": 1.43855516,
+        "outn_max_v": 1.51388025,
+        "adc_diff_min_v": -0.0994448476,
+        "adc_diff_max_v": 0.000567142863,
+        "post_pulse_peak_to_peak_v": 1.399999999826887e-10,
+        "requested_amplitude_v": 0.2
+      },
+      "overload_minus_2p7v": {
+        "simulation_end_time_us": 12.0,
+        "simulation_completed": true,
+        "baseline_diff_v": 0.000567140204,
+        "adc_diff_min_v": -1.34959467,
+        "adc_diff_max_v": 0.000567144756,
+        "outp_min_v": 1.49687406,
+        "outp_max_v": 2.17931152,
+        "outn_min_v": 0.798193929,
+        "outn_max_v": 1.52893317,
+        "late_residual_from_baseline_mv": 0.0,
+        "adc_exceeds_nominal_3p6vpp": false
+      },
+      "ac": {
+        "low_frequency_gain_db": -6.01955887,
+        "bandwidth_3db_hz": 1647947.9173281288,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 0.740069373
+      },
+      "estimated_peak_source_current_at_minus_2p7v_a": 0.0006752194463200541
+    },
+    "5x": {
+      "resistors": {
+        "signal_input_ohm": 402.7,
+        "reference_input_ohm": 402.0,
+        "feedback_ohm": 2000.0
+      },
+      "small_signal": {
+        "input_step_v": -0.02,
+        "baseline_diff_v": 0.006087199,
+        "plateau_diff_v": -0.09328624334999999,
+        "output_step_v": -0.09937344235,
+        "simulated_gain_v_per_v": 4.9686721175,
+        "overshoot_percent": 0.00043970500533951906,
+        "settling_1pct_us": 0.44125205000000006,
+        "adc_common_mode_min_v": 1.50057282,
+        "adc_common_mode_max_v": 1.5005728249999999,
+        "outp_min_v": 1.49686794,
+        "outp_max_v": 1.54792641,
+        "outn_min_v": 1.45098758,
+        "outn_max_v": 1.50651519,
+        "adc_diff_min_v": -0.0932866818,
+        "adc_diff_max_v": 0.00608720032,
+        "post_pulse_peak_to_peak_v": 1.2999999948054564e-10,
+        "requested_amplitude_v": 0.02
+      },
+      "overload_minus_2p7v": {
+        "simulation_end_time_us": 1.04975471,
+        "simulation_completed": false,
+        "baseline_diff_v": 0.006087199,
+        "adc_diff_min_v": -0.521478993,
+        "adc_diff_max_v": 0.00608725647,
+        "outp_min_v": 1.49364985,
+        "outp_max_v": 2.85941767,
+        "outn_min_v": 0.0487771283,
+        "outn_max_v": 1.50362071,
+        "late_residual_from_baseline_mv": null,
+        "adc_exceeds_nominal_3p6vpp": false
+      },
+      "ac": {
+        "low_frequency_gain_db": 13.924845,
+        "bandwidth_3db_hz": 1656244.6001779225,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 1.49990263
+      },
+      "estimated_peak_source_current_at_minus_2p7v_a": 0.006704742984852248
+    },
+    "25x": {
+      "resistors": {
+        "signal_input_ohm": 78.7,
+        "reference_input_ohm": 78.7,
+        "feedback_ohm": 2000.0
+      },
+      "small_signal": {
+        "input_step_v": -0.004,
+        "baseline_diff_v": 0.0185878349,
+        "plateau_diff_v": -0.08298134885,
+        "output_step_v": -0.10156918375,
+        "simulated_gain_v_per_v": 25.3922959375,
+        "overshoot_percent": 0.0003256401083451266,
+        "settling_1pct_us": 0.4538453900000001,
+        "adc_common_mode_min_v": 1.500478775,
+        "adc_common_mode_max_v": 1.50047878,
+        "outp_min_v": 1.49070748,
+        "outp_max_v": 1.5424494,
+        "outn_min_v": 1.45850552,
+        "outn_max_v": 1.51025466,
+        "adc_diff_min_v": -0.0829816803,
+        "adc_diff_max_v": 0.0185878356,
+        "post_pulse_peak_to_peak_v": 0.0,
+        "requested_amplitude_v": 0.004
+      },
+      "overload_minus_2p7v": {
+        "simulation_end_time_us": 1.02882173,
+        "simulation_completed": false,
+        "baseline_diff_v": 0.0185878349,
+        "adc_diff_min_v": -0.219337654,
+        "adc_diff_max_v": 0.0185880114,
+        "outp_min_v": 1.48770291,
+        "outp_max_v": 2.76259478,
+        "outn_min_v": 0.157589365,
+        "outn_max_v": 1.50977407,
+        "late_residual_from_baseline_mv": null,
+        "adc_exceeds_nominal_3p6vpp": false
+      },
+      "ac": {
+        "low_frequency_gain_db": 28.0940677,
+        "bandwidth_3db_hz": 1564136.4064031504,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 1.86545846
+      },
+      "estimated_peak_source_current_at_minus_2p7v_a": 0.03430749682337993
+    }
+  },
+  "low_range_output_isolation_sweep": {
+    "riso-10ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.01935041,
+        "bandwidth_3db_hz": 3708919.251978904,
+        "peaking_db": 9.74205918,
+        "peaking_frequency_hz": 35481338.9,
+        "phase_at_last_point_deg": 0.607776066
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567153815,
+        "plateau_diff_v": -0.09974065115,
+        "output_step_v": -0.100307804965,
+        "simulated_gain_v_per_v": 0.5015390248249999,
+        "overshoot_percent": 9.665858856529708,
+        "settling_1pct_us": null,
+        "adc_common_mode_min_v": 1.500934325,
+        "adc_common_mode_max_v": 1.50093543,
+        "outp_min_v": 1.23919881,
+        "outp_max_v": 1.76248652,
+        "outn_min_v": 1.23941092,
+        "outn_max_v": 1.76270961,
+        "adc_diff_min_v": -0.110271998,
+        "adc_diff_max_v": 0.0547501993,
+        "post_pulse_peak_to_peak_v": 0.1084162701,
+        "requested_amplitude_v": 0.2
+      }
+    },
+    "riso-22ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.01955887,
+        "bandwidth_3db_hz": 1647947.9173281288,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 0.740069373
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567140204,
+        "plateau_diff_v": -0.0994443902,
+        "output_step_v": -0.100011530404,
+        "simulated_gain_v_per_v": 0.50005765202,
+        "overshoot_percent": 0.00045534749659736917,
+        "settling_1pct_us": 0.43867656000000005,
+        "adc_common_mode_min_v": 1.500934875,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49872299,
+        "outp_max_v": 1.5525616,
+        "outn_min_v": 1.43855516,
+        "outn_max_v": 1.51388025,
+        "adc_diff_min_v": -0.0994448476,
+        "adc_diff_max_v": 0.000567142863,
+        "post_pulse_peak_to_peak_v": 1.399999999826887e-10,
+        "requested_amplitude_v": 0.2
+      }
+    },
+    "riso-33ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.01974995,
+        "bandwidth_3db_hz": 1095523.9343539944,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 0.857481164
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567127727,
+        "plateau_diff_v": -0.099415104,
+        "output_step_v": -0.099982231727,
+        "simulated_gain_v_per_v": 0.499911158635,
+        "overshoot_percent": 0.027336957305212906,
+        "settling_1pct_us": 0.6577476800000001,
+        "adc_common_mode_min_v": 1.500934875,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49889345,
+        "outp_max_v": 1.55238865,
+        "outn_min_v": 1.44141364,
+        "outn_max_v": 1.51103086,
+        "adc_diff_min_v": -0.099442563,
+        "adc_diff_max_v": 0.000567130196,
+        "post_pulse_peak_to_peak_v": 1.2682999999996843e-07,
+        "requested_amplitude_v": 0.2
+      }
+    },
+    "riso-47ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.01999313,
+        "bandwidth_3db_hz": 768498.8180247329,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 0.997055591
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567111848,
+        "plateau_diff_v": -0.09912135820000001,
+        "output_step_v": -0.09968847004800001,
+        "simulated_gain_v_per_v": 0.49844235024,
+        "overshoot_percent": 0.30865986793842115,
+        "settling_1pct_us": 0.88712096,
+        "adc_common_mode_min_v": 1.500934875,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49901797,
+        "outp_max_v": 1.55224872,
+        "outn_min_v": 1.44068739,
+        "outn_max_v": 1.51195347,
+        "adc_diff_min_v": -0.0994338661,
+        "adc_diff_max_v": 0.00056711411,
+        "post_pulse_peak_to_peak_v": 7.28553900000001e-06,
+        "requested_amplitude_v": 0.2
+      }
+    },
+    "riso-68ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.0203579,
+        "bandwidth_3db_hz": 530875.831631859,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 1.17915866
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.00056708803,
+        "plateau_diff_v": -0.09754742890000001,
+        "output_step_v": -0.09811451693,
+        "simulated_gain_v_per_v": 0.49057258465000003,
+        "overshoot_percent": 1.7386602445559118,
+        "settling_1pct_us": null,
+        "adc_common_mode_min_v": 1.50093487,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49912884,
+        "outp_max_v": 1.55211166,
+        "outn_min_v": 1.43994465,
+        "outn_max_v": 1.51267388,
+        "adc_diff_min_v": -0.0993148213,
+        "adc_diff_max_v": 0.000567090035,
+        "post_pulse_peak_to_peak_v": 0.00013819338399999998,
+        "requested_amplitude_v": 0.2
+      }
+    },
+    "riso-100ohm": {
+      "ac": {
+        "low_frequency_gain_db": -6.02091371,
+        "bandwidth_3db_hz": 360934.2989434455,
+        "peaking_db": 0.0,
+        "peaking_frequency_hz": 10.0,
+        "phase_at_last_point_deg": 1.39185381
+      },
+      "transient": {
+        "input_step_v": -0.2,
+        "baseline_diff_v": 0.000567051735,
+        "plateau_diff_v": -0.09271543805,
+        "output_step_v": -0.093282489785,
+        "simulated_gain_v_per_v": 0.466412448925,
+        "overshoot_percent": 5.728452641343695,
+        "settling_1pct_us": null,
+        "adc_common_mode_min_v": 1.50093487,
+        "adc_common_mode_max_v": 1.50093488,
+        "outp_min_v": 1.49922591,
+        "outp_max_v": 1.55203024,
+        "outn_min_v": 1.43975842,
+        "outn_max_v": 1.51278025,
+        "adc_diff_min_v": -0.0983937335,
+        "adc_diff_max_v": 0.000567053443,
+        "post_pulse_peak_to_peak_v": 0.001126478834,
+        "requested_amplitude_v": 0.2
+      }
+    }
+  }
+}

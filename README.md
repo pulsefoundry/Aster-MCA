@@ -34,6 +34,19 @@ registers, followed by a full-cycle fabric pipeline stage. Two independently
 placed images now produce matching Cs-137 spectra. FPGA configuration is
 volatile and must be reloaded after power loss.
 
+## Aster MCA v2.0 concept
+
+The repository also contains a routed, explicitly unreleased
+[v2.0 high-performance concept](hardware/rev2.0-preliminary/README.md): a
+16-bit 40 MSPS ADS5560, Intel MAX 10 FPGA, directly soldered RP2350 host module,
+and three fixed analogue ranges of approximately 0.5x, 5x and 25x. The current
+r8 CAD passes ERC, DRC and an independent 489-pin network audit, and its THS4551
+front end has reproducible analogue simulations.
+
+v2.0 has no FPGA firmware or physical prototype yet. Its manufacturing files
+are published for review and quotation only and must not be treated as a
+production release.
+
 ## Prototype photographs
 
 | Powered bench prototype | Second PCB during assembly and inspection |

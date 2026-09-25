@@ -1,0 +1,169 @@
+(footprint "Capacitor_THT__C_Rect_L7.2mm_W2.5mm_P5.00mm__AsterProd"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "C, Rect series, Radial, pin pitch=5.00mm, length*width=7.2*2.5mm^2, Capacitor, R82, https://content.kemet.com/datasheets/KEM_F3101_R82.pdf")
+	(tags "C Rect series Radial pin pitch 5.00mm length 7.2mm width 2.5mm Capacitor R82")
+	(property "Reference" "C1"
+		(at 2.5 -2.5 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bab67343-47a3-4fb5-bdfd-59ee82b89df0")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "100n FILM DNP"
+		(at 2.5 2.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05744f77-eccc-46da-b98f-7ec53bdf5175")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a0ee4e6-3f27-42ef-ba19-18421764f640")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36762587-f052-4a0b-ac6a-ba2bb28c272f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "capacitor/THT/other"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4dffed3c-c280-49d1-85e2-5502e6e121ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole dnp)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.35 -1.5)
+		(end 6.35 1.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a4082df4-af45-46e5-8ff1-38aad1519931")
+	)
+	(fp_line
+		(start -1.22 -1.37)
+		(end 6.22 -1.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b7b54df-8f51-4ca8-b513-b7eb876e98a2")
+	)
+	(fp_line
+		(start -1.22 1.37)
+		(end -1.22 -1.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6978f491-25ab-488c-a33e-2356b3e22ad4")
+	)
+	(fp_line
+		(start 6.22 -1.37)
+		(end 6.22 1.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b9df2f7d-e713-48cd-9632-f9729ef67f71")
+	)
+	(fp_line
+		(start 6.22 1.37)
+		(end -1.22 1.37)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1b229c47-05f3-40a9-868b-efef80774512")
+	)
+	(fp_rect
+		(start -1.1 -1.25)
+		(end 6.1 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6459c6d5-0486-4e83-af1c-6dc48b15669a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.5 0 0)
+		(layer "F.Fab")
+		(uuid "9c1303b0-0e5f-4e12-a0f3-3b7235cb0128")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9e6dbc8f-87f3-4959-87b9-1cb57d35f063")
+	)
+	(pad "2" thru_hole circle
+		(at 5 0)
+		(size 1.5 1.5)
+		(drill 0.75)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6928f6a2-efd7-418f-bda4-391c01283425")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L7.2mm_W2.5mm_P5.00mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

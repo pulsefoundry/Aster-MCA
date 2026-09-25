@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "board": "source/Aster-MCA-v2.0.kicad_pcb",
+  "manifest": "reference/parts-manifest.json",
+  "passed": [
+    "all manifest references are present on the PCB",
+    "PCB has no unexpected references",
+    "all PCB values match the current design manifest",
+    "all PCB DNP attributes match the current design manifest",
+    "all 489 numbered pad/net assignments match the current design manifest",
+    "AP63203 FB senses the fixed 3.3 V output",
+    "AP63203 EN is tied to the fused 5 V input",
+    "AP63203 VIN uses the fused 5 V input",
+    "AP63203 ground pin is grounded",
+    "AP63203 SW drives only the buck switch node",
+    "AP63203 BST uses the bootstrap node",
+    "THS4551 inverting input uses FDA_INN",
+    "THS4551 VOCM is driven by ADS5560 VCM",
+    "THS4551 positive supply uses filtered 5VA",
+    "THS4551 OUT+ uses FDA_OUTP",
+    "THS4551 OUT- uses FDA_OUTN",
+    "THS4551 negative supply is grounded",
+    "THS4551 PD has its dedicated pull-up net",
+    "THS4551 noninverting input uses FDA_INP",
+    "DP3T gain switch pad/net map matches the current design table",
+    "all three gain ranges connect to the intended THS4551 feedback arms",
+    "worst nominal gain-arm mismatch is below 0.2%",
+    "critical interface component C9 has the intended net map",
+    "critical interface component C10 has the intended net map",
+    "critical interface component R15 has the intended net map",
+    "critical interface component R16 has the intended net map",
+    "critical interface component R9 has the intended net map",
+    "critical interface component R10 has the intended net map",
+    "critical interface component C2 has the intended net map",
+    "board has four copper layers"
+  ],
+  "warnings": [
+    "Quartus pin legality and timing are not proven until the exact MAX 10 project compiles.",
+    "ADS5560 switched-capacitor input and quantisation are not represented by the analogue macro-model.",
+    "Purchased JS203011AQN switch continuity and physical slider order still require bench confirmation."
+  ],
+  "failures": [],
+  "metrics": {
+    "manifest_parts": 111,
+    "pcb_footprints": 111,
+    "numbered_pins_checked": 489,
+    "copper_layers": 4,
+    "nominal_gains": {
+      "0p5x_signal": 0.5001625528296697,
+      "0p5x_reference": 0.5,
+      "5x_signal": 4.966476285075739,
+      "5x_reference": 4.975124378109452,
+      "25x_signal": 25.412960609911053,
+      "25x_reference": 25.412960609911053,
+      "0p5x_arm_mismatch_percent": 0.03251056593394086,
+      "5x_arm_mismatch_percent": 0.17382666997763468,
+      "25x_arm_mismatch_percent": 0.0
+    }
+  }
+}

@@ -1,0 +1,88 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"A1","RP2350 Pico 2 compatible 52x21mm","RP2350_Clone_52x21mm_Castellated",64.000000,-12.000000,-90.000000,top
+"C2","2.2n C0G","Capacitor_SMD__C_0603_1608Metric__AsterProd",34.200000,-39.500000,0.000000,top
+"C5","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",33.000000,-48.000000,0.000000,top
+"C6","2.2u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",28.500000,-48.500000,0.000000,top
+"C7","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",34.000000,-43.500000,0.000000,top
+"C8","1u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",31.500000,-52.000000,0.000000,top
+"C9","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",35.500000,-33.200000,90.000000,top
+"C10","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",38.250000,-33.200000,90.000000,top
+"C11","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",49.000000,-30.000000,0.000000,top
+"C12","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",52.500000,-30.000000,0.000000,top
+"C13","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",56.000000,-30.000000,0.000000,top
+"C14","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",59.500000,-30.000000,0.000000,top
+"C15","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",63.000000,-30.000000,0.000000,top
+"C16","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",66.500000,-30.000000,0.000000,top
+"C17","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",70.000000,-30.000000,0.000000,top
+"C18","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",47.000000,-57.000000,0.000000,top
+"C19","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",50.500000,-57.000000,0.000000,top
+"C20","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",54.000000,-57.000000,0.000000,top
+"C21","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",57.500000,-59.500000,0.000000,top
+"C22","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",61.000000,-57.000000,0.000000,top
+"C23","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",64.500000,-57.000000,0.000000,top
+"C24","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",68.000000,-57.000000,0.000000,top
+"C25","4.7u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",51.000000,-26.000000,0.000000,top
+"C26","4.7u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",56.000000,-26.000000,0.000000,top
+"C27","4.7u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",61.000000,-26.000000,0.000000,top
+"C28","10u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",36.000000,-53.000000,0.000000,top
+"C29","4.7u","Capacitor_SMD__C_0805_2012Metric_Pad1.18x1.45mm_HandSolder__AsterProd",41.000000,-53.000000,0.000000,top
+"C30","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",44.000000,-32.500000,0.000000,top
+"C31","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",47.000000,-32.500000,0.000000,top
+"C32","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",36.500000,-46.800000,0.000000,top
+"C33","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",35.500000,-55.300000,0.000000,top
+"C34","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",38.700000,-55.300000,0.000000,top
+"C35","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",36.500000,-49.300000,0.000000,top
+"C36","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",41.900000,-55.300000,0.000000,top
+"C37","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",45.100000,-55.300000,0.000000,top
+"C38","100n","Capacitor_SMD__C_0402_1005Metric__AsterProd",66.550000,-64.550000,90.000000,top
+"C39","10u 10V","Capacitor_SMD__C_1206_3216Metric_Pad1.33x1.80mm_HandSolder__AsterProd",76.500000,-61.000000,90.000000,top
+"C40","22u 6.3V","Capacitor_SMD__C_1206_3216Metric_Pad1.33x1.80mm_HandSolder__AsterProd",55.500000,-62.000000,0.000000,top
+"C41","22u 6.3V","Capacitor_SMD__C_1206_3216Metric_Pad1.33x1.80mm_HandSolder__AsterProd",55.500000,-66.000000,0.000000,top
+"C42","100n","Capacitor_SMD__C_0603_1608Metric__AsterProd",24.000000,-28.000000,90.000000,top
+"D6","SS14L USB OR","Diode_SMD__D_SOD-123F__AsterProd",77.000000,-57.000000,0.000000,top
+"D7","SS14L EXT OR","Diode_SMD__D_SOD-123F__AsterProd",76.000000,-65.000000,0.000000,top
+"F1","1.5A RESETTABLE","Fuse__Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder__AsterProd",72.000000,-57.000000,0.000000,top
+"FB1","600R@100MHz 1A","Inductor_SMD__L_0805_2012Metric_Pad1.05x1.20mm_HandSolder__AsterProd",46.000000,-61.000000,0.000000,top
+"FB2","600R@100MHz 1A","Inductor_SMD__L_0805_2012Metric_Pad1.05x1.20mm_HandSolder__AsterProd",42.000000,-61.000000,0.000000,top
+"FB3","600R@100MHz 1A","Inductor_SMD__L_0805_2012Metric_Pad1.05x1.20mm_HandSolder__AsterProd",50.000000,-61.000000,0.000000,top
+"FB4","600R@100MHz 1A","Inductor_SMD__L_0805_2012Metric_Pad1.05x1.20mm_HandSolder__AsterProd",38.000000,-61.000000,0.000000,top
+"L1","3.9uH >=3A","Inductor_SMD__L_Changjiang_FNR6020S__AsterProd",62.500000,-64.000000,180.000000,top
+"R2","78R7 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",17.800000,-35.000000,90.000000,top
+"R3","0R","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.500000,-40.000000,0.000000,top
+"R4","78R7 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.500000,-35.200000,0.000000,top
+"R5","3k92 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.500000,-42.400000,0.000000,top
+"R6","4k00 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.500000,-37.600000,0.000000,top
+"R7","2k00 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",30.000000,-44.700000,180.000000,top
+"R8","2k00 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",30.000000,-32.800000,180.000000,top
+"R9","22R 1%","Resistor_SMD__R_0805_2012Metric__AsterProd",33.500000,-41.200000,0.000000,top
+"R10","22R 1%","Resistor_SMD__R_0805_2012Metric__AsterProd",33.500000,-35.800000,0.000000,top
+"R11","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",22.900000,-46.500000,0.000000,top
+"R12","8k25 1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",36.000000,-29.000000,0.000000,top
+"R13","4k99 1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",41.000000,-29.000000,0.000000,top
+"R14","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",34.000000,-24.000000,0.000000,top
+"R15","33R","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",32.800000,-26.500000,0.000000,top
+"R16","33R","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",40.750000,-33.000000,90.000000,top
+"R33","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",73.000000,-26.000000,0.000000,top
+"R34","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",78.000000,-26.000000,0.000000,top
+"R35","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-30.000000,0.000000,top
+"R36","1k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-33.000000,0.000000,top
+"R37","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-49.000000,0.000000,top
+"R38","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",78.500000,-50.000000,0.000000,top
+"R39","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-53.000000,0.000000,top
+"R40","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-37.000000,0.000000,top
+"R41","10k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",74.500000,-41.000000,0.000000,top
+"R42","1k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",79.500000,-29.000000,0.000000,top
+"R43","1k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",79.500000,-35.000000,0.000000,top
+"R44","1k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",79.500000,-41.000000,0.000000,top
+"R45","1k","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",79.500000,-47.000000,0.000000,top
+"R46","324R 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.800000,-45.300000,90.000000,top
+"R47","402R 0.1%","Resistor_SMD__R_0805_2012Metric_Pad1.20x1.40mm_HandSolder__AsterProd",25.500000,-32.799999,0.000000,top
+"RN1","33R x4 isolated","Resistor_SMD__R_Array_Convex_4x0603__AsterProd",46.500000,-37.000000,0.000000,top
+"RN2","33R x4 isolated","Resistor_SMD__R_Array_Convex_4x0603__AsterProd",46.500000,-40.800000,0.000000,top
+"RN3","33R x4 isolated","Resistor_SMD__R_Array_Convex_4x0603__AsterProd",46.500000,-44.600000,0.000000,top
+"RN4","33R x4 isolated","Resistor_SMD__R_Array_Convex_4x0603__AsterProd",46.500000,-48.400000,0.000000,top
+"U1","10M16SAE144C8G","Package_QFP__EQFP-144-1EP_20x20mm_P0.5mm_EP4x4mm__AsterProd",60.000000,-44.000000,-90.000000,top
+"U2","ADS5560IRGZT","Package_DFN_QFN__Texas_RGZ0048A_VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm__AsterProd",40.000000,-40.000000,-90.000000,top
+"U3","THS4551IDGKT","Package_SO__VSSOP-8_3x3mm_P0.65mm__AsterProd",30.000000,-38.500000,90.000000,top
+"U4","AP63203WU-7","Package_TO_SOT_SMD__TSOT-23-6_HandSoldering__AsterProd",70.200000,-64.000000,180.000000,top
+"Y1","40.000 MHz CMOS","Oscillator__Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering__AsterProd",28.000000,-27.000000,0.000000,top

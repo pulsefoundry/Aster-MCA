@@ -1,0 +1,54 @@
+{
+  "status": "PRELIMINARY - NOT RELEASED FOR FABRICATION",
+  "board": {
+    "width_mm": 90,
+    "height_mm": 70,
+    "layers": 4,
+    "stack": "F.Cu / solid GND / power / B.Cu"
+  },
+  "fpga": {
+    "part": "10M16SAE144C8G",
+    "configuration": "internal flash; JTAG header",
+    "external_ddr": false
+  },
+  "adc": {
+    "part": "ADS5560IRGZT",
+    "bits": 16,
+    "sample_rate_msps": 40,
+    "interface": "parallel CMOS"
+  },
+  "host": {
+    "module": "Raspberry Pi Pico 2 / compatible RP2350",
+    "bus": "8-bit FIFO-like + IRQ/SPI"
+  },
+  "gain": {
+    "low": 0.50016,
+    "medium": 4.96648,
+    "high": 25.41296,
+    "reference_side": {
+      "low": 0.5,
+      "medium": 4.97512,
+      "high": 25.41296
+    },
+    "switch": "mechanical non-shorting DP3T, matched resistor pairs; R2 is included in the signal-side input resistance; nominal gains assume negligible source impedance",
+    "nominal_input_full_scale_vpp": {
+      "low": 7.12,
+      "medium": 0.717,
+      "high": 0.1401
+    },
+    "practical_unipolar_peak_target_v": {
+      "low": 3.2,
+      "medium": 0.32,
+      "high": 0.063
+    }
+  },
+  "mandatory_release_gates": [
+    "Quartus pin assignment compile",
+    "MAX10 E144 footprint drawing review",
+    "ADS5560 RGZ48 exposed-pad review",
+    "Pico 2 module orientation review",
+    "Power/current/thermal bench review",
+    "EasyEDA native DRC and 3D inspection",
+    "BOM stock and exact MPN freeze"
+  ]
+}
