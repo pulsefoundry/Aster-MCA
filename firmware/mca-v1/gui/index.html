@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Aster MCA Spectrum Workstation</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <p class="eyebrow">4096 CHANNEL PULSE ANALYZER</p>
+        <h1>Aster MCA <b>v1</b></h1>
+      </div>
+    </div>
+    <div class="connection-cluster">
+      <div id="connectionPill" class="status-pill offline">
+        <i></i><span id="connectionText">未连接</span>
+      </div>
+      <button id="connectButton" class="button primary">连接仪器</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="metrics" aria-label="主要测量值">
+      <article class="metric accent">
+        <span>总事件</span><strong id="totalEvents">—</strong><small>counts</small>
+      </article>
+      <article class="metric">
+        <span>瞬时计数率</span><strong id="instantRate">—</strong><small>cps</small>
+      </article>
+      <article class="metric">
+        <span>平均计数率</span><strong id="averageRate">—</strong><small>cps</small>
+      </article>
+      <article class="metric">
+        <span>有效时间</span><strong id="liveTime">—</strong><small>s</small>
+      </article>
+      <article class="metric">
+        <span>主峰道址</span><strong id="peakChannel">—</strong><small>channel</small>
+      </article>
+      <article class="metric">
+        <span>粗略分辨率</span><strong id="resolution">—</strong><small>FWHM / peak</small>
+      </article>
+    </section>
+
+    <section class="workspace">
+      <article class="panel spectrum-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">LIVE HISTOGRAM</p>
+            <h2>脉冲高度谱</h2>
+          </div>
+          <div class="toolbar">
+            <label class="switch-label">
+              <input id="logScale" type="checkbox">
+              <span class="switch"></span>对数纵轴
+            </label>
+            <label>刷新
+              <select id="refreshInterval">
+                <option value="2000">2 s</option>
+                <option value="5000" selected>5 s</option>
+                <option value="10000">10 s</option>
+                <option value="30000">30 s</option>
+              </select>
+            </label>
+            <label class="switch-label">
+              <input id="autoRefresh" type="checkbox" checked>
+              <span class="switch"></span>自动刷新
+            </label>
+          </div>
+        </div>
+
+        <div class="plot-shell">
+          <canvas id="spectrumCanvas" aria-label="4096 道能谱图"></canvas>
+          <div id="plotTooltip" class="plot-tooltip" hidden></div>
+        </div>
+
+        <div class="plot-controls">
+          <div class="range-control">
+            <label>显示道址 <input id="xMin" type="number" min="0" max="4095" value="0"></label>
+            <span>—</span>
+            <input id="xMax" aria-label="最大显示道址" type="number" min="0" max="4095" value="4095">
+            <button id="applyRange" class="button ghost small">应用</button>
+            <button id="fullRange" class="button ghost small">全谱</button>
+          </div>
+          <div class="roi-control">
+            <span>拖动图面选 ROI</span>
+            <strong id="roiReadout">未选择</strong>
+            <button id="clearRoi" class="button ghost small">清除</button>
+          </div>
+        </div>
+      </article>
+
+      <aside class="side-stack">
+        <article class="panel controls-panel">
+          <div class="panel-heading compact">
+            <div><p class="eyebrow">ACQUISITION</p><h2>采集控制</h2></div>
+          </div>
+          <button id="newAcquisition" class="button primary wide">清零并开始新采集</button>
+          <div class="timed-row">
+            <label>定时采集
+              <div class="input-unit"><input id="duration" type="number" min="1" value="600"><span>s</span></div>
+            </label>
+            <button id="timedStart" class="button secondary">开始</button>
+          </div>
+          <div id="timerDisplay" class="timer-display"><span>READY</span><strong>—</strong></div>
+          <p class="hint">FPGA 上电后始终累计事件。“定时采集”会先清零，在到时瞬间保存一个显示快照。</p>
+        </article>
+
+        <article class="panel controls-panel">
+          <div class="panel-heading compact">
+            <div><p class="eyebrow">ANALYSIS</p><h2>算法设置</h2></div>
+          </div>
+          <div class="form-grid">
+            <label>阈值（ADC 道）<input id="threshold" type="number" min="4" max="4095" value="32"></label>
+            <label>脉冲极性
+              <select id="polarity">
+                <option value="negative">负脉冲</option>
+                <option value="positive">正脉冲</option>
+              </select>
+            </label>
+            <label class="full">能量估计
+              <select id="energyMode">
+                <option value="peak">峰高</option>
+                <option value="area">脉冲面积</option>
+                <option value="area2">脉冲面积 / 2</option>
+                <option value="area4">脉冲面积 / 4</option>
+                <option value="area8">脉冲面积 / 8</option>
+                <option value="trapezoid4">数字梯形成形 / 4</option>
+                <option value="trapezoid8">数字梯形成形 / 8</option>
+                <option value="trapezoid16">数字梯形成形 / 16</option>
+              </select>
+            </label>
+          </div>
+          <button id="applyConfig" class="button secondary wide">应用设置</button>
+          <p class="hint warning">改变能量估计模式会自动清空当前直方图。</p>
+        </article>
+
+        <article class="panel export-panel">
+          <div><p class="eyebrow">EXPORT</p><h2>保存当前快照</h2></div>
+          <div class="export-buttons">
+            <button id="saveCsv" class="button ghost">CSV 数据</button>
+            <button id="savePng" class="button ghost">PNG 谱图</button>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="detail-grid">
+      <article class="panel detail-panel">
+        <p class="eyebrow">ADC MONITOR</p><h2>模拟输入</h2>
+        <dl>
+          <div><dt>当前 / 基线</dt><dd id="adcCurrent">—</dd></div>
+          <div><dt>最小 / 最大</dt><dd id="adcRange">—</dd></div>
+          <div><dt>最近峰高</dt><dd id="lastPeak">—</dd></div>
+          <div><dt>最近入谱</dt><dd id="lastEnergy">—</dd></div>
+        </dl>
+      </article>
+      <article class="panel detail-panel">
+        <p class="eyebrow">EVENT ACCOUNTING</p><h2>事件诊断</h2>
+        <dl>
+          <div><dt>触发 / 接受</dt><dd id="triggerAccepted">—</dd></div>
+          <div><dt>拒绝 / 饱和</dt><dd id="rejectedSaturated">—</dd></div>
+          <div><dt>直方图丢失</dt><dd id="dropped">—</dd></div>
+          <div><dt>UART 错误</dt><dd id="uartErrors">—</dd></div>
+        </dl>
+      </article>
+      <article class="panel detail-panel">
+        <p class="eyebrow">DEVICE</p><h2>仪器信息</h2>
+        <dl>
+          <div><dt>固件</dt><dd id="firmwareVersion">—</dd></div>
+          <div><dt>ADC</dt><dd id="adcInfo">—</dd></div>
+          <div><dt>直方图</dt><dd id="histogramInfo">—</dd></div>
+          <div><dt>通信</dt><dd id="uartInfo">—</dd></div>
+        </dl>
+      </article>
+    </section>
+
+    <footer>
+      <span id="message">等待连接 Aster MCA。</span>
+      <span>本地模式 · 127.0.0.1 · 数据不上传</span>
+    </footer>
+  </main>
+</body>
+</html>

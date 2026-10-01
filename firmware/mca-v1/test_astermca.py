@@ -17,6 +17,14 @@ class FakeTransport:
         return result
 
 
+class StubDevice(astermca.MCADevice):
+    def __init__(self, payload: bytes):
+        self.payload = payload
+
+    def command(self, request, expected_type=None, timeout_ms=3000):
+        return astermca.Frame(astermca.RESP_STATS, 0, self.payload)
+
+
 def make_frame(response_type: int, status: int, payload: bytes) -> bytes:
     body = b"MCA1" + struct.pack("<BBH", response_type, status, len(payload)) + payload
     return body + struct.pack("<H", astermca.crc16_ccitt(body))
@@ -39,6 +47,27 @@ class ProtocolTests(unittest.TestCase):
         raw[-1] ^= 0x80
         with self.assertRaises(astermca.ProtocolError):
             astermca.read_frame(FakeTransport(raw))
+
+    def test_v110_stats_report_energy_mode_and_bin(self):
+        payload = struct.pack(
+            "<HHHHHBBIIIIIQHBBH",
+            2040, 2048, 1800, 2055, 32, 1, 0,
+            10, 8, 2, 0, 0, 1_000_000, 100, 0, 3, 1234,
+        )
+        stats = StubDevice(payload).stats()
+        self.assertEqual(stats["energy_mode"], 3)
+        self.assertEqual(stats["last_peak"], 100)
+        self.assertEqual(stats["last_energy"], 1234)
+
+    def test_v19_stats_remain_compatible(self):
+        payload = struct.pack(
+            "<HHHHHBBIIIIIQHBB",
+            2040, 2048, 1800, 2055, 32, 1, 0,
+            10, 8, 2, 0, 0, 1_000_000, 100, 0, 0,
+        )
+        stats = StubDevice(payload).stats()
+        self.assertEqual(stats["energy_mode"], 0)
+        self.assertEqual(stats["last_energy"], 100)
 
 
 if __name__ == "__main__":

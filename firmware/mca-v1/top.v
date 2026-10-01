@@ -13,10 +13,11 @@ module top (
     localparam [2:0] TX_CRC_LO  = 3'd3;
     localparam [2:0] TX_CRC_HI  = 3'd4;
 
-    localparam [1:0] CMD_IDLE   = 2'd0;
-    localparam [1:0] CMD_T_LO   = 2'd1;
-    localparam [1:0] CMD_T_HI   = 2'd2;
-    localparam [1:0] CMD_POL    = 2'd3;
+    localparam [2:0] CMD_IDLE   = 3'd0;
+    localparam [2:0] CMD_T_LO   = 3'd1;
+    localparam [2:0] CMD_T_HI   = 3'd2;
+    localparam [2:0] CMD_POL    = 3'd3;
+    localparam [2:0] CMD_MODE   = 3'd4;
 
     localparam [7:0] RESP_INFO  = 8'h49; // I
     localparam [7:0] RESP_STATS = 8'h53; // S
@@ -59,6 +60,9 @@ module top (
     // The assembled analog path produces negative-going ADC codes for the
     // user's amplified PMT module.  1 selects baseline-sample.
     reg polarity = 1'b1;
+    // 0 = peak height; 1 = area; 2/3/4 = area / 2/4/8;
+    // 5/6/7 = trapezoid / 4/8/16.
+    reg [2:0] energy_mode = 3'd0;
     reg clear_stats_request = 1'b0;
     reg hist_clear_request = 1'b0;
     reg stream_pause = 1'b0;
@@ -71,6 +75,7 @@ module top (
     wire [11:0] adc_min;
     wire [11:0] adc_max;
     wire [11:0] last_peak;
+    wire [11:0] last_energy;
     wire pulse_active;
     wire [31:0] trigger_count;
     wire [31:0] accepted_count;
@@ -93,6 +98,7 @@ module top (
         .sample(adc_sample),
         .threshold(threshold),
         .polarity(polarity),
+        .energy_mode(energy_mode),
         .event_valid(event_valid),
         .event_bin(event_bin),
         .trigger_pulse(trigger_pulse),
@@ -101,6 +107,7 @@ module top (
         .adc_min(adc_min),
         .adc_max(adc_max),
         .last_peak(last_peak),
+        .last_energy(last_energy),
         .pulse_active(pulse_active),
         .trigger_count(trigger_count),
         .accepted_count(accepted_count),
@@ -153,7 +160,7 @@ module top (
 
     reg [7:0] ack_command = 8'h00;
     reg [15:0] ack_value = 16'h0000;
-    reg [1:0] command_state = CMD_IDLE;
+    reg [2:0] command_state = CMD_IDLE;
     reg [7:0] threshold_low = 8'h00;
 
     // Snapshot registers keep a statistics response internally consistent.
@@ -171,6 +178,8 @@ module top (
     reg [31:0] snap_dropped = 32'd0;
     reg [63:0] snap_live = 64'd0;
     reg [11:0] snap_last_peak = 12'd0;
+    reg [2:0] snap_energy_mode = 3'd0;
+    reg [11:0] snap_last_energy = 12'd0;
 
     function [15:0] crc16_next;
         input [15:0] crc_in;
@@ -223,9 +232,9 @@ module top (
         begin
             case (index)
                 4'd0:  info_byte = 8'd1;    // firmware major
-                4'd1:  info_byte = 8'd9;    // firmware minor
+                4'd1:  info_byte = 8'd14;   // firmware minor
                 4'd2:  info_byte = 8'd12;   // ADC bits
-                4'd3:  info_byte = 8'h11;   // bit 0: histogram; bit 4: IOLOGIC ADC capture
+                4'd3:  info_byte = 8'hf7;   // bit 7: trapezoidal shaping
                 4'd4:  info_byte = 8'h80;   // 10,000,000 samples/s, little-endian
                 4'd5:  info_byte = 8'h96;
                 4'd6:  info_byte = 8'h98;
@@ -273,6 +282,9 @@ module top (
                 6'd40: stats_byte = snap_last_peak[7:0];
                 6'd41: stats_byte = {4'd0, snap_last_peak[11:8]};
                 6'd42: stats_byte = uart_error_count[7:0];
+                6'd43: stats_byte = {5'd0, snap_energy_mode};
+                6'd44: stats_byte = snap_last_energy[7:0];
+                6'd45: stats_byte = {4'd0, snap_last_energy[11:8]};
                 default: stats_byte = 8'd0;
             endcase
         end
@@ -338,6 +350,7 @@ module top (
         if (rst) begin
             threshold          <= 12'd32;
             polarity           <= 1'b1;
+            energy_mode        <= 3'd0;
             stream_pause       <= 1'b0;
             tx_state           <= TX_IDLE;
             command_state      <= CMD_IDLE;
@@ -426,6 +439,28 @@ module top (
                         command_state     <= CMD_IDLE;
                     end
 
+                    CMD_MODE: begin
+                        ack_command     <= 8'h4d;
+                        response_type   <= 8'hcd;
+                        payload_length  <= 16'd4;
+                        response_crc    <= 16'hffff;
+                        header_index    <= 3'd0;
+                        tx_state        <= TX_HEADER;
+                        command_state   <= CMD_IDLE;
+                        if (uart_rx_data <= 8'd7) begin
+                            energy_mode        <= uart_rx_data[2:0];
+                            ack_value          <= {13'd0, uart_rx_data[2:0]};
+                            response_status    <= 8'h00;
+                            // Never mix peak-height and pulse-area events in
+                            // the same histogram.
+                            hist_clear_request  <= 1'b1;
+                            clear_stats_request <= 1'b1;
+                        end else begin
+                            ack_value       <= {13'd0, energy_mode};
+                            response_status <= 8'h01;
+                        end
+                    end
+
                     default: begin
                         case (uart_rx_data)
                             8'h49: begin // I: firmware information
@@ -452,9 +487,11 @@ module top (
                                 snap_dropped     <= hist_dropped_events;
                                 snap_live        <= live_samples;
                                 snap_last_peak   <= last_peak;
+                                snap_energy_mode <= energy_mode;
+                                snap_last_energy <= last_energy;
                                 response_type    <= RESP_STATS;
                                 response_status  <= 8'h00;
-                                payload_length   <= 16'd44;
+                                payload_length   <= 16'd46;
                                 response_crc     <= 16'hffff;
                                 header_index     <= 3'd0;
                                 tx_state         <= TX_HEADER;
@@ -491,6 +528,7 @@ module top (
 
                             8'h54: command_state <= CMD_T_LO; // T + uint16 threshold
                             8'h50: command_state <= CMD_POL;  // P + uint8 polarity
+                            8'h4d: command_state <= CMD_MODE; // M + uint8 energy mode
 
                             default: begin
                                 ack_command       <= uart_rx_data;

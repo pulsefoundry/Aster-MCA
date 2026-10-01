@@ -23,7 +23,7 @@ SOURCES := top.v mca_engine.v histogram.v uart_rx.v uart_tx.v
 SIM_SOURCES := $(SOURCES) gowin_iddr_sim.v
 PATCHER := tools/patch_gowin_id_crc.py
 
-.PHONY: all clean sim sim-core sim-protocol host-test detect load-sram load-adc-pulldown load-adc-pd-high
+.PHONY: all clean sim sim-core sim-protocol host-test gui gui-demo detect load-sram load-adc-pulldown load-adc-pd-high
 
 all: $(BUILD)/aster-mca-v1.fs
 
@@ -80,7 +80,13 @@ sim-protocol: $(BUILD)/tb_protocol.vvp
 	$(VVP) $<
 
 host-test:
-	$(PYTHON) -m unittest -v test_astermca.py
+	$(PYTHON) -m unittest -v test_astermca.py test_astermca_gui.py
+
+gui:
+	$(PYTHON) astermca_gui.py
+
+gui-demo:
+	$(PYTHON) astermca_gui.py --demo
 
 $(BUILD)/tb_mca.vvp: tb_mca.v $(SIM_SOURCES) | $(BUILD)
 	$(IVERILOG) -g2012 -s tb_mca -o $@ tb_mca.v $(SIM_SOURCES)

@@ -21,6 +21,21 @@ parallel ADC bus
 The extra register adds a fixed 100 ns latency at 10 MHz. It does not alter
 pulse height or count rate.
 
+**v1.14 is an experimental build that has completed physical SRAM A/B tests.**
+It preserves the complete v1.9 capture path and peak-height mode, and adds a
+four-sample input filter, two-sample trigger confirmation, a fixed 64-sample
+area gate, and a 16-sample rise, 4-sample flat-top, 16-sample fall digital
+trapezoid. Trapezoid output can be divided by 4, 8, or 16. Over-range events
+are treated as saturated rather than wrapping into the low-energy region, and
+changing mode clears the histogram automatically.
+
+This is not cosmetic x-axis multiplication: the trapezoid is a finite impulse
+response filter over multiple baseline-subtracted samples. It suppresses slow
+tails and reduces single-sample phase sensitivity. It materially improves use
+of the 4096-bin histogram, but the current x10 analogue gain still drives many
+source pulses into the ADC rails. Digital processing cannot restore clipped
+amplitudes, so v1.14 remains marked experimental.
+
 ## Why capture timing had to be fixed first
 
 The original v1.3 design captured the 12-bit bus on the falling edge with
@@ -71,6 +86,31 @@ placement sensitivity of the old capture path.
 | IOLOGICI | 12 / 198 | 12 / 198 |
 | Estimated maximum clock | 61.13 MHz | 55.06 MHz |
 | Required clock | 10 MHz | 10 MHz |
+
+## Energy-estimator development from v1.10 through v1.14
+
+- v1.10 first added scaled pulse area. Physical spectra later showed that
+  ending the integral at threshold release quantised pulse width into a comb.
+- v1.13 changed area measurement to a fixed 64-sample gate and required a
+  baseline return at the end. The comb disappeared, but the Am-241 maximum
+  remained near channel 392 with a long high-energy tail.
+- v1.14 added the 16/4/16 trapezoidal FIR with `/4`, `/8`, and `/16` scales.
+  HDL tests cover low-energy gain, over-range clamping, long-pulse rejection,
+  clearing, and the default peak path. UART tests cover `M`, modes 0 through 7,
+  and CRC. Host tests cover both 44- and 46-byte statistics payloads.
+- Complete v1.14 place-and-route passes the 10 MHz requirement with an
+  estimated maximum clock around 42.3 MHz.
+
+With the same NaI(Tl)/PMT, Am-241 position, negative polarity, threshold 256,
+and trapezoid `/8`, an 81.71 s source run measured 63.35 cps and a 105.36 s
+background run measured 4.65 cps. Net rate was 58.70 cps, the subtracted peak
+was near channel 1148, and there were no net counts above channel 2048. Local
+FWHM was roughly 31%. A separate 32/8/32 long-shaper trial raised accepted rate
+to about 155 cps but worsened FWHM to about 49%, so it did not replace 16/4/16.
+
+The next step is to reduce analogue gain from x10 so the ADC no longer reaches
+either rail, then retune trapezoid `/4` or `/8` and consider pole-zero
+correction. Increasing digital channel gain alone cannot repair clipping.
 
 ## Treatment of earlier algorithm experiments
 

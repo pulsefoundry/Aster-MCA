@@ -28,8 +28,15 @@ CH347T USB/JTAG/UART 桥，单根 USB-C 完成供电、通信和 FPGA SRAM 配�
 
 当前经过实板和铯谱验证的固件版本为 **v1.9**。它保留 v1.3 的
 MCA 算法，但将 12 路 ADC 输入改为专用 IOLOGIC 下降沿采样，并在后面
-加入一级整周期寄存器。两份独立布局的镜像现已得到一致的 Cs-137 谱。
-固件只加载进易失性 SRAM，断电后需要重新加载。
+加入一级整周期寄存器。两份独立布局的镜像现已得到一致的 Cs-137 谱。当前已验证
+流程仍只加载易失性 SRAM；GW1N-4 内置 Flash 的永久固件流程已有说明，但尚待在
+这块自制板上完成一次断电自启动实测。
+
+已经实板试用的 **v1.14 实验版**在峰高模式之外加入四点输入滤波、固定时间窗
+脉冲面积，以及 16/4/16 点数字梯形成型，并提供 `/4`、`/8`、`/16` 三档输出。
+Am-241 在梯形 `/8`、阈值 256 下的扣本底峰约在 1148 道，原先的高道拖尾已
+消失。该镜像目前只验证了 SRAM 临时加载，模拟端削顶仍限制分辨率，因此尚未
+取代用于永久启动的 v1.9。
 
 ## Aster MCA v2.0 构想
 
@@ -108,7 +115,7 @@ R67 各安装一只 4.99 kΩ、0.1% 电阻，`10k || 4.99k ≈ 3.33k`，因此�
 brew install libusb openfpgaloader iverilog
 ```
 
-给修复后的板卡加载已验证的 v1.3 固件：
+给修复后的板卡加载已验证的 v1.9 固件：
 
 ```sh
 cd firmware/mca-v1
@@ -126,6 +133,22 @@ python3 astermca.py info
 python3 astermca.py stats
 python3 astermca.py acquire 600 --threshold 32 -o spectrum.csv
 ```
+
+也可以直接启动图形化能谱仪：
+
+```sh
+python3 astermca_gui.py
+```
+
+macOS 还可以双击 `launch-gui.command`。界面可实时显示 4096 道谱、总计数率和
+ROI 计数率，估算峰位与 FWHM，完成定时采集，并导出 CSV 或 PNG。没有连接板卡时
+可运行 `python3 astermca_gui.py --demo` 预览完整界面。详细说明见
+[`firmware/mca-v1/README.md`](firmware/mca-v1/README.md)。
+
+GW1N-4 带有内置配置 Flash，理论上可在上电后自动加载固件，不必每次写入 SRAM。
+由于本项目自带 CH347T 的永久写入链路仍需实板验证，首次写入前请遵循
+[永久固件安全流程](docs/permanent-fpga-configuration.md)，并优先使用已实测的 v1.9，
+不要先把实验版 v1.14 固化进去。
 
 首次上电请按照 [`docs/bring-up.md`](docs/bring-up.md) 操作，不要立即连接探头。
 

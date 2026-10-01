@@ -31,8 +31,16 @@ board.
 The current physically validated firmware is **v1.9**. It keeps the proven v1.3
 MCA algorithm but moves all 12 ADC inputs into dedicated falling-edge IOLOGIC
 registers, followed by a full-cycle fabric pipeline stage. Two independently
-placed images now produce matching Cs-137 spectra. FPGA configuration is
-volatile and must be reloaded after power loss.
+placed images now produce matching Cs-137 spectra. The currently validated
+workflow loads volatile SRAM; the GW1N-4 internal-flash path is documented but
+still awaits a power-cycle test on this custom board.
+
+The physically exercised **v1.14 experimental** image adds a four-sample input
+filter, fixed-window pulse-area modes, and 16/4/16-sample trapezoidal shaping
+with `/4`, `/8`, and `/16` output scales. An Am-241 run with trapezoid `/8` and
+threshold 256 moved the net peak to about channel 1148 and removed the former
+high-channel tail. This image has been tested in volatile SRAM, but analogue
+clipping still limits resolution and it is not yet the permanent-boot release.
 
 ## Aster MCA v2.0 concept
 
@@ -174,6 +182,24 @@ python3 astermca.py info
 python3 astermca.py stats
 python3 astermca.py acquire 600 --threshold 32 -o spectrum.csv
 ```
+
+Or launch the graphical spectrum viewer:
+
+```sh
+python3 astermca_gui.py
+```
+
+On macOS, `launch-gui.command` can also be opened directly. The GUI displays
+the live 4096-channel spectrum, total/ROI rates, peak and FWHM estimates, timed
+runs, diagnostics, and CSV/PNG export. Run `python3 astermca_gui.py --demo` to
+inspect it without hardware. See the
+[`firmware/mca-v1` documentation](firmware/mca-v1/README.md) for details.
+
+The GW1N-4 has embedded configuration flash, but the permanent-programming
+path through this custom CH347T board still needs a physical verification pass.
+Before writing it, follow the
+[guarded permanent-configuration procedure](docs/permanent-fpga-configuration.md)
+and use the physically validated v1.9 image rather than experimental v1.14.
 
 For a first power-up, follow [`docs/bring-up.md`](docs/bring-up.md) rather than
 connecting a detector immediately.

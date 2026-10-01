@@ -37,6 +37,27 @@ RESP_INFO = ord("I")
 RESP_STATS = ord("S")
 RESP_HIST = ord("H")
 
+ENERGY_MODES = {
+    "peak": 0,
+    "area": 1,
+    "area2": 2,
+    "area4": 3,
+    "area8": 4,
+    "trapezoid4": 5,
+    "trapezoid8": 6,
+    "trapezoid16": 7,
+}
+ENERGY_MODE_NAMES = {
+    0: "峰高",
+    1: "脉冲面积",
+    2: "脉冲面积/2",
+    3: "脉冲面积/4",
+    4: "脉冲面积/8",
+    5: "梯形成形/4",
+    6: "梯形成形/8",
+    7: "梯形成形/16",
+}
+
 
 class AsterMCAError(RuntimeError):
     pass
@@ -354,10 +375,9 @@ class MCADevice:
 
     def stats(self) -> dict:
         payload = self.command(b"S", RESP_STATS).payload
-        if len(payload) != 44:
+        if len(payload) not in (44, 46):
             raise ProtocolError(f"STATS 长度错误：{len(payload)}")
-        values = struct.unpack("<HHHHHBBIIIIIQHBB", payload)
-        keys = (
+        legacy_keys = (
             "sample",
             "baseline",
             "adc_min",
@@ -373,9 +393,14 @@ class MCADevice:
             "live_samples",
             "last_peak",
             "uart_errors",
-            "reserved",
+            "energy_mode",
         )
-        return dict(zip(keys, values))
+        if len(payload) == 44:
+            result = dict(zip(legacy_keys, struct.unpack("<HHHHHBBIIIIIQHBB", payload)))
+            result["last_energy"] = result["last_peak"]
+            return result
+        keys = legacy_keys + ("last_energy",)
+        return dict(zip(keys, struct.unpack("<HHHHHBBIIIIIQHBBH", payload)))
 
     def histogram(self) -> list[int]:
         payload = self.command(b"H", RESP_HIST, timeout_ms=5000).payload
@@ -400,6 +425,14 @@ class MCADevice:
             raise ProtocolError("极性确认帧长度错误")
         return struct.unpack_from("<H", frame.payload, 2)[0]
 
+    def set_energy_mode(self, mode: int) -> int:
+        if mode not in ENERGY_MODE_NAMES:
+            raise ValueError("能量模式必须在 0..7 之间")
+        frame = self.command(b"M" + bytes([mode]), 0xCD)
+        if len(frame.payload) != 4:
+            raise ProtocolError("能量模式确认帧长度错误")
+        return struct.unpack_from("<H", frame.payload, 2)[0]
+
 
 def save_histogram(path: Path, counts: Iterable[int]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -421,7 +454,13 @@ def print_info(info: dict) -> None:
         feature_names.append("对称基线 IIR")
     if info["features"] & 0x10:
         feature_names.append("IOLOGIC ADC 下降沿采样")
-    unknown_features = info["features"] & ~0x1F
+    if info["features"] & 0x20:
+        feature_names.append("可选脉冲面积能量估计")
+    if info["features"] & 0x40:
+        feature_names.append("有限时间窗脉冲面积")
+    if info["features"] & 0x80:
+        feature_names.append("数字梯形成形")
+    unknown_features = info["features"] & ~0xFF
     if unknown_features:
         feature_names.append(f"未知特性 0x{unknown_features:02x}")
 
@@ -448,7 +487,11 @@ def print_stats(stats: dict) -> None:
         f"{stats['rejected']} / {stats['saturated']} / {stats['dropped']}"
     )
     print(f"有效采集时间: {live_seconds:.3f} s  平均计数率: {rate:.3f} cps")
-    print(f"最近峰值道: {stats['last_peak']}  UART 帧错误: {stats['uart_errors']}")
+    mode_name = ENERGY_MODE_NAMES.get(stats["energy_mode"], f"未知 {stats['energy_mode']}")
+    print(
+        f"能量模式: {mode_name}  最近峰高: {stats['last_peak']}  "
+        f"最近入谱道址: {stats['last_energy']}  UART 帧错误: {stats['uart_errors']}"
+    )
 
 
 def default_output_path() -> Path:
@@ -473,6 +516,9 @@ def build_parser() -> argparse.ArgumentParser:
         "mode", choices=("negative", "positive", "default", "reverse")
     )
 
+    energy_mode = sub.add_parser("mode", help="选择峰高或脉冲面积能量估计")
+    energy_mode.add_argument("mode", choices=tuple(ENERGY_MODES))
+
     spectrum = sub.add_parser("spectrum", help="立即读取当前 4096 道谱")
     spectrum.add_argument("-o", "--output", type=Path, default=None)
 
@@ -481,6 +527,10 @@ def build_parser() -> argparse.ArgumentParser:
     acquire.add_argument("-o", "--output", type=Path, default=None)
     acquire.add_argument(
         "--threshold", type=int, default=None, help="开始前设置触发阈值"
+    )
+    acquire.add_argument(
+        "--mode", choices=tuple(ENERGY_MODES), default=None,
+        help="开始前设置能量模式；area2/4/8 表示面积除以 2/4/8",
     )
     return parser
 
@@ -503,6 +553,9 @@ def run(args: argparse.Namespace) -> int:
             # default == positive.  New scripts should use explicit names.
             actual = device.set_polarity(args.mode in ("negative", "reverse"))
             print("极性已设为" + ("负向。" if actual else "正向。"))
+        elif args.command == "mode":
+            actual = device.set_energy_mode(ENERGY_MODES[args.mode])
+            print(f"能量模式已设为 {ENERGY_MODE_NAMES[actual]}，原谱已清空。")
         elif args.command == "spectrum":
             output = args.output or default_output_path()
             counts = device.histogram()
@@ -514,6 +567,9 @@ def run(args: argparse.Namespace) -> int:
             if args.threshold is not None:
                 actual = device.set_threshold(args.threshold)
                 print(f"阈值已设为 {actual} 道。")
+            if args.mode is not None:
+                actual = device.set_energy_mode(ENERGY_MODES[args.mode])
+                print(f"能量模式已设为 {ENERGY_MODE_NAMES[actual]}。")
             device.clear()
             print(f"开始采集 {args.seconds:g} 秒……")
             deadline = time.monotonic() + args.seconds
