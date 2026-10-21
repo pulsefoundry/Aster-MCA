@@ -1,0 +1,16 @@
+{
+  "example": {
+    "segment": 290,
+    "trigger": 873,
+    "peak_code": 77.74609375,
+    "nominal_peak_mv": 62.63723373413086,
+    "half_height_width_us": 1.25,
+    "selection": "Nearest accepted sampled height to prior gross-spectrum centroid 78.3333; not an independently energy-tagged event"
+  },
+  "background_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-182113-531360",
+  "source_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-182211-268849",
+  "histogram_background_scale": 1.0,
+  "spectrum_fit_performed": false,
+  "native_channels": 2048,
+  "display_bin_width_adc_codes": 2
+}

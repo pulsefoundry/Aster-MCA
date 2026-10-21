@@ -1,0 +1,12 @@
+WCH SDK: https://github.com/openwch/ch32x035
+Commit: c6253942b29ff2a3f5e2829182a874afffa45881
+Vendor notices retained. WCH code/binaries are for WCH microcontrollers only.
+Modified: USB CDC demo removes all UART bridge operations, uses polled USB,
+bounds CDC control IN reads; USB strings identify this bench selftest.
+Startup leaves IRQs disabled and enters main in machine mode without hardware stacking.
+USB VID/PID 1a86:fe0c retained from WCH example for this local bench prototype only.
+This package is a static bring-up selftest, not MCA acquisition firmware.
+
+v0.2: USB bulk OUT accepts n/p/a; reports OPA/GPIO/ADC registers; pause and single-channel diagnostic modes.
+
+v0.3: ADC1/DMA1_Channel1 normal blocks, 4096 AD samples, 8 MHz ADC / 11 sample cycles. Optional WAVE/TRIGGER modes. FNV checked binary frames. Added vendor ch32x035_dma.c from the same pinned SDK. No changes to GPIO, OPA, startup or linker.

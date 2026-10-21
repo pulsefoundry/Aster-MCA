@@ -1,0 +1,65 @@
+{
+  "input_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/empty-raw-50-v082",
+  "input_state": "SMA disconnected; no input cable/probe connected; user BOOT confirmation then verified v0.8.2 flash",
+  "firmware": "0.8.2",
+  "diagnostic_only": true,
+  "integrity_rechecked": true,
+  "engine_histogram_exact_match": true,
+  "segment_samples": 4096,
+  "sample_rate_hz": 4000000,
+  "segment_us": 1024.0,
+  "snapshots": 50,
+  "verified_sampled_seconds": 0.0512,
+  "wall_seconds": 0.7176679586991668,
+  "minimum_code": 2041,
+  "maximum_code": 2063,
+  "segment_mean": {
+    "n": 50,
+    "median": 2051.20263671875,
+    "p10": 2050.865966796875,
+    "p90": 2051.6084228515624
+  },
+  "quiet_window_rms_code": {
+    "n": 3200,
+    "median": 0.998044963916957,
+    "p10": 0.7576111201500411,
+    "p90": 1.7978869339700327
+  },
+  "quiet_window_rms_nominal_mv": {
+    "n": 3200,
+    "median": 0.8040889601870015,
+    "p10": 0.6103800528552576,
+    "p90": 1.4484928911379658
+  },
+  "quiet_windows": 3200,
+  "total_windows": 3200,
+  "candidates": 0,
+  "accepted": 0,
+  "rejected": 0,
+  "boundary_pending_excluded": 0,
+  "rejection_flags": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "accepted_peak_code": {
+    "n": 0
+  },
+  "accepted_pre_rms_code": {
+    "n": 0
+  },
+  "accepted_half_height_width_us": {
+    "n": 0
+  },
+  "amplitude_60_to_100_code_events": 0,
+  "limitations": [
+    "Independent 1.024 ms snapshots with unsampled upload gaps; no absolute detector rate.",
+    "Quiet-window RMS selects 16 us windows with range below 20 ADC codes and removes each window mean. This can suppress slow drift and exclude noise outliers.",
+    "Voltages assume a nominal 3.3 V ADC reference, not a measured reference.",
+    "Half-height width is counted on 0.25 us samples, not an analog bandwidth measurement.",
+    "60..100 ADC codes is an illustrative amplitude range from the prior spectrum, not tagged photopeak events.",
+    "No resolution fit, energy calibration, gain change or proof against out-of-band oscillation."
+  ]
+}

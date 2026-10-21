@@ -1,0 +1,138 @@
+{
+  "source": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173943-644509",
+  "background": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173709-138374",
+  "firmware": "0.8.0",
+  "estimator": "sampled peak above frozen baseline",
+  "channels": 2048,
+  "bin_width_adc_codes": 1,
+  "sampled_seconds": 60.000256,
+  "accepted": 15896,
+  "background_seconds": 30.000128,
+  "background_accepted": 2566,
+  "background_scale": 2.0,
+  "source_selected_rate_per_sampled_s": 264.93220295593403,
+  "background_selected_rate_per_sampled_s": 85.5329683926682,
+  "background_subtracted_counts": 10764.0,
+  "primary": {
+    "success": true,
+    "bound_warning": false,
+    "window": [
+      62,
+      102
+    ],
+    "bin_width_adc_codes": 1,
+    "centroid_channel": 78.33330109564639,
+    "sigma_channels": 5.720447756649003,
+    "fwhm_channels": 13.470625043732353,
+    "apparent_fwhm_percent": 17.196549686173032,
+    "fitted_peak_events": 2950.731899273107,
+    "events_in_window": 4322,
+    "deviance": 72.88822105446545,
+    "dof": 35,
+    "parameters": [
+      2950.731899273107,
+      78.33330109564639,
+      5.720447756649003,
+      61.69249195860883,
+      7.190732293813402
+    ]
+  },
+  "window_sensitivity": [
+    {
+      "success": true,
+      "bound_warning": false,
+      "window": [
+        58,
+        106
+      ],
+      "bin_width_adc_codes": 1,
+      "centroid_channel": 78.34648017823461,
+      "sigma_channels": 5.523392730763278,
+      "fwhm_channels": 13.006595918808653,
+      "apparent_fwhm_percent": 16.601378759095816,
+      "fitted_peak_events": 2821.4811060108414,
+      "events_in_window": 4664,
+      "deviance": 90.73113465358608,
+      "dof": 43,
+      "parameters": [
+        2821.4811060108414,
+        78.34648017823461,
+        5.523392730763278,
+        72.90473464745382,
+        3.880430387687332
+      ]
+    },
+    {
+      "success": true,
+      "bound_warning": false,
+      "window": [
+        66,
+        98
+      ],
+      "bin_width_adc_codes": 1,
+      "centroid_channel": 77.84016583364473,
+      "sigma_channels": 6.3573088606180805,
+      "fwhm_channels": 14.970318337239567,
+      "apparent_fwhm_percent": 19.232125441810105,
+      "fitted_peak_events": 3590.61225244636,
+      "events_in_window": 4000,
+      "deviance": 63.45315162397899,
+      "dof": 27,
+      "parameters": [
+        3590.61225244636,
+        77.84016583364473,
+        6.3573088606180805,
+        19.51241908497125,
+        13.262077803362203
+      ]
+    }
+  ],
+  "bin_sensitivity": [
+    {
+      "success": true,
+      "bound_warning": false,
+      "window": [
+        62,
+        102
+      ],
+      "bin_width_adc_codes": 2,
+      "centroid_channel": 78.34205044108056,
+      "sigma_channels": 5.6993048692295485,
+      "fwhm_channels": 13.420837348627844,
+      "apparent_fwhm_percent": 17.131077464868476,
+      "fitted_peak_events": 2927.3820127730874,
+      "events_in_window": 4322,
+      "deviance": 28.767806350254652,
+      "dof": 15,
+      "parameters": [
+        2927.3820127730874,
+        78.34205044108056,
+        5.6993048692295485,
+        62.95896258626278,
+        7.077264598445894
+      ]
+    }
+  ],
+  "bootstrap": {
+    "method": "Parametric Poisson resampling of primary fitted gross-source ROI; conditional on fixed model/window",
+    "seed": 2026101808,
+    "repeats": 300,
+    "successful": 300,
+    "apparent_width_95_percent": [
+      16.1230912390459,
+      18.350644122919217
+    ],
+    "apparent_width_sd_percentage_points": 0.5555347568885453
+  },
+  "roi_selection": "After observing the full source/background spectrum, a clear source-related candidate peak near channel78 was selected; ROI/window sensitivity disclosed, not a blind pre-registered peak selection.",
+  "nominal_3v3_adc_peak_amplitude_mv": 63.110325589754176,
+  "nominal_adc_full_scale_fraction": 0.019124341087804295,
+  "limitations": [
+    "Gross-source histogram is fitted directly with bin-integrated Gaussian plus nonnegative linear continuum. No histogram smoothing or fit to subtracted counts.",
+    "FWHM/centroid assumes a negligible energy offset and linear response; not a multipoint energy calibration or detector specification.",
+    "Statistical interval excludes ROI/model, analog, calibration and background-model systematic uncertainty.",
+    "Only final spectra retained, no current pulse waveforms. Cannot redo baseline/shaping per event from these files.",
+    "Source/background share current firmware, threshold and user-confirmed settings. Historical integral and r11 results have different sampling/units/conditions; no direct improvement claim.",
+    "Rates use sampled clock duration and accepted events; not dead-time or quality-cut corrected detector rates."
+  ]
+}

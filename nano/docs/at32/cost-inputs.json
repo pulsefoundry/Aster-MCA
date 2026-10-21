@@ -1,0 +1,408 @@
+{
+  "currency": "CNY",
+  "prepared": "2026-10-21",
+  "configuration": "AT32 v0.3 PCB, R21=40.2k and R22=10k, U3 gain=5.02",
+  "quotation_file": "Aster-MCA-Nano-5套-合并采购清单-立创_20261010.xls",
+  "quotation_sha256": "9383b34d6d809e52df711a8ac7147cf0142432ffb269a085d248d30e5a42a9be",
+  "quotation_sheet": "sheet",
+  "unit_price_column": "AD",
+  "method": "Sum quoted unit price times populated single-board quantity; PCB and MCU prices overridden by owner. No MOQ, spare stock, shipping, labour or detector cost allocation.",
+  "priced_items": [
+    {
+      "references": [
+        "PCB"
+      ],
+      "quantity": 1,
+      "description": "AT32 PCB, 32 x 18 mm, 1.6 mm",
+      "unit_rmb": "4",
+      "source": "Owner cost assumption, 2026-10-21"
+    },
+    {
+      "references": [
+        "U1"
+      ],
+      "quantity": 1,
+      "description": "AT32F423CCT7",
+      "package": "LQFP48",
+      "mpn": "AT32F423CCT7",
+      "unit_rmb": "5",
+      "source": "Owner cost assumption, 2026-10-21"
+    },
+    {
+      "references": [
+        "U3"
+      ],
+      "quantity": 1,
+      "description": "TLV9061IDBVR",
+      "package": "SOT-23-5",
+      "manufacturer": "TI(德州仪器)",
+      "mpn": "TLV9061IDBVR",
+      "lcsc": "C398358",
+      "unit_rmb": "0.5708",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 9,
+      "url": "https://item.szlcsc.com/380588.html"
+    },
+    {
+      "references": [
+        "U2"
+      ],
+      "quantity": 1,
+      "description": "XC6206P332MR-G",
+      "package": "SOT-23-3L",
+      "manufacturer": "TOREX(特瑞仕)",
+      "mpn": "XC6206P332MR-G",
+      "lcsc": "C5446",
+      "unit_rmb": "0.8768",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 10,
+      "url": "https://item.szlcsc.com/5896.html"
+    },
+    {
+      "references": [
+        "D1"
+      ],
+      "quantity": 1,
+      "description": "USBLC6-2SC6",
+      "package": "SOT-23-6L",
+      "manufacturer": "ST(意法半导体)",
+      "mpn": "USBLC6-2SC6",
+      "lcsc": "C7519",
+      "unit_rmb": "1.0864",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 11,
+      "url": "https://item.szlcsc.com/7996.html"
+    },
+    {
+      "references": [
+        "D2"
+      ],
+      "quantity": 1,
+      "description": "BAT54S",
+      "package": "TO-236AB",
+      "manufacturer": "Nexperia(安世)",
+      "mpn": "BAT54S,235",
+      "lcsc": "C503463",
+      "unit_rmb": "0.1707",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 12,
+      "url": "https://item.szlcsc.com/516159.html"
+    },
+    {
+      "references": [
+        "SW1"
+      ],
+      "quantity": 1,
+      "description": "B3U-1000P BOOT",
+      "package": "SMD,3x2.5mm",
+      "manufacturer": "OMRON(欧姆龙)",
+      "mpn": "B3U-1000P",
+      "lcsc": "C231329",
+      "unit_rmb": "1.1469",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 13,
+      "url": "https://item.szlcsc.com/231216.html"
+    },
+    {
+      "references": [
+        "R19"
+      ],
+      "quantity": 1,
+      "description": "0Ω",
+      "package": "0402",
+      "manufacturer": "FOJAN(富捷)",
+      "mpn": "FRC0402F0000TS",
+      "lcsc": "C2906858",
+      "unit_rmb": "0.008265",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 16,
+      "url": "https://item.szlcsc.com/3180371.html"
+    },
+    {
+      "references": [
+        "R20"
+      ],
+      "quantity": 1,
+      "description": "100Ω 1%",
+      "package": "0402",
+      "manufacturer": "PANASONIC(松下)",
+      "mpn": "ERJ2RKF1000X",
+      "lcsc": "C413063",
+      "unit_rmb": "0.0342",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 17,
+      "url": "https://item.szlcsc.com/405058.html"
+    },
+    {
+      "references": [
+        "R7",
+        "R22"
+      ],
+      "quantity": 2,
+      "description": "10kΩ 0.1%",
+      "package": "0402",
+      "manufacturer": "VISHAY(威世)",
+      "mpn": "TNPW040210K0BEED",
+      "lcsc": "C844452",
+      "unit_rmb": "0.4545",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 18,
+      "url": "https://item.szlcsc.com/904026.html"
+    },
+    {
+      "references": [
+        "R16",
+        "R17",
+        "R18"
+      ],
+      "quantity": 3,
+      "description": "10kΩ 1%",
+      "package": "0402",
+      "manufacturer": "PANASONIC(松下)",
+      "mpn": "ERJ2RKF1002X",
+      "lcsc": "C191123",
+      "unit_rmb": "0.0284",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 19,
+      "url": "https://item.szlcsc.com/213966.html"
+    },
+    {
+      "references": [
+        "R5"
+      ],
+      "quantity": 1,
+      "description": "1MΩ 1%",
+      "package": "0402",
+      "manufacturer": "VISHAY(威世)",
+      "mpn": "CRCW04021M00FKED",
+      "lcsc": "C482082",
+      "unit_rmb": "0.0254",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 20,
+      "url": "https://item.szlcsc.com/490008.html"
+    },
+    {
+      "references": [
+        "R13",
+        "R14"
+      ],
+      "quantity": 2,
+      "description": "1kΩ 0.1%",
+      "package": "0402",
+      "manufacturer": "VISHAY(威世)",
+      "mpn": "TNPW04021K00BEED",
+      "lcsc": "C843869",
+      "unit_rmb": "0.4135",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 21,
+      "url": "https://item.szlcsc.com/903443.html"
+    },
+    {
+      "references": [
+        "R6",
+        "R21"
+      ],
+      "quantity": 2,
+      "description": "40.2kΩ 0.1%",
+      "package": "0402",
+      "manufacturer": "VISHAY(威世)",
+      "mpn": "TNPW040240K2BEED",
+      "lcsc": "C2088750",
+      "unit_rmb": "0.6237",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 22,
+      "url": "https://item.szlcsc.com/2180341.html"
+    },
+    {
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "quantity": 2,
+      "description": "1kΩ 1%",
+      "package": "0603",
+      "manufacturer": "UNI-ROYAL(厚声)",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "unit_rmb": "0.0154",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 29,
+      "url": "https://item.szlcsc.com/21904.html"
+    },
+    {
+      "references": [
+        "C3",
+        "C8",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C15",
+        "C17"
+      ],
+      "quantity": 8,
+      "description": "100nF X7R 10V ±10%",
+      "package": "0402",
+      "manufacturer": "HRE(芯声)",
+      "mpn": "CGA0402X7R104K100GT",
+      "lcsc": "C22435935",
+      "unit_rmb": "0.014",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 31,
+      "url": "https://item.szlcsc.com/24066916.html"
+    },
+    {
+      "references": [
+        "C16"
+      ],
+      "quantity": 1,
+      "description": "100pF C0G 50V ±5%",
+      "package": "0402",
+      "manufacturer": "FH(风华)",
+      "mpn": "0402CG101J500NT",
+      "lcsc": "C1546",
+      "unit_rmb": "0.0255",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 32,
+      "url": "https://item.szlcsc.com/1898.html"
+    },
+    {
+      "references": [
+        "C9"
+      ],
+      "quantity": 1,
+      "description": "1nF C0G 50V ±5%",
+      "package": "0402",
+      "manufacturer": "SAMSUNG(三星)",
+      "mpn": "CL05C102JB5NNNC",
+      "lcsc": "C307441",
+      "unit_rmb": "0.0557",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 33,
+      "url": "https://item.szlcsc.com/291115.html"
+    },
+    {
+      "references": [
+        "C14"
+      ],
+      "quantity": 1,
+      "description": "1µF X7R 10V ±10%",
+      "package": "0402",
+      "manufacturer": "FOJAN(富捷)",
+      "mpn": "FCC0402B105K100AT",
+      "lcsc": "C54938484",
+      "unit_rmb": "0.0618",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 34,
+      "url": "https://item.szlcsc.com/58499306.html"
+    },
+    {
+      "references": [
+        "C1"
+      ],
+      "quantity": 1,
+      "description": "1µF X7R 10V ±10%",
+      "package": "0603",
+      "manufacturer": "FH(风华)",
+      "mpn": "0603B105K100NT",
+      "lcsc": "C167338",
+      "unit_rmb": "0.1521",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 37,
+      "url": "https://item.szlcsc.com/178721.html"
+    },
+    {
+      "references": [
+        "C2"
+      ],
+      "quantity": 1,
+      "description": "4.7µF X7R 10V ±10%",
+      "package": "0603",
+      "manufacturer": "CCTC(三环)",
+      "mpn": "TCC0603X7R475K100CT",
+      "lcsc": "C18185770",
+      "unit_rmb": "0.1333",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 38,
+      "url": "https://item.szlcsc.com/19332544.html"
+    },
+    {
+      "references": [
+        "C7"
+      ],
+      "quantity": 1,
+      "description": "10µF X7R 10V ±10%",
+      "package": "0805",
+      "manufacturer": "YAGEO(国巨)",
+      "mpn": "CC0805KKX7R6BB106",
+      "lcsc": "C1952580",
+      "unit_rmb": "0.5728",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 40,
+      "url": "https://item.szlcsc.com/2044114.html"
+    },
+    {
+      "references": [
+        "C4"
+      ],
+      "quantity": 1,
+      "description": "33nF C0G 50V ±5%",
+      "package": "0805",
+      "manufacturer": "TDK",
+      "mpn": "C2012C0G1H333JT000N",
+      "lcsc": "C76628",
+      "unit_rmb": "0.7234",
+      "source": "LCSC quotation, 2026-10-10",
+      "source_sheet": "sheet",
+      "source_row": 41,
+      "url": "https://item.szlcsc.com/77755.html"
+    }
+  ],
+  "unpriced_items": [
+    {
+      "references": [
+        "J1"
+      ],
+      "quantity": 1,
+      "description": "Externally sourced USB-A male",
+      "unit_rmb": null
+    },
+    {
+      "references": [
+        "J2"
+      ],
+      "quantity": 1,
+      "description": "Externally sourced SMA female",
+      "unit_rmb": null
+    },
+    {
+      "references": [
+        "LED1",
+        "LED2"
+      ],
+      "quantity": 2,
+      "description": "Existing blue 0603 LED stock, Vf 2.5-3 V",
+      "unit_rmb": null
+    }
+  ]
+}

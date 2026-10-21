@@ -1,0 +1,4 @@
+Aster MCA Nano AT32 v0.3 / prototype / hand assembly
+32 x 18 mm, FR-4, 2 layers, 1 oz copper. Finished thickness 1.50 +/- 0.05 mm (SMA132289 max 1.57 mm). Do NOT substitute standard 1.6 mm +/-10% without mechanical review.
+2 plated USB shell slots: overall 2.50 x 0.90 mm; 2 NPTH locating holes: diameter 1.10 mm. Preserve slots. Vias tented both sides.
+Drill_PTH_Through.DRL includes plated vias and slots; no duplicate Via drill file is required. No stencil / SMT order.

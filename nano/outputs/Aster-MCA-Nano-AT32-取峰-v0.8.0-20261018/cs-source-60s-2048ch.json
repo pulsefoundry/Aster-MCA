@@ -1,0 +1,19 @@
+{
+  "record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173943-644509",
+  "background": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173709-138374",
+  "mode": "peak",
+  "channels": 2048,
+  "full_scale": 2048.0,
+  "unit": "ADC code",
+  "sampled_seconds": 60.000256,
+  "threshold_codes": 20,
+  "acquisition_mode": "histogram",
+  "wall_seconds": 60.04921741737053,
+  "duty_cycle": 0.9991846452047789,
+  "analysis_window_seconds": 60.00017325,
+  "condition": "铯源在位",
+  "calibration": null,
+  "mapping_version": "mcu-peak-2048-v1",
+  "underflow": 0,
+  "overflow": 0
+}

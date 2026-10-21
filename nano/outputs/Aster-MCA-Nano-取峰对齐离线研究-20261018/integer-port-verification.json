@@ -1,0 +1,25 @@
+{
+  "scope": "Native execution of a private peak-only copy. No firmware release, ARM timing or hardware verification.",
+  "original_engine_sha256": "1a4b0f874041b8b5d84d2ece7a323ed440e2e3c2bca44302474bd7ad6fa26e44",
+  "candidate_header_sha256": "f6b042944f42ca4ddb0eb5a690e740975b3130c91cde9c31367ba7e57e6677a4",
+  "original_firmware_source_unchanged": true,
+  "segments_replayed": 6475,
+  "exact_match_all_2048_peak_bins": true,
+  "candidates": 5625,
+  "accepted": 5019,
+  "rejected": 606,
+  "underflow": 0,
+  "overflow": 0,
+  "partial_events_excluded": 43,
+  "faults": 0,
+  "rejection_reason_counts": [
+    583,
+    28,
+    0,
+    24,
+    7
+  ],
+  "bin_width_adc_codes": 1,
+  "no_additional_per_sample_scan": true,
+  "candidate_header": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/nano-peak-alignment-20261018/integer-peak-candidate/engine.h"
+}

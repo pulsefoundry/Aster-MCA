@@ -1,0 +1,17 @@
+test_baseline_noise_pileup_clipping_and_recovery (test_histogram.EngineTests.test_baseline_noise_pileup_clipping_and_recovery) ... ok
+test_long_continuous_skipped_blocks (test_histogram.EngineTests.test_long_continuous_skipped_blocks) ... ok
+test_pulse_positions_ring_dma_and_end_boundaries (test_histogram.EngineTests.test_pulse_positions_ring_dma_and_end_boundaries) ... ok
+test_saved_source_and_background_exact_histogram (test_histogram.EngineTests.test_saved_source_and_background_exact_histogram) ... ok
+test_selftest_known_area_and_histogram_limits (test_histogram.EngineTests.test_selftest_known_area_and_histogram_limits) ... ok
+test_device_fault_rejected (test_histogram.ProtocolTests.test_device_fault_rejected) ... ok
+test_fragmented_final_result_after_silence (test_histogram.ProtocolTests.test_fragmented_final_result_after_silence) ... ok
+test_manual_stop_returns_partial_spectrum (test_histogram.ProtocolTests.test_manual_stop_returns_partial_spectrum) ... ok
+test_metadata_checksum_failure_invalidates_record (test_histogram.ProtocolTests.test_metadata_checksum_failure_invalidates_record) ... ok
+test_reject_crc_counters_deadline_and_early_finish (test_histogram.ProtocolTests.test_reject_crc_counters_deadline_and_early_finish) ... ok
+test_result_conservation_and_long_duration_counter_wrap (test_histogram.ProtocolTests.test_result_conservation_and_long_duration_counter_wrap) ... ok
+test_snapshot_allows_processing_burst_but_rejects_overwritten_input (test_histogram.ProtocolTests.test_snapshot_allows_processing_burst_but_rejects_overwritten_input) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.006s
+
+OK

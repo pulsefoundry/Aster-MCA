@@ -1,0 +1,24 @@
+test_native_bins_history_export_and_no_fake_4096 (test_histogram_gui.HistogramGUI.test_native_bins_history_export_and_no_fake_4096) ... ok
+test_waiting_has_no_invented_counts_then_final_histogram (test_histogram_gui.HistogramGUI.test_waiting_has_no_invented_counts_then_final_histogram) ... ok
+test_burst_record_export_and_background_isolation (test_burst_gui.BurstGUI.test_burst_record_export_and_background_isolation) ... ok
+test_mode_dispatch_and_failure_not_exportable (test_burst_gui.BurstGUI.test_mode_dispatch_and_failure_not_exportable) ... ok
+test_independent_codec_modules (test_sparse_gui.SparseGUI.test_independent_codec_modules) ... ok
+test_overload_explanation_is_readable (test_sparse_gui.SparseGUI.test_overload_explanation_is_readable) ... ok
+test_sparse_record_and_background_separation (test_sparse_gui.SparseGUI.test_sparse_record_and_background_separation) ... ok
+test_edges_and_count_conservation (test_gui.ChannelTests.test_edges_and_count_conservation) ... ok
+test_history_rebin_and_invalid_record (test_gui.ChannelTests.test_history_rebin_and_invalid_record) ... ok
+test_corruption_and_invalid_samples_rejected (test_host.Checks.test_corruption_and_invalid_samples_rejected) ... ok
+test_fragmentation_and_contiguity (test_host.Checks.test_fragmentation_and_contiguity) ... ok
+test_host_event_across_block_boundary (test_host.Checks.test_host_event_across_block_boundary) ... ok
+test_lossless_full_range_and_noise (test_host.Checks.test_lossless_full_range_and_noise) ... ok
+test_no_join_between_independent_runs (test_host.Checks.test_no_join_between_independent_runs) ... ok
+test_positive_rebound_and_clipping (test_host.Checks.test_positive_rebound_and_clipping) ... ok
+test_terminal_fault_and_missing_tail_rejected (test_host.Checks.test_terminal_fault_and_missing_tail_rejected) ... ok
+test_acquisition_failure_cannot_be_exported (test_gui.HTTPTests.test_acquisition_failure_cannot_be_exported) ... ok
+test_token_origin_and_host_protection (test_gui.HTTPTests.test_token_origin_and_host_protection) ... ok
+test_manual_stop_is_valid_and_preserves_all_samples (test_gui.StopTests.test_manual_stop_is_valid_and_preserves_all_samples) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.153s
+
+OK

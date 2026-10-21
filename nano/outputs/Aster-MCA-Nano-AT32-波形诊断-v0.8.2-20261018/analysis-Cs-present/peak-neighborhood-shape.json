@@ -1,0 +1,40 @@
+{
+  "selection": "Accepted events with sampled peak 60..100 ADC codes from previous gross spectrum; not independently tagged photopeak events",
+  "n": 48,
+  "peak_adc_code": {
+    "median": 76.32421875,
+    "p10": 62.2953125,
+    "p90": 88.31757812500001,
+    "min": 60.56640625,
+    "max": 99.984375
+  },
+  "half_width_us": {
+    "median": 1.25,
+    "p10": 1.25,
+    "p90": 1.5,
+    "min": 1.25,
+    "max": 1.5
+  },
+  "three_point_correction_code": {
+    "median": 0.5075187969924811,
+    "p10": 0.05082236842105263,
+    "p90": 2.5021969696969717,
+    "min": 0.005952380952380952,
+    "max": 3.2666666666666666
+  },
+  "local_minus_frozen_baseline_code": {
+    "median": -0.19140625,
+    "p10": -0.6421875,
+    "p90": 0.24179687500000122,
+    "min": -6.34765625,
+    "max": 1.55078125
+  },
+  "sampled_peak_mv": {
+    "median": 61.49168014526367,
+    "p10": 50.18909454345703,
+    "p90": 71.15429878234865,
+    "min": 48.79617691040039,
+    "max": 80.55381774902344
+  },
+  "analysis": "Diagnostic shape/baseline comparison only. No resolution fit or calibrated pulse amplitude. Three-point interpolation is a local mathematical estimate, not a measured true peak. Local baseline is [-22,-6) samples before trigger; frozen baseline is [-272,-16). No acquisition parameters changed."
+}

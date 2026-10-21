@@ -1,0 +1,29 @@
+{
+  "info": {
+    "type": "info",
+    "board": "Aster MCA Nano AT32 v0.3",
+    "mcu": "AT32F423CCT7",
+    "fw": "0.6.3",
+    "method": "onboard_histogram",
+    "core_hz": 144000000,
+    "adc_hz": 72000000,
+    "sample_rate_hz": 4000000,
+    "timer_ticks": 36,
+    "sample_cycles_x2": 5,
+    "channels": 2048,
+    "dma_samples": 8192,
+    "snapshot_samples": 4096,
+    "ldo_mv": 1300,
+    "adc_on": 1,
+    "adc_fault": 0,
+    "clock_fault": 0,
+    "bist_fault": 0,
+    "xtest": 9,
+    "session": 0,
+    "last_errors": 0,
+    "bist_max_cycles": 90625,
+    "has_result": 0,
+    "copy_bist_cycles": 8252
+  },
+  "configuration_valid": true
+}

@@ -1,0 +1,38 @@
+{
+  "firmware": "0.8.2",
+  "input_state": "SMA disconnected throughout",
+  "raw_before_first_hist": 50,
+  "raw_between_hist_runs": 50,
+  "result_header_and_bytes_identical": true,
+  "retained_histogram_sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47",
+  "sessions": [
+    1,
+    2
+  ],
+  "hist_runs": [
+    {
+      "sampled_seconds": 3.00032,
+      "accepted": 0,
+      "errors": 0,
+      "adc_overrun": 0,
+      "process_max_cycles": 58271,
+      "copy_end_max_cycles": 8833,
+      "blocks": 2930,
+      "processed_blocks": 2930
+    },
+    {
+      "sampled_seconds": 3.00032,
+      "accepted": 0,
+      "errors": 0,
+      "adc_overrun": 0,
+      "process_max_cycles": 58274,
+      "copy_end_max_cycles": 8841,
+      "blocks": 2930,
+      "processed_blocks": 2930
+    }
+  ],
+  "raw_errors": [
+    0
+  ],
+  "passed": true
+}

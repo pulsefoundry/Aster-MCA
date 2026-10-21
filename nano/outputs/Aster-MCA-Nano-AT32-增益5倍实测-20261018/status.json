@@ -1,0 +1,31 @@
+{
+  "user_confirmed_rework": {
+    "R21_ohms": 40200,
+    "R22_ohms": 10000,
+    "total_measured_kohms": 50.2,
+    "dc_voltages": "Reported within expectations, no individual numeric readings"
+  },
+  "firmware": "0.8.2",
+  "firmware_reflashed": false,
+  "native_channels": 2048,
+  "threshold_adc_codes": 100,
+  "all_integrity_checks_pass": true,
+  "source_sampled_seconds": 60.000256,
+  "source_wall_seconds": 60.04798787459731,
+  "source_accepted": 17611,
+  "background_sampled_seconds": 10.000384,
+  "background_accepted": 898,
+  "nominal_opamp_gain": 5.02,
+  "peak_centroid_code": 408.78747553470146,
+  "nominal_peak_mv": 329.3453782384069,
+  "apparent_fwhm_percent": 16.07075387801516,
+  "before_apparent_fwhm_percent": 17.196549686173032,
+  "difference_95_percentage_points": [
+    -2.5034672478740827,
+    0.33322815089291047
+  ],
+  "significant_improvement_demonstrated": false,
+  "final_state": "USB and powered probe connected; Cs source remains in position by last user confirmation; acquisition stopped; desktop showing source60s with gain5.02 background10s and trigger100",
+  "gui_reconnect_note": "Current desktop connection handler restores default threshold20 on reconnect; verify/reset100 for this reworked board before future acquisition. No GUI code change made in this experiment.",
+  "next_step": "Retain current hardware as test configuration. Further resolution work should compare estimators on identical raw pulses and check drift/shape dependence; no new firmware or acquisition pending automatically."
+}

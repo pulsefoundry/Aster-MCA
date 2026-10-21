@@ -1,0 +1,74 @@
+{
+  "input_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/cs-source-raw-500-v082",
+  "input_state": "User confirmed Cs source placed at previous position; original powered negative-pulse probe; high voltage/gain/connections unchanged; no resistor/gain change",
+  "firmware": "0.8.2",
+  "diagnostic_only": true,
+  "integrity_rechecked": true,
+  "engine_histogram_exact_match": true,
+  "segment_samples": 4096,
+  "sample_rate_hz": 4000000,
+  "segment_us": 1024.0,
+  "snapshots": 500,
+  "verified_sampled_seconds": 0.512,
+  "wall_seconds": 6.976954250130802,
+  "minimum_code": 1768,
+  "maximum_code": 2066,
+  "segment_mean": {
+    "n": 500,
+    "median": 2051.7362060546875,
+    "p10": 2051.415185546875,
+    "p90": 2052.1214111328127
+  },
+  "quiet_window_rms_code": {
+    "n": 31791,
+    "median": 0.8964992679863157,
+    "p10": 0.7228145941387736,
+    "p90": 1.8103435447450298
+  },
+  "quiet_window_rms_nominal_mv": {
+    "n": 31791,
+    "median": 0.7222772422741314,
+    "p10": 0.582345742348133,
+    "p90": 1.4585287347799312
+  },
+  "quiet_windows": 31791,
+  "total_windows": 32000,
+  "candidates": 157,
+  "accepted": 140,
+  "rejected": 17,
+  "boundary_pending_excluded": 2,
+  "rejection_flags": [
+    16,
+    1,
+    0,
+    1,
+    1
+  ],
+  "accepted_peak_code": {
+    "n": 140,
+    "median": 43.666015625,
+    "p10": 23.12734375,
+    "p90": 84.182421875
+  },
+  "accepted_pre_rms_code": {
+    "n": 140,
+    "median": 0.8901750986952031,
+    "p10": 0.777486580577836,
+    "p90": 1.888025291464604
+  },
+  "accepted_half_height_width_us": {
+    "n": 140,
+    "median": 1.25,
+    "p10": 1.25,
+    "p90": 1.5
+  },
+  "amplitude_60_to_100_code_events": 48,
+  "limitations": [
+    "Independent 1.024 ms snapshots with unsampled upload gaps; no absolute detector rate.",
+    "Quiet-window RMS selects 16 us windows with range below 20 ADC codes and removes each window mean. This can suppress slow drift and exclude noise outliers.",
+    "Voltages assume a nominal 3.3 V ADC reference, not a measured reference.",
+    "Half-height width is counted on 0.25 us samples, not an analog bandwidth measurement.",
+    "60..100 ADC codes is an illustrative amplitude range from the prior spectrum, not tagged photopeak events.",
+    "No resolution fit, energy calibration, gain change or proof against out-of-band oscillation."
+  ]
+}

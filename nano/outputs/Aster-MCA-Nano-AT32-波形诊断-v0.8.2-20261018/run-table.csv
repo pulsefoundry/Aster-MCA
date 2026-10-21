@@ -1,0 +1,9 @@
+condition,mode,firmware,threshold_adc_codes,sampled_seconds,wall_seconds,snapshots,accepted,rejected,errors,adc_overrun,process_max_us,copy_end_max_us,integrity,record
+empty,diagnostic,0.8.2,,0.0512,0.7176679586991668,50,,,0,0,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/empty-raw-50-v082
+empty-preserve,diagnostic,0.8.2,,0.0512,0.7165009998716414,50,,,0,0,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/empty-raw-50-v082-preserve
+empty-before,histogram,0.8.2,20,3.00032,3.018233375158161,,0,0,0,0,404.65972222222223,61.34027777777778,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/empty-hist-3s-v082-before
+empty-after,histogram,0.8.2,20,3.00032,3.019168166909367,,0,0,0,0,404.68055555555554,61.395833333333336,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/empty-hist-3s-v082-after
+probe-background,diagnostic,0.8.2,,0.512,6.973499667365104,500,,,0,0,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/probe-background-raw-500-v082
+probe-background,histogram,0.8.2,20,10.000384,10.023191041778773,,856,133,0,0,838.6458333333334,61.47222222222222,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-182113-531360
+Cs-present,diagnostic,0.8.2,,0.512,6.976954250130802,500,,,0,0,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-scope-2026-10-18/cs-source-raw-500-v082
+Cs-present,histogram,0.8.2,20,10.000384,10.022067042067647,,2826,398,0,0,983.5277777777778,61.520833333333336,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-182211-268849

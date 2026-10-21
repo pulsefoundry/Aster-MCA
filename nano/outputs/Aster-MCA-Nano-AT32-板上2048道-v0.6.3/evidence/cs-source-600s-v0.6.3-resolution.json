@@ -1,0 +1,404 @@
+{
+  "source_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261016-122147-741791",
+  "background_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261016-120758-815812",
+  "capture_completed": true,
+  "source_condition": "v0.6.3; powered negative-pulse probe connected; Cs source remains at same position as 60 s source run, Th previously removed; user explicitly reconfirmed unchanged probe, source position, gain, HV and cabling before 600 s acquisition.",
+  "sampled_seconds": 600.000512,
+  "wall_seconds": 599.9325916669331,
+  "nominal_sampled_duration_to_host_wall_ratio": 1.0001132132743082,
+  "dma_block_processing_fraction": 1.0,
+  "timebase_note": "Sampled seconds use the nominal MCU sample clock; host wall time uses another clock and command timing. Their raw ratio can exceed one and is not physical coverage or corrected live time.",
+  "in_range_counts": 268115,
+  "source_rate": 446.85795201454766,
+  "background_sampled_seconds": 30.000128,
+  "background_scale": 19.999931733624603,
+  "background_rate": 181.99922346997985,
+  "net_rate": 264.8587285445678,
+  "device_result": {
+    "type": "spectrum",
+    "fw": "0.6.3",
+    "method": "mcu-area8-4M-v0.1",
+    "session": 4,
+    "requested_ms": 600000,
+    "threshold_codes": 20,
+    "channels": 2048,
+    "sample_rate_hz": 4000000,
+    "core_hz": 144000000,
+    "bin_width_code_us": 1,
+    "blocks": 585938,
+    "processed_blocks": 585938,
+    "engine_blocks": 37500032,
+    "fine_blocks": 587991,
+    "errors": 0,
+    "adc_overrun": 0,
+    "tail_samples_excluded": 6,
+    "stop_user": 0,
+    "acquisition_ms": 600001,
+    "span_cycles_mod32": 500727983,
+    "irq_delta_min": 147440,
+    "irq_delta_max": 147475,
+    "process_max_cycles": 282878,
+    "latency_max_cycles": 135723,
+    "candidates": 298794,
+    "accepted": 268132,
+    "peak_fine_blocks": 31,
+    "peak_candidates": 2,
+    "snapshot_samples": 4096,
+    "copy_max_cycles": 8667,
+    "copy_end_max_cycles": 144191,
+    "rejected": 30662,
+    "underflow": 17,
+    "overflow": 0,
+    "pending_excluded": 0,
+    "rejection_flags": [
+      29030,
+      1817,
+      0,
+      1723,
+      598
+    ],
+    "minimum": 871,
+    "maximum": 2465,
+    "histogram_crc32": 2667131176
+  },
+  "final_info": {
+    "type": "info",
+    "board": "Aster MCA Nano AT32 v0.3",
+    "mcu": "AT32F423CCT7",
+    "fw": "0.6.3",
+    "method": "onboard_histogram",
+    "core_hz": 144000000,
+    "adc_hz": 72000000,
+    "sample_rate_hz": 4000000,
+    "timer_ticks": 36,
+    "sample_cycles_x2": 5,
+    "channels": 2048,
+    "dma_samples": 8192,
+    "snapshot_samples": 4096,
+    "ldo_mv": 1300,
+    "adc_on": 1,
+    "adc_fault": 0,
+    "clock_fault": 0,
+    "bist_fault": 0,
+    "xtest": 9,
+    "session": 4,
+    "last_errors": 0,
+    "bist_max_cycles": 90625,
+    "has_result": 1,
+    "copy_bist_cycles": 8252
+  },
+  "method": "Binned Poisson maximum likelihood, bin-integrated Gaussian plus nonnegative linear local continuum. Original 2048-bin gross-source spectrum, no smoothing or background subtraction in peak fitting.",
+  "primary": {
+    "roi": [
+      360,
+      600
+    ],
+    "bin_width": 1,
+    "continuum": "linear",
+    "area_counts": 36299.919810718544,
+    "centroid_channel": 452.1100403836531,
+    "sigma_channels": 36.82950961569536,
+    "fwhm_channels": 86.72686749169952,
+    "relative_fwhm_percent": 19.182689996909723,
+    "continuum_parameters": [
+      111.60216445094473,
+      12.580679021902197
+    ],
+    "deviance": 256.869823192613,
+    "dof": 235,
+    "reduced_deviance": 1.0930630774153745,
+    "approximate_deviance_p": 0.15634153330300607,
+    "pearson_chi2": 260.4175099104184,
+    "success": true,
+    "active_bounds": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "bootstrap": {
+    "seed": 423063,
+    "requested": 400,
+    "successful": 400,
+    "method": "Parametric Poisson bootstrap conditional on the Gaussian plus local linear continuum model.",
+    "standard_deviation": {
+      "centroid_channel": 0.3552389400493227,
+      "fwhm_channels": 0.9931088855942625,
+      "relative_fwhm_percentage_points": 0.2287918536973916
+    },
+    "resolution_68_percent_interval": [
+      18.956713779794484,
+      19.417154968567196
+    ],
+    "resolution_95_percent_interval": [
+      18.74380833380222,
+      19.66295139722678
+    ]
+  },
+  "roi_sensitivity": [
+    {
+      "roi": [
+        340,
+        620
+      ],
+      "bin_width": 1,
+      "continuum": "linear",
+      "area_counts": 33991.075628498016,
+      "centroid_channel": 452.55845275691286,
+      "sigma_channels": 35.19444389938597,
+      "fwhm_channels": 82.8765819679913,
+      "relative_fwhm_percent": 18.31290112097577,
+      "continuum_parameters": [
+        138.17744034684821,
+        7.747284975666966
+      ],
+      "deviance": 444.01369522033394,
+      "dof": 275,
+      "reduced_deviance": 1.614595255346669,
+      "approximate_deviance_p": 4.3460264236291664e-10,
+      "pearson_chi2": 452.4350711063598,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "roi": [
+        360,
+        600
+      ],
+      "bin_width": 1,
+      "continuum": "linear",
+      "area_counts": 36299.919810718544,
+      "centroid_channel": 452.1100403836531,
+      "sigma_channels": 36.82950961569536,
+      "fwhm_channels": 86.72686749169952,
+      "relative_fwhm_percent": 19.182689996909723,
+      "continuum_parameters": [
+        111.60216445094473,
+        12.580679021902197
+      ],
+      "deviance": 256.869823192613,
+      "dof": 235,
+      "reduced_deviance": 1.0930630774153745,
+      "approximate_deviance_p": 0.15634153330300607,
+      "pearson_chi2": 260.4175099104184,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "roi": [
+        380,
+        580
+      ],
+      "bin_width": 1,
+      "continuum": "linear",
+      "area_counts": 39275.847818511604,
+      "centroid_channel": 451.35737627834675,
+      "sigma_channels": 38.478601656465074,
+      "fwhm_channels": 90.61018248540505,
+      "relative_fwhm_percent": 20.075041917455412,
+      "continuum_parameters": [
+        78.70138227796751,
+        17.926637642486703
+      ],
+      "deviance": 182.59010149070605,
+      "dof": 195,
+      "reduced_deviance": 0.9363594948241336,
+      "approximate_deviance_p": 0.7285055220855413,
+      "pearson_chi2": 185.06901913762522,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "roi": [
+        400,
+        560
+      ],
+      "bin_width": 1,
+      "continuum": "linear",
+      "area_counts": 47553.32609800958,
+      "centroid_channel": 448.7907418465581,
+      "sigma_channels": 41.42359862206211,
+      "fwhm_channels": 97.54512037254827,
+      "relative_fwhm_percent": 21.735100855957278,
+      "continuum_parameters": [
+        3.7482039312754925e-14,
+        20.69384088810071
+      ],
+      "deviance": 146.34268449632725,
+      "dof": 155,
+      "reduced_deviance": 0.9441463515892081,
+      "approximate_deviance_p": 0.6783580885968717,
+      "pearson_chi2": 147.99185118859077,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        -1,
+        0
+      ]
+    }
+  ],
+  "bin_sensitivity": [
+    {
+      "roi": [
+        360,
+        600
+      ],
+      "bin_width": 1,
+      "continuum": "linear",
+      "area_counts": 36299.919810718544,
+      "centroid_channel": 452.1100403836531,
+      "sigma_channels": 36.82950961569536,
+      "fwhm_channels": 86.72686749169952,
+      "relative_fwhm_percent": 19.182689996909723,
+      "continuum_parameters": [
+        111.60216445094473,
+        12.580679021902197
+      ],
+      "deviance": 256.869823192613,
+      "dof": 235,
+      "reduced_deviance": 1.0930630774153745,
+      "approximate_deviance_p": 0.15634153330300607,
+      "pearson_chi2": 260.4175099104184,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "roi": [
+        360,
+        600
+      ],
+      "bin_width": 2,
+      "continuum": "linear",
+      "area_counts": 36310.957113843375,
+      "centroid_channel": 452.1110776770932,
+      "sigma_channels": 36.83718269164647,
+      "fwhm_channels": 86.74493620475624,
+      "relative_fwhm_percent": 19.186642506183233,
+      "continuum_parameters": [
+        223.0482623864154,
+        25.13989854929664
+      ],
+      "deviance": 155.34327778243542,
+      "dof": 115,
+      "reduced_deviance": 1.3508111111516123,
+      "approximate_deviance_p": 0.007277452523198371,
+      "pearson_chi2": 155.6759774338908,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "roi": [
+        360,
+        600
+      ],
+      "bin_width": 4,
+      "continuum": "linear",
+      "area_counts": 36331.10327353354,
+      "centroid_channel": 452.10485766830027,
+      "sigma_channels": 36.85046977546736,
+      "fwhm_channels": 86.7762248960777,
+      "relative_fwhm_percent": 19.193827145237968,
+      "continuum_parameters": [
+        445.5771852777358,
+        50.15470675961627
+      ],
+      "deviance": 96.05246170077405,
+      "dof": 55,
+      "reduced_deviance": 1.7464083945595281,
+      "approximate_deviance_p": 0.0005131923582211995,
+      "pearson_chi2": 95.90355902661291,
+      "success": true,
+      "active_bounds": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "alternative_step_continuum": {
+    "roi": [
+      360,
+      600
+    ],
+    "bin_width": 1,
+    "continuum": "step",
+    "area_counts": 38406.452448436954,
+    "centroid_channel": 454.79267331450694,
+    "sigma_channels": 38.70798377708856,
+    "fwhm_channels": 91.15033610102093,
+    "relative_fwhm_percent": 20.042173379074402,
+    "continuum_parameters": [
+      86.5342323648495,
+      19.322857546906654
+    ],
+    "deviance": 260.42375068480646,
+    "dof": 235,
+    "reduced_deviance": 1.108186173126836,
+    "approximate_deviance_p": 0.12233517048076448,
+    "pearson_chi2": 261.3997835621823,
+    "success": true,
+    "active_bounds": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "resolution_definition": "100 * FWHM_channels / centroid_channel; assumes channel zero corresponds to energy zero when interpreted as energy resolution.",
+  "conditional_662_keV_fwhm": 126.98940777954236,
+  "limitations": [
+    "No independent energy calibration or offset/linearity measurement.",
+    "Measured width combines probe, analog chain, ADC, integration and drift; not intrinsic ADC resolution.",
+    "Bootstrap measures statistical uncertainty conditional on the model; it excludes model/calibration/systematic uncertainty.",
+    "Only the final histogram is retained; no event timestamps or waveforms to assess within-run gain drift.",
+    "Sample coverage is not dead-time/quality-cut corrected live time.",
+    "The 30-second background is displayed as a rate comparison; its noisy scaled histogram is not used in the primary peak fit."
+  ],
+  "comparison_to_60s": {
+    "record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261016-121520-210408",
+    "same_fit_method": true,
+    "centroid_shift_channels": -0.4224671517442289,
+    "centroid_shift_percent": -0.09335619976675008,
+    "previous_centroid_channel": 452.5325075353973,
+    "previous_relative_fwhm_percent": 18.58778957613547,
+    "previous_statistical_standard_deviation_percentage_points": 0.6711900023816794,
+    "caution": "Only time-averaged histograms are available; this comparison cannot establish within-run drift."
+  }
+}

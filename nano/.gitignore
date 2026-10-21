@@ -1,0 +1,30 @@
+# Generated build products, local tools, and runtime recordings
+/work/
+/firmware/**/build/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+*.app/
+.venv/
+.env
+.env.*
+
+# Keep the validated board packages and named experiment evidence.
+/outputs/*
+!/outputs/Aster-MCA-Nano-CH32-v0.3-USB-A-LED/
+!/outputs/Aster-MCA-Nano-AT32-v0.3-USB-A-LED/
+!/outputs/Aster-MCA-Nano-CH32-v0.3-焊接对照/
+!/outputs/Aster-MCA-Nano-AT32-v0.3-焊接对照/
+!/outputs/Aster-MCA-Nano-v0.3.1-SlotCut-Bridge2p5-32x38/
+!/outputs/Aster-MCA-Nano-v0.3-采购清单/
+!/outputs/Aster-MCA-Nano-AT32-板上2048道-v0.6.3/
+!/outputs/Aster-MCA-Nano-AT32-取峰-v0.8.0-20261018/
+!/outputs/Aster-MCA-Nano-AT32-波形诊断-v0.8.2-20261018/
+!/outputs/Aster-MCA-Nano-AT32-增益改焊-20261018/
+!/outputs/Aster-MCA-Nano-AT32-增益5倍实测-20261018/
+!/outputs/Aster-MCA-Nano-AT32-v0.6.3-铯源10分钟分辨率-20261016/
+!/outputs/Aster-MCA-Nano-取峰对齐离线研究-20261018/
+!/outputs/Aster-MCA-Nano-r11参考数据核对-20261018/
+
+# Historical browser launcher; native desktop source is tracked under firmware.
+/启动 Aster Nano.command

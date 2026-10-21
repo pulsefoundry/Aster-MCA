@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "native_pcb_drc": [],
+  "native_schematic_drc": [
+    {
+      "type": "warn",
+      "count": 1
+    }
+  ],
+  "components": 47,
+  "original_component_positions_preserved": true,
+  "original_values_preserved": true,
+  "original_traces_preserved_except_BOOT_PULL_endpoint_adjustment": [],
+  "schematic_pcb_netlist_match": true,
+  "expected_pin_nets_match": true,
+  "run_mcu_pin": "25",
+  "outline_mm": [
+    32,
+    18
+  ],
+  "drill_geometry_matches_native": true,
+  "copper_pad_centres_match_native": true,
+  "via_count": 44,
+  "physical_performance_validated": false,
+  "scope": "Native PCB DRC plus independent netlist, component geometry, outline, drill and copper pad centre checks. No full independent copper extraction or physical performance test.",
+  "min_via_hole_to_smd_rectangular_envelope_mm": 0.1501,
+  "via_holes_outside_smd_pads": true
+}

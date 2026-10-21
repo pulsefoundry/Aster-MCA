@@ -1,0 +1,26 @@
+{
+  "firmware": "0.8.2",
+  "readback_verified": true,
+  "probe_background_valid": true,
+  "source_present_valid": true,
+  "physical_state": "Probe powered and connected; Cs source in place at end by last confirmation; board idle",
+  "scope": "100 empty + 500 background + 500 Cs finite raw snapshots and two 10-second real-pulse histogram checks; no new resolution fit",
+  "histogram_background_accepted": 856,
+  "histogram_source_accepted": 2826,
+  "histogram_errors": 0,
+  "adc_overrun": 0,
+  "raw_background_seconds": 0.512,
+  "raw_source_seconds": 0.512,
+  "native_channels": 2048,
+  "threshold_adc_codes": 20,
+  "gain_hardware_changed": false,
+  "next_step_suggestion": "Controlled analog gain A/B test about 5x; if default R21=0/R22=DNP, replace R21 with 40.2k and populate R22=10k. Set histogram threshold near100 to preserve prior input threshold. Recheck ADC clipping, baseline, timing and source/background spectra. No resolution improvement guaranteed.",
+  "interpolation_note": "Selected 60..100-code diagnostic events: three-point parabola correction median0.51 codes, p90 2.50. This estimates a local peak only; it does not establish true peak or resolution improvement.",
+  "limitations": [
+    "Diagnostic uploads introduce unsampled gaps; diagnostic counts do not measure continuous detector rate.",
+    "Quiet noise stats remove each 16 us window mean and select windows with range <20 codes.",
+    "Diagnostic sampling CPU load differs from real-time histogram processing; analog noise under normal processing is not fully characterized by RAW alone.",
+    "This is a short validation at the measured source load, not a high-rate or long-duration guarantee.",
+    "No new energy calibration or spectral resolution fit. Voltages use nominal3.3V reference."
+  ]
+}

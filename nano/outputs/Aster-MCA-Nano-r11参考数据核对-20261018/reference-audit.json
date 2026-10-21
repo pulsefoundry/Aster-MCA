@@ -1,0 +1,477 @@
+{
+  "audited_at": "2026-10-18T16:56:26.652524+08:00",
+  "source_directory": "/Users/liu/Documents/Codex/2026-09-10/new-chat/outputs/aster-mca-r11-check-20261018/cs137-same-event-1000",
+  "audit_script": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/verify-r11-reference-20261018.py",
+  "verification": {
+    "wire_frames_redecoded_crc_sequence_checked": 183798,
+    "bad_or_missing_wire_frames": 0,
+    "raw_waveforms_exactly_match_wire_reconstruction": 1000,
+    "basic_estimator_rows_recomputed_and_matched": 1000,
+    "train_validation_disjoint_and_complete": true,
+    "template_and_pz_use_identical_train_validation_ids": true,
+    "training_events": 300,
+    "validation_events": 700,
+    "all_primary_validation_events_retained": true,
+    "reported_point_fits_reproduced": 13,
+    "bootstrap_recomputed_in_this_audit": false,
+    "template_pz_per_event_filters_recomputed_in_this_audit": false
+  },
+  "capture": {
+    "sample_rate_hz": 20000000,
+    "adc_bits": 14,
+    "samples_per_waveform": 1024,
+    "trigger_index": 128,
+    "firmware_reason_counts": {
+      "4": 23,
+      "0": 966,
+      "2": 7,
+      "6": 4
+    },
+    "near_rail_waveforms": 0,
+    "peak_at_search_boundary_waveforms": 0,
+    "host_elapsed_seconds": 904.3155293748714,
+    "sparse_triggered_records_not_continuous_live_time": true
+  },
+  "reproduced_point_fits": {
+    "all1000/firmware_peak_codes": {
+      "success": true,
+      "centroid": 1826.8034911813784,
+      "sigma": 112.93268437369343,
+      "fwhm": 265.93614889883156,
+      "apparent_width_percent": 14.557457886554229,
+      "fitted_peak_events": 125.86410912626432,
+      "events_in_window": 200,
+      "continuum_density_endpoints": [
+        0.15503004132435622,
+        0.01945708695314443
+      ],
+      "deviance": 30.48664934640502,
+      "dof": 29,
+      "parameters": [
+        125.86410912626432,
+        1826.8034911813784,
+        112.93268437369343,
+        0.15503004132435622,
+        0.01945708695314443
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/local_parabolic_peak_codes": {
+      "success": true,
+      "centroid": 1830.721145850853,
+      "sigma": 118.3924018121407,
+      "fwhm": 278.79280096292325,
+      "apparent_width_percent": 15.228578180504407,
+      "fitted_peak_events": 130.97549784146022,
+      "events_in_window": 200,
+      "continuum_density_endpoints": [
+        0.15304134833612948,
+        0.009472883250576472
+      ],
+      "deviance": 17.95133127233923,
+      "dof": 29,
+      "parameters": [
+        130.97549784146022,
+        1830.721145850853,
+        118.3924018121407,
+        0.15304134833612948,
+        0.009472883250576472
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/binomial3_parabolic_peak_codes": {
+      "success": true,
+      "centroid": 1832.7148704088115,
+      "sigma": 130.42014291977247,
+      "fwhm": 307.11596681924505,
+      "apparent_width_percent": 16.75743301797615,
+      "fitted_peak_events": 142.029241861419,
+      "events_in_window": 198,
+      "continuum_density_endpoints": [
+        0.1320774701574337,
+        5.077246232077848e-20
+      ],
+      "deviance": 25.21268492380907,
+      "dof": 29,
+      "parameters": [
+        142.029241861419,
+        1832.7148704088115,
+        130.42014291977247,
+        0.1320774701574337,
+        5.077246232077848e-20
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/area_1.6us_codes_us": {
+      "success": true,
+      "centroid": 1834.0186794512636,
+      "sigma": 135.0802589830416,
+      "fwhm": 318.08970153705764,
+      "apparent_width_percent": 17.34386378399536,
+      "fitted_peak_events": 137.28770975136644,
+      "events_in_window": 202,
+      "continuum_density_endpoints": [
+        0.13564541730904192,
+        0.017165776270427882
+      ],
+      "deviance": 26.79072778083644,
+      "dof": 29,
+      "parameters": [
+        137.28770975136644,
+        1834.0186794512636,
+        135.0802589830416,
+        0.13564541730904192,
+        0.017165776270427882
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/area_2.4us_codes_us": {
+      "success": true,
+      "centroid": 1833.0322664324121,
+      "sigma": 127.05973508997259,
+      "fwhm": 299.20281110225733,
+      "apparent_width_percent": 16.322833841031546,
+      "fitted_peak_events": 123.81502814859013,
+      "events_in_window": 204,
+      "continuum_density_endpoints": [
+        0.17337717446606812,
+        0.015538896100373165
+      ],
+      "deviance": 28.16946525233759,
+      "dof": 29,
+      "parameters": [
+        123.81502814859013,
+        1833.0322664324121,
+        127.05973508997259,
+        0.17337717446606812,
+        0.015538896100373165
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/area_3.2us_codes_us": {
+      "success": true,
+      "centroid": 1824.624892354651,
+      "sigma": 142.36337468653437,
+      "fwhm": 335.2401283856967,
+      "apparent_width_percent": 18.373098481248626,
+      "fitted_peak_events": 135.7175961939482,
+      "events_in_window": 208,
+      "continuum_density_endpoints": [
+        0.16232142719031997,
+        0.00865940724178854
+      ],
+      "deviance": 20.615516458350996,
+      "dof": 29,
+      "parameters": [
+        135.7175961939482,
+        1824.624892354651,
+        142.36337468653437,
+        0.16232142719031997,
+        0.00865940724178854
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/area_4.8us_codes_us": {
+      "success": true,
+      "centroid": 1814.360689644976,
+      "sigma": 128.63359472123156,
+      "fwhm": 302.90896730996224,
+      "apparent_width_percent": 16.6950799275327,
+      "fitted_peak_events": 118.33939673580178,
+      "events_in_window": 209,
+      "continuum_density_endpoints": [
+        0.15602509302072223,
+        0.05757015447868063
+      ],
+      "deviance": 19.911050918188398,
+      "dof": 29,
+      "parameters": [
+        118.33939673580178,
+        1814.360689644976,
+        128.63359472123156,
+        0.15602509302072223,
+        0.05757015447868063
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "all1000/area_6.4us_codes_us": {
+      "success": true,
+      "centroid": 1817.0112072523405,
+      "sigma": 135.0668278169059,
+      "fwhm": 318.0580735578136,
+      "apparent_width_percent": 17.504464049992112,
+      "fitted_peak_events": 125.09316569401604,
+      "events_in_window": 210,
+      "continuum_density_endpoints": [
+        0.15112868492069487,
+        0.04914760408873778
+      ],
+      "deviance": 33.41842705196342,
+      "dof": 29,
+      "parameters": [
+        125.09316569401604,
+        1817.0112072523405,
+        135.0668278169059,
+        0.15112868492069487,
+        0.04914760408873778
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "validation700/raw_peak": {
+      "success": true,
+      "centroid": 1827.3781488082143,
+      "sigma": 95.1237031353566,
+      "fwhm": 223.99920289776708,
+      "apparent_width_percent": 12.257955642287593,
+      "fitted_peak_events": 79.53908627769736,
+      "events_in_window": 138,
+      "continuum_density_endpoints": [
+        0.12211272151506926,
+        0.01544384813102432
+      ],
+      "deviance": 24.726816092622194,
+      "dof": 29,
+      "parameters": [
+        79.53908627769736,
+        1827.3781488082143,
+        95.1237031353566,
+        0.12211272151506926,
+        0.01544384813102432
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "validation700/template": {
+      "success": true,
+      "centroid": 1844.8875896511381,
+      "sigma": 116.42627054010089,
+      "fwhm": 274.16291563242254,
+      "apparent_width_percent": 14.860684042232934,
+      "fitted_peak_events": 94.38293301199289,
+      "events_in_window": 139,
+      "continuum_density_endpoints": [
+        0.10505184084837679,
+        2.728918259059066e-19
+      ],
+      "deviance": 30.552949344087246,
+      "dof": 29,
+      "parameters": [
+        94.38293301199289,
+        1844.8875896511381,
+        116.42627054010089,
+        0.10505184084837679,
+        2.728918259059066e-19
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "validation700/pz_trap_0.4us": {
+      "success": true,
+      "centroid": 1830.8680350625061,
+      "sigma": 107.60419167584125,
+      "fwhm": 253.38850748429311,
+      "apparent_width_percent": 13.839801811584,
+      "fitted_peak_events": 81.24569509936669,
+      "events_in_window": 146,
+      "continuum_density_endpoints": [
+        0.12313830181070473,
+        0.029240134638734157
+      ],
+      "deviance": 37.729053896667374,
+      "dof": 29,
+      "parameters": [
+        81.24569509936669,
+        1830.8680350625061,
+        107.60419167584125,
+        0.12313830181070473,
+        0.029240134638734157
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "validation700/pz_trap_0.8us": {
+      "success": true,
+      "centroid": 1828.6802911426528,
+      "sigma": 110.47193751745483,
+      "fwhm": 260.14153287609014,
+      "apparent_width_percent": 14.22564316661063,
+      "fitted_peak_events": 83.30807396398053,
+      "events_in_window": 143,
+      "continuum_density_endpoints": [
+        0.12111429808765245,
+        0.01936082638704245
+      ],
+      "deviance": 46.96672881705187,
+      "dof": 29,
+      "parameters": [
+        83.30807396398053,
+        1828.6802911426528,
+        110.47193751745483,
+        0.12111429808765245,
+        0.01936082638704245
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    },
+    "validation700/pz_trap_1.6us": {
+      "success": true,
+      "centroid": 1832.4206249325964,
+      "sigma": 110.67783555090071,
+      "fwhm": 260.62638569247457,
+      "apparent_width_percent": 14.223065498515739,
+      "fitted_peak_events": 81.0771319130405,
+      "events_in_window": 144,
+      "continuum_density_endpoints": [
+        0.13997105128930118,
+        0.008107189192652563
+      ],
+      "deviance": 40.55787801896191,
+      "dof": 29,
+      "parameters": [
+        81.0771319130405,
+        1832.4206249325964,
+        110.67783555090071,
+        0.13997105128930118,
+        0.008107189192652563
+      ],
+      "bound_warning": false,
+      "window": [
+        1400,
+        2250
+      ],
+      "bin_width": 25
+    }
+  },
+  "existing_uncertainty_results_not_recomputed": {
+    "all1000_raw_peak_95_percent": [
+      9.123425703092213,
+      19.198695444917057
+    ],
+    "validation700_raw_peak_95_percent_pz_report": [
+      7.285309433501711,
+      16.41824334919843
+    ],
+    "validation700_template_minus_raw_95_percentage_points": [
+      -0.44641085081049636,
+      7.176013836497038
+    ],
+    "validation700_primary_pz_minus_raw_95_percentage_points": [
+      -1.2475964290689063,
+      7.040968760591002
+    ]
+  },
+  "limitations": [
+    "14.56 percent (all 1000) and 12.26 percent (validation 700) are different subsets of the same run, not an observed hardware improvement.",
+    "Apparent FWHM/centroid under the inherited Gaussian-plus-continuum model; not a multipoint calibrated or repeatability-validated instrument specification.",
+    "Existing paired bootstrap differences include zero: no demonstrated improvement from these template or PZ/trapezoid trials; no proof DSP can never help.",
+    "Holdout is internal to a previously inspected run, not a new blind physical acquisition.",
+    "R11 20 MS/s 14-bit and Nano 4 MS/s 12-bit use different analog chains. Do not transfer sample counts, ADC-code thresholds or predicted resolution directly.",
+    "No acquisition, USB access, firmware change, retuning, bootstrap rerun or detector-efficiency measurement in this audit."
+  ],
+  "sha256_manifest": {
+    "job.json": {
+      "bytes": 1683,
+      "sha256": "946befc8bbfbc0c698b124d3489b5e117284fdaed1980d6b82c30f1c666f2a52"
+    },
+    "capture/summary.json": {
+      "bytes": 3898,
+      "sha256": "0abc4a3fbe1b2cdda4d2c723a99bd64ecc9717b28e9cfe44006947b7d0fb4706"
+    },
+    "capture/frames.jsonl": {
+      "bytes": 52368907,
+      "sha256": "eabd6435dcd21c94aa3391f0be9abba9b68c76271907cd1766a128ecdce284fb"
+    },
+    "capture/waveforms.jsonl": {
+      "bytes": 6498780,
+      "sha256": "4b0446e05676997df550852a75ab45d4596eb58b69a334ac33c822cd9248bbb0"
+    },
+    "estimator-replay/estimators.jsonl": {
+      "bytes": 937548,
+      "sha256": "fe1c82505fb674a3bb5ad05e59f1e90dbb908883e44e4d14cdd7824faaf3fe4f"
+    },
+    "comparison/comparison.json": {
+      "bytes": 35896,
+      "sha256": "a3e583a62a9f3de86483db9f7cc0ff97c656b2502861d26cc737e6324f083802"
+    },
+    "template-holdout/comparison.json": {
+      "bytes": 11577,
+      "sha256": "53cecc43f12792fe471b3aefe01a755941de44111f3893c5b3e2e666cbad44fc"
+    },
+    "template-holdout/trained-model.json": {
+      "bytes": 62293,
+      "sha256": "732f5eb00991256a915be5ddbfb02f872156f7a9d7460a39ec2a487637578f50"
+    },
+    "template-holdout/event-estimates.jsonl": {
+      "bytes": 584314,
+      "sha256": "deb80885f245393e46c5a3b711d29dca236f2269cc151cf0a1779d7d612324ff"
+    },
+    "pz-trapezoid-dspeed/comparison.json": {
+      "bytes": 20417,
+      "sha256": "63940e603186c45fa9e1f57d3689aa55dd3cb8c702b9a2c39bc8db2f059cdb65"
+    },
+    "pz-trapezoid-dspeed/trained-settings.json": {
+      "bytes": 64755,
+      "sha256": "a5f093c686234657e3d0a93b04b84e7c079176ffa5ad0a00fea320265082b324"
+    },
+    "pz-trapezoid-dspeed/event-estimates.jsonl": {
+      "bytes": 982484,
+      "sha256": "28edd745fe3fe35968382af67b8ec4192c6fdb27831c1470065f66588bd807c3"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-18T18:50:37.123640+08:00",
+  "user_confirmed_rework": true,
+  "R21_ohms": 40200,
+  "R22_ohms": 10000,
+  "nominal_opamp_gain": 5.02,
+  "reported_series_kohms": 50.2,
+  "reported_dc": "All previously requested voltages within expectation; no individual numerical readings supplied",
+  "user_confirmed_input": "USB connected, SMA disconnected",
+  "firmware": "0.8.2",
+  "threshold_codes": 100
+}

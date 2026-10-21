@@ -1,0 +1,5 @@
+# Frozen evidence and fabrication files must retain exact bytes/line endings.
+outputs/** -text -diff
+# Preserve vendor sources as imported; do not normalize their line endings.
+firmware/ch32-selftest-v0.3/vendor/** -text
+firmware/ch32-selftest-v0.3/src/Link.ld -text

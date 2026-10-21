@@ -1,0 +1,72 @@
+{
+  "scope": "Offline research only; no device access or firmware/source edits",
+  "nano_source": "work/at32-gui-recordings/capture-20261015-001908-112177",
+  "primary_event_set": "All 5019 events accepted by the existing archived firmware-equivalent flags, identical for every estimator; no new quality or energy cuts. Keep all 5625 candidates in event output.",
+  "comparison_methods_fixed_before_execution": [
+    "area8_long_baseline",
+    "area4_long_baseline",
+    "peak_long_baseline",
+    "peak_local_baseline",
+    "peak_local_parabolic",
+    "area8_local_baseline"
+  ],
+  "long_baseline_relative_samples": [
+    -272,
+    -16
+  ],
+  "local_baseline_relative_samples": [
+    -26,
+    -6
+  ],
+  "peak_search_relative_samples": [
+    0,
+    26
+  ],
+  "area8_relative_samples": [
+    -4,
+    28
+  ],
+  "area4_relative_samples": [
+    -4,
+    12
+  ],
+  "sample_rate_hz": 4000000,
+  "interpolation": "Three-point concave parabola about sampled minimum, maximum half-sample shift; fall back to sampled peak on boundaries or invalid curvature",
+  "internal_split": "30 training events per chronological block of 100 accepted events; floor(0.3*n) in final partial block; all others validation",
+  "split_seed": 2026101806,
+  "scaling": "One constant positive median(method/area8) on training records with nonzero area8; no event correction, offset or peak alignment. All records retained in histograms.",
+  "fit_model": "Bin-integrated Gaussian plus nonnegative linear continuum; binned Poisson deviance",
+  "fit_window_area8_equivalent": [
+    360,
+    620
+  ],
+  "fit_bin_width": 2,
+  "fit_centroid_bounds": [
+    400,
+    560
+  ],
+  "fit_sigma_bounds": [
+    3,
+    100
+  ],
+  "sensitivity_windows": [
+    [
+      340,
+      640
+    ],
+    [
+      380,
+      600
+    ]
+  ],
+  "paired_bootstrap_repeats": 200,
+  "bootstrap_seed": 2026101807,
+  "primary_fits": "Fixed internal validation subset; all-event fits and original-2048-bin quantization checks are secondary. No automatic winner or parameter search.",
+  "r11_downsample_diagnostic": "Retain every 5th original sample for all five possible phases; same full-rate pretrigger baseline in all phases. Compare sampled and 3-point parabolic peaks to original 20 MS/s sampled peak; no ADC requantization, analog filter model or simulated Nano resolution.",
+  "limits": [
+    "Archived Nano run has different gain/settings from later 600-second histogram. Its absolute amplitudes and fitted widths must not be equated with that later run.",
+    "Existing accepted-event set and internal split are not blind independent acquisition or detector efficiency.",
+    "Inherited fit window is an analysis assumption, not calibrated energy.",
+    "Native/offline replay cannot establish ARM timing, ADC behavior or hardware improvement."
+  ]
+}

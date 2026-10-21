@@ -1,0 +1,4 @@
+firmware,topology,requested_seconds,sampled_seconds,accepted,rejected,adc_overrun,errors,underflow,overflow,process_max_cycles,copy_end_max_cycles,dma_half_period_cycles,all_dma_blocks_processed,result,record
+0.8.0,SMA disconnected,3.0,3.00032,0,0,0,0,0,0,58273,8852,147456,True,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-peak-2026-10-18/empty-v080-3s-173604
+0.8.0,Probe on; Cs/Th absent,30.0,30.000128,2566,316,0,0,0,0,114127,8859,147456,True,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173709-138374
+0.8.0,Probe on; Cs present,60.0,60.000256,15896,2094,0,0,0,0,156519,17931,147456,True,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173943-644509

@@ -1,0 +1,19 @@
+{
+  "firmware": "0.8.2",
+  "snapshots": 100,
+  "samples": 409600,
+  "valid_sampled_seconds": 0.1024,
+  "elapsed_cycles_range": [
+    147609,
+    147618
+  ],
+  "dma_remaining_range": [
+    4093,
+    4093
+  ],
+  "adc_overrun": 0,
+  "firmware_errors": 0,
+  "every_segment_crc_statistics_and_sequence_verified": true,
+  "input": "SMA disconnected",
+  "raw_data_scope": "Finite 1.024 ms snapshots; upload gaps excluded"
+}

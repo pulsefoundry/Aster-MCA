@@ -1,0 +1,2 @@
+﻿Designator,Quantity_to_fit,Value,Footprint,Notes
+R22,0,10k 0.1%,Resistor_SMD:R_0402_1005Metric,DO NOT FIT in default assembly; no paste apertures. Fit 10k ONLY together with R21=40.2k for optional overall gain ~1.00. Manual rework and calibration required.

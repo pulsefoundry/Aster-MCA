@@ -1,0 +1,15 @@
+{
+  "scope": "Diagnostic pulse width, not gamma peak resolution. Contiguous sampled half-height width, including endpoint samples; not interpolated analog FWHM. No energy cuts.",
+  "r11_all1000_sampled_half_height_width_us": {
+    "p05": 0.4,
+    "p50": 0.45,
+    "p90": 0.5,
+    "p95": 0.5
+  },
+  "nano_existing_accepted_sampled_half_height_width_us": {
+    "p05": 1.25,
+    "p50": 1.5,
+    "p90": 1.5,
+    "p95": 1.5
+  }
+}

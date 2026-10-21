@@ -1,0 +1,16 @@
+MANUFACTURING NOTES — v0.3.1 SLOTCUT, 2.50 mm END BRIDGES
+SUPERSEDES v0.3 SlotCut with 1.00 mm end bridges.
+Revision responds to factory feedback requiring slot end connections wider than 2 mm.
+Outer profile: 32.00 x 38.00 mm. Two independent circuit designs.
+FR-4, 2 layers, 1 oz copper, finished thickness 1.6 mm per confirmed customer order. Vias tented on both sides.
+MILL THROUGH the closed inner contour in Gerber_BoardOutlineLayer.GKO.
+Unplated capsule slot: 27.00 x 2.00 mm overall, R1.00 mm ends.
+Component-side top-left coordinates: slot bounds X=2.50..29.50 mm, Y=18.00..20.00 mm.
+End centers: (3.50,19.00) and (28.50,19.00) mm.
+Retain BOTH solid FR-4 end bridges. Nominal minimum width is 2.50 mm at Y=19.00 mm.
+NO V-CUT. NO PERFORATION HOLES. NO FACTORY SEPARATION OF END BRIDGES.
+Original drills retained: 79 vias, four plated USB mounting slots 2.50 x 0.90 mm overall, four 1.10 mm NPTH USB locator holes.
+Drill_PTH_Through.DRL already includes vias; do not duplicate via drilling.
+Short top-silkscreen marks at Y=18/20 mm are manual bridge-stub trimming guides only.
+Each panel yields one CH32 and one AT32 board after customer separation.
+Please re-review the revised end bridges for manufacturing acceptance.

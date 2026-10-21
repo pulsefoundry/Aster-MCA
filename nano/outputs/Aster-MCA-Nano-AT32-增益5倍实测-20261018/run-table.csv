@@ -1,0 +1,8 @@
+condition,mode,nominal_opamp_gain,threshold_adc_codes,sampled_seconds,wall_seconds,snapshots,accepted,rejected,errors,adc_overrun,processed_blocks,blocks,process_max_us,copy_end_max_us,integrity,record
+SMA disconnected,raw,5.02,offline100,0.1024,1.4113419582135975,100,,,0,0,,,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/empty-raw-100-g502
+SMA disconnected,histogram,5.02,100,3.00032,3.016927082557231,,0,0,0,0,2930,2930,404.65972222222223,61.52777777777778,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/empty-hist-3s-th100-g502
+Probe background,raw,5.02,offline100,0.512,6.9673355827108026,500,,,0,0,,,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/probe-background-raw-500-g502
+Probe background,histogram,5.02,100,10.000384,10.024120999965817,,898,123,0,0,9766,9766,838.3333333333334,61.36805555555556,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185230-858445
+Cs present,raw,5.02,offline100,0.512,6.96997783286497,500,,,0,0,,,,,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/cs-source-raw-500-g502
+Cs present,histogram,5.02,100,10.000384,10.02209308417514,,2928,466,0,0,9766,9766,1273.0347222222222,310.7013888888889,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185356-980569
+Cs present,histogram,5.02,100,60.000256,60.04798787459731,,17611,2682,0,0,58594,58594,1082.5347222222222,119.58333333333333,PASS,/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185447-558141

@@ -1,0 +1,26 @@
+{
+  "capture-20261015-001908-112177": {
+    "histogram_exact": true,
+    "candidates": 5625,
+    "accepted": 5019,
+    "rejected": 606,
+    "underflow": 0,
+    "overflow": 0,
+    "in_range": 5019,
+    "scan_blocks": 828800,
+    "fine_blocks": 11239,
+    "scope": "Native execution of the same integer engine; ARM timing/SIMD require device self-test and acquisition validation."
+  },
+  "capture-20261015-001338-073683": {
+    "histogram_exact": true,
+    "candidates": 393,
+    "accepted": 356,
+    "rejected": 37,
+    "underflow": 0,
+    "overflow": 0,
+    "in_range": 356,
+    "scan_blocks": 138368,
+    "fine_blocks": 774,
+    "scope": "Native execution of the same integer engine; ARM timing/SIMD require device self-test and acquisition validation."
+  }
+}

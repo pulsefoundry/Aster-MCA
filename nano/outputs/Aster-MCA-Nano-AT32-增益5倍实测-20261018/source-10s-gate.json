@@ -1,0 +1,8 @@
+{
+  "histogram_integrity_passed": true,
+  "histogram_no_endpoint_clipping": true,
+  "raw_no_endpoint_clipping": true,
+  "histogram_errors": 0,
+  "histogram_adc_overrun": 0,
+  "raw_all_errors_zero": true
+}

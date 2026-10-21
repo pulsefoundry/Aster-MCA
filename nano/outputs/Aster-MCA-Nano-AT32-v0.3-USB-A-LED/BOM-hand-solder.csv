@@ -1,0 +1,39 @@
+﻿Designator,Quantity,Value,Footprint,Manufacturer,MPN,Assembly,Side,Specification,Notes
+C1,1,1u X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C2,1,4.7u X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C3,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C4,1,33n C0G 50V,C_0805_2012Metric,TDK,C2012C0G1H333J125AA,HAND SOLDER,TOP,"C0G/NP0, +/-5%",33nF C0G50V; AC coupling about 1.657ms with 50.2k passband input. Baseline/pole-zero correction remains firmware work.
+C7,1,10u X7R 10V,C_0805_2012Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",Bias reservoir; wait >=150ms before acquisition.
+C8,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C9,1,1n C0G 50V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"C0G/NP0, +/-5%",1nF ADC reservoir AFTER 100R R20. Feedback is taken before R20. Verify settling and ringing.
+C10,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C11,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C12,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C13,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C14,1,1u X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C15,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C16,1,100p C0G 50V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"C0G/NP0, +/-5%","Pre-buffer low-pass: 40.2k||10k with 100pF gives nominal 0.80us. Include op-amp, diode and PCB input capacitance in measured response."
+C17,1,100n X7R 10V,C_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",U3 local supply bypass; place close to pin 5.
+D1,1,USBLC6-2SC6,SOT-23-6,ST,USBLC6-2SC6,HAND SOLDER,TOP,"ST USBLC6-2SC6, 3.5pF maximum, duplicate I/O pins internally connected.","ST USBLC6-2SC6, 3.5pF maximum, duplicate I/O pins internally connected."
+D2,1,BAT54S,SOT-23,Nexperia,BAT54S,HAND SOLDER,TOP,Clamp attenuated input before U3; BAT54S leakage/temperature drift must be measured. No detector HV input.,Clamp attenuated input before U3; BAT54S leakage/temperature drift must be measured. No detector HV input.
+J1,1,1001-011-01101,USB_A_CNCTech_1001-011-01101_Horizontal,CnC Tech,1001-011-01101,HAND,TOP,"CnC Tech USB-A male, SMD signals, 2 plated shell slots and 2 NPTH pegs. Board edge at x=0. Hand solder shell.","CnC Tech USB-A male, SMD signals, 2 plated shell slots and 2 NPTH pegs. Board edge at x=0. Hand solder shell."
+J2,1,132289 SMA-F,SMA_Amphenol_132289_EdgeMount,Amphenol RF,132289,HAND,TOP,Amphenol 132289 ordinary SMA female edge jack. 0.062-inch board interface. Hand solder top and bottom grounds.,Amphenol 132289 ordinary SMA female edge jack. 0.062-inch board interface. Hand solder top and bottom grounds.
+R5,1,1M,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.063W",
+R6,1,40.2k 0.1%,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.063W","With R7=10k, default gain 0.1992 and input load approximately 50.2k in the passband, excluding 1M bleed."
+R7,1,10k 0.1%,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.063W",
+R13,1,1k 0.1%,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.063W",
+R14,1,1k 0.1%,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.063W",
+R16,1,10k,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.063W",
+R17,1,10k,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.063W",
+R18,1,10k,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.063W","PA9 is FT and VBUS input. Firmware must select input/USB function, not output."
+R19,1,0R,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Jumper, rated >=0.1A; >=0.063W",Analog supply link. DS requires VDDA at VDD potential; do not replace with high resistance.
+R20,1,100R 1%,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.063W",Isolates U3 from C9 1nF ADC reservoir. Feedback must stay before this resistor.
+R21,1,0R,R_0402_1005Metric,Generic qualified source,,HAND SOLDER,TOP,"Jumper, rated >=0.1A; >=0.063W","Default FITTED 0R for unity buffer. Optional gain: replace with 40.2k 0.1% AND fit R22=10k; overall gain ~1.00, input amplitude must decrease accordingly."
+SW1,1,B3U-1000P BOOT,SW_SPST_B3U-1000P,Omron,B3U-1000P,HAND SOLDER,TOP,"Hold BOOT while connecting USB, then release. Keep factory nBOOT1=1 and boot memory intact.","Hold BOOT while connecting USB, then release. Keep factory nBOOT1=1 and boot memory intact."
+U1,1,AT32F423CBT7,LQFP-48_7x7mm_P0.5mm,Artery,AT32F423CBT7,HAND SOLDER,TOP,LQFP48 AT32F423CBT7. External TLV9061 buffers PA0/ADC1_IN0. HICK+ACC USB; ADC ES0010 XTEST=0x09 workaround required.,LQFP48 AT32F423CBT7. External TLV9061 buffers PA0/ADC1_IN0. HICK+ACC USB; ADC ES0010 XTEST=0x09 workaround required.
+U2,1,XC6206P332MR-G,SOT-23,Torex,XC6206P332MR-G,HAND SOLDER,TOP,3.3V LDO; SOT-23 exact pinout. Do not substitute SOT-89 pin mapping.,3.3V LDO; SOT-23 exact pinout. Do not substitute SOT-89 pin mapping.
+U3,1,TLV9061IDBVR,SOT-23-5,Texas Instruments,TLV9061IDBVR,HAND SOLDER,TOP,"TI TLV9061IDBVR DBV/SOT23-5. NOT the SC70 pinout. Non-inverting buffer, default unity U3 gain. 3.3V supply.","TI TLV9061IDBVR DBV/SOT23-5. NOT the SC70 pinout. Non-inverting buffer, default unity U3 gain. 3.3V supply."
+LED1,1,Blue LED Vf 2.5-3V,0603,User stock,,HAND SOLDER,TOP,0603; verify cathode before soldering,PWR; cathode left (USB side)
+LED2,1,Blue LED Vf 2.5-3V,0603,User stock,,HAND SOLDER,TOP,0603; verify cathode before soldering,RUN; cathode left; MCU active low
+R1,1,1k,0603,Generic qualified source,,HAND SOLDER,TOP,1k ohm; 1% or 5%; >=0.063W,LED current limit
+R2,1,1k,0603,Generic qualified source,,HAND SOLDER,TOP,1k ohm; 1% or 5%; >=0.063W,LED current limit

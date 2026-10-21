@@ -1,0 +1,31 @@
+{
+  "method": "mcu-peak-4M-v0.1",
+  "acquisition_mode": "histogram",
+  "valid_histogram_run": true,
+  "sample_rate_hz": 4000000,
+  "samples": 12001280,
+  "sampled_seconds": 3.00032,
+  "channels": 2048,
+  "threshold_codes": 20,
+  "candidates": 0,
+  "accepted": 0,
+  "rejected": 0,
+  "rejection_flags": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "underflow": 0,
+  "overflow": 0,
+  "boundary_partial_events_excluded": 0,
+  "tail_samples_excluded": 6,
+  "analysis_window_seconds": 3.00023725,
+  "calibration": null,
+  "limitations": [
+    "Only the final histogram is retained; no raw waveform or event list.",
+    "Sample-clock duration rounds up to a 4096-sample DMA boundary (at most 1.024 ms).",
+    "No calibrated energy or dead-time/quality-cut corrected live time."
+  ]
+}

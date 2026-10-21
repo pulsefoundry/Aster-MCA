@@ -1,0 +1,76 @@
+{
+  "input_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/empty-raw-100-g502",
+  "input_state": "POST REWORK: R21=40.2k and R22=10k; nominal opamp gain5.02; user reports total50.2k and expected DC; USB connected, SMA disconnected",
+  "firmware": "0.8.2",
+  "diagnostic_only": true,
+  "offline_threshold_adc_codes": 100,
+  "quiet_window_max_range_codes_exclusive": 100,
+  "nominal_relative_gain": 5.02,
+  "firmware_quality_cuts_unchanged": true,
+  "integrity_rechecked": true,
+  "engine_histogram_exact_match": true,
+  "segment_samples": 4096,
+  "sample_rate_hz": 4000000,
+  "segment_us": 1024.0,
+  "snapshots": 100,
+  "verified_sampled_seconds": 0.1024,
+  "wall_seconds": 1.4113419582135975,
+  "minimum_code": 2041,
+  "maximum_code": 2112,
+  "segment_mean": {
+    "n": 100,
+    "median": 2081.2216796875,
+    "p10": 2080.7561767578127,
+    "p90": 2081.71357421875
+  },
+  "quiet_window_rms_code": {
+    "n": 6400,
+    "median": 2.650453193631397,
+    "p10": 1.3691636833131196,
+    "p90": 7.655057210172985
+  },
+  "quiet_window_rms_nominal_mv": {
+    "n": 6400,
+    "median": 2.1353748874471705,
+    "p10": 1.1030859753255111,
+    "p90": 6.1674044906178835
+  },
+  "quiet_windows": 6400,
+  "total_windows": 6400,
+  "candidates": 0,
+  "accepted": 0,
+  "rejected": 0,
+  "boundary_pending_excluded": 0,
+  "rejection_flags": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "accepted_peak_code": {
+    "n": 0
+  },
+  "accepted_pre_rms_code": {
+    "n": 0
+  },
+  "accepted_half_height_width_us": {
+    "n": 0
+  },
+  "amplitude_60_to_100_code_events": 0,
+  "illustrative_amplitude_band_adc_codes": [
+    301.2,
+    501.99999999999994
+  ],
+  "illustrative_amplitude_band_events": 0,
+  "limitations": [
+    "Independent 1.024 ms snapshots with unsampled upload gaps; no absolute detector rate.",
+    "Quiet-window RMS selects 16 us windows with range below 100 ADC codes and removes each window mean. This can suppress slow drift and exclude noise outliers.",
+    "Voltages assume a nominal 3.3 V ADC reference, not a measured reference.",
+    "Half-height width is counted on 0.25 us samples, not an analog bandwidth measurement.",
+    "The illustrative amplitude band scales the prior 60..100-code range by the supplied nominal gain ratio; it does not tag photopeak events or establish measured gain.",
+    "Changing the trigger threshold does not rescale the firmware baseline-noise/drift quality cuts.",
+    "Diagnostic sampling CPU load differs from normal histogram processing.",
+    "No resolution fit, energy calibration or proof against out-of-band oscillation."
+  ]
+}

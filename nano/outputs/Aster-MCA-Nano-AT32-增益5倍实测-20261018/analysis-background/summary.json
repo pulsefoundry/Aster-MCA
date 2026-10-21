@@ -1,0 +1,85 @@
+{
+  "input_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gain-rework-20261018/probe-background-raw-500-g502",
+  "input_state": "POST REWORK R21=40.2k R22=10k, nominal opamp gain5.02; original powered negative-pulse probe reconnected; sources removed; detector HV/gain unchanged by user confirmation",
+  "firmware": "0.8.2",
+  "diagnostic_only": true,
+  "offline_threshold_adc_codes": 100,
+  "quiet_window_max_range_codes_exclusive": 100,
+  "nominal_relative_gain": 5.02,
+  "firmware_quality_cuts_unchanged": true,
+  "integrity_rechecked": true,
+  "engine_histogram_exact_match": true,
+  "segment_samples": 4096,
+  "sample_rate_hz": 4000000,
+  "segment_us": 1024.0,
+  "snapshots": 500,
+  "verified_sampled_seconds": 0.512,
+  "wall_seconds": 6.9673355827108026,
+  "minimum_code": 1299,
+  "maximum_code": 2098,
+  "segment_mean": {
+    "n": 500,
+    "median": 2081.2635498046875,
+    "p10": 2080.8998046875,
+    "p90": 2081.7060791015624
+  },
+  "quiet_window_rms_code": {
+    "n": 31953,
+    "median": 0.9499177595981665,
+    "p10": 0.7498372219188641,
+    "p90": 1.7725665432677198
+  },
+  "quiet_window_rms_nominal_mv": {
+    "n": 31953,
+    "median": 0.7653146012387572,
+    "p10": 0.6041169024248662,
+    "p90": 1.4280931623006532
+  },
+  "quiet_windows": 31953,
+  "total_windows": 32000,
+  "candidates": 42,
+  "accepted": 38,
+  "rejected": 4,
+  "boundary_pending_excluded": 0,
+  "rejection_flags": [
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "accepted_peak_code": {
+    "n": 38,
+    "median": 174.361328125,
+    "p10": 115.4859375,
+    "p90": 378.78984375
+  },
+  "accepted_pre_rms_code": {
+    "n": 38,
+    "median": 0.9887178325774701,
+    "p10": 0.8342491931216582,
+    "p90": 1.7884119122396653
+  },
+  "accepted_half_height_width_us": {
+    "n": 38,
+    "median": 1.25,
+    "p10": 1.25,
+    "p90": 1.25
+  },
+  "amplitude_60_to_100_code_events": 0,
+  "illustrative_amplitude_band_adc_codes": [
+    301.2,
+    501.99999999999994
+  ],
+  "illustrative_amplitude_band_events": 7,
+  "limitations": [
+    "Independent 1.024 ms snapshots with unsampled upload gaps; no absolute detector rate.",
+    "Quiet-window RMS selects 16 us windows with range below 100 ADC codes and removes each window mean. This can suppress slow drift and exclude noise outliers.",
+    "Voltages assume a nominal 3.3 V ADC reference, not a measured reference.",
+    "Half-height width is counted on 0.25 us samples, not an analog bandwidth measurement.",
+    "The illustrative amplitude band scales the prior 60..100-code range by the supplied nominal gain ratio; it does not tag photopeak events or establish measured gain.",
+    "Changing the trigger threshold does not rescale the firmware baseline-noise/drift quality cuts.",
+    "Diagnostic sampling CPU load differs from normal histogram processing.",
+    "No resolution fit, energy calibration or proof against out-of-band oscillation."
+  ]
+}

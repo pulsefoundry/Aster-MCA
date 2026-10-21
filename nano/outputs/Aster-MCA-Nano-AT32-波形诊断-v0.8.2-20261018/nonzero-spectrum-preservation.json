@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-182211-268849",
+  "spectrum_accepted": 2826,
+  "session": 4,
+  "header_and_nonzero_spectrum_identical": true,
+  "histogram_sha256": "73efc5d8e5390792aea10dad4a3258a3e9c4f15bc2a20a93b327038e9dfdc889"
+}

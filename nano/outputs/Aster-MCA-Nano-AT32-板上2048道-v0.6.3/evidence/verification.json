@@ -1,0 +1,10 @@
+{
+  "program_exact_match": true,
+  "erased_padding_ff": true,
+  "flash_outside_erase_unchanged": true,
+  "options_unchanged": true,
+  "firmware_sha256": "f5aab7343fc84d456aaad627ad77f435f8f500e0eb7633f9b9c88d7496935cc8",
+  "written_bytes": 22200,
+  "erase_end_offset": 22528,
+  "leave_exit": 74
+}

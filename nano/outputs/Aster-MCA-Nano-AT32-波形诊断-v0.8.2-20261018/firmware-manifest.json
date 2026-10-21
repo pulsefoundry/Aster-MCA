@@ -1,0 +1,28 @@
+{
+  "firmware": "0.8.2",
+  "method": "mcu-peak-4M-v0.1",
+  "energy_estimator": "sampled_peak",
+  "bin_width_adc_codes": 1,
+  "mcu": "AT32F423CCT7",
+  "flash_start": "0x08000000",
+  "flash_bytes": 262144,
+  "erase_page_bytes": 2048,
+  "binary_bytes": 24004,
+  "sha256": "40bdc400d1342128eccd6fee780109b5912d556745b524498abc322755162dea",
+  "sdk_commit": "a60472b248c39034f111ac17e7b1286549594435",
+  "stack": "0x2000c000",
+  "reset_vector": "0x8001aa9",
+  "ram_static_bytes": 40112,
+  "remaining_ram_bytes": 9040,
+  "reserved_stack_bytes": 4096,
+  "hot_functions": {
+    "snapshot_copy": "0x20000144",
+    "halt_raw": "0x20000160",
+    "halt_sampling": "0x200001d4",
+    "histogram_finish_event.constprop.0": "0x20000270",
+    "histogram_copy.constprop.0": "0x200004bc",
+    "histogram_feed.constprop.0": "0x200005ac",
+    "pump_adc": "0x200007dc",
+    "DMA1_Channel1_IRQHandler": "0x20000938"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "record": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185447-558141",
+  "background": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185230-858445",
+  "mode": "peak",
+  "channels": 2048,
+  "full_scale": 2048.0,
+  "unit": "ADC code",
+  "sampled_seconds": 60.000256,
+  "threshold_codes": 100,
+  "acquisition_mode": "histogram",
+  "wall_seconds": 60.04798787459731,
+  "duty_cycle": 0.999205104512461,
+  "analysis_window_seconds": 60.00017325,
+  "condition": "POST REWORK R21=40.2k R22=10k, opamp gain5.02; Cs source remains at user-confirmed original position; detector HV/gain/connections unchanged; threshold100; 60-second peak-width comparison",
+  "calibration": null,
+  "mapping_version": "mcu-peak-2048-v1",
+  "underflow": 0,
+  "overflow": 0
+}

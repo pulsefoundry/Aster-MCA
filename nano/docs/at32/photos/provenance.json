@@ -1,0 +1,26 @@
+{
+  "IMG_1201.JPG": {
+    "source_filename": "IMG_1201.JPG",
+    "source_sha256": "5003f913f2d734792785032a7f37a8d93b2787729c451588b39e6b1fd57d8edb",
+    "published_sha256": "c87480ca2c430fe0e6a1ce53ddcfd7df05ed4a217b8dcc0eb7552f8870204741",
+    "published_bytes": 4177751,
+    "pixel_dimensions": [
+      4032,
+      3024
+    ],
+    "exif_orientation": 6,
+    "method": "JPEG compressed image data preserved exactly. EXIF/XMP/IPTC/comments removed; EXIF orientation retained. No resampling or recompression."
+  },
+  "IMG_1202.JPG": {
+    "source_filename": "IMG_1202.JPG",
+    "source_sha256": "5b5bcefff07ef50723d62a6488221ce6f124864cdffe87b4e513b5d92fe1e642",
+    "published_sha256": "c2183123add51bc0f7d288839b72067bd6fa22d25f398a0bb038415a0a9723c1",
+    "published_bytes": 3264628,
+    "pixel_dimensions": [
+      4032,
+      3024
+    ],
+    "exif_orientation": 6,
+    "method": "JPEG compressed image data preserved exactly. EXIF/XMP/IPTC/comments removed; EXIF orientation retained. No resampling or recompression."
+  }
+}

@@ -1,0 +1,34 @@
+﻿Designator,Quantity,Value,Footprint,Manufacturer,MPN,Assembly,Side,Specification,Notes
+C1,1,1u X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C2,1,4.7u X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C3,1,100n X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C4,1,33n C0G 50V,C_0805_2012Metric,TDK,C2012C0G1H333J125AA,HAND SOLDER,TOP,"C0G/NP0, +/-5%",33nF C0G 50V 5% 0805. AC coupling time constant about 3.63ms with a low-impedance source.
+C5,1,470p C0G 50V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"C0G/NP0, +/-5%",
+C6,1,470p C0G 50V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"C0G/NP0, +/-5%",
+C7,1,4.7u X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",Bias filter. Firmware must wait >=150ms after power-on before using pulse data.
+C8,1,100n X7R 10V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"X7R, +/-10%; check DC-bias derating",
+C9,1,1n C0G 50V,C_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"C0G/NP0, +/-5%",ADC charge reservoir isolated from OPA1 output by 100R. Settling still requires bench verification.
+D1,1,USBLC6-2SC6,SOT-23-6,ST,USBLC6-2SC6,HAND SOLDER,TOP,"ST USBLC6-2SC6, 3.5pF maximum, duplicate I/O pins internally connected.","ST USBLC6-2SC6, 3.5pF maximum, duplicate I/O pins internally connected."
+D2,1,BAT54S,SOT-23,Nexperia,BAT54S,HAND SOLDER,TOP,"Rail clamp at virtual summing node, AFTER current-limiting input resistance.","Rail clamp at virtual summing node, AFTER current-limiting input resistance."
+J1,1,1001-011-01101,USB_A_CNCTech_1001-011-01101_Horizontal,CnC Tech,1001-011-01101,HAND,TOP,"CnC Tech USB-A male, SMD signals, 2 plated shell slots and 2 NPTH pegs. Board edge at x=0. Hand solder shell.","CnC Tech USB-A male, SMD signals, 2 plated shell slots and 2 NPTH pegs. Board edge at x=0. Hand solder shell."
+J2,1,132289 SMA-F,SMA_Amphenol_132289_EdgeMount,Amphenol RF,132289,HAND,TOP,Amphenol 132289 ordinary SMA female edge jack. 0.062-inch board interface. Hand solder top and bottom grounds.,Amphenol 132289 ordinary SMA female edge jack. 0.062-inch board interface. Hand solder top and bottom grounds.
+R5,1,1M,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",
+R6,1,10k 1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",
+R7,1,100k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R8,1,110k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R9,1,27.4k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",Default fitted: overall low-frequency gain ~0.199. Remove R9 for gain ~1. R8 remains in feedback in both modes.
+R10,1,10k 1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",
+R11,1,100k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R12,1,110k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R13,1,10k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R14,1,10k 0.1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thin film, 25 ppm/C max; >=0.1W",
+R15,1,100R 1%,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",
+R16,1,1k,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",Limits BOOT pull-up current; no permanent external USB pullup.
+R17,1,10k,R_0603_1608Metric,Generic qualified source,,HAND SOLDER,TOP,"Thick film, 1%; >=0.1W",
+SW1,1,B3U-1000P BOOT,SW_SPST_B3U-1000P,Omron,B3U-1000P,HAND SOLDER,TOP,"Hold during USB connection, then release before ISP transfer.","Hold during USB connection, then release before ISP transfer."
+U1,1,CH32X033F8P6,TSSOP-20_4.4x6.5mm_P0.65mm,WCH,CH32X033F8P6,HAND SOLDER,TOP,"OPA2 first inverting stage, OPA1 second inverting stage. Both + inputs use shared pin 2. ADC0 samples through R15. Native ISP bootloader must be preserved.","OPA2 first inverting stage, OPA1 second inverting stage. Both + inputs use shared pin 2. ADC0 samples through R15. Native ISP bootloader must be preserved."
+U2,1,XC6206P332MR-G,SOT-23,Torex,XC6206P332MR-G,HAND SOLDER,TOP,3.3V LDO; SOT-23 exact pinout. Do not substitute SOT-89 pin mapping.,3.3V LDO; SOT-23 exact pinout. Do not substitute SOT-89 pin mapping.
+LED1,1,Blue LED Vf 2.5-3V,0603,User stock,,HAND SOLDER,TOP,0603; verify cathode before soldering,PWR; cathode left (USB side)
+LED2,1,Blue LED Vf 2.5-3V,0603,User stock,,HAND SOLDER,TOP,0603; verify cathode before soldering,RUN; cathode left; MCU active low
+R1,1,1k,0603,Generic qualified source,,HAND SOLDER,TOP,1k ohm; 1% or 5%; >=0.063W,LED current limit
+R2,1,1k,0603,Generic qualified source,,HAND SOLDER,TOP,1k ohm; 1% or 5%; >=0.063W,LED current limit

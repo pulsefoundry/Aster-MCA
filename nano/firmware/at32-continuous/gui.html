@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="aster-token" content="__ASTER_TOKEN__"><title>Aster Nano · 能谱</title><link rel="stylesheet" href="/gui.css"></head>
+<body><main>
+<header><div><h1>Aster Nano <span>能谱</span></h1><p id="acquisitionMode">AT32 · 1M / 4M 采集 · 电脑端处理</p></div><span id="connectionBadge" class="badge">未连接设备</span></header>
+<section class="toolbar" aria-label="采集控制">
+<label>设备<select id="port" aria-label="设备端口"></select></label><button id="connect">连接</button>
+<label><span id="durationLabel">时长 / 秒</span><input id="seconds" type="number" value="60" min="1" max="3600"></label>
+<label>输入状态<select id="condition"><option>其他 / 调试</option><option>探头本底（源已移开）</option><option>铯源在位</option><option>信号发生器</option><option>SMA 空载</option></select></label>
+<button id="start" class="primary">开始采集</button><button id="stop" class="stop" disabled>停止</button>
+</section>
+<div id="error" role="alert" hidden></div>
+<div id="notice" role="status" hidden></div>
+<section class="status"><div><span id="phase" class="badge">历史记录</span><strong id="recordName">尚无记录</strong></div><span id="validity">未标定 · 道号显示</span></section>
+<section class="metrics" aria-label="采集统计">
+<div><small>采样覆盖时长</small><strong id="elapsed">—</strong></div><div><small>通过筛选</small><strong id="accepted">—</strong></div>
+<div><small>筛选事件率</small><strong id="rate">—</strong></div><div><small>当前谱入谱数</small><strong id="inrange">—</strong></div>
+</section>
+<p id="coverageText" role="status"></p>
+<section class="chart-panel">
+<div class="plot-controls">
+<label>谱类型<select id="mode"><option value="area8">8 µs 积分谱</option><option value="peak">采样峰高谱</option></select></label>
+<label>道数<select id="channels"><option>512</option><option selected>1024</option><option>2048</option><option>4096</option></select></label>
+<label>纵轴<select id="units"><option value="counts">计数</option><option value="rate">计数 / 秒</option></select></label>
+<label class="check"><input id="log" type="checkbox">对数纵轴</label>
+<label class="check"><input id="showBackground" type="checkbox" checked>叠加本底</label>
+<label class="check"><input id="net" type="checkbox">扣本底</label>
+<button id="resetZoom">全谱</button><button id="fitZoom">适合数据</button>
+</div>
+<div class="canvas-wrap"><canvas id="plot" aria-label="能谱图：横轴道号，纵轴计数"></canvas><div id="tooltip" hidden></div></div>
+<div class="chart-note"><span id="mapping">—</span><span>拖动选区放大 · 双击恢复全谱</span></div>
+<div id="legend" class="legend"></div>
+</section>
+<section class="lower">
+<div class="history"><label>已保存的记录<select id="records"></select></label><button id="load">打开</button><button id="refresh">刷新</button><button id="setBackground">设为本底</button><button id="clearBackground">取消本底</button></div>
+<div class="exports"><button id="exportCsv">导出 CSV</button><button id="exportPng">保存谱图 PNG</button></div>
+</section>
+<details><summary>采集设置与记录信息</summary><div class="details-grid">
+<label>触发门限 / ADC 码<input id="threshold" type="number" min="1" max="2048" value="20"></label>
+<label>本次备注<input id="notes" type="text" maxlength="350" placeholder="例如探头、高压、增益和源的位置"></label>
+<p>峰高量程：4096 ADC 码；积分量程：2048 ADC 码·µs。更改显示道数不会改变已记录的脉冲或筛选条件。</p>
+<p id="conditionText"></p><p id="backgroundText"></p><p id="pathText" class="path"></p>
+</div></details>
+<footer>板上采谱模式按设定时长累计 2048 道，结束后读取并保存能谱，不保存原始波形。其他模式保留各自的波形记录。需要提前结束时请点“停止”。<br>事件率按采样覆盖时长计算，尚未校正脉冲筛选、边界排除和死时间，不能直接作为绝对计数率。“通过筛选”包含量程外事件；当前谱未进行能量标定。</footer>
+</main><script src="/gui.js"></script></body></html>

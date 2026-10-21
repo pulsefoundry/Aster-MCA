@@ -1,0 +1,10 @@
+{
+  "peak_engine_unchanged": true,
+  "engine_sha256": "c93c11a5b31a65bd1eba479b62f245ad4895a4b2a692b2c63eba30af94fab799",
+  "desktop_version": "0.6.1",
+  "desktop_bundle_version": "7",
+  "desktop_backend_self_test": "passed",
+  "desktop_history_open_verified": true,
+  "physical_v082_validation": "Readback, empty + powered-probe background + Cs source raw/histogram runs, and nonzero spectrum preservation passed; short-run scope only",
+  "desktop_v082_connected_in_native_ui": true
+}

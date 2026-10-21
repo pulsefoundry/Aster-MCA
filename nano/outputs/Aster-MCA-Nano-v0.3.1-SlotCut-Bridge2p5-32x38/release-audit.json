@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "project_uuid": "1f5b793c120145979acdaa6bb3df4724",
+  "pcb_name": "Aster-MCA-Nano-CH32-AT32-v0.3.1-SlotCut-Bridge2p5-32x38",
+  "native_pcb_drc": [],
+  "pcb_only_mechanical_combination": true,
+  "original_unit_netlists_match": true,
+  "units": [
+    {
+      "variant": "CH32",
+      "preserved": {
+        "COMPONENT": 41,
+        "ATTR": 160,
+        "LINE": 314,
+        "VIA": 35,
+        "POUR": 2,
+        "STRING": 13
+      }
+    },
+    {
+      "variant": "AT32",
+      "preserved": {
+        "COMPONENT": 47,
+        "ATTR": 184,
+        "LINE": 361,
+        "VIA": 44,
+        "POUR": 2,
+        "STRING": 13
+      }
+    }
+  ],
+  "outer_mm": [
+    32,
+    38
+  ],
+  "individual_finished_mm": [
+    32,
+    18
+  ],
+  "slot": {
+    "overall_mm": [
+      27,
+      2
+    ],
+    "bounds_from_top_left_mm": [
+      2.5,
+      18,
+      29.5,
+      20
+    ],
+    "end_radius_mm": 1,
+    "plated": false,
+    "representation": "Closed inner contour in GKO; mill through",
+    "bridges": 2,
+    "minimum_bridge_width_mm": 2.5,
+    "cut_holes": 0
+  },
+  "drills_match_original": true,
+  "drill_object_counts": {
+    "PTH": 83,
+    "NPTH": 4
+  },
+  "slot_to_copper_lower_bound_mm": 0.25,
+  "no_copper_in_join_or_bridges": true,
+  "cam_copper_changes": "Native copper repour follows shortened slot end clearances; local maximum boundary displacement 0.00654 mm. All non-region copper objects identical.",
+  "board_edge_track_clearance_rule_mm": 0.25,
+  "physical_separation_tested": false,
+  "limits": [
+    "Native PCB DRC and original per-unit netlist/geometry verification. No independent full copper connectivity extraction.",
+    "Manual separation, bridge transport strength and analog/USB performance remain untested.",
+    "Two designs must be declared to manufacturer; no promise of promotional pricing.",
+    "Final 32 x 18 mm units require trimming residual bridge stubs."
+  ],
+  "previous_release": "v0.3-SlotCut-32x38",
+  "finished_board_thickness_mm": 1.6,
+  "native_changed_ids": [
+    "DOCHEAD",
+    "SLOT_FINISH_18_0.2",
+    "SLOT_FINISH_18_30.4",
+    "SLOT_FINISH_20_0.2",
+    "SLOT_FINISH_20_30.4",
+    "pair_slot_outline"
+  ],
+  "gerber_layer_comparison": {
+    "GTL": {
+      "object_count": 935,
+      "non_region_objects_identical": true,
+      "pour_boundary_hausdorff_mm": 0.00654,
+      "pour_symmetric_difference_mm2": 0.03924,
+      "changes_only_at_slot_end_clearance_edges": true
+    },
+    "GBL": {
+      "object_count": 337,
+      "non_region_objects_identical": true,
+      "pour_boundary_hausdorff_mm": 0.00654,
+      "pour_symmetric_difference_mm2": 0.03924,
+      "changes_only_at_slot_end_clearance_edges": true
+    },
+    "GTS": {
+      "object_count": 237,
+      "non_region_objects_identical": true,
+      "pour_boundary_hausdorff_mm": 0,
+      "pour_symmetric_difference_mm2": 0,
+      "changes_only_at_slot_end_clearance_edges": true
+    },
+    "GBS": {
+      "object_count": 28,
+      "non_region_objects_identical": true,
+      "pour_boundary_hausdorff_mm": 0,
+      "pour_symmetric_difference_mm2": 0,
+      "changes_only_at_slot_end_clearance_edges": true
+    },
+    "GBO": {
+      "object_count": 764,
+      "non_region_objects_identical": true,
+      "pour_boundary_hausdorff_mm": 0,
+      "pour_symmetric_difference_mm2": 0,
+      "changes_only_at_slot_end_clearance_edges": true
+    }
+  },
+  "manufacturer_reapproval_pending": true,
+  "factory_feedback": "Minimum slot end bridge must exceed 2 mm; revised nominal minimum is 2.5 mm."
+}

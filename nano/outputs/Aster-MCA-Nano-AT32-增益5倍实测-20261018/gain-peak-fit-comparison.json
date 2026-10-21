@@ -1,0 +1,193 @@
+{
+  "firmware_before": "0.8.0",
+  "firmware_after": "0.8.2",
+  "source_before": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-173943-644509",
+  "source_after": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185447-558141",
+  "background_after": "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/at32-gui-recordings/capture-20261018-185230-858445",
+  "sampled_seconds_before": 60.000256,
+  "sampled_seconds_after": 60.000256,
+  "accepted_before": 15896,
+  "accepted_after": 17611,
+  "threshold_before": 20,
+  "threshold_after": 100,
+  "nominal_opamp_gain_before": 1.0,
+  "nominal_opamp_gain_after": 5.02,
+  "native_channels": 2048,
+  "unchanged_integer_peak_engine": true,
+  "before": {
+    "success": true,
+    "bound_warning": false,
+    "window_adc_codes": [
+      62,
+      102
+    ],
+    "bin_width_adc_codes": 1,
+    "centroid_adc_code": 78.33330109564639,
+    "sigma_adc_codes": 5.720447756649003,
+    "fwhm_adc_codes": 13.470625043732353,
+    "apparent_fwhm_percent": 17.196549686173032,
+    "fitted_peak_events": 2950.731899273107,
+    "observed_roi_counts": 4322,
+    "deviance": 72.88822105446545,
+    "dof": 35,
+    "parameters_in_nominal_pre_gain_codes": [
+      2950.731899273107,
+      78.33330109564639,
+      5.720447756649003,
+      61.69249195860883,
+      7.190732293813402
+    ]
+  },
+  "after": {
+    "success": true,
+    "bound_warning": false,
+    "window_adc_codes": [
+      311,
+      512
+    ],
+    "bin_width_adc_codes": 1,
+    "centroid_adc_code": 408.78747553470146,
+    "sigma_adc_codes": 27.89819511551394,
+    "fwhm_adc_codes": 65.69522907733331,
+    "apparent_fwhm_percent": 16.07075387801516,
+    "fitted_peak_events": 3377.477089923441,
+    "observed_roi_counts": 5121,
+    "deviance": 266.57332325763355,
+    "dof": 196,
+    "parameters_in_nominal_pre_gain_codes": [
+      3377.477089923441,
+      81.4317680348011,
+      5.557409385560546,
+      77.75223971452259,
+      9.39387165500631
+    ]
+  },
+  "after_sensitivity": [
+    {
+      "success": true,
+      "bound_warning": false,
+      "window_adc_codes": [
+        291,
+        532
+      ],
+      "bin_width_adc_codes": 1,
+      "centroid_adc_code": 408.86276350247863,
+      "sigma_adc_codes": 26.67125102127954,
+      "fwhm_adc_codes": 62.805996530135786,
+      "apparent_fwhm_percent": 15.36114367376354,
+      "fitted_peak_events": 3195.65264870135,
+      "observed_roi_counts": 5573,
+      "deviance": 342.1377580651673,
+      "dof": 236,
+      "parameters_in_nominal_pre_gain_codes": [
+        3195.65264870135,
+        81.44676563794395,
+        5.312998211410267,
+        92.60383395085411,
+        6.436782445143458
+      ]
+    },
+    {
+      "success": true,
+      "bound_warning": false,
+      "window_adc_codes": [
+        331,
+        492
+      ],
+      "bin_width_adc_codes": 1,
+      "centroid_adc_code": 408.27994741894474,
+      "sigma_adc_codes": 29.400042880782912,
+      "fwhm_adc_codes": 69.23181029952714,
+      "apparent_fwhm_percent": 16.95694602127665,
+      "fitted_peak_events": 3624.3709745907477,
+      "observed_roi_counts": 4744,
+      "deviance": 221.893547632075,
+      "dof": 156,
+      "parameters_in_nominal_pre_gain_codes": [
+        3624.3709745907477,
+        81.33066681652286,
+        5.856582247167911,
+        58.88292746296504,
+        12.404197151348532
+      ]
+    },
+    {
+      "success": true,
+      "bound_warning": false,
+      "window_adc_codes": [
+        310,
+        515
+      ],
+      "bin_width_adc_codes": 5,
+      "centroid_adc_code": 408.8858710943806,
+      "sigma_adc_codes": 27.686656004938886,
+      "fwhm_adc_codes": 65.1970925394497,
+      "apparent_fwhm_percent": 15.945058792310448,
+      "fitted_peak_events": 3345.8053806932803,
+      "observed_roi_counts": 5149,
+      "deviance": 52.746138823138494,
+      "dof": 36,
+      "parameters_in_nominal_pre_gain_codes": [
+        3345.8053806932803,
+        81.45136874390053,
+        5.515270120505755,
+        79.95842363796648,
+        8.39358687380157
+      ]
+    },
+    {
+      "success": true,
+      "bound_warning": false,
+      "window_adc_codes": [
+        310,
+        520
+      ],
+      "bin_width_adc_codes": 10,
+      "centroid_adc_code": 408.6680578188141,
+      "sigma_adc_codes": 27.246247222618262,
+      "fwhm_adc_codes": 64.16000911084706,
+      "apparent_fwhm_percent": 15.699785653248401,
+      "fitted_peak_events": 3305.6104911930393,
+      "observed_roi_counts": 5166,
+      "deviance": 41.056172651769586,
+      "dof": 16,
+      "parameters_in_nominal_pre_gain_codes": [
+        3305.6104911930393,
+        81.4079796451821,
+        5.427539287374156,
+        79.85370903643442,
+        9.117251755850997
+      ]
+    }
+  ],
+  "centroid_ratio": 5.2185656651385655,
+  "after_nominal_peak_mv": 329.3453782384069,
+  "after_minus_before_percentage_points": -1.1257958081578714,
+  "bootstrap": {
+    "method": "Independent parametric Poisson resampling of each fitted gross-source ROI, conditional on its Gaussian + linear-continuum model; no systematic errors",
+    "seed": 20261018502,
+    "successful": 300,
+    "before_fwhm_percent_95": [
+      16.137910221600592,
+      18.403924108106537
+    ],
+    "after_fwhm_percent_95": [
+      15.269022340834365,
+      16.941951269225807
+    ],
+    "difference_percentage_points_95": [
+      -2.5034672478740827,
+      0.33322815089291047
+    ]
+  },
+  "limitations": [
+    "Apparent FWHM/centroid assumes negligible energy offset and linear response; no multipoint energy calibration.",
+    "Fit is bin-integrated Gaussian plus nonnegative linear continuum on unsmoothed gross-source counts, not background-subtracted counts.",
+    "Nominal gain ratio5.02 determines scaled fit ROI and numerical units, not the fitted centroid ratio.",
+    "Native1-code fits are primary;5/10-code regrouping and ROI changes are sensitivity checks.",
+    "The detector HV/gain and source placement were user-confirmed unchanged, but source was physically removed/replaced and the runs were taken at different times.",
+    "The peak engine is unchanged but firmware differs0.8.0/0.8.2. Trigger threshold changes20/100 and baseline quality cuts remain fixed in ADC units.",
+    "Statistical bootstrap intervals exclude model/window, drift, source positioning, analog behavior and quality-selection systematic errors.",
+    "This is one short before/after experiment, not a detector or hardware resolution limit."
+  ]
+}
