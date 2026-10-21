@@ -36,6 +36,6 @@ The next gate is a stable baseline under a controlled input condition, followed 
 
 ## 第三方代码 / Third-party code
 
-WCH 源码保留其版权及 WCH 微控制器使用限制，见 [SOURCE-NOTES](../../firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt)。仓库公开不改变这些条款。
+Nano 原创内容采用 [MIT](../../LICENSE)。WCH 源码保留其版权及 WCH 微控制器使用限制，见 [SOURCE-NOTES](../../firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt)和[第三方说明](../../THIRD_PARTY_NOTICES.md)。
 
-WCH source retains its original notices and restrictions to WCH microcontrollers. Public repository visibility does not change those terms.
+Nano project-authored material uses MIT. WCH source retains its original notices and restrictions to WCH microcontrollers; it is not relicensed as MIT.

@@ -4,6 +4,12 @@ The Aster MCA FPGA firmware, HDL testbenches, Python host utility, and parts of
 the technical documentation were written and refined with assistance from
 OpenAI Codex/ChatGPT.
 
+The MCU-based Nano subproject also used Codex/ChatGPT for firmware, host
+software, documentation and offline analysis. Its board-level measurements,
+algorithm checks and known limits are documented independently in
+[`nano/`](nano/). The CH32 baseline investigation remains unresolved; archived
+AT32 spectra are not a claim that every configuration is validated.
+
 AI-generated or AI-suggested material was not treated as independent evidence
 that the instrument worked. The released firmware was checked with HDL
 simulation, host-side protocol tests, complete synthesis and place-and-route,

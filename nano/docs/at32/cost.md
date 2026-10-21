@@ -55,7 +55,7 @@ The priced subtotal is **not a complete assembled-board price**. Add the actual 
 
 The public JSON records the source worksheet row and original unit price for each component. R21 now uses the same part as R6, and R22 uses the same part as R7. The original v0.3 BOM remains unchanged as fabrication history; this calculation applies the documented gain rework.
 
-在仓库根目录运行 / Run from the repository root:
+在 Nano 项目目录运行 / Run from the Nano project directory (`Aster-MCA/nano/`):
 
 ```sh
 python3 scripts/calculate_at32_cost.py --check

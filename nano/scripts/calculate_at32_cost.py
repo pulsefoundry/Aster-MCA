@@ -57,7 +57,7 @@ def render():
         '## 复算和来源 / Reproduction and source', '',
         '[价格输入 JSON](cost-inputs.json) 保存逐项原单价、报价行号、立创料号和商品链接。原报价为 `'+data['quotation_file']+'`，工作表 `sheet`，AD 列（单价/RMB）；文件 SHA256 为 `'+data['quotation_sha256']+'`。公开的摘录只含所需物料数据，原 XLS 没有上传。', '',
         'The public JSON records the source worksheet row and original unit price for each component. R21 now uses the same part as R6, and R22 uses the same part as R7. The original v0.3 BOM remains unchanged as fabrication history; this calculation applies the documented gain rework.', '',
-        '在仓库根目录运行 / Run from the repository root:', '',
+        '在 Nano 项目目录运行 / Run from the Nano project directory (`Aster-MCA/nano/`):', '',
         '```sh', 'python3 scripts/calculate_at32_cost.py --check', '```', '',
         '按完整精度先汇总，最后四舍五入到分；明细保留报价原精度。 / Sum at full precision, then round the subtotal to two decimal places.', '',
     ]

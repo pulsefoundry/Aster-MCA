@@ -13,7 +13,7 @@ Thank you for helping improve Aster MCA.
 
 ## Before opening a pull request
 
-Run the tests from `firmware/mca-v1`:
+For FPGA MCA changes, run the tests from `firmware/mca-v1`:
 
 ```sh
 make sim
@@ -38,3 +38,20 @@ Hardware changes must include:
 Do not propose connecting detector high voltage directly to the BNC input.
 Any future high-voltage module or bias tee must be documented and reviewed as
 a separate safety-critical subsystem.
+
+## Nano changes
+
+Nano is maintained under `nano/`. Keep AT32 and CH32 hardware and validation
+claims separate. From `nano/` on macOS, run:
+
+```sh
+python3 -m unittest discover -s firmware/at32-peak-scope -p 'test_*.py' -v
+python3 -m unittest discover -s firmware/at32-continuous -p 'test_*gui.py' -v
+python3 scripts/verify_artifacts.py
+python3 scripts/calculate_at32_cost.py --check
+```
+
+These tests use simulated interfaces and saved data, not a connected board.
+Preserve archived artifact bytes and use a new output folder for replay.
+See [Nano development](nano/docs/development.md) and
+[Nano licensing](nano/THIRD_PARTY_NOTICES.md).

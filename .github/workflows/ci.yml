@@ -17,3 +17,22 @@ jobs:
       - name: Run host protocol tests
         working-directory: firmware/mca-v1
         run: make host-test
+
+  nano-software-tests:
+    runs-on: macos-latest
+    defaults:
+      run:
+        working-directory: nano
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run peak engine and waveform protocol tests
+        run: python3 -m unittest discover -s firmware/at32-peak-scope -p 'test_*.py' -v
+      - name: Run host and GUI tests
+        run: python3 -m unittest discover -s firmware/at32-continuous -p 'test_*gui.py' -v
+      - name: Verify archived evidence and itemized cost
+        run: |
+          python3 scripts/verify_artifacts.py
+          python3 scripts/calculate_at32_cost.py --check

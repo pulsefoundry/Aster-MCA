@@ -2,7 +2,13 @@
 
 [中文总览](../README.md) | [English overview](../README.en.md)
 
-Run the commands below from the repository root. Software tests and offline replay do not require a connected board. Current host/native-app validation is on macOS with Python 3 and a working C compiler (`cc`).
+Run the commands below from the Nano project directory. From an Aster MCA checkout, first enter `nano/`:
+
+```sh
+cd nano
+```
+
+Software tests and offline replay do not require a connected board. Current host/native-app validation is on macOS with Python 3 and a working C compiler (`cc`).
 
 ## Current firmware build
 
@@ -87,4 +93,4 @@ The analyzer rechecks segment IDs, lengths, ADC range, CRC, statistics and stop 
 - `docs`: bilingual project/track documentation, price inputs and photographs.
 - `work`: ignored SDKs, toolchains, virtual environments and temporary captures.
 
-Manufacturing and experimental artifacts keep their original bytes. Do not normalize archived line endings or overwrite measurements when reproducing analyses. Project licensing has not been selected; retain all third-party notices and restrictions.
+Manufacturing and experimental artifacts keep their original bytes. Do not normalize archived line endings or overwrite measurements when reproducing analyses. Nano original project material uses [MIT](../LICENSE); retain all [third-party notices and restrictions](../THIRD_PARTY_NOTICES.md).

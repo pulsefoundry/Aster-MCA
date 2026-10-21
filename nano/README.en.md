@@ -4,16 +4,16 @@
 
 A low-cost, **32 × 18 mm USB multichannel pulse-height analyzer prototype**, with separate AT32 and CH32 development tracks. It accepts the low-voltage output of a detector's existing amplifier/shaper. The board samples pulses and accumulates a pulse-height histogram; the computer displays and saves the result.
 
-This project is separate from the FPGA-based [Aster MCA](https://github.com/pulsefoundry/Aster-MCA).
+Nano is the MCU-based subproject of the [Aster MCA family](../README.md).
 
 ## Development tracks
 
-| Track | Status | Documentation | Branch |
-|---|---|---|---|
-| **AT32F423 + TLV9061** | Active spectroscopy track; 4 MS/s, 2048 channels, archived cesium-source measurements | [AT32 guide](docs/at32/README.en.md) | [codex/at32](https://github.com/pulsefoundry/Aster-MCA-Nano/tree/codex/at32) |
-| **CH32X033F8P6** | **Baseline drift and abnormal spikes are still under investigation.** Analog-chain diagnostics are available; reliable spectroscopy has not been validated. | [CH32 status and hardware](docs/ch32/README.md) | [codex/ch32](https://github.com/pulsefoundry/Aster-MCA-Nano/tree/codex/ch32) |
+| Track | Status | Documentation |
+|---|---|---|
+| **AT32F423 + TLV9061** | Active spectroscopy track; 4 MS/s, 2048 channels, archived cesium-source measurements | [AT32 guide](docs/at32/README.en.md) |
+| **CH32X033F8P6** | **Baseline drift and abnormal spikes are still under investigation.** Analog-chain diagnostics are available; reliable spectroscopy has not been validated. | [CH32 status and hardware](docs/ch32/README.md) |
 
-`main` contains the overview, shared desktop software and experiment archives. The device branches provide separate entry points; each firmware implementation has its own directory. Documentation updated on 2026-10-21; latest physical-board measurements were recorded on 2026-10-18.
+This directory is maintained at `Aster-MCA/nano/`, with separate documentation and firmware directories for AT32 and CH32. The original Nano main-branch history was imported without squashing; the former repository retains historical entry points. See the [migration record](docs/repository-migration-2026-10-21.md). Documentation updated on 2026-10-21; latest physical-board measurements were recorded on 2026-10-18.
 
 ## AT32 prototype
 
@@ -97,4 +97,4 @@ Historical v0.7.x waveform-streaming experiments failed sustained processing wit
 
 ## Licensing
 
-A project-wide open-source license has not yet been selected. Public visibility does not change third-party license terms. WCH code retains its original notices and WCH-microcontroller-only restrictions; see [SOURCE-NOTES](firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt). Obtain the AT32 SDK and complete toolchains from their original sources.
+Nano project-authored material, including hardware designs, is licensed under [MIT](LICENSE). Third-party material retains its own terms. Imported WCH SDK and startup code retain their original notices and WCH-microcontroller-only restrictions; see [third-party notices](THIRD_PARTY_NOTICES.md) and [SOURCE-NOTES](firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt). Obtain the AT32 SDK and complete toolchains from their original sources.

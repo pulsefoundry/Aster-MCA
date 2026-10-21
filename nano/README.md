@@ -4,14 +4,14 @@
 
 低成本、**32 × 18 mm** 的 USB 多道脉冲幅度分析器原型。接收探测器已有放大／整形电路的低压输出，板上完成 ADC 采样和脉冲幅度直方图累计，电脑负责显示和保存。
 
-本项目分为 **AT32 与 CH32 两条开发主线**，与 FPGA 版 [Aster MCA](https://github.com/pulsefoundry/Aster-MCA) 是独立项目。
+Nano 是 [Aster MCA 系列](../README.zh-CN.md)中的 MCU 子项目，分为 **AT32 与 CH32 两条开发主线**。
 
-| 主线 | 状态 | 资料入口 | Git 分支 |
-|---|---|---|---|
-| **AT32F423 + TLV9061** | 当前采谱主线；4 MS/s、2048 道，已保存铯源实测 | [AT32 指南](docs/at32/README.md) | [codex/at32](https://github.com/pulsefoundry/Aster-MCA-Nano/tree/codex/at32) |
-| **CH32X033F8P6** | **仍在处理基线漂移与异常尖峰问题**；目前为模拟链诊断阶段，尚未完成可靠采谱验证 | [CH32 状态与硬件](docs/ch32/README.md) | [codex/ch32](https://github.com/pulsefoundry/Aster-MCA-Nano/tree/codex/ch32) |
+| 主线 | 状态 | 资料入口 |
+|---|---|---|
+| **AT32F423 + TLV9061** | 当前采谱主线；4 MS/s、2048 道，已保存铯源实测 | [AT32 指南](docs/at32/README.md) |
+| **CH32X033F8P6** | **仍在处理基线漂移与异常尖峰问题**；目前为模拟链诊断阶段，尚未完成可靠采谱验证 | [CH32 状态与硬件](docs/ch32/README.md) |
 
-`main` 保存总览、共享上位机和实验档案；两条器件分支分别提供开发入口，固件位于各自的 `firmware` 子目录。文档整理于 2026-10-21，最近一次上板实验为 2026-10-18。
+本目录位于 `Aster-MCA/nano/`，两条主线分别保留文档和固件目录。Nano 原主分支提交历史已完整导入，原独立仓库保留历史入口；详见[迁移说明](docs/repository-migration-2026-10-21.md)。文档整理于 2026-10-21，最近一次上板实验为 2026-10-18。
 
 ## AT32 实物
 
@@ -91,4 +91,4 @@
 
 [开发指南 / Development guide](docs/development.md)包含固件构建、原生软件打包、离线拟合及档案校验。`work/` 中的第三方 SDK、工具链、虚拟环境和临时数据不纳入 Git。v0.7.x 是未通过真实脉冲持续处理的历史实验，v0.8.1 RAW 已判失败；两者均不作为当前采谱版本。
 
-项目自身尚未指定开源许可证。仓库公开不改变第三方授权条款；CH32 中保留的 WCH 代码沿用原版权声明和仅用于 WCH 微控制器的限制，见 [SOURCE-NOTES](firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt)。
+Nano 项目原创内容（含硬件设计）采用 [MIT](LICENSE)。第三方材料继续适用各自条款；CH32 中保留的 WCH SDK 和启动代码沿用原版权声明及仅用于 WCH 微控制器的限制，详见[第三方说明](THIRD_PARTY_NOTICES.md)和 [SOURCE-NOTES](firmware/ch32-selftest-v0.3/SOURCE-NOTES.txt)。

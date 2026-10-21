@@ -2,6 +2,28 @@
 
 [English](README.md)
 
+## Aster MCA 系列
+
+本仓库包含 FPGA MCA 与小型 MCU 方案 **Aster MCA Nano**。各主线分别保留
+硬件、固件、实测数据和验证状态。
+
+| 主线 | 采样／道数 | 状态与入口 |
+| --- | --- | --- |
+| FPGA MCA v0.1 | 12 位、10 MSPS／4096 道 | 已实测原型；有必须处理的装配勘误，见下文。 |
+| FPGA MCA v2.0 | 16 位、40 MSPS 构想 | 尚未投产，见[方案与限制](hardware/rev2.0-preliminary/README.md)。 |
+| **Nano AT32F423 + TLV9061** | 12 位、4 MS/s／2048 道 | 已保存铯源实测，见 [AT32 指南](nano/docs/at32/README.md)。 |
+| **Nano CH32X033F8P6** | 模拟链／ADC 诊断 | **仍在处理基线漂移和异常尖峰问题**，见 [CH32 状态](nano/docs/ch32/README.md)。 |
+
+**Nano 入口：**[中文介绍](nano/README.md) · [English](nano/README.en.md) ·
+[固件、照片、原理图和 Gerber](nano/README.md#原理图gerber-和装配) ·
+[单板成本明细](nano/docs/at32/cost.md)。
+AT32 已计价部分约 ¥17.86，外购 USB-A、SMA 和库存 LED 的实际价格另计。
+Nano 项目原创内容采用 [MIT](nano/LICENSE)，第三方材料保留各自条款。
+
+下文保留 FPGA MCA 的说明；Nano 的使用方式和实测结果集中在 [`nano/`](nano/)。
+
+## FPGA MCA v0.1
+
 Aster MCA 是一块面向**已经过前置放大与调理的低压探测器脉冲**的紧凑型
 4096 道多道分析仪。板上集成 12 位 10 MSPS ADC、Gowin GW1N-4 FPGA 和
 CH347T USB/JTAG/UART 桥，单根 USB-C 完成供电、通信和 FPGA SRAM 配置。
@@ -190,5 +212,7 @@ Codex/ChatGPT 的协助下完成。发布内容随后经过 HDL 仿真、完整�
 
 ## 许可证
 
-硬件设计文件采用 CERN-OHL-P-2.0；固件、上位机、文档、测试、图片和示例
+Nano 项目原创内容（包括其硬件设计）采用 MIT，见 [nano/LICENSE](nano/LICENSE)
+及[第三方说明](nano/THIRD_PARTY_NOTICES.md)。
+根目录 `hardware/` 下的 FPGA 硬件设计文件采用 CERN-OHL-P-2.0；固件、上位机、文档、测试、图片和示例
 数据采用 MIT。适用范围和完整许可证文本见 [LICENSE.md](LICENSE.md)。

@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Integrated Aster MCA Nano under `nano/`, preserving its original main-branch
+  commit history and exact hardware/measurement artifacts.
+- Added bilingual family navigation for FPGA MCA, Nano AT32 and Nano CH32.
+- Licensed Nano project-authored material under MIT, with explicit retention
+  of third-party WCH restrictions. Existing FPGA hardware remains CERN-OHL-P-2.0.
+- Retained the AT32 v0.8.2 firmware, prototype photos, spectra and itemized
+  cost; marked CH32 baseline drift as unresolved.
 - Prepared a public repository layout and documented the v0.1 hardware errata.
 - Added measured Cs-137 and background example data.
 - Added a prebuilt FPGA v1.3 SRAM image and reproducible tests.
