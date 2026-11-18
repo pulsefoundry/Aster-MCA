@@ -1,0 +1,25 @@
+{
+  "archives": [
+    {
+      "file": "awg-bench.zip",
+      "files": 1557,
+      "unchanged_binary_files": 1287,
+      "bytes": 4314329
+    },
+    {
+      "file": "cs137-600s.zip",
+      "files": 8487,
+      "unchanged_binary_files": 8466,
+      "bytes": 6024223
+    },
+    {
+      "file": "wait-deadline-sweep.zip",
+      "files": 4838,
+      "unchanged_binary_files": 4756,
+      "bytes": 5194227
+    }
+  ],
+  "metadata_portable": true,
+  "binary_capture_bytes_unchanged": true,
+  "excluded": "SDKs, toolchains, Flash/options backups and build objects."
+}

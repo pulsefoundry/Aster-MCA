@@ -1,0 +1,122 @@
+{
+  "file": "N61118A.bin",
+  "format": "OWON Ultrawave native;4LEint32+32byte filename+8192LEuint16",
+  "bytes": 16432,
+  "sha256": "694b1d1c8fba6a53dd2dfc7ceef1cc5676572c86e490f4c379f8348ff12123d2",
+  "payload_sha256": "b5097b79a666ea285081def4915605aaf705bcf725c0db89c9246d216aa3c0d7",
+  "points": 8192,
+  "shape": "Single negative sin-squared pulse from nominal zero baseline",
+  "point_time_us_at_target_frequency": 0.125,
+  "period_us": 1024.0,
+  "pulse_start_us": 128.0,
+  "pulse_end_us": 132.0,
+  "total_pulse_width_us": 4.0,
+  "pulse_fwhm_us": 2.0,
+  "first_edge_to_peak_us": 2.0,
+  "peak_to_baseline_us": 2.0,
+  "target_frequency_hz": 976.5625,
+  "initial_instrument_settings": {
+    "amplitude_vpp": 0.5,
+    "offset_v": -0.25,
+    "load": "High Z",
+    "nominal_baseline_v": 0.0,
+    "nominal_negative_peak_v": -0.5,
+    "frequency_hz": 976.5625,
+    "output_enable": false
+  },
+  "amplitude_scan": [
+    {
+      "amplitude_mvpp": 100,
+      "offset_mv": -50.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -100
+    },
+    {
+      "amplitude_mvpp": 150,
+      "offset_mv": -75.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -150
+    },
+    {
+      "amplitude_mvpp": 200,
+      "offset_mv": -100.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -200
+    },
+    {
+      "amplitude_mvpp": 250,
+      "offset_mv": -125.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -250
+    },
+    {
+      "amplitude_mvpp": 300,
+      "offset_mv": -150.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -300
+    },
+    {
+      "amplitude_mvpp": 400,
+      "offset_mv": -200.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -400
+    },
+    {
+      "amplitude_mvpp": 500,
+      "offset_mv": -250.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -500
+    },
+    {
+      "amplitude_mvpp": 750,
+      "offset_mv": -375.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -750
+    },
+    {
+      "amplitude_mvpp": 1000,
+      "offset_mv": -500.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -1000
+    },
+    {
+      "amplitude_mvpp": 1250,
+      "offset_mv": -625.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -1250
+    },
+    {
+      "amplitude_mvpp": 1500,
+      "offset_mv": -750.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -1500
+    },
+    {
+      "amplitude_mvpp": 1750,
+      "offset_mv": -875.0,
+      "nominal_baseline_mv": 0,
+      "nominal_negative_peak_mv": -1750
+    }
+  ],
+  "amplitude_and_frequency_embedded_in_bin": false,
+  "instrument_uploaded": false,
+  "analog_output_measured": false,
+  "previous_format_evidence": {
+    "file": "<nano-workspace>/outputs/Aster-MCA-Nano-峰值保持测试波形-20261116/N61116A.bin",
+    "same_payload": true,
+    "previous_readback_verified": true,
+    "previously_reported_model": "AG1022",
+    "evidence": "work/owon-awg-20261116/upload-first.json"
+  },
+  "validation": {
+    "header_roundtrip": true,
+    "sample_payload_roundtrip": true,
+    "symmetry": true,
+    "single_pulse": true,
+    "matching_previous_verified_payload": true,
+    "maximum_normalized_geometry_error": 1.5193848727390602e-05
+  },
+  "scope": "Offline generation only. No USB/network device commands and no Nano operation.",
+  "instrument_connection_attempted": false,
+  "generated_at": "2026-11-18T22:12:56.935461+08:00"
+}

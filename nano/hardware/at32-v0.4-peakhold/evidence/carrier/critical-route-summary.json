@@ -1,0 +1,51 @@
+{
+  "HOLD_CAP": {
+    "original_trace_length_mm": 8.615153313703988,
+    "actual_trace_length_mm": 8.615153313703994,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ]
+  },
+  "CAPTURE_IN": {
+    "original_trace_length_mm": 5.212792206135785,
+    "actual_trace_length_mm": 5.212792206135786,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ]
+  },
+  "PEAK_DRV": {
+    "original_trace_length_mm": 8.029328098979208,
+    "actual_trace_length_mm": 8.029328098979217,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ]
+  },
+  "PEAK_DIODE_A": {
+    "original_trace_length_mm": 10.096883835420687,
+    "actual_trace_length_mm": 10.096883835420684,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ]
+  },
+  "PEAK_FB": {
+    "original_trace_length_mm": 9.676150070512056,
+    "actual_trace_length_mm": 16.033395679557902,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ]
+  },
+  "PEAK_ADC": {
+    "original_trace_length_mm": 15.535382386916243,
+    "actual_trace_length_mm": 25.234746432051207,
+    "vias": 2,
+    "layers": [
+      "B.Cu",
+      "F.Cu"
+    ]
+  }
+}

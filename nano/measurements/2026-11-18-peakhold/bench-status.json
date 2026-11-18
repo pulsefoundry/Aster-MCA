@@ -1,0 +1,208 @@
+{
+  "started": "2026-11-18T22:30:12.839198+08:00",
+  "generator_control": "Operator front panel; only Nano USB connected.",
+  "operator_last_confirmed_output": "OFF",
+  "waveform": "N61118A.bin recalled per operator confirmation",
+  "nominal_generator_settings": {
+    "amplitude_mvpp": 300,
+    "offset_mv": -150,
+    "frequency_hz": 976.5625,
+    "load": "High Z"
+  },
+  "usb_generator_access_performed": false,
+  "nano_port": "<nano-usb-port>",
+  "status": "stop_phase_comparison_complete_no_amplitude_recovery_output_off",
+  "updated": "2026-11-18T23:30:14.297479+08:00",
+  "off_before": {
+    "completed": true,
+    "wall_seconds": 0.9961111671291292,
+    "received": 0,
+    "batches": 46,
+    "fault": 0
+  },
+  "operator_on_confirmed": "2026-11-18T23:26:54.870572+08:00",
+  "pulse_500mv": {
+    "completed": true,
+    "result": "awg-bench/pulse-500mv/spectrum.json",
+    "analysis": "awg-bench/analysis-500mv/summary.json",
+    "received": 3495,
+    "wall_seconds": 4.992587416898459,
+    "amplitude_median_channel": 41.375,
+    "high_event_kept": true
+  },
+  "off_after": {
+    "completed": true,
+    "wall_seconds": 0.9950750418938696,
+    "received": 0,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "report": "awg-bench/500mV测试结果.txt",
+  "pulse_300mv": {
+    "completed": true,
+    "wall_seconds": 4.997841499745846,
+    "received": 3519,
+    "binned": 3482,
+    "flagged": 37,
+    "median_channel": 20.0,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_300mv": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.9968195836991072,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "comparison_report": "awg-bench/300mV-停止采样时机对照结果.txt",
+  "pulse_750mv": {
+    "completed": true,
+    "wall_seconds": 4.9964078748598695,
+    "received": 3446,
+    "binned": 3446,
+    "median_channel": 64.25,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_750mv": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.997711333911866,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "pulse_1000mv": {
+    "completed": true,
+    "wall_seconds": 4.99642329197377,
+    "received": 3481,
+    "binned": 3481,
+    "median_channel": 84.375,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_1000mv": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.9937764583155513,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "pulse_500mv_return": {
+    "completed": true,
+    "received": 3522,
+    "median_channel": 40.5,
+    "median_change_channel": -0.875,
+    "relative_median_change": -0.02114803625377648,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_500mv_return": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.997923499904573,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "pulse_250mv": {
+    "completed": true,
+    "received": 3612,
+    "binned": 3541,
+    "flagged": 71,
+    "median_channel": 16.75,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_250mv": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.9956413749605417,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "pulse_400mv": {
+    "completed": true,
+    "received": 3626,
+    "binned": 3606,
+    "flagged": 20,
+    "median_channel": 32.5,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "off_after_400mv": {
+    "completed": true,
+    "received": 0,
+    "wall_seconds": 0.9939171667210758,
+    "raw_crc_metadata_histogram_verified": true
+  },
+  "raw_400mv": {
+    "completed": true,
+    "snapshots": 20,
+    "rate_hz": 4000000,
+    "global_amplitude_code": 73.0,
+    "local_amplitude_code": 72.60000000000002,
+    "crc_statistics_guard_rate_verified": true
+  },
+  "raw_off_after400mv": {
+    "completed": true,
+    "snapshots": 20,
+    "sigma_median_code": 1.1081199518571985,
+    "maximum_positive_excursion_code": 5.0,
+    "crc_statistics_guard_rate_verified": true
+  },
+  "restored_profile": {
+    "type": "phinfo",
+    "fw": "0.4.1-fast.7",
+    "fault": 0,
+    "selftest": 15,
+    "base_code": 770,
+    "idle_peak_code": 770,
+    "dac_code": 810,
+    "threshold_offset": 40,
+    "hold": 1,
+    "reset": 1,
+    "trig": 0,
+    "timer_hz": 144000000,
+    "adc_hz": 72000000,
+    "raw_rate_hz": 500000,
+    "clock_fault": 0,
+    "ldo_mv": 1300,
+    "raw_stop_phase": "trigger",
+    "peak_sample_cycles_x2": 49,
+    "raw_timer_ticks": 288,
+    "wait_limit_us": 500
+  },
+  "raw_300mv": {
+    "completed": true,
+    "snapshots": 20,
+    "local_amplitude_code": 54.69999999999999,
+    "raw_300_over400_ratio": 0.7534435261707985,
+    "raw_area_300_over400_ratio": 0.7471083484145064,
+    "crc_statistics_guard_rate_verified": true
+  },
+  "peak_300mv_afterraw": {
+    "completed": true,
+    "received": 3475,
+    "binned": 3448,
+    "flagged": 27,
+    "median_code": 39
+  },
+  "raw_off_after300mv": {
+    "completed": true,
+    "sigma_median_code": 1.1213209848376058,
+    "maximum_positive_excursion_code": 5.0
+  },
+  "stop_phase_attempt_01": {
+    "completed": false,
+    "received": 0,
+    "trigger_irqs": 0,
+    "attempts": 128,
+    "profile_restored": true,
+    "path": "awg-bench/stop-phase-300mv-abba-01/sequence.json"
+  },
+  "raw_signal_check": {
+    "path": "awg-bench/raw-300mv-prestop-check-01/signal-check.json",
+    "records": 5,
+    "maximum_positive_excursion_code": 4,
+    "samples_above_baseline_plus10": 0
+  },
+  "stop_phase_comparison": {
+    "completed": true,
+    "run": "awg-bench/stop-phase-300mv-abba-02/sequence.json",
+    "analysis": "awg-bench/stop-phase-300mv-abba-02/analysis/summary.json",
+    "early_received": 465,
+    "late_received": 454,
+    "early_all_median_code": 39.25,
+    "late_all_median_code": 39.25,
+    "actual_stop_phases_verified": true,
+    "off_received": 0
+  }
+}

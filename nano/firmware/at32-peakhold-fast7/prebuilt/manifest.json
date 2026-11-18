@@ -1,0 +1,66 @@
+{
+  "firmware": "0.4.1-fast.7",
+  "board": "AT32 v0.4.1 PTH + peak-hold carrier",
+  "purpose": "Configurable total-attempt waiting deadline and reset/timing diagnostics; unchanged analog chain and capture window",
+  "mcu": "AT32F423CCT7",
+  "flash_start": "0x08000000",
+  "flash_bytes": 262144,
+  "erase_page_bytes": 2048,
+  "binary_bytes": 29688,
+  "sha256": "e6a626ad15bb9c00f59dfa1767c5bcb3f14b45d59907700ba62f99f50eca4e2e",
+  "sdk_commit": "a60472b248c39034f111ac17e7b1286549594435",
+  "stack": "0x2000c000",
+  "reset_vector": "0x8002f11",
+  "core_hz": 144000000,
+  "adc_hz": 72000000,
+  "raw_sample_rate_hz": 1000000,
+  "raw_timer_ticks": 144,
+  "ldo_mv": 1300,
+  "raw_ring_samples": 256,
+  "ram_static_bytes": 30456,
+  "stack_margin_bytes": 18696,
+  "hot_functions": {
+    "TMR3_GLOBAL_IRQHandler": "0x20000168",
+    "DMA1_Channel1_IRQHandler": "0x20000278"
+  },
+  "default_stop_phase": "hold",
+  "adc_profiles_mhz": [
+    72,
+    36,
+    24,
+    12
+  ],
+  "raw_profile_rates_hz": [
+    4000000,
+    2000000,
+    1000000,
+    500000
+  ],
+  "peak_sample_cycles_x2": [
+    49,
+    95,
+    185,
+    495
+  ],
+  "dma_stop_timing_reference": "TMR3_C2_IRQ_entry; signed cycles",
+  "early_irq_source": "TMR3_TRIGGER_INT (TRGIN)",
+  "independent_raw_rates_hz": [
+    4000000,
+    2000000,
+    1000000,
+    500000,
+    250000,
+    125000
+  ],
+  "default_wait_limit_us": 10000,
+  "wait_limit_profiles_us": [
+    10000,
+    2000,
+    1000,
+    500
+  ],
+  "wait_time_reference": "Before ph_prepare through HOLD IRQ; includes DMA priming; polling deadline",
+  "timing_note": "Armed-observed duration includes capture/IRQ latency; not independently measured true live time",
+  "event_frame_bytes": 64,
+  "reply_buffer_bytes": 3072
+}

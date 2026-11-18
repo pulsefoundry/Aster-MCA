@@ -1,0 +1,76 @@
+Aster MCA Nano v0.4 peak-hold carrier — analog design candidate
+2026-11-12. Engineering prototype; no hardware validation. No resolution claim.
+
+Locked circuit
+U10 TLV9062IDR SOIC8: reference buffer and inverting input conditioner.
+U11 OPA2356AIDR SOIC8: positive peak driver and hold buffer.
+U12 TMUX1136DGSR VSSOP10: input selection + hold-capacitor reset.
+U13 TLV3201AIDBVR SOT235: positive-going trigger.
+D11 BAS316,115 SOD323: low-leakage fast charge diode, pin2 anode at driver resistor, pin1 cathode at HOLD_CAP.
+D12 BAS70-04,215 SOT23: use pin1 anode at PEAK_FB and pin3 cathode at PEAK_DRV, pin2 unconnected.
+D12 must be low-VF and low-capacitance: ordinary silicon causes lower-rail saturation at the low reference; BAT54WS's larger capacitance degraded the modeled feedback response.
+Input protection BAV199 is not a capture diode; its slow reverse recovery is unsuitable as D11.
+Module supplied3.3V. Analog and digital ground remain one continuous ground plane.
+
+Signal path
+External SMA accepts low-voltage negative shaped detector pulses only, not detector high voltage/PMT bare anode.
+C100=33nF C0G with Rin49.9k creates1.647ms AC coupling time constant. Rf49.9k gives−1 small-signal gain.
+R10143k/R10210k create3.3/5.3=0.6226415V nominal reference, buffered by U10A.
+RAW is therefore a positive pulse about0.623V. Initial design amplitude0.1–0.8V, 4us total pulse, actual rise-time/curvature dependent.
+PEAK is the held maximum of RAW. Energy=PEAK minus event-before RAW baseline, followed by pedestal/gain calibration.
+BASE ADC monitors the reference only; BASE is NOT a substitute for the event-before baseline.
+Both amplifiers run on3.3V so normal outputs cannot statically drive ADC toward5V.
+OPA2356 common-mode top=VDD−1.5V. At low rail3.234V, reference0.610V+0.8V=1.410V, leaving0.324V margin. Out-of-range pulses/large positive RAW excursions remain unsupported.
+Raw path has no former100p/40.2k||10k input shunt. Optional input feedback C101 is DNP and must be characterized if fitted.
+No ADC-output RC on carrier; core owns PEAK100ohm/1nF, RAW33ohm/100pF, BASE100ohm/1nF.
+
+Operation and default controls
+HOLD=1 selects buffered reference as peak-driver input; existing positive held peak then cannot be overwritten by a later raw pulse.
+HOLD=0 selects RAW. RESET=1 connects HOLD_CAP via330ohm to reference; RESET=0 disconnects reset branch.
+Both controls have100k pull-ups. Boot state is freeze+reset. GPIO0 latches must not briefly arm during initialization.
+Initial firmware procedure:
+1. Power settles at least500ms (reference-divider10uF reservoir). SetHOLD=1,RESET=1.
+2. ADC baseline/raw checks and comparator-DAC threshold initialization. DAC threshold filter10k/10n needs>=1ms after changes.
+3. RESET=0, retain HOLD=1 briefly for pedestal/settling, then HOLD=0 to arm.
+4. Trigger edge captures timestamp and pretrigger RAW baseline from a circular ADC buffer. Start a hardware-timed capture window initially6us. Track comparator edges and time-above-threshold for pileup/overload rejection.
+5. At window end setHOLD=1. Allow>=1us output-ADC settling, then measure held value in a short read window, preferably within10us of the detected peak. Multiple ADC reads may suppress ADC noise but cannot remove analog noise already captured.
+6. RESET=1 for an initial2us, thenRESET=0; settle and rearm withHOLD=0. Record actual busy duration and accepted/rejected counts.
+7. Any additional distinguishable comparator trigger during capture or busy is flagged/rejected or counted as lost; a fully overlapping pair without a second threshold crossing is not guaranteed to be identified.
+8. During long quiet periods reset periodically while explicitly accounting for dead time; otherwise the hold circuit accumulates the largest noise excursion since last reset.
+Timing values are bring-up starting points, not validated rate limits. Peak-return histograms need firmware changes; existingv0.8.2 cannot simply operate this board as-is.
+
+Error budget and simulation boundary
+Official TI OPA356 model is used twice to approximate OPA2356. TLV9062 official model is used for frontend. Copyright headers retained. Native TINA TLV365 model was also extracted for exploration; no model is relicensed MIT.
+Capture BAS316 and antisaturation BAS70 use approximate generic diode SPICE models rather than official models. This is explicitly not vendor-qualified simulation.
+TMUX switch is a simplifiedRon/Roff model. Charge injection/feedthrough, actual switch parasitic capacitance, temperature, layout, package coupling and ADC transient input current remain bench gates.
+Read simulation-summary.json plus validate_positive.json and validate_frontend.json. Deliberately abrupt triangular peaks reveal larger errors; fixed total pulse width does not establish a1percent accuracy guarantee.
+C102470pF gives a conservative room-temperature10us droop budget around0.75mV if using30nA diode allowance,0.1nA switch/opamp allowance and5nA PCB-leakage allowance. PCB leakage is a design budget, not a component specification. Higher-temperature diode leakage has no comparable low-voltage guaranteed bound; hot performance must be measured.
+BAS316maxIR30nA is specified25V/25C; at150C/25V the datasheet allows30uA. Do not claim the component's entire temperature range as system measurement accuracy.
+Reset charge injection scale:2pC/470pF≈4.3mV. It occurs before capture and should be overwritten by a valid0.1V or larger pulse; measure startup/pedestal to confirm. HOLD switching is upstream at a low-impedance input, not directly on HOLD_CAP, but residual feedthrough still exists.
+OPA2356 has up to9mV offset at25C, so zero/pedestal and gain calibration are mandatory. Typical transient simulations do not include that worst-case offset.
+Model results are NOT measured spectral resolution and do not establish improvement overv0.3.
+
+Layout
+Keep U11 pin1/R106/D11/HOLD_CAP/U11pin5 compact; avoid vias in this high-impedance capture branch.
+Keep U11pin7/R107/U11pin2 short. D12 and optional C103 sit at U11 pins1/2.
+Keep HOLD_CAP away from USB, clocks, control traces and LED traces; do not fan it out to module or a large test pad.
+Use the buffered PEAK_OUT testpoint. A scope probe directly on HOLD_CAP materially changes capacitance.
+Avoid excess grounded copper directly adjacent to HOLD_CAP. An optional guard driven by PEAK_OUT is low impedance; do not cut the shared ground plane or break return paths.
+Place100nF+1uF at U11 supply pins. Tie local returns with short vias. Keep comparator/control edge routes outside the capture feedback loop.
+
+Required bench gates
+Use fixed-amplitude negative pulses with varied rise time and source impedance. Compare RAW and PEAK on the same event. Characterize gain/offset/linearity, hold drift vs delay, reset pedestal/recovery, second-pulse isolation and capture-window pileup, temperature and supply sensitivity.
+Then compare spectra with the same detector/HV/gain/source geometry and matched live time. Keep raw bypass available until peak-hold performance is established.
+
+Official sources
+https://www.ti.com/lit/ds/symlink/tlv9062.pdf
+https://www.ti.com/lit/ds/symlink/opa2356.pdf
+https://www.ti.com/lit/ds/symlink/tmux1136.pdf
+https://www.ti.com/lit/ds/symlink/tlv3201.pdf
+https://assets.nexperia.com/documents/data-sheet/BAS316.pdf
+https://assets.nexperia.com/documents/data-sheet/BAS70-04.pdf
+https://www.ti.com/lit/an/snla140d/snla140d.pdf
+https://www.ti.com/lit/zip/sbom848 (OPA356 model)
+https://www.ti.com/lit/zip/sbomag1 (TLV9062 model)
+
+Representative tolerance check: 470pF +/-5percent and feedback parasitic0.1/0.5/1/2.2pF, 0.5V/4us sin-squared full-frontend pulse.12cases total error+0.341percent to+0.697percent, hold-driver minimum0.2426V. This is not a broad pulse-shape or production-corner guarantee. See tolerance_check.json.

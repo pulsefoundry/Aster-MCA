@@ -1,0 +1,35 @@
+AT32 Nano positive peak hold candidate (SIMULATION ONLY; NOT VERIFIED FOR FABRICATION)
+.include opa356-model/OPA356_PSPICE_AIO/OPA356.LIB
+.param CH=470p RI=22 CF=0.1p
+VDD vdd 0 3.3
+VB base 0 0.6226415094
+VIN raw 0 PWL(0 .5 10u .5 11u 1.0 14u .5 22u .5 23u 1.3 26u .5)
+VH sel 0 PWL(0 3.3 5u 3.3 5.01u 0 16u 0 16.01u 3.3)
+VR rst 0 PWL(0 3.3 4u 3.3 4.01u 0 28u 0 28.01u 3.3)
+Sraw raw inp zsel 0 SW1
+Sbase base inp sel 0 SW1
+Bsel zsel 0 V=3.3-v(sel)
+Rrst base rstp 330
+Sreset rstp cap rst 0 SW1
+Rswleak cap 0 1e12
+XDRV drv 0 inp fb vdd OPA356
+Rdrv drv da {RI}
+Dpeak da cap DBAS316
+Danti fb drv DBAS70
+Rfb peak fb 1k
+Ccomp drv fb {CF}
+Cpk cap 0 {CH}
+XBUF peak 0 cap peak vdd OPA356
+Rout peak adc 100
+Cadc adc 0 1n
+.model DBAS70 D(Is=500p N=1.05 Rs=10 Cjo=2p Tt=0 Bv=70 Ibv=10u)
+.model SW1 SW(Ron=4 Roff=1e12 Vt=1.65 Vh=.05)
+.model DBAS316 D(Is=2n N=1.9 Rs=1 Cjo=1.5p Tt=4n Bv=100 Ibv=100n)
+.options method=gear reltol=1e-4
+.tran 2n 32u
+.control
+run
+wrdata valley.dat v(raw) v(cap) v(peak) v(adc) v(drv)
+quit
+.endc
+.end

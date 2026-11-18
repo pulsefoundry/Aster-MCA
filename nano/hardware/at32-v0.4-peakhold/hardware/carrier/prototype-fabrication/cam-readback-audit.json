@@ -1,0 +1,23 @@
+{
+  "status": "NOT_FOR_FAB",
+  "audit_scope": "Independent CAM outline/drill geometry and copper-pad center readback; no native or physical validation claim",
+  "outline_mm": [
+    60,
+    32
+  ],
+  "outline_closed": true,
+  "copper_layers": 2,
+  "board_thickness_mm": 1.6,
+  "expected_drill_count": 58,
+  "cam_drill_count": 58,
+  "drill_geometry_matches": true,
+  "pth_count": 56,
+  "npth_count": 2,
+  "plated_slots": 2,
+  "halfholes": [],
+  "copper_pad_centers_checked": {
+    "top": 141,
+    "bottom": 10
+  },
+  "frozen_sources_unchanged": true
+}

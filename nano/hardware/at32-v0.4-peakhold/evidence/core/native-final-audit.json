@@ -1,0 +1,124 @@
+{
+  "reviewed_at_utc": "2026-11-11T17:02:47.122571+00:00",
+  "status": "PASS_WITH_CASTELLATION_EXCEPTIONS",
+  "scope": "Readback of final native exports against core/design.json, native DRC scope and schematic PDF positive-peak wording",
+  "project_uuid": "468318639f18467982c3c48eda5f8e33",
+  "project_url": "https://pro.lceda.cn/editor#id=468318639f18467982c3c48eda5f8e33",
+  "source_export": "../core-final-export.json",
+  "source_design": "../../core/design.json",
+  "native_export_errors": [],
+  "netlists": {
+    "schematic": {
+      "component_count": 32,
+      "electrical_pin_count": 131,
+      "mismatches": []
+    },
+    "pcb": {
+      "component_count": 32,
+      "electrical_pin_count": 131,
+      "mismatches": []
+    }
+  },
+  "schematic_and_pcb_electrical_nets_equal": true,
+  "native_schematic_drc": [],
+  "native_pcb_drc_categories": [
+    {
+      "category": "Board Outline to TH Pad",
+      "count": 22,
+      "pad_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "all_22_castellated_pins_once": true
+    },
+    {
+      "category": "Board Outline to Hole",
+      "count": 22,
+      "pad_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "all_22_castellated_pins_once": true
+    }
+  ],
+  "native_pcb_drc_total": 44,
+  "unexpected_pcb_drc_items": [],
+  "top_silkscreen_strings": [
+    "1",
+    "BOOT",
+    "PWR",
+    "RUN",
+    "USB",
+    "AT32",
+    "CORE v0.4",
+    "NRST"
+  ],
+  "orientation_markers_present": true,
+  "schematic_positive_peak_notes": [
+    "HOLD high=frozen, PEAK_RESET high=reset to BASE (nominal0.623V). 100k pull-ups on carrier.",
+    "Positive peak: amplitude=PEAK_ADC minus event-before RAW_ADC baseline. BASE_ADC monitors nominal0.623V reference only; TRIG uses rising edge."
+  ],
+  "pdf_notes_match_native_source": {
+    "HOLD high=frozen, PEAK_RESET high=reset to BASE (nominal0.623V). 100k pull-ups on carrier.": true,
+    "Positive peak: amplitude=PEAK_ADC minus event-before RAW_ADC baseline. BASE_ADC monitors nominal0.623V reference only; TRIG uses rising edge.": true
+  },
+  "schematic_pdf_render_review": {
+    "performed": true,
+    "tool": "pdftoppm",
+    "page_count_reviewed": 1,
+    "result": "Full schematic page rendered and viewed; positive-peak/reference/trigger notes present, no clipping observed in reviewed page. Large schematic canvas requires zoom for pin text.",
+    "source_pdf": "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Schematic.pdf"
+  },
+  "reviewed_native_file_sha256": {
+    "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Schematic.pdf": "c445361b3f2189c03d1251cdc81ae91ed7323b577eefd999faf3f844108d4a9c",
+    "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-native.epro2": "715499e9a109ea5f3675784a45dff6197cfb0fb259c9da5c09de2ce175369e0b",
+    "PCB-netlist.net": "8a4ea55c4ceb167573d7934fb4da62450d5d63e4d3d2f99f9a23059750f15ce7",
+    "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip": "5d07b934be9370bb7b1e76e3e0c4d4bef21c799bc7a8e45c2134167a248a04cc",
+    "Schematic-netlist.net": "4b103feea8fd55a7e672df306cda6e6abda1f77ef51dcff5d75a19cefe1c921e"
+  },
+  "notes": [
+    "PCB DRC is not zero: 44 intentional board-edge clearance findings, covering 22 castellated pads and their 22 holes. No other categories were returned.",
+    "No native-to-KiCad Gerber geometry equality claim and no bench validation claim.",
+    "PDF retains a generic DRAFT/native DRC pending subtitle; actual final native check results are recorded in this audit and native-check-summary.json."
+  ]
+}

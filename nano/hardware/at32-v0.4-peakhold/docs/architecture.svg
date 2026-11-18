@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Aster MCA Nano AT32 v0.4 — two-board architecture</title>
+  <desc id="desc">The 26 by 20 millimeter AT32 core has 22 castellated contacts and is soldered on a 60 by 32 millimeter carrier. USB is at the left and SMA is at the right. Negative input pulses are inverted around a nominal 0.623 volt baseline. RAW is sampled and compared with a DAC threshold. OPA2356 and TMUX1136 capture the positive peak. HOLD and RESET are active high. Pulse amplitude is the held peak minus the pre-event RAW baseline. Firmware adaptation and bench validation remain pending.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#1767b0"/></marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#b74936"/></marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#7752a0"/></marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#388168"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#203044;font-size:21px}
+      .title{font-size:34px;font-weight:700}.subtitle{font-size:19px;fill:#56657a}
+      .heading{font-size:23px;font-weight:700}.small{font-size:18px}.tiny{font-size:16px}
+      .box{fill:#fff;stroke:#7d8a9c;stroke-width:2}.core{fill:#edf4fc;stroke:#1767b0;stroke-width:2.5}
+      .analog{fill:#fcf2e9;stroke:#b58453;stroke-width:2}.board{fill:#f5f8f7;stroke:#91a49b;stroke-width:2}
+      .sig{fill:none;stroke:#1767b0;stroke-width:3;marker-end:url(#arrow-blue)}
+      .raw{fill:none;stroke:#b74936;stroke-width:3;marker-end:url(#arrow-red)}
+      .ctl{fill:none;stroke:#7752a0;stroke-width:3;marker-end:url(#arrow-purple)}
+      .base{fill:none;stroke:#388168;stroke-width:3;marker-end:url(#arrow-green)}
+      .label{paint-order:stroke;stroke:#fff;stroke-width:7px;stroke-linejoin:round}
+    </style>
+  </defs>
+  <rect width="1600" height="1000" fill="#fff"/>
+  <text x="60" y="59" class="title">Aster MCA Nano AT32 v0.4</text>
+  <text x="60" y="92" class="subtitle">Castellated core + positive peak-hold carrier · Functional engineering diagram, not a PCB rendering</text>
+
+  <rect x="95" y="136" width="1425" height="206" rx="12" class="board"/>
+  <text x="113" y="162" class="small">CARRIER · 60 × 32 mm · top-view orientation</text>
+  <rect x="25" y="213" width="152" height="72" rx="5" fill="#e7ebf0" stroke="#7d8a9c" stroke-width="2"/>
+  <text x="101" y="243" text-anchor="middle" class="heading">USB-A</text>
+  <text x="101" y="268" text-anchor="middle" class="small">5 V / USB</text>
+  <path d="M177 249 H223" class="sig"/>
+  <rect x="227" y="188" width="340" height="127" rx="5" class="core"/>
+  <g fill="#d7b657" stroke="#ab8b2e" stroke-width="1">
+    <path d="M247 181h12v14h-12z M275 181h12v14h-12z M303 181h12v14h-12z M331 181h12v14h-12z M359 181h12v14h-12z M387 181h12v14h-12z M415 181h12v14h-12z M443 181h12v14h-12z M471 181h12v14h-12z M499 181h12v14h-12z M527 181h12v14h-12z"/>
+    <path d="M247 308h12v14h-12z M275 308h12v14h-12z M303 308h12v14h-12z M331 308h12v14h-12z M359 308h12v14h-12z M387 308h12v14h-12z M415 308h12v14h-12z M443 308h12v14h-12z M471 308h12v14h-12z M499 308h12v14h-12z M527 308h12v14h-12z"/>
+  </g>
+  <text x="397" y="226" text-anchor="middle" class="heading">AT32 CORE · 26 × 20 mm</text>
+  <text x="397" y="255" text-anchor="middle" class="small">22 castellations · 2 mm pitch</text>
+  <text x="397" y="283" text-anchor="middle" class="small">Top components / flat underside</text>
+  <text x="619" y="241" class="small">Soldered onto carrier</text>
+  <text x="619" y="271" class="small">3.3 V supplied by core LDO</text>
+  <rect x="962" y="191" width="310" height="118" rx="5" class="analog"/>
+  <text x="1117" y="230" text-anchor="middle" class="heading">ANALOG FRONT END</text>
+  <text x="1117" y="263" text-anchor="middle" class="small">Input + trigger + peak hold</text>
+  <rect x="1384" y="214" width="161" height="70" rx="5" fill="#f4e8c7" stroke="#a88735" stroke-width="2"/>
+  <text x="1464" y="244" text-anchor="middle" class="heading">SMA</text>
+  <text x="1464" y="269" text-anchor="middle" class="small">5-pin vertical</text>
+  <path d="M1384 249 H1277" class="raw"/>
+
+  <text x="60" y="401" class="heading">SIGNAL AND CONTROL FLOW</text>
+  <rect x="95" y="443" width="315" height="414" rx="9" class="core"/>
+  <text x="252" y="474" text-anchor="middle" class="heading">AT32F423CCT7</text>
+  <text x="252" y="511" text-anchor="middle" class="small">ADC + DAC + event control</text>
+  <text x="252" y="548" text-anchor="middle" class="small">BOOT / LEDs / SWD</text>
+  <text x="252" y="579" text-anchor="middle" class="small">USB + 3.3 V LDO</text>
+  <text x="390" y="620" text-anchor="end" class="small">PEAK_ADC · PA0</text>
+  <text x="390" y="675" text-anchor="end" class="small">HOLD / PEAK_RESET</text>
+  <text x="390" y="735" text-anchor="end" class="small">TRIG · PA6</text>
+  <text x="390" y="790" text-anchor="end" class="small">DAC_THRESH · PA4</text>
+  <text x="390" y="830" text-anchor="end" class="small">BASE_ADC · PA2</text>
+  <text x="429" y="478" class="small" fill="#b74936">RAW_ADC · PA1</text>
+
+  <rect x="1130" y="443" width="290" height="103" rx="7" class="analog"/>
+  <text x="1275" y="475" text-anchor="middle" class="heading">TLV9062</text>
+  <text x="1275" y="506" text-anchor="middle" class="small">Invert negative input</text>
+  <text x="1275" y="533" text-anchor="middle" class="small">BASE ≈ 0.623 V reference</text>
+  <text x="1532" y="457" text-anchor="end" class="small">SMA</text>
+  <text x="1532" y="482" text-anchor="end" class="tiny">Negative pulses</text>
+  <path d="M1530 499 H1425" class="raw"/>
+  <path d="M1130 495 H415" class="raw"/>
+  <text x="857" y="480" class="small label">Positive-going RAW</text>
+  <circle cx="966" cy="495" r="5" fill="#b74936"/>
+  <path d="M966 495 V590" class="raw"/>
+
+  <rect x="820" y="590" width="325" height="111" rx="7" class="analog"/>
+  <text x="982" y="622" text-anchor="middle" class="heading">OPA2356 + TMUX1136</text>
+  <text x="982" y="651" text-anchor="middle" class="small">Positive peak capture / buffer</text>
+  <text x="982" y="678" text-anchor="middle" class="small">HOLD high / RESET high</text>
+  <path d="M820 625 H415" class="sig"/>
+  <text x="615" y="611" class="small label">Held PEAK</text>
+  <path d="M410 680 H815" class="ctl"/>
+  <text x="460" y="666" class="small label">Freeze / reset to BASE</text>
+
+  <rect x="520" y="711" width="220" height="103" rx="7" class="box"/>
+  <text x="630" y="742" text-anchor="middle" class="heading">TLV3201</text>
+  <text x="630" y="772" text-anchor="middle" class="small">RAW &gt; threshold</text>
+  <circle cx="772" cy="495" r="5" fill="#b74936"/>
+  <path d="M772 495 V742 H745" class="raw"/>
+  <path d="M520 742 H415" class="sig"/>
+  <text x="440" y="723" class="tiny label">Rising edge</text>
+  <path d="M410 797 H515" class="ctl"/>
+  <text x="433" y="823" class="tiny">DAC setting</text>
+
+  <path d="M1280 546 V878 H453 V837 H415" class="base"/>
+  <text x="793" y="863" class="small label">BASE monitor only — not the pre-event baseline</text>
+  <text x="1320" y="715" class="small">3.3 V analog supply</text>
+  <text x="1320" y="747" class="small">Common ground</text>
+  <text x="1320" y="779" class="small">ADC input RC on core</text>
+
+  <rect x="60" y="912" width="1480" height="63" rx="8" fill="#fff5db" stroke="#d6bc77"/>
+  <text x="80" y="938" class="small" font-weight="700">Pulse amplitude = held PEAK − pre-event RAW baseline</text>
+  <text x="80" y="962" class="small">Firmware adaptation pending · Bench validation pending · Dimensions describe the design; analog performance is not yet measured.</text>
+</svg>

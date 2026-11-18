@@ -1,0 +1,36 @@
+{
+  "copper_records_match": true,
+  "missing": [],
+  "extra": [],
+  "copper_layers": 2,
+  "tracks_and_vias": 428,
+  "halfholes": [],
+  "usb_routes": {
+    "USB_DP": {
+      "length_mm": 15.426955471374153,
+      "vias": 2
+    },
+    "USB_DM": {
+      "length_mm": 9.374782356124268,
+      "vias": 0
+    },
+    "USB_DP_CONN": {
+      "length_mm": 8.276713562373095,
+      "vias": 2
+    },
+    "USB_DM_CONN": {
+      "length_mm": 11.923427913352075,
+      "vias": 2
+    },
+    "MCU_USB_DP": {
+      "length_mm": 0,
+      "vias": 0
+    },
+    "MCU_USB_DM": {
+      "length_mm": 0,
+      "vias": 0
+    }
+  },
+  "usb_impedance_or_signal_integrity_validated": false,
+  "native_editor_DRC": "separate gate"
+}

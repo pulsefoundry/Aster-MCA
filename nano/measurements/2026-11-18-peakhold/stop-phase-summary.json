@@ -1,0 +1,180 @@
+{
+  "created": "2026-11-18T23:30:14.157970+08:00",
+  "completed": true,
+  "run": "awg-bench/stop-phase-300mv-abba-02",
+  "crc_metadata_counts_and_actual_phase_verified": true,
+  "groups": {
+    "early": {
+      "received": 465,
+      "selected": 463,
+      "flagged": 2,
+      "all_amplitude_code": {
+        "n": 465,
+        "median": 39.25,
+        "mean": 39.41935483870968,
+        "sigma_population": 3.4854461791337243,
+        "minimum": 36.25,
+        "maximum": 104.75,
+        "percentiles_5_95": [
+          37.75,
+          40.75
+        ]
+      },
+      "selected_amplitude_code": {
+        "n": 463,
+        "median": 39.0,
+        "mean": 39.41198704103672,
+        "sigma_population": 3.488983270096223,
+        "minimum": 36.25,
+        "maximum": 104.75,
+        "percentiles_5_95": [
+          37.75,
+          40.75
+        ]
+      },
+      "baseline_code": {
+        "n": 465,
+        "median": 772.0,
+        "mean": 772.1268817204301,
+        "sigma_population": 0.5153847680405611,
+        "minimum": 771.0,
+        "maximum": 774.0,
+        "percentiles_5_95": [
+          771.0,
+          773.0
+        ]
+      },
+      "absolute_peak_code": {
+        "n": 465,
+        "median": 811.25,
+        "mean": 811.5462365591397,
+        "sigma_population": 3.356747630328678,
+        "minimum": 809.0,
+        "maximum": 875.75,
+        "percentiles_5_95": [
+          810.0,
+          812.5
+        ]
+      },
+      "attempts": 1024,
+      "timeouts": 559,
+      "baseline_rejects": 0,
+      "actual_dma_stops": 465,
+      "actual_dma_stops_before_hold_irq": 465,
+      "stop_minus_hold_irq_us": [
+        -4.381944444444445,
+        -3.8472222222222223
+      ],
+      "block_all_medians": [
+        39.25,
+        39.0,
+        39.0,
+        39.25
+      ]
+    },
+    "late": {
+      "received": 454,
+      "selected": 450,
+      "flagged": 4,
+      "all_amplitude_code": {
+        "n": 454,
+        "median": 39.25,
+        "mean": 39.28579295154185,
+        "sigma_population": 1.4928101287434228,
+        "minimum": 36.5,
+        "maximum": 53.25,
+        "percentiles_5_95": [
+          37.75,
+          41.0
+        ]
+      },
+      "selected_amplitude_code": {
+        "n": 450,
+        "median": 39.25,
+        "mean": 39.263888888888886,
+        "sigma_population": 1.4676895633344906,
+        "minimum": 36.5,
+        "maximum": 53.25,
+        "percentiles_5_95": [
+          37.75,
+          41.0
+        ]
+      },
+      "baseline_code": {
+        "n": 454,
+        "median": 772.0,
+        "mean": 772.1519823788547,
+        "sigma_population": 0.5065935642475854,
+        "minimum": 771.0,
+        "maximum": 774.0,
+        "percentiles_5_95": [
+          771.0,
+          773.0
+        ]
+      },
+      "absolute_peak_code": {
+        "n": 454,
+        "median": 811.25,
+        "mean": 811.4377753303964,
+        "sigma_population": 1.3334931877149427,
+        "minimum": 808.5,
+        "maximum": 824.25,
+        "percentiles_5_95": [
+          809.9125,
+          812.75
+        ]
+      },
+      "attempts": 1024,
+      "timeouts": 570,
+      "baseline_rejects": 0,
+      "actual_dma_stops": 454,
+      "actual_dma_stops_before_hold_irq": 0,
+      "stop_minus_hold_irq_us": [
+        1.0,
+        1.4791666666666667
+      ],
+      "block_all_medians": [
+        39.25,
+        39.25,
+        39.25,
+        39.0
+      ]
+    }
+  },
+  "all_median_late_minus_early_code": 0.0,
+  "selected_median_late_minus_early_code": 0.25,
+  "earlier_raw_reference_amplitude_code": 54.7,
+  "off_after": {
+    "received": 0,
+    "wall_seconds": 0.9955026670359075
+  },
+  "final": {
+    "type": "phinfo",
+    "fw": "0.4.1-fast.7",
+    "fault": 0,
+    "selftest": 15,
+    "base_code": 770,
+    "idle_peak_code": 770,
+    "dac_code": 810,
+    "threshold_offset": 40,
+    "hold": 1,
+    "reset": 1,
+    "trig": 0,
+    "timer_hz": 144000000,
+    "adc_hz": 72000000,
+    "raw_rate_hz": 500000,
+    "clock_fault": 0,
+    "ldo_mv": 1300,
+    "raw_stop_phase": "trigger",
+    "peak_sample_cycles_x2": 49,
+    "raw_timer_ticks": 288,
+    "wait_limit_us": 500
+  },
+  "limitations": [
+    "Stop times reference HOLD IRQ entry,not an externally measured hardware edge.",
+    "All-event medians primary;existingflag/analogguard selection also reported. No amplitude outlier cuts.",
+    "EARLY still permits ADC conversion during the initial capture interval;this does not exclude all ADC coupling.",
+    "Fixed electrical-pulse diagnostic,not detector energy resolution.",
+    "Initial no-signal attempt01 preserved separately and excluded from this completed comparison."
+  ]
+}

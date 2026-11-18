@@ -1,0 +1,1926 @@
+{
+    "version": "2.0.0",
+    "components": {
+        "7a966d21dd3a50ae": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "AT32F423CCT7",
+                "Designator": "U1",
+                "Symbol": "f0e3feeeb5935883",
+                "Device": "d8f716ef6a3558d4",
+                "Footprint": "cd83143bbafa500a",
+                "Unique ID": "7a966d21dd3a50ae",
+                "Value": "AT32F423CCT7",
+                "Description": "256KB Flash/48KB SRAM. All four VDD pads supplied. VDDA=VDD, VSSA=GND. Firmware ADC ES0010 XTEST workaround required. New v0.4 pin contract, not old firmware unchanged.",
+                "Group ID": "",
+                "Channel ID": "$1n11",
+                "Reuse Block": "",
+                "DeviceName": "AT32F423CCT7",
+                "FootprintName": "Package_QFP:LQFP-48_7x7mm_P0.5mm_U1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "VDD",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "PC13",
+                    "number": "2",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "PC14",
+                    "number": "3",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "PC15",
+                    "number": "4",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "PF0/HEXT_IN",
+                    "number": "5",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "PF1/HEXT_OUT",
+                    "number": "6",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "NRST",
+                    "number": "7",
+                    "net": "NRST",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "VSSA",
+                    "number": "8",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                },
+                "9": {
+                    "name": "VDDA/VREF+",
+                    "number": "9",
+                    "net": "VDDA",
+                    "props": {
+                        "Pin Number": "9"
+                    }
+                },
+                "10": {
+                    "name": "PA0/ADC1_IN0",
+                    "number": "10",
+                    "net": "ADC_PEAK_PIN",
+                    "props": {
+                        "Pin Number": "10"
+                    }
+                },
+                "11": {
+                    "name": "PA1/ADC1_IN1",
+                    "number": "11",
+                    "net": "ADC_RAW_PIN",
+                    "props": {
+                        "Pin Number": "11"
+                    }
+                },
+                "12": {
+                    "name": "PA2/ADC1_IN2",
+                    "number": "12",
+                    "net": "ADC_BASE_PIN",
+                    "props": {
+                        "Pin Number": "12"
+                    }
+                },
+                "13": {
+                    "name": "PA3",
+                    "number": "13",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "13"
+                    }
+                },
+                "14": {
+                    "name": "PA4/DAC1_OUT",
+                    "number": "14",
+                    "net": "DAC_THRESH_PIN",
+                    "props": {
+                        "Pin Number": "14"
+                    }
+                },
+                "15": {
+                    "name": "PA5/DAC2_OUT",
+                    "number": "15",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "15"
+                    }
+                },
+                "16": {
+                    "name": "PA6/TMR3_CH1",
+                    "number": "16",
+                    "net": "TRIG",
+                    "props": {
+                        "Pin Number": "16"
+                    }
+                },
+                "17": {
+                    "name": "PA7/TMR3_CH2",
+                    "number": "17",
+                    "net": "HOLD",
+                    "props": {
+                        "Pin Number": "17"
+                    }
+                },
+                "18": {
+                    "name": "PB0/TMR3_CH3",
+                    "number": "18",
+                    "net": "PEAK_RESET",
+                    "props": {
+                        "Pin Number": "18"
+                    }
+                },
+                "19": {
+                    "name": "PB1/TMR3_CH4",
+                    "number": "19",
+                    "net": "AUX",
+                    "props": {
+                        "Pin Number": "19"
+                    }
+                },
+                "20": {
+                    "name": "PB2",
+                    "number": "20",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "20"
+                    }
+                },
+                "21": {
+                    "name": "PB10",
+                    "number": "21",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "21"
+                    }
+                },
+                "22": {
+                    "name": "PB11",
+                    "number": "22",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "22"
+                    }
+                },
+                "23": {
+                    "name": "PF8",
+                    "number": "23",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "23"
+                    }
+                },
+                "24": {
+                    "name": "VDD",
+                    "number": "24",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "24"
+                    }
+                },
+                "25": {
+                    "name": "PB12/LED_RUN",
+                    "number": "25",
+                    "net": "LED_RUN",
+                    "props": {
+                        "Pin Number": "25"
+                    }
+                },
+                "26": {
+                    "name": "PB13",
+                    "number": "26",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "26"
+                    }
+                },
+                "27": {
+                    "name": "PB14",
+                    "number": "27",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "27"
+                    }
+                },
+                "28": {
+                    "name": "PB15",
+                    "number": "28",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "28"
+                    }
+                },
+                "29": {
+                    "name": "PA8",
+                    "number": "29",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "29"
+                    }
+                },
+                "30": {
+                    "name": "PA9/OTG_VBUS",
+                    "number": "30",
+                    "net": "VBUS_SENSE",
+                    "props": {
+                        "Pin Number": "30"
+                    }
+                },
+                "31": {
+                    "name": "PA10",
+                    "number": "31",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "31"
+                    }
+                },
+                "32": {
+                    "name": "PA11/USB_DM",
+                    "number": "32",
+                    "net": "MCU_USB_DM",
+                    "props": {
+                        "Pin Number": "32"
+                    }
+                },
+                "33": {
+                    "name": "PA12/USB_DP",
+                    "number": "33",
+                    "net": "MCU_USB_DP",
+                    "props": {
+                        "Pin Number": "33"
+                    }
+                },
+                "34": {
+                    "name": "PA13/SWDIO",
+                    "number": "34",
+                    "net": "SWDIO",
+                    "props": {
+                        "Pin Number": "34"
+                    }
+                },
+                "35": {
+                    "name": "PF6",
+                    "number": "35",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "35"
+                    }
+                },
+                "36": {
+                    "name": "VDD",
+                    "number": "36",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "36"
+                    }
+                },
+                "37": {
+                    "name": "PA14/SWCLK",
+                    "number": "37",
+                    "net": "SWCLK",
+                    "props": {
+                        "Pin Number": "37"
+                    }
+                },
+                "38": {
+                    "name": "PA15",
+                    "number": "38",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "38"
+                    }
+                },
+                "39": {
+                    "name": "PB3",
+                    "number": "39",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "39"
+                    }
+                },
+                "40": {
+                    "name": "PB4",
+                    "number": "40",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "40"
+                    }
+                },
+                "41": {
+                    "name": "PB5",
+                    "number": "41",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "41"
+                    }
+                },
+                "42": {
+                    "name": "PB6",
+                    "number": "42",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "42"
+                    }
+                },
+                "43": {
+                    "name": "PB7",
+                    "number": "43",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "43"
+                    }
+                },
+                "44": {
+                    "name": "BOOT0",
+                    "number": "44",
+                    "net": "BOOT0",
+                    "props": {
+                        "Pin Number": "44"
+                    }
+                },
+                "45": {
+                    "name": "PB8",
+                    "number": "45",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "45"
+                    }
+                },
+                "46": {
+                    "name": "PB9",
+                    "number": "46",
+                    "net": "",
+                    "props": {
+                        "Pin Number": "46"
+                    }
+                },
+                "47": {
+                    "name": "VSS",
+                    "number": "47",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "47"
+                    }
+                },
+                "48": {
+                    "name": "VDD",
+                    "number": "48",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "48"
+                    }
+                }
+            }
+        },
+        "30150c7adf7b5f7d": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "XC6206P332MR-G",
+                "Designator": "U2",
+                "Symbol": "7708d381f8f059e4",
+                "Device": "2fd867b612485071",
+                "Footprint": "9ffc5c2560e65bcb",
+                "Unique ID": "30150c7adf7b5f7d",
+                "Value": "XC6206P332MR-G",
+                "Description": "Existing Nano regulator reused. Thermal/current budget must include carrier. V3V3 module pin is OUT only during USB power.",
+                "Group ID": "",
+                "Channel ID": "$1n181",
+                "Reuse Block": "",
+                "DeviceName": "XC6206P332MR-G",
+                "FootprintName": "Package_TO_SOT_SMD:SOT-23_U2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "VSS",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "VOUT",
+                    "number": "2",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "VIN",
+                    "number": "3",
+                    "net": "VBUS",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                }
+            }
+        },
+        "0b616d0775c852ad": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "CASTELLATED_22_26x20",
+                "Designator": "J1",
+                "Symbol": "b25a3906762b5f5f",
+                "Device": "131df58dc10e5ffe",
+                "Footprint": "436f3e37e4f951d0",
+                "Unique ID": "0b616d0775c852ad",
+                "Value": "CASTELLATED_22_26x20",
+                "Description": "Custom board-edge plated half-hole footprint; hole centers on outline. All pads no paste on module. Carrier receives mating SMD lands; numbered clockwise TOP VIEW.",
+                "Group ID": "",
+                "Channel ID": "$1n206",
+                "Reuse Block": "",
+                "DeviceName": "CASTELLATED_22_26x20",
+                "FootprintName": "Aster:Castellated_22_26x20_J1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "GND",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "VBUS",
+                    "number": "2",
+                    "net": "VBUS",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                },
+                "3": {
+                    "name": "USB_DM",
+                    "number": "3",
+                    "net": "USB_DM",
+                    "props": {
+                        "Pin Number": "3"
+                    }
+                },
+                "4": {
+                    "name": "USB_DP",
+                    "number": "4",
+                    "net": "USB_DP",
+                    "props": {
+                        "Pin Number": "4"
+                    }
+                },
+                "5": {
+                    "name": "GND",
+                    "number": "5",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "5"
+                    }
+                },
+                "6": {
+                    "name": "V3V3",
+                    "number": "6",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "6"
+                    }
+                },
+                "7": {
+                    "name": "NRST",
+                    "number": "7",
+                    "net": "NRST",
+                    "props": {
+                        "Pin Number": "7"
+                    }
+                },
+                "8": {
+                    "name": "SWDIO",
+                    "number": "8",
+                    "net": "SWDIO",
+                    "props": {
+                        "Pin Number": "8"
+                    }
+                },
+                "9": {
+                    "name": "SWCLK",
+                    "number": "9",
+                    "net": "SWCLK",
+                    "props": {
+                        "Pin Number": "9"
+                    }
+                },
+                "10": {
+                    "name": "BOOT0",
+                    "number": "10",
+                    "net": "BOOT0",
+                    "props": {
+                        "Pin Number": "10"
+                    }
+                },
+                "11": {
+                    "name": "GND",
+                    "number": "11",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "11"
+                    }
+                },
+                "12": {
+                    "name": "GND",
+                    "number": "12",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "12"
+                    }
+                },
+                "13": {
+                    "name": "PEAK_ADC",
+                    "number": "13",
+                    "net": "PEAK_ADC",
+                    "props": {
+                        "Pin Number": "13"
+                    }
+                },
+                "14": {
+                    "name": "GND",
+                    "number": "14",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "14"
+                    }
+                },
+                "15": {
+                    "name": "RAW_ADC",
+                    "number": "15",
+                    "net": "RAW_ADC",
+                    "props": {
+                        "Pin Number": "15"
+                    }
+                },
+                "16": {
+                    "name": "BASE_ADC",
+                    "number": "16",
+                    "net": "BASE_ADC",
+                    "props": {
+                        "Pin Number": "16"
+                    }
+                },
+                "17": {
+                    "name": "GND",
+                    "number": "17",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "17"
+                    }
+                },
+                "18": {
+                    "name": "DAC_THRESH",
+                    "number": "18",
+                    "net": "DAC_THRESH",
+                    "props": {
+                        "Pin Number": "18"
+                    }
+                },
+                "19": {
+                    "name": "TRIG",
+                    "number": "19",
+                    "net": "TRIG",
+                    "props": {
+                        "Pin Number": "19"
+                    }
+                },
+                "20": {
+                    "name": "HOLD",
+                    "number": "20",
+                    "net": "HOLD",
+                    "props": {
+                        "Pin Number": "20"
+                    }
+                },
+                "21": {
+                    "name": "PEAK_RESET",
+                    "number": "21",
+                    "net": "PEAK_RESET",
+                    "props": {
+                        "Pin Number": "21"
+                    }
+                },
+                "22": {
+                    "name": "AUX",
+                    "number": "22",
+                    "net": "AUX",
+                    "props": {
+                        "Pin Number": "22"
+                    }
+                }
+            }
+        },
+        "7cdc614de7ff5844": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1u X7R 10V",
+                "Designator": "C1",
+                "Symbol": "d0d0d24191c55e4f",
+                "Device": "d5325760bb335c8c",
+                "Footprint": "8cde805451965fe8",
+                "Unique ID": "7cdc614de7ff5844",
+                "Value": "1u X7R 10V",
+                "Description": "LDO local input decoupling",
+                "Group ID": "",
+                "Channel ID": "$1n345",
+                "Reuse Block": "",
+                "DeviceName": "1u X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0603_1608Metric_C1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "VBUS",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "25c56b44624c5a13": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "4.7u X7R 10V",
+                "Designator": "C2",
+                "Symbol": "4d5563207723509a",
+                "Device": "4c19516e6ea55228",
+                "Footprint": "107a107c47a45004",
+                "Unique ID": "25c56b44624c5a13",
+                "Value": "4.7u X7R 10V",
+                "Description": "LDO output decoupling; verify effective capacitance and stability",
+                "Group ID": "",
+                "Channel ID": "$1n364",
+                "Reuse Block": "",
+                "DeviceName": "4.7u X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0603_1608Metric_C2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "dd568b9d3d45554b": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C3",
+                "Symbol": "b90a22335a665d23",
+                "Device": "318713315d01571f",
+                "Footprint": "4e0b2fe8919458fd",
+                "Unique ID": "dd568b9d3d45554b",
+                "Value": "100n X7R 10V",
+                "Description": "At U1 VDD pin 1; short pad-to-cap and ground via",
+                "Group ID": "",
+                "Channel ID": "$1n383",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C3"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "07dca35a735a5abb": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C4",
+                "Symbol": "f03f1ab466095af9",
+                "Device": "f4a4dc5fca4f5bc5",
+                "Footprint": "a133186408c85009",
+                "Unique ID": "07dca35a735a5abb",
+                "Value": "100n X7R 10V",
+                "Description": "At U1 VDD pin 24; short pad-to-cap and ground via",
+                "Group ID": "",
+                "Channel ID": "$1n402",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C4"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "aba06d6516e357f8": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C5",
+                "Symbol": "2eae1621be9c56e6",
+                "Device": "bd39761a123554af",
+                "Footprint": "7b835bfd711a557f",
+                "Unique ID": "aba06d6516e357f8",
+                "Value": "100n X7R 10V",
+                "Description": "At U1 VDD pin 36; short pad-to-cap and ground via",
+                "Group ID": "",
+                "Channel ID": "$1n421",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C5"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "e95ae6cbd1265754": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C6",
+                "Symbol": "b3606f0b3b1452c1",
+                "Device": "96f2a8dd10fa581d",
+                "Footprint": "a3968d31eeda5437",
+                "Unique ID": "e95ae6cbd1265754",
+                "Value": "100n X7R 10V",
+                "Description": "At U1 VDD pin 48; short pad-to-cap and ground via",
+                "Group ID": "",
+                "Channel ID": "$1n440",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C6"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "30d0d990f8d75a7a": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1u X7R 10V",
+                "Designator": "C7",
+                "Symbol": "900cbfc83b125e58",
+                "Device": "09fdfe7c00165c36",
+                "Footprint": "4c944ceac30e5ea8",
+                "Unique ID": "30d0d990f8d75a7a",
+                "Value": "1u X7R 10V",
+                "Description": "Local MCU bulk",
+                "Group ID": "",
+                "Channel ID": "$1n459",
+                "Reuse Block": "",
+                "DeviceName": "1u X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C7"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "5b8ce634c9585012": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C8",
+                "Symbol": "387a73afba935a4e",
+                "Device": "93ae676465aa5a78",
+                "Footprint": "2b77af32f0a95db4",
+                "Unique ID": "5b8ce634c9585012",
+                "Value": "100n X7R 10V",
+                "Description": "At U1 pin9 VDDA",
+                "Group ID": "",
+                "Channel ID": "$1n478",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C8"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "VDDA",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "6b03775259635b4f": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1u X7R 10V",
+                "Designator": "C9",
+                "Symbol": "97b3a882138b5a97",
+                "Device": "6bc82770d1c75157",
+                "Footprint": "09a4756d2b355e28",
+                "Unique ID": "6b03775259635b4f",
+                "Value": "1u X7R 10V",
+                "Description": "Local ADC/DAC bulk",
+                "Group ID": "",
+                "Channel ID": "$1n497",
+                "Reuse Block": "",
+                "DeviceName": "1u X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C9"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "VDDA",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "10aab16db7aa5eec": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100n X7R 10V",
+                "Designator": "C10",
+                "Symbol": "fffc1610d5db5678",
+                "Device": "73f23a4fb9b655e7",
+                "Footprint": "039b2bf6ee6356bb",
+                "Unique ID": "10aab16db7aa5eec",
+                "Value": "100n X7R 10V",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n516",
+                "Reuse Block": "",
+                "DeviceName": "100n X7R 10V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C10"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "NRST",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "82f8789360165be3": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1n C0G 50V",
+                "Designator": "C11",
+                "Symbol": "d839c8491a3e568d",
+                "Device": "347b7f57a63757a6",
+                "Footprint": "1bf9f4451e2a597a",
+                "Unique ID": "82f8789360165be3",
+                "Value": "1n C0G 50V",
+                "Description": "Buffered plateau input; allow settling before ADC conversion",
+                "Group ID": "",
+                "Channel ID": "$1n535",
+                "Reuse Block": "",
+                "DeviceName": "1n C0G 50V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C11"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "ADC_PEAK_PIN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "0437bf52c1755493": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100p C0G 50V",
+                "Designator": "C12",
+                "Symbol": "9c45c6fb4ba65192",
+                "Device": "1883444c33975bb9",
+                "Footprint": "c10e662c82485a8d",
+                "Unique ID": "0437bf52c1755493",
+                "Value": "100p C0G 50V",
+                "Description": "Raw-waveform reservoir; source settling and bandwidth require measurement",
+                "Group ID": "",
+                "Channel ID": "$1n554",
+                "Reuse Block": "",
+                "DeviceName": "100p C0G 50V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C12"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "ADC_RAW_PIN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "08402e29f80a525a": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1n C0G 50V",
+                "Designator": "C13",
+                "Symbol": "2c9094977b0d5352",
+                "Device": "1c1d10ef821a5197",
+                "Footprint": "764c4a08331353c2",
+                "Unique ID": "08402e29f80a525a",
+                "Value": "1n C0G 50V",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n573",
+                "Reuse Block": "",
+                "DeviceName": "1n C0G 50V",
+                "FootprintName": "Capacitor_SMD:C_0402_1005Metric_C13"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "ADC_BASE_PIN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "fa01c2a4fda85a8a": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1k 1%",
+                "Designator": "R1",
+                "Symbol": "7eabbad9c6475539",
+                "Device": "f14b4acc97345a81",
+                "Footprint": "cdd047a004ef5fcf",
+                "Unique ID": "fa01c2a4fda85a8a",
+                "Value": "1k 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n592",
+                "Reuse Block": "",
+                "DeviceName": "1k 1%",
+                "FootprintName": "Resistor_SMD:R_0603_1608Metric_R1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "LED_PWR_A",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "cf33da8575645389": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "1k 1%",
+                "Designator": "R2",
+                "Symbol": "1b7369513cf959a3",
+                "Device": "3254751f91075a06",
+                "Footprint": "6963c81ac1165364",
+                "Unique ID": "cf33da8575645389",
+                "Value": "1k 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n611",
+                "Reuse Block": "",
+                "DeviceName": "1k 1%",
+                "FootprintName": "Resistor_SMD:R_0603_1608Metric_R2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "LED_RUN_A",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "bb0c9b3e21845ef1": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "BLUE_0603_USER_STOCK",
+                "Designator": "LED1",
+                "Symbol": "69e859e2a03d5299",
+                "Device": "31a562db99d9561a",
+                "Footprint": "8b8162e58c1351cf",
+                "Unique ID": "bb0c9b3e21845ef1",
+                "Value": "BLUE_0603_USER_STOCK",
+                "Description": "User stock blue LED, Vf 2.5..3V",
+                "Group ID": "",
+                "Channel ID": "$1n630",
+                "Reuse Block": "",
+                "DeviceName": "BLUE_0603_USER_STOCK",
+                "FootprintName": "LED_SMD:LED_0603_1608Metric_LED1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "K",
+                    "number": "1",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "LED_PWR_A",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "23757ddf027252bc": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "BLUE_0603_USER_STOCK",
+                "Designator": "LED2",
+                "Symbol": "8fe3e8d71fea557f",
+                "Device": "973c5fbc3a295876",
+                "Footprint": "359f7df038f05e72",
+                "Unique ID": "23757ddf027252bc",
+                "Value": "BLUE_0603_USER_STOCK",
+                "Description": "PB12 active-low running LED; use slow heartbeat",
+                "Group ID": "",
+                "Channel ID": "$1n649",
+                "Reuse Block": "",
+                "DeviceName": "BLUE_0603_USER_STOCK",
+                "FootprintName": "LED_SMD:LED_0603_1608Metric_LED2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "K",
+                    "number": "1",
+                    "net": "LED_RUN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "A",
+                    "number": "2",
+                    "net": "LED_RUN_A",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "3092a96af64e54c3": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "10k 1%",
+                "Designator": "R3",
+                "Symbol": "a8256143e4ab5609",
+                "Device": "44066952e4c85a5d",
+                "Footprint": "391c9f170db95516",
+                "Unique ID": "3092a96af64e54c3",
+                "Value": "10k 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n668",
+                "Reuse Block": "",
+                "DeviceName": "10k 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R3"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "BOOT0",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "7a7d8ff5fcd45489": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "10k 1%",
+                "Designator": "R4",
+                "Symbol": "251226b034ae599b",
+                "Device": "003b375a4ae65841",
+                "Footprint": "5af76fa6cbe65fbd",
+                "Unique ID": "7a7d8ff5fcd45489",
+                "Value": "10k 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n687",
+                "Reuse Block": "",
+                "DeviceName": "10k 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R4"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "NRST",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "7fe90ef0d5ea5c3a": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "10k 1%",
+                "Designator": "R5",
+                "Symbol": "4f48707c4604546f",
+                "Device": "a75616fc83ba5434",
+                "Footprint": "149f4fd417455a84",
+                "Unique ID": "7fe90ef0d5ea5c3a",
+                "Value": "10k 1%",
+                "Description": "PA9 FT VBUS sense; never configure output",
+                "Group ID": "",
+                "Channel ID": "$1n706",
+                "Reuse Block": "",
+                "DeviceName": "10k 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R5"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "VBUS",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "VBUS_SENSE",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "0bb20c8cd48c5d4e": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "0R",
+                "Designator": "R6",
+                "Symbol": "62afb8bce6cc52d2",
+                "Device": "344c38908f9a58db",
+                "Footprint": "d150379a7c4e548c",
+                "Unique ID": "0bb20c8cd48c5d4e",
+                "Value": "0R",
+                "Description": "VDDA and VDD must have same DC potential; do not insert high-value resistor",
+                "Group ID": "",
+                "Channel ID": "$1n725",
+                "Reuse Block": "",
+                "DeviceName": "0R",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R6"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "VDDA",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "b79c753ef13752cb": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100R 1%",
+                "Designator": "R7",
+                "Symbol": "59ccac2567f355ef",
+                "Device": "17b6c7d5f1b25973",
+                "Footprint": "ad5c9e11225252cd",
+                "Unique ID": "b79c753ef13752cb",
+                "Value": "100R 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n744",
+                "Reuse Block": "",
+                "DeviceName": "100R 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R7"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "PEAK_ADC",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "ADC_PEAK_PIN",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "213e566369825086": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "33R 1%",
+                "Designator": "R8",
+                "Symbol": "bb584e3b7a975d00",
+                "Device": "12dcc0672d2a5bcf",
+                "Footprint": "3da0ea1f44175f9d",
+                "Unique ID": "213e566369825086",
+                "Value": "33R 1%",
+                "Description": "",
+                "Group ID": "",
+                "Channel ID": "$1n763",
+                "Reuse Block": "",
+                "DeviceName": "33R 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R8"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "RAW_ADC",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "ADC_RAW_PIN",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "ce69351f7ef9544d": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "100R 1%",
+                "Designator": "R9",
+                "Symbol": "7e7d90175ec651a1",
+                "Device": "4ae2b58abdf95d2f",
+                "Footprint": "07c078b95aec5a88",
+                "Unique ID": "ce69351f7ef9544d",
+                "Value": "100R 1%",
+                "Description": "Nominal0.623V BASE/reference monitor input; not per-event baseline",
+                "Group ID": "",
+                "Channel ID": "$1n782",
+                "Reuse Block": "",
+                "DeviceName": "100R 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R9"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "BASE_ADC",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "ADC_BASE_PIN",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "161e3f873ca259c0": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "33R 1%",
+                "Designator": "R10",
+                "Symbol": "887dd111f41f597b",
+                "Device": "264e1748967a580d",
+                "Footprint": "d72220da79a05d99",
+                "Unique ID": "161e3f873ca259c0",
+                "Value": "33R 1%",
+                "Description": "Carrier provides low-pass/buffer; use high-Z load",
+                "Group ID": "",
+                "Channel ID": "$1n801",
+                "Reuse Block": "",
+                "DeviceName": "33R 1%",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R10"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "DAC_THRESH_PIN",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "DAC_THRESH",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "7ef0d461a12e554a": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "0R",
+                "Designator": "R11",
+                "Symbol": "7178e36f56d155c4",
+                "Device": "63ff98e6215c572c",
+                "Footprint": "02fc6d47500b5691",
+                "Unique ID": "7ef0d461a12e554a",
+                "Value": "0R",
+                "Description": "USB routing option; populated 0R by default, no extra pullup",
+                "Group ID": "",
+                "Channel ID": "$1n820",
+                "Reuse Block": "",
+                "DeviceName": "0R",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R11"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "USB_DM",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "MCU_USB_DM",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "1f6963b9bde552f4": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "0R",
+                "Designator": "R12",
+                "Symbol": "0028e2bc5cb05043",
+                "Device": "65910dd8ae765458",
+                "Footprint": "f0d895d7ac6e5169",
+                "Unique ID": "1f6963b9bde552f4",
+                "Value": "0R",
+                "Description": "Matched with R11; USB FS on-chip transceiver",
+                "Group ID": "",
+                "Channel ID": "$1n839",
+                "Reuse Block": "",
+                "DeviceName": "0R",
+                "FootprintName": "Resistor_SMD:R_0402_1005Metric_R12"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "USB_DP",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "MCU_USB_DP",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "93887e3e58a15745": {
+            "props": {
+                "Add into BOM": "yes",
+                "Convert to PCB": "yes",
+                "Name": "B3U-1000P",
+                "Designator": "SW1",
+                "Symbol": "2061d541e23651bd",
+                "Device": "3181f3a95d9553e0",
+                "Footprint": "48c8f19683a55665",
+                "Unique ID": "93887e3e58a15745",
+                "Value": "B3U-1000P",
+                "Description": "Hold during USB power up for DFU; preserve factory nBOOT1 setting",
+                "Group ID": "",
+                "Channel ID": "$1n858",
+                "Reuse Block": "",
+                "DeviceName": "B3U-1000P",
+                "FootprintName": "Button_Switch_SMD:SW_SPST_B3U-1000P_SW1"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "BOOT0",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "V3V3",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        },
+        "ce7bcc32014556f2": {
+            "props": {
+                "Add into BOM": "no",
+                "Convert to PCB": "yes",
+                "Name": "B3U-1000P",
+                "Designator": "SW2",
+                "Symbol": "9cb3c3ac2562501c",
+                "Device": "309bd8deae3c58f6",
+                "Footprint": "b92d75c6972857dd",
+                "Unique ID": "ce7bcc32014556f2",
+                "Value": "B3U-1000P",
+                "Description": "Optional local reset convenience",
+                "Group ID": "",
+                "Channel ID": "$1n877",
+                "Reuse Block": "",
+                "DeviceName": "B3U-1000P",
+                "FootprintName": "Button_Switch_SMD:SW_SPST_B3U-1000P_SW2"
+            },
+            "pinInfoMap": {
+                "1": {
+                    "name": "1",
+                    "number": "1",
+                    "net": "NRST",
+                    "props": {
+                        "Pin Number": "1"
+                    }
+                },
+                "2": {
+                    "name": "2",
+                    "number": "2",
+                    "net": "GND",
+                    "props": {
+                        "Pin Number": "2"
+                    }
+                }
+            }
+        }
+    },
+    "designRule": {
+        "trackPhysics": {
+            "copperThickness1oz": {
+                "name": "copperThickness1oz",
+                "isDefault": true,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.127,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            },
+            "copperThickness2oz": {
+                "name": "copperThickness2oz",
+                "isDefault": false,
+                "unit": "mm",
+                "strokeValue": {
+                    "common": {
+                        "min": 0.203,
+                        "max": 2.54,
+                        "default": 0.254
+                    }
+                }
+            }
+        },
+        "netRule": {
+            "V3V3": {
+                "net": "V3V3",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "NRST": {
+                "net": "NRST",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "GND": {
+                "net": "GND",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "VDDA": {
+                "net": "VDDA",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "ADC_PEAK_PIN": {
+                "net": "ADC_PEAK_PIN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "ADC_RAW_PIN": {
+                "net": "ADC_RAW_PIN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "ADC_BASE_PIN": {
+                "net": "ADC_BASE_PIN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "DAC_THRESH_PIN": {
+                "net": "DAC_THRESH_PIN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "TRIG": {
+                "net": "TRIG",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "HOLD": {
+                "net": "HOLD",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PEAK_RESET": {
+                "net": "PEAK_RESET",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "AUX": {
+                "net": "AUX",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LED_RUN": {
+                "net": "LED_RUN",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "VBUS_SENSE": {
+                "net": "VBUS_SENSE",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "MCU_USB_DM": {
+                "net": "MCU_USB_DM",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "MCU_USB_DP": {
+                "net": "MCU_USB_DP",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "SWDIO": {
+                "net": "SWDIO",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "SWCLK": {
+                "net": "SWCLK",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "BOOT0": {
+                "net": "BOOT0",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "VBUS": {
+                "net": "VBUS",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "USB_DM": {
+                "net": "USB_DM",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "USB_DP": {
+                "net": "USB_DP",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "PEAK_ADC": {
+                "net": "PEAK_ADC",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "RAW_ADC": {
+                "net": "RAW_ADC",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "BASE_ADC": {
+                "net": "BASE_ADC",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "DAC_THRESH": {
+                "net": "DAC_THRESH",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LED_PWR_A": {
+                "net": "LED_PWR_A",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            },
+            "LED_RUN_A": {
+                "net": "LED_RUN_A",
+                "ruleMap": {
+                    "TrackPhysics": ""
+                }
+            }
+        }
+    },
+    "differentialPair": {},
+    "netClass": {},
+    "equalLengthNetGroup": {}
+}

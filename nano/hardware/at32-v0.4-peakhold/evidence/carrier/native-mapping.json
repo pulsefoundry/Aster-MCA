@@ -1,0 +1,952 @@
+[
+  {
+    "ref": "M1",
+    "schematic_component": "n10",
+    "pcb_component": "n24",
+    "symbol": "3679ef9992f654b9",
+    "footprint": "7f33817dce925d6e",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "VBUS"
+      },
+      {
+        "pad": "3",
+        "net": "USB_DM"
+      },
+      {
+        "pad": "4",
+        "net": "USB_DP"
+      },
+      {
+        "pad": "5",
+        "net": "GND"
+      },
+      {
+        "pad": "6",
+        "net": "V3V3"
+      },
+      {
+        "pad": "7",
+        "net": "NRST"
+      },
+      {
+        "pad": "8",
+        "net": "SWDIO"
+      },
+      {
+        "pad": "9",
+        "net": "SWCLK"
+      },
+      {
+        "pad": "10",
+        "net": "BOOT0"
+      },
+      {
+        "pad": "11",
+        "net": "GND"
+      },
+      {
+        "pad": "12",
+        "net": "GND"
+      },
+      {
+        "pad": "13",
+        "net": "PEAK_ADC"
+      },
+      {
+        "pad": "14",
+        "net": "GND"
+      },
+      {
+        "pad": "15",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "16",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "17",
+        "net": "GND"
+      },
+      {
+        "pad": "18",
+        "net": "DAC_THRESH"
+      },
+      {
+        "pad": "19",
+        "net": "TRIG"
+      },
+      {
+        "pad": "20",
+        "net": "HOLD"
+      },
+      {
+        "pad": "21",
+        "net": "PEAK_RESET"
+      },
+      {
+        "pad": "22",
+        "net": "AUX"
+      }
+    ]
+  },
+  {
+    "ref": "J1",
+    "schematic_component": "n149",
+    "pcb_component": "n51",
+    "symbol": "967747420b3f5078",
+    "footprint": "f7e4249cea6c572e",
+    "pad_nets": [
+      {
+        "pad": "",
+        "net": ""
+      },
+      {
+        "pad": "",
+        "net": ""
+      },
+      {
+        "pad": "1",
+        "net": "VBUS"
+      },
+      {
+        "pad": "2",
+        "net": "USB_DM_CONN"
+      },
+      {
+        "pad": "3",
+        "net": "USB_DP_CONN"
+      },
+      {
+        "pad": "4",
+        "net": "GND"
+      },
+      {
+        "pad": "SH",
+        "net": "GND"
+      },
+      {
+        "pad": "SH",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "J2",
+    "schematic_component": "n186",
+    "pcb_component": "n64",
+    "symbol": "365acfe0b5aa5275",
+    "footprint": "f015f17fddc851b0",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PULSE_IN"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "J3",
+    "schematic_component": "n205",
+    "pcb_component": "n74",
+    "symbol": "f1ac9d86d68d5c28",
+    "footprint": "7bd05d9971c35dc2",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "PULSE_IN"
+      },
+      {
+        "pad": "3",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "D90",
+    "schematic_component": "n230",
+    "pcb_component": "n82",
+    "symbol": "f374742ebd5b5109",
+    "footprint": "6a2ba98a9cea5f22",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "USB_DP_CONN"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      },
+      {
+        "pad": "3",
+        "net": "USB_DM_CONN"
+      },
+      {
+        "pad": "4",
+        "net": "USB_DM"
+      },
+      {
+        "pad": "5",
+        "net": "VBUS"
+      },
+      {
+        "pad": "6",
+        "net": "USB_DP"
+      }
+    ]
+  },
+  {
+    "ref": "C90",
+    "schematic_component": "n273",
+    "pcb_component": "n93",
+    "symbol": "1d6f9ef3484752d5",
+    "footprint": "146fcc69923052fb",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "VBUS"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C91",
+    "schematic_component": "n292",
+    "pcb_component": "n100",
+    "symbol": "5f4bac3f08115478",
+    "footprint": "15c6f14529ec5b1e",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "VBUS"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "U10",
+    "schematic_component": "n8",
+    "pcb_component": "n107",
+    "symbol": "5e8f016590725d45",
+    "footprint": "75cbd49460b15dc3",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "2",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "3",
+        "net": "BASE_DIV"
+      },
+      {
+        "pad": "4",
+        "net": "GND"
+      },
+      {
+        "pad": "5",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "6",
+        "net": "INPUT_FB"
+      },
+      {
+        "pad": "7",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "8",
+        "net": "AV3V3"
+      }
+    ]
+  },
+  {
+    "ref": "U11",
+    "schematic_component": "n8",
+    "pcb_component": "n120",
+    "symbol": "3de2480deb895d39",
+    "footprint": "d4ebc05a801b5b87",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_DRV"
+      },
+      {
+        "pad": "2",
+        "net": "PEAK_FB"
+      },
+      {
+        "pad": "3",
+        "net": "CAPTURE_IN"
+      },
+      {
+        "pad": "4",
+        "net": "GND"
+      },
+      {
+        "pad": "5",
+        "net": "HOLD_CAP"
+      },
+      {
+        "pad": "6",
+        "net": "PEAK_ADC"
+      },
+      {
+        "pad": "7",
+        "net": "PEAK_ADC"
+      },
+      {
+        "pad": "8",
+        "net": "AV3V3"
+      }
+    ]
+  },
+  {
+    "ref": "U12",
+    "schematic_component": "n63",
+    "pcb_component": "n133",
+    "symbol": "655142b2794b559c",
+    "footprint": "77766f2ee7aa5a42",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "HOLD_CTL"
+      },
+      {
+        "pad": "2",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "3",
+        "net": "GND"
+      },
+      {
+        "pad": "4",
+        "net": "RESET_SOURCE"
+      },
+      {
+        "pad": "5",
+        "net": "RESET_CTL"
+      },
+      {
+        "pad": "6",
+        "net": "HOLD_CAP"
+      },
+      {
+        "pad": "7",
+        "net": ""
+      },
+      {
+        "pad": "8",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "9",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "10",
+        "net": "CAPTURE_IN"
+      }
+    ]
+  },
+  {
+    "ref": "U13",
+    "schematic_component": "n63",
+    "pcb_component": "n148",
+    "symbol": "7bb6db7a960359cc",
+    "footprint": "91885815ee8159ca",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "TRIG_DRV"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      },
+      {
+        "pad": "3",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "4",
+        "net": "THRESH_FILT"
+      },
+      {
+        "pad": "5",
+        "net": "AV3V3"
+      }
+    ]
+  },
+  {
+    "ref": "D10",
+    "schematic_component": "n100",
+    "pcb_component": "n158",
+    "symbol": "e5b12bede0d95226",
+    "footprint": "62433bc9d3235ac8",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "GND"
+      },
+      {
+        "pad": "2",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "3",
+        "net": "INPUT_FB"
+      }
+    ]
+  },
+  {
+    "ref": "D11",
+    "schematic_component": "n125",
+    "pcb_component": "n166",
+    "symbol": "3bb0890d7772508c",
+    "footprint": "1f221f0b13955c15",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "HOLD_CAP"
+      },
+      {
+        "pad": "2",
+        "net": "PEAK_DIODE_A"
+      }
+    ]
+  },
+  {
+    "ref": "D12",
+    "schematic_component": "n144",
+    "pcb_component": "n173",
+    "symbol": "b7c0b9055e935401",
+    "footprint": "bbbda7676712583f",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_FB"
+      },
+      {
+        "pad": "2",
+        "net": ""
+      },
+      {
+        "pad": "3",
+        "net": "PEAK_DRV"
+      }
+    ]
+  },
+  {
+    "ref": "R100",
+    "schematic_component": "n125",
+    "pcb_component": "n181",
+    "symbol": "ba02cf3f93a85693",
+    "footprint": "3f3ec518d4f35256",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "V3V3"
+      },
+      {
+        "pad": "2",
+        "net": "AV3V3"
+      }
+    ]
+  },
+  {
+    "ref": "R101",
+    "schematic_component": "n144",
+    "pcb_component": "n188",
+    "symbol": "2f40ef599b535504",
+    "footprint": "16092d6441475afe",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "BASE_DIV"
+      }
+    ]
+  },
+  {
+    "ref": "R102",
+    "schematic_component": "n163",
+    "pcb_component": "n195",
+    "symbol": "f8d8d21fc4b65f54",
+    "footprint": "c65a10d3164a58f2",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "BASE_DIV"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R103",
+    "schematic_component": "n182",
+    "pcb_component": "n202",
+    "symbol": "02429ebddbcb5ebd",
+    "footprint": "30331e9bd8fe5ca5",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PULSE_IN"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C100",
+    "schematic_component": "n201",
+    "pcb_component": "n209",
+    "symbol": "cb0abeba0c415e52",
+    "footprint": "70b8c7de9f39548b",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PULSE_IN"
+      },
+      {
+        "pad": "2",
+        "net": "INPUT_AC"
+      }
+    ]
+  },
+  {
+    "ref": "R104",
+    "schematic_component": "n220",
+    "pcb_component": "n216",
+    "symbol": "17810cc928eb5c36",
+    "footprint": "49b563293ca255df",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "INPUT_AC"
+      },
+      {
+        "pad": "2",
+        "net": "INPUT_FB"
+      }
+    ]
+  },
+  {
+    "ref": "R105",
+    "schematic_component": "n239",
+    "pcb_component": "n223",
+    "symbol": "a45a4becfcf05b3f",
+    "footprint": "17eeff1c09fc5468",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "2",
+        "net": "INPUT_FB"
+      }
+    ]
+  },
+  {
+    "ref": "C101",
+    "schematic_component": "n258",
+    "pcb_component": "n230",
+    "symbol": "2101efbaaeda51f6",
+    "footprint": "9c7d0c7c555b51cf",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "RAW_ADC"
+      },
+      {
+        "pad": "2",
+        "net": "INPUT_FB"
+      }
+    ]
+  },
+  {
+    "ref": "R106",
+    "schematic_component": "n164",
+    "pcb_component": "n237",
+    "symbol": "98ab124f7c735c2a",
+    "footprint": "190eac34b76751dc",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_DRV"
+      },
+      {
+        "pad": "2",
+        "net": "PEAK_DIODE_A"
+      }
+    ]
+  },
+  {
+    "ref": "R107",
+    "schematic_component": "n183",
+    "pcb_component": "n244",
+    "symbol": "c5a4467250db59a0",
+    "footprint": "6a1231dd665b5b0a",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_ADC"
+      },
+      {
+        "pad": "2",
+        "net": "PEAK_FB"
+      }
+    ]
+  },
+  {
+    "ref": "C102",
+    "schematic_component": "n202",
+    "pcb_component": "n251",
+    "symbol": "624400a634485011",
+    "footprint": "49612641d01e5363",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "HOLD_CAP"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C103",
+    "schematic_component": "n221",
+    "pcb_component": "n258",
+    "symbol": "e5d120ea35fc53d5",
+    "footprint": "357ca69eb02c5e44",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_DRV"
+      },
+      {
+        "pad": "2",
+        "net": "PEAK_FB"
+      }
+    ]
+  },
+  {
+    "ref": "R108",
+    "schematic_component": "n240",
+    "pcb_component": "n265",
+    "symbol": "4947fbcd19825d16",
+    "footprint": "16b2e934429b5b7f",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "BASE_ADC"
+      },
+      {
+        "pad": "2",
+        "net": "RESET_SOURCE"
+      }
+    ]
+  },
+  {
+    "ref": "R109",
+    "schematic_component": "n259",
+    "pcb_component": "n272",
+    "symbol": "102622a2d0b45622",
+    "footprint": "7c18561a3b6c5a95",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "V3V3"
+      },
+      {
+        "pad": "2",
+        "net": "HOLD_CTL"
+      }
+    ]
+  },
+  {
+    "ref": "R110",
+    "schematic_component": "n278",
+    "pcb_component": "n279",
+    "symbol": "b16fb843e0ed59cd",
+    "footprint": "4dfa2b3153ba5b39",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "V3V3"
+      },
+      {
+        "pad": "2",
+        "net": "RESET_CTL"
+      }
+    ]
+  },
+  {
+    "ref": "R111",
+    "schematic_component": "n297",
+    "pcb_component": "n286",
+    "symbol": "8fcbf1f4f6665da5",
+    "footprint": "795a5267c6055587",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "HOLD"
+      },
+      {
+        "pad": "2",
+        "net": "HOLD_CTL"
+      }
+    ]
+  },
+  {
+    "ref": "R112",
+    "schematic_component": "n316",
+    "pcb_component": "n293",
+    "symbol": "d7ac7bfc09d85037",
+    "footprint": "62bea5ae688f571b",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "PEAK_RESET"
+      },
+      {
+        "pad": "2",
+        "net": "RESET_CTL"
+      }
+    ]
+  },
+  {
+    "ref": "R113",
+    "schematic_component": "n277",
+    "pcb_component": "n300",
+    "symbol": "58ec44787f665b3b",
+    "footprint": "5a07f20d707d52f7",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "DAC_THRESH"
+      },
+      {
+        "pad": "2",
+        "net": "THRESH_FILT"
+      }
+    ]
+  },
+  {
+    "ref": "C104",
+    "schematic_component": "n296",
+    "pcb_component": "n307",
+    "symbol": "dbddff025a8a5e68",
+    "footprint": "b0f550aeef365845",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "THRESH_FILT"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "R114",
+    "schematic_component": "n315",
+    "pcb_component": "n314",
+    "symbol": "c2212880ebfc5fec",
+    "footprint": "733cd5417a6a5691",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "TRIG_DRV"
+      },
+      {
+        "pad": "2",
+        "net": "TRIG"
+      }
+    ]
+  },
+  {
+    "ref": "C105",
+    "schematic_component": "n334",
+    "pcb_component": "n321",
+    "symbol": "09ebc376724555e4",
+    "footprint": "27334bd293b2595a",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "BASE_DIV"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C106",
+    "schematic_component": "n353",
+    "pcb_component": "n328",
+    "symbol": "4714c84a9c005187",
+    "footprint": "11abf9dc6d6c5bc2",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "BASE_DIV"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C107",
+    "schematic_component": "n372",
+    "pcb_component": "n335",
+    "symbol": "78aa149b15165495",
+    "footprint": "1499bd06833d53f5",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C108",
+    "schematic_component": "n391",
+    "pcb_component": "n342",
+    "symbol": "6d69efbc9fa556fe",
+    "footprint": "ea1be8022c1553b4",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C109",
+    "schematic_component": "n335",
+    "pcb_component": "n349",
+    "symbol": "603737f314a65118",
+    "footprint": "5884cdf038165fbb",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C110",
+    "schematic_component": "n354",
+    "pcb_component": "n356",
+    "symbol": "44e99e8de06252bf",
+    "footprint": "8702069fe7725eb7",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C111",
+    "schematic_component": "n373",
+    "pcb_component": "n363",
+    "symbol": "396da048618b53d5",
+    "footprint": "5a6b2b77f6ec54ab",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  },
+  {
+    "ref": "C112",
+    "schematic_component": "n410",
+    "pcb_component": "n370",
+    "symbol": "687cb1ce5a3f5fdd",
+    "footprint": "376762c5af035629",
+    "pad_nets": [
+      {
+        "pad": "1",
+        "net": "AV3V3"
+      },
+      {
+        "pad": "2",
+        "net": "GND"
+      }
+    ]
+  }
+]

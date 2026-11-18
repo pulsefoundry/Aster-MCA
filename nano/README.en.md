@@ -10,10 +10,12 @@ Nano is the MCU-based subproject of the [Aster MCA family](../README.md).
 
 | Track | Status | Documentation |
 |---|---|---|
-| **AT32F423 + TLV9061** | Active spectroscopy track; 4 MS/s, 2048 channels, archived cesium-source measurements | [AT32 guide](docs/at32/README.en.md) |
+| **AT32F423** | v0.4.1 peak-hold bench; low-level bias unresolved; v0.3 measurements archived | [AT32 guide](docs/at32/README.en.md) |
 | **CH32X033F8P6** | **Baseline drift and abnormal spikes are still under investigation.** Analog-chain diagnostics are available; reliable spectroscopy has not been validated. | [CH32 status and hardware](docs/ch32/README.md) |
 
-This directory is maintained at `Aster-MCA/nano/`, with separate documentation and firmware directories for AT32 and CH32. The original Nano main-branch history was imported without squashing; the former repository retains historical entry points. See the [migration record](docs/repository-migration-2026-10-21.md). Documentation updated on 2026-10-21; latest physical-board measurements were recorded on 2026-10-18.
+2026-11-19 checkpoint: [v0.4.1 PTH core + peak-hold bench results](measurements/2026-11-18-peakhold/README.en.md). Current bench firmware: fast.7; low-amplitude bias remains unresolved. The 600-second Cs result of 8.67% is an uncalibrated channel-domain ratio. The v0.3 spectra, cost and desktop protocol below are retained as history.
+
+This directory is maintained at `Aster-MCA/nano/`, with separate documentation and firmware directories for AT32 and CH32. The original Nano main-branch history was imported without squashing; the former repository retains historical entry points. See the [migration record](docs/repository-migration-2026-10-21.md). The v0.3 documentation dates from 2026-10-21; see the 2026-11-19 checkpoint above for current bench status.
 
 ## AT32 prototype
 
@@ -24,7 +26,7 @@ This directory is maintained at `Aster-MCA/nano/`, with separate documentation a
 
 The photographed prototype uses an **AT32F423CCT7**, a **TLV9061** external op amp, a USB-A male connector and an SMA female connector. The PCB is 1.6 mm thick. Two blue LEDs indicate power and operation. Published photographs retain the original image pixels and display orientation, with location and other personal metadata removed.
 
-## Current AT32 configuration
+## Archived AT32 v0.3 configuration
 
 | Item | Configuration |
 |---|---|
@@ -62,7 +64,7 @@ The latest 60.000256 s acquisition accepted 17,611 events and processed all 58,5
 - [Source/background histograms, finite raw waveforms and fits](outputs/Aster-MCA-Nano-AT32-增益5倍实测-20261018); [detailed checkpoint](docs/2026-10-18-checkpoint.md).
 - [Earlier 10-minute v0.6.3 cesium spectrum](outputs/Aster-MCA-Nano-AT32-v0.6.3-铯源10分钟分辨率-20261016/铯源谱与分辨率拟合.png), retained as history. Its integral estimator and configuration differ from the current peak mode.
 
-## AT32 single-board cost
+## AT32 v0.3 single-board cost
 
 **Priced subtotal: approximately CNY 17.86 per board, plus the actual USB-A connector, SMA connector and two stock LEDs.**
 

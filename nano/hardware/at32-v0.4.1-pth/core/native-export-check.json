@@ -1,0 +1,85 @@
+{
+  "errors": [],
+  "project": {
+    "itemType": "Project",
+    "uuid": "c6272f473a3b4635be2af605c1985002",
+    "friendlyName": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+    "name": "liueee/Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+    "teamUuid": "b3e4ba8006e041e9adf1e7fd5e98fc95",
+    "description": "",
+    "data": [
+      {
+        "itemType": "Board",
+        "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+        "schematic": {
+          "itemType": "Schematic",
+          "uuid": "5955ad282f135477",
+          "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+          "page": [
+            {
+              "itemType": "Schematic Page",
+              "uuid": "51d25e62331a512a",
+              "name": "AT32 PTH core / pin contract v0.4.1-PTH",
+              "parentSchematicUuid": "5955ad282f135477",
+              "showTitleBlock": true,
+              "titleBlockData": {}
+            }
+          ],
+          "parentProjectUuid": "c6272f473a3b4635be2af605c1985002",
+          "parentBoardName": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB"
+        },
+        "pcb": {
+          "itemType": "PCB",
+          "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+          "uuid": "378149dd1b4a5b96",
+          "parentBoardName": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+          "parentProjectUuid": "c6272f473a3b4635be2af605c1985002"
+        },
+        "parentProjectUuid": "c6272f473a3b4635be2af605c1985002"
+      }
+    ]
+  },
+  "pcbs": [
+    {
+      "itemType": "PCB",
+      "uuid": "378149dd1b4a5b96",
+      "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB",
+      "parentProjectUuid": "c6272f473a3b4635be2af605c1985002",
+      "parentBoardName": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB"
+    }
+  ],
+  "pcbDrc": [],
+  "pageInfo": [
+    {
+      "titleBlockData": {},
+      "showTitleBlock": true,
+      "itemType": "Schematic Page",
+      "uuid": "51d25e62331a512a",
+      "name": "AT32 PTH core / pin contract v0.4.1-PTH",
+      "parentSchematicUuid": "5955ad282f135477"
+    }
+  ],
+  "schDrc": [],
+  "native_export_files": [
+    {
+      "name": "PCB-netlist.net",
+      "size_bytes": 37205
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+      "size_bytes": 42717
+    },
+    {
+      "name": "Schematic-netlist.net",
+      "size_bytes": 63206
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB-Schematic.pdf",
+      "size_bytes": 182214
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Core-v0.4.1-PTH-NOT_FOR_FAB-native.epro2",
+      "size_bytes": 301848
+    }
+  ]
+}

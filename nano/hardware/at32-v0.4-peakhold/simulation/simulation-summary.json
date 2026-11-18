@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-12",
+  "circuit": "positive peak,0.62264V base,OPA2356 modeled with two OPA356 channels;470p;22R driver;1k feedback;BAS316 capture+BAS70 antisaturation",
+  "simulator": "ngspice47,ps compatibility",
+  "physical_measurements": false,
+  "triangle_cases": 48,
+  "finite_sin_squared_cases": 12,
+  "triangle_error_pct_range": [
+    -0.3241992892830947,
+    11.04637630135849
+  ],
+  "four_us_full_frontend_error_pct_range": [
+    0.13866448399987852,
+    0.3931002149999835
+  ],
+  "four_us_peak_vs_raw_error_pct_range": [
+    -0.3634905707770248,
+    -0.11032737808056661
+  ],
+  "model_limitations": [
+    "BAS316 and BAS70 are approximate analytical SPICE models, NOT vendor-qualified device models.",
+    "TMUX1136 uses ideal Ron/Roff switching; charge injection, feedthrough,clock coupling, switch capacitance,crosstalk not fully modeled.",
+    "Two OPA356 single-channel vendor models approximate dual OPA2356; package crosstalk/layout not modeled.",
+    "TLV9062 vendor macro used for inverting frontend. Reference is ideal in transient test.",
+    "Typical parameter models only: no production-corner,hardware,temp,ADC switchkickback or full PCB extraction validation.",
+    "4us full-width pulse alone does not specify rise time or tip curvature; abrupt narrow triangle tests exceed1percent."
+  ],
+  "conservative_room_temperature_droop_budget_mV_per_10us": 0.7468085106382979,
+  "representative_tolerance_cases": 12,
+  "representative_tolerance_total_error_pct_range": [
+    0.34096343199998547,
+    0.6974455999999796
+  ],
+  "representative_tolerance_driver_hold_min_V": 0.242624845
+}

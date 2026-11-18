@@ -1,0 +1,43 @@
+Reference,Value,Footprint,DNP,Notes
+M1,AT32_CORE_v0.4_26x20,Aster:AT32_Core_22_26x20_Carrier,False,"TOP-VIEW land pattern, not mirrored. Module body x8..34/y6..26. No carrier components underneath. 22 lands match module half-hole center coordinates one-to-one."
+J1,USB-A_MALE_CNCTech_1001-011-01101_PATTERN,Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal,False,Reuse original proven USB-A male pattern. 2 plated shell slots and 2 NPTH alignment holes. Board edge x=0. Confirm any low-cost substitute against all mechanical dimensions.
+J2,SMA_F_5PIN_5.08MM_PATTERN,Connector_Coaxial:SMA_Amphenol_132134_Vertical,False,"Five physical PTH pins: center signal plus four grounds on 5.08mm square. KiCad 132134 footprint is dimensional reference only, not required purchase. Center drill1.5mm, grounds1.7mm; check actual alternative drawing. Vertical jack avoids edge-clamp board-thickness constraint."
+J3,G-S-G_WIRE_PADS_2.54,Aster:GSG_Wire_3P,True,Optional wire attachment instead of J2; no connector needed. Keep signal short and adjacent return. Do not connect two independently driven inputs at once.
+D90,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,False,"ST USBLC6-2SC6 SOT23-6L. Pads1/6 internally IO1;3/4 internally IO2. Separate IN/OUT net labels force routing through part, not long tee stub. Ground/power returns short. No 1.5k external USB pullup."
+C90,1u X7R 10V,Capacitor_SMD:C_0603_1608Metric,False,Carrier local VBUS decoupling; core has own1u input. Recalculate total USB attach capacitance and inrush with complete assembly.
+C91,100n X7R 10V,Capacitor_SMD:C_0603_1608Metric,False,Local USBLC6 VBUS decoupling; place next to D90 with short ground return.
+U10,TLV9062IDR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,False,"A=0.5V reference follower, B=inverting signal conditioner"
+U11,OPA2356AIDR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,False,A=positive peak driver; B=hold buffer. Low-impedance analog outputs only cross module joint.
+U12,TMUX1136DGSR,Package_SO:MSOP-10_3x3mm_P0.5mm,False,"SEL=1 selects A. HOLD=1 selects BASE, RESET=1 selects RESET_SOURCE. NC_RESET is intentionally unconnected."
+U13,TLV3201AIDBVR,Package_TO_SOT_SMD:SOT-23-5,False,"Trigger high when positive RAW pulse exceeds threshold; 1.2mV nominal internal hysteresis. 40ns typ, not an event-count guarantee."
+D10,"BAV199,215",Package_TO_SOT_SMD:SOT-23,False,"Only input protection, NOT the peak-capture diode. A1=1, K2=2, series junction=3."
+D11,"BAS316,115",Diode_SMD:D_SOD-323,False,"Peak charging diode: pin1 cathode at capacitor, pin2 anode at driver resistor."
+D12,"BAS70-04,215",Package_TO_SOT_SMD:SOT-23,False,"Low-VF antisaturation diode: anode feedback, cathode driver. Must be low-capacitance Schottky for0.623V baseline; ordinary silicon diode would require a negative driver output in hold."
+R100,0R,Resistor_SMD:R_0402_1005Metric,False,"Supply link; optional low-DCR ferrite after prototype test, do not add appreciable DC drop."
+R101,43k 0.1%,Resistor_SMD:R_0603_1608Metric,False,
+R102,10k 0.1%,Resistor_SMD:R_0603_1608Metric,False,
+R103,1M,Resistor_SMD:R_0603_1608Metric,False,Connector-side bleed; not 50-ohm termination.
+C100,33n C0G 50V,Capacitor_SMD:C_0805_2012Metric,False,AC coupling; tau approximately 33n*49.9k=1.647ms. Not a detector-HV input.
+R104,49.9k 0.1%,Resistor_SMD:R_0603_1608Metric,False,Input impedance about49.9k in passband; limits fault input current.
+R105,49.9k 0.1%,Resistor_SMD:R_0603_1608Metric,False,Signal gain -1; raw positive pulse from negative detector pulse.
+C101,DNP 1p-4.7p C0G,Capacitor_SMD:C_0603_1608Metric,True,"Optional feedback compensation, must characterize with actual detector; not populated by default."
+R106,22R,Resistor_SMD:R_0402_1005Metric,False,Peak driver output isolation; physical trace short.
+R107,1k,Resistor_SMD:R_0402_1005Metric,False,Low enough to limit parasitic phase lag; keep entire loop compact.
+C102,470p C0G 50V,Capacitor_SMD:C_0603_1608Metric,False,Critical hold capacitor; separate capacitor from USB/digital routing; optional220p/1n values require fresh characterization.
+C103,DNP 0.5p-4.7p C0G,Capacitor_SMD:C_0402_1005Metric,True,"Compensation tuning footprint; simulated parasitic0.1p only, explicit capacitor DNP."
+R108,330R,Resistor_SMD:R_0402_1005Metric,False,Limits reset transient; nominal RC about157ns plus switch/amp; begin with2us reset.
+R109,100k,Resistor_SMD:R_0402_1005Metric,False,Pull high: freeze during boot/reset or unconfigured MCU.
+R110,100k,Resistor_SMD:R_0402_1005Metric,False,Pull high: capacitor reset during boot/reset.
+R111,100R,Resistor_SMD:R_0402_1005Metric,False,Digital edge damping; no nF capacitor here.
+R112,100R,Resistor_SMD:R_0402_1005Metric,False,Digital edge damping.
+R113,10k,Resistor_SMD:R_0402_1005Metric,False,Isolates MCU DAC from filter; update only idle and settle at least1ms.
+C104,10n X7R,Capacitor_SMD:C_0402_1005Metric,False,100us time constant; high-Z comparator load.
+R114,33R,Resistor_SMD:R_0402_1005Metric,False,Digital edge damping at comparator.
+C105,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,False,"Before buffer, not directly on opamp output; reference wait>=500ms after powerup."
+C106,100n X7R,Capacitor_SMD:C_0402_1005Metric,False,
+C107,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,False,Bulk supply capacitor.
+C108,100n X7R,Capacitor_SMD:C_0402_1005Metric,False,At U10 supply8/4.
+C109,100n X7R,Capacitor_SMD:C_0402_1005Metric,False,"At U11 supply8/4. Route return directly, avoid hold node."
+C110,1u X7R,Capacitor_SMD:C_0402_1005Metric,False,Additional U11 local reservoir.
+C111,100n X7R,Capacitor_SMD:C_0402_1005Metric,False,At U12.
+C112,100n X7R,Capacitor_SMD:C_0402_1005Metric,False,At U13.

@@ -1,0 +1,288 @@
+{
+  "name": "Aster MCA Nano AT32 castellated core v0.4",
+  "status": "DESIGN DRAFT - NOT_FOR_FAB; native sync/DRC and analog bench validation pending",
+  "size_mm": [
+    26,
+    20
+  ],
+  "layers": 2,
+  "castellation": {
+    "pitch_mm": 2.0,
+    "drill_mm": 0.8,
+    "pad_size_mm": [
+      1.4,
+      2.0
+    ],
+    "edge_centered": true,
+    "pad_to_nearest_corner_center_mm": 3.0,
+    "mask_expansion_mm": 0.0,
+    "paste": false,
+    "carrier_land_mm": [
+      1.5,
+      2.8
+    ],
+    "fabricator_confirmation_required": true
+  },
+  "assembly": {
+    "all_components_on_top": true,
+    "bottom_flat": true,
+    "do_not_place_carrier_components_beneath_module": true
+  },
+  "mcu": "AT32F423CCT7",
+  "interface": [
+    {
+      "number": 1,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 3,
+      "y_mm": 0,
+      "direction": "power",
+      "note": "Common ground"
+    },
+    {
+      "number": 2,
+      "net": "VBUS",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 5,
+      "y_mm": 0,
+      "direction": "power_in",
+      "note": "USB 5 V input; only normal supply source"
+    },
+    {
+      "number": 3,
+      "net": "USB_DM",
+      "mcu_pin": "PA11",
+      "mcu_package_pin": 32,
+      "x_mm": 7,
+      "y_mm": 0,
+      "direction": "usb",
+      "note": "USB D-"
+    },
+    {
+      "number": 4,
+      "net": "USB_DP",
+      "mcu_pin": "PA12",
+      "mcu_package_pin": 33,
+      "x_mm": 9,
+      "y_mm": 0,
+      "direction": "usb",
+      "note": "USB D+"
+    },
+    {
+      "number": 5,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 11,
+      "y_mm": 0,
+      "direction": "power",
+      "note": "USB return"
+    },
+    {
+      "number": 6,
+      "net": "V3V3",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 13,
+      "y_mm": 0,
+      "direction": "power_out",
+      "note": "Regulated 3.3 V output; do not drive externally with USB attached"
+    },
+    {
+      "number": 7,
+      "net": "NRST",
+      "mcu_pin": "NRST",
+      "mcu_package_pin": 7,
+      "x_mm": 15,
+      "y_mm": 0,
+      "direction": "bidirectional",
+      "note": "Active-low reset; 10k pull-up, 100nF to ground on module"
+    },
+    {
+      "number": 8,
+      "net": "SWDIO",
+      "mcu_pin": "PA13",
+      "mcu_package_pin": 34,
+      "x_mm": 17,
+      "y_mm": 0,
+      "direction": "debug",
+      "note": "3.3 V SWD data"
+    },
+    {
+      "number": 9,
+      "net": "SWCLK",
+      "mcu_pin": "PA14",
+      "mcu_package_pin": 37,
+      "x_mm": 19,
+      "y_mm": 0,
+      "direction": "debug",
+      "note": "3.3 V SWD clock"
+    },
+    {
+      "number": 10,
+      "net": "BOOT0",
+      "mcu_pin": "BOOT0",
+      "mcu_package_pin": 44,
+      "x_mm": 21,
+      "y_mm": 0,
+      "direction": "input",
+      "note": "10k pull-down; BOOT button to 3.3 V"
+    },
+    {
+      "number": 11,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 23,
+      "y_mm": 0,
+      "direction": "power",
+      "note": "Debug return"
+    },
+    {
+      "number": 12,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 23,
+      "y_mm": 20,
+      "direction": "power",
+      "note": "Analog return"
+    },
+    {
+      "number": 13,
+      "net": "PEAK_ADC",
+      "mcu_pin": "PA0",
+      "mcu_package_pin": 10,
+      "x_mm": 21,
+      "y_mm": 20,
+      "direction": "analog_in",
+      "note": "Buffered positive held peak; amplitude=PEAK_ADC minus event-before RAW_ADC baseline; input remains within0..VDDA"
+    },
+    {
+      "number": 14,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 19,
+      "y_mm": 20,
+      "direction": "power",
+      "note": "Guard/return between PEAK and RAW"
+    },
+    {
+      "number": 15,
+      "net": "RAW_ADC",
+      "mcu_pin": "PA1",
+      "mcu_package_pin": 11,
+      "x_mm": 17,
+      "y_mm": 20,
+      "direction": "analog_in",
+      "note": "Buffered positive-going RAW pulses from negative SMA input; baseline nominal0.623V; event-before baseline must be measured"
+    },
+    {
+      "number": 16,
+      "net": "BASE_ADC",
+      "mcu_pin": "PA2",
+      "mcu_package_pin": 12,
+      "x_mm": 15,
+      "y_mm": 20,
+      "direction": "analog_in",
+      "note": "Buffered nominal0.623V reference monitor; NOT the event-before baseline; obtain event baseline from RAW_ADC"
+    },
+    {
+      "number": 17,
+      "net": "GND",
+      "mcu_pin": null,
+      "mcu_package_pin": null,
+      "x_mm": 13,
+      "y_mm": 20,
+      "direction": "power",
+      "note": "Analog return"
+    },
+    {
+      "number": 18,
+      "net": "DAC_THRESH",
+      "mcu_pin": "PA4",
+      "mcu_package_pin": 14,
+      "x_mm": 11,
+      "y_mm": 20,
+      "direction": "analog_out",
+      "note": "DAC1 threshold command; buffer/filter on carrier"
+    },
+    {
+      "number": 19,
+      "net": "TRIG",
+      "mcu_pin": "PA6",
+      "mcu_package_pin": 16,
+      "x_mm": 9,
+      "y_mm": 20,
+      "direction": "digital_in",
+      "note": "Active-high comparator event, use rising edge; TMR3_CH1 / EXINT6"
+    },
+    {
+      "number": 20,
+      "net": "HOLD",
+      "mcu_pin": "PA7",
+      "mcu_package_pin": 17,
+      "x_mm": 7,
+      "y_mm": 20,
+      "direction": "digital_out",
+      "note": "High freezes detector; carrier 100k pull-up"
+    },
+    {
+      "number": 21,
+      "net": "PEAK_RESET",
+      "mcu_pin": "PB0",
+      "mcu_package_pin": 18,
+      "x_mm": 5,
+      "y_mm": 20,
+      "direction": "digital_out",
+      "note": "High resets storage to BASE, nominal0.623V; carrier100k pull-up"
+    },
+    {
+      "number": 22,
+      "net": "AUX",
+      "mcu_pin": "PB1",
+      "mcu_package_pin": 19,
+      "x_mm": 3,
+      "y_mm": 20,
+      "direction": "bidirectional",
+      "note": "Spare TMR3_CH4 / ADC1_IN9"
+    }
+  ],
+  "clock": {
+    "default_reuse": "HICK48 + ACC USB SOF calibration; no crystal",
+    "optional_external_clock": "PF0/PF1 retained NC; may add crystal only after deliberate footprint/layout revision",
+    "maximum_frequency_hz": 150000000,
+    "reuse_firmware_cpu_hz": 144000000
+  },
+  "safety_defaults": {
+    "HOLD": "carrier100k pull-up to V3V3 => frozen; capture input selects nominal0.623V BASE",
+    "PEAK_RESET": "carrier100k pull-up to V3V3 => reset storage to nominal0.623V BASE",
+    "BOOT0": "module 10k pull-down => boot application when nBOOT1 retained",
+    "NRST": "module 10k pull-up + 100nF",
+    "LED_RUN": "active low PB12, set output latch high before configuring",
+    "DAC_THRESH": "firmware initializes threshold before releasing RESET/HOLD",
+    "TRIG": "configure input before release; active-high comparator, rising-edge event trigger",
+    "power": "USB only; SWD 3V3 pin is voltage reference, not a second supply"
+  },
+  "sources": [
+    {
+      "url": "https://www.arterychip.com/en/product/AT32F423.jsp",
+      "purpose": "Crystal-less USB device support and family features"
+    },
+    {
+      "local": "work/AT32F423-V2.03.pdf",
+      "purpose": "DS Rev 2.03 2025-01-17 pp.14,26,29-33,70-72 pinout and power; local copy already existed"
+    },
+    {
+      "url": "https://www.arterychip.com/download/DS/DS_AT32F423_V2.02_EN.pdf",
+      "purpose": "Official earlier Rev 2.02 cross-check of pin mapping"
+    },
+    {
+      "url": "https://jlcpcb.com/help/article/what-is-castellated-holes",
+      "purpose": "Official metallized half-hole manufacturing requirements"
+    }
+  ]
+}

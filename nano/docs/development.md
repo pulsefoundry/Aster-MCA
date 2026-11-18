@@ -10,7 +10,22 @@ cd nano
 
 Software tests and offline replay do not require a connected board. Current host/native-app validation is on macOS with Python 3 and a working C compiler (`cc`).
 
-## Current firmware build
+## Current peak-hold bench (v0.4.1 / fast.7)
+
+[Saved results and limits](../measurements/2026-11-18-peakhold/README.en.md) · [Offline archive verification](../analysis/20261118/README.md).
+
+Run from `nano/`; the commands below do not access hardware:
+
+```sh
+python3 analysis/20261118/verify_checkpoint.py
+python3 firmware/at32-peakhold-fast7/check_software.py
+python3 firmware/at32-peakhold-fast7/check_trigger_guards.py
+AT32_SDK=/path/to/pinned/AT32F423_Firmware_Library python3 firmware/at32-peakhold-fast7/build.py
+```
+
+Use the same pinned SDK/toolchain described below. The verified `prebuilt/` binaries and manifests are retained for fast.6/fast.7. `flash.py` expects build artifacts and a known installed fast.6/fast.7 image; it is a guarded updater, not a blank-chip installer. The old native GUI speaks the v0.3 protocol.
+
+## Archived v0.3 firmware build
 
 The validated build used ARM GNU Toolchain **14.2.Rel1** with newlib, and the [official AT32F423 Firmware Library](https://github.com/ArteryTek/AT32F423_Firmware_Library) at commit `a60472b248c39034f111ac17e7b1286549594435`.
 

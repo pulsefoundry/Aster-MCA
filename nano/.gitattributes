@@ -3,3 +3,11 @@ outputs/** -text -diff
 # Preserve vendor sources as imported; do not normalize their line endings.
 firmware/ch32-selftest-v0.3/vendor/** -text
 firmware/ch32-selftest-v0.3/src/Link.ld -text
+
+# Published capture/fabrication bytes must survive checkout unchanged.
+measurements/** -text -diff
+measurements/**/*.md text diff
+hardware/**/native/** -text -diff
+hardware/**/prototype-fabrication/** -text -diff
+hardware/** -text -diff
+hardware/**/README*.md text diff

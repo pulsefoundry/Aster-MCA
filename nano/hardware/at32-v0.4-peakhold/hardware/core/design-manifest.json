@@ -1,0 +1,1912 @@
+{
+  "name": "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB",
+  "size_mm": [
+    26,
+    20
+  ],
+  "parts": [
+    {
+      "ref": "U1",
+      "value": "AT32F423CCT7",
+      "fp": "Package_QFP:LQFP-48_7x7mm_P0.5mm",
+      "nets": {
+        "1": "V3V3",
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null,
+        "6": null,
+        "7": "NRST",
+        "8": "GND",
+        "9": "VDDA",
+        "10": "ADC_PEAK_PIN",
+        "11": "ADC_RAW_PIN",
+        "12": "ADC_BASE_PIN",
+        "13": null,
+        "14": "DAC_THRESH_PIN",
+        "15": null,
+        "16": "TRIG",
+        "17": "HOLD",
+        "18": "PEAK_RESET",
+        "19": "AUX",
+        "20": null,
+        "21": null,
+        "22": null,
+        "23": null,
+        "24": "V3V3",
+        "25": "LED_RUN",
+        "26": null,
+        "27": null,
+        "28": null,
+        "29": null,
+        "30": "VBUS_SENSE",
+        "31": null,
+        "32": "MCU_USB_DM",
+        "33": "MCU_USB_DP",
+        "34": "SWDIO",
+        "35": null,
+        "36": "V3V3",
+        "37": "SWCLK",
+        "38": null,
+        "39": null,
+        "40": null,
+        "41": null,
+        "42": null,
+        "43": null,
+        "44": "BOOT0",
+        "45": null,
+        "46": null,
+        "47": "GND",
+        "48": "V3V3"
+      },
+      "xy": [
+        13,
+        10
+      ],
+      "angle": 180,
+      "names": {
+        "1": "VDD",
+        "2": "PC13",
+        "3": "PC14",
+        "4": "PC15",
+        "5": "PF0/HEXT_IN",
+        "6": "PF1/HEXT_OUT",
+        "7": "NRST",
+        "8": "VSSA",
+        "9": "VDDA/VREF+",
+        "10": "PA0/ADC1_IN0",
+        "11": "PA1/ADC1_IN1",
+        "12": "PA2/ADC1_IN2",
+        "13": "PA3",
+        "14": "PA4/DAC1_OUT",
+        "15": "PA5/DAC2_OUT",
+        "16": "PA6/TMR3_CH1",
+        "17": "PA7/TMR3_CH2",
+        "18": "PB0/TMR3_CH3",
+        "19": "PB1/TMR3_CH4",
+        "20": "PB2",
+        "21": "PB10",
+        "22": "PB11",
+        "23": "PF8",
+        "24": "VDD",
+        "25": "PB12/LED_RUN",
+        "26": "PB13",
+        "27": "PB14",
+        "28": "PB15",
+        "29": "PA8",
+        "30": "PA9/OTG_VBUS",
+        "31": "PA10",
+        "32": "PA11/USB_DM",
+        "33": "PA12/USB_DP",
+        "34": "PA13/SWDIO",
+        "35": "PF6",
+        "36": "VDD",
+        "37": "PA14/SWCLK",
+        "38": "PA15",
+        "39": "PB3",
+        "40": "PB4",
+        "41": "PB5",
+        "42": "PB6",
+        "43": "PB7",
+        "44": "BOOT0",
+        "45": "PB8",
+        "46": "PB9",
+        "47": "VSS",
+        "48": "VDD"
+      },
+      "notes": "256KB Flash/48KB SRAM. All four VDD pads supplied. VDDA=VDD, VSSA=GND. Firmware ADC ES0010 XTEST workaround required. New v0.4 pin contract, not old firmware unchanged.",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "IC"
+    },
+    {
+      "ref": "U2",
+      "value": "XC6206P332MR-G",
+      "fp": "Package_TO_SOT_SMD:SOT-23",
+      "nets": {
+        "1": "GND",
+        "2": "V3V3",
+        "3": "VBUS"
+      },
+      "xy": [
+        4.5,
+        4.5
+      ],
+      "angle": 0,
+      "names": {
+        "1": "VSS",
+        "2": "VOUT",
+        "3": "VIN"
+      },
+      "notes": "Existing Nano regulator reused. Thermal/current budget must include carrier. V3V3 module pin is OUT only during USB power.",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "IC"
+    },
+    {
+      "ref": "J1",
+      "value": "CASTELLATED_22_26x20",
+      "fp": "Aster:Castellated_22_26x20",
+      "nets": {
+        "1": "GND",
+        "2": "VBUS",
+        "3": "USB_DM",
+        "4": "USB_DP",
+        "5": "GND",
+        "6": "V3V3",
+        "7": "NRST",
+        "8": "SWDIO",
+        "9": "SWCLK",
+        "10": "BOOT0",
+        "11": "GND",
+        "12": "GND",
+        "13": "PEAK_ADC",
+        "14": "GND",
+        "15": "RAW_ADC",
+        "16": "BASE_ADC",
+        "17": "GND",
+        "18": "DAC_THRESH",
+        "19": "TRIG",
+        "20": "HOLD",
+        "21": "PEAK_RESET",
+        "22": "AUX"
+      },
+      "xy": [
+        13,
+        10
+      ],
+      "angle": 0,
+      "names": {
+        "1": "GND",
+        "2": "VBUS",
+        "3": "USB_DM",
+        "4": "USB_DP",
+        "5": "GND",
+        "6": "V3V3",
+        "7": "NRST",
+        "8": "SWDIO",
+        "9": "SWCLK",
+        "10": "BOOT0",
+        "11": "GND",
+        "12": "GND",
+        "13": "PEAK_ADC",
+        "14": "GND",
+        "15": "RAW_ADC",
+        "16": "BASE_ADC",
+        "17": "GND",
+        "18": "DAC_THRESH",
+        "19": "TRIG",
+        "20": "HOLD",
+        "21": "PEAK_RESET",
+        "22": "AUX"
+      },
+      "notes": "Custom board-edge plated half-hole footprint; hole centers on outline. All pads no paste on module. Carrier receives mating SMD lands; numbered clockwise TOP VIEW.",
+      "sheet": 1,
+      "dnp": false,
+      "custom_pads": [
+        {
+          "num": "1",
+          "xy": [
+            -10,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "2",
+          "xy": [
+            -8,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "3",
+          "xy": [
+            -6,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "4",
+          "xy": [
+            -4,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "5",
+          "xy": [
+            -2,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "6",
+          "xy": [
+            0,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "7",
+          "xy": [
+            2,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "8",
+          "xy": [
+            4,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "9",
+          "xy": [
+            6,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "10",
+          "xy": [
+            8,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "11",
+          "xy": [
+            10,
+            -10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "12",
+          "xy": [
+            10,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "13",
+          "xy": [
+            8,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "14",
+          "xy": [
+            6,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "15",
+          "xy": [
+            4,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "16",
+          "xy": [
+            2,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "17",
+          "xy": [
+            0,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "18",
+          "xy": [
+            -2,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "19",
+          "xy": [
+            -4,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "20",
+          "xy": [
+            -6,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "21",
+          "xy": [
+            -8,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        },
+        {
+          "num": "22",
+          "xy": [
+            -10,
+            10
+          ],
+          "size": [
+            1.4,
+            2.0
+          ],
+          "drill": 0.8,
+          "type": "thru_hole",
+          "shape": "oval",
+          "angle": 0,
+          "layers": [
+            "F.Cu",
+            "B.Cu",
+            "F.Mask",
+            "B.Mask"
+          ]
+        }
+      ],
+      "custom_body": [
+        -13,
+        -10,
+        13,
+        10
+      ],
+      "kind": "IC"
+    },
+    {
+      "ref": "C1",
+      "value": "1u X7R 10V",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "xy": [
+        1.6,
+        4.5
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "LDO local input decoupling",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C2",
+      "value": "4.7u X7R 10V",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        3.7,
+        7
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "LDO output decoupling; verify effective capacitance and stability",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C3",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        19.4,
+        13.1
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "At U1 VDD pin 1; short pad-to-cap and ground via",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C4",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        10.2,
+        4.0
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "At U1 VDD pin 24; short pad-to-cap and ground via",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C5",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        6.7,
+        12.8
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "At U1 VDD pin 36; short pad-to-cap and ground via",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C6",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        15.8,
+        16
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "At U1 VDD pin 48; short pad-to-cap and ground via",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C7",
+      "value": "1u X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "GND"
+      },
+      "xy": [
+        7.7,
+        4.0
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Local MCU bulk",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C8",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "VDDA",
+        "2": "GND"
+      },
+      "xy": [
+        19.3,
+        10.8
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "At U1 pin9 VDDA",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C9",
+      "value": "1u X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "VDDA",
+        "2": "GND"
+      },
+      "xy": [
+        21.5,
+        10.8
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "Local ADC/DAC bulk",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C10",
+      "value": "100n X7R 10V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "NRST",
+        "2": "GND"
+      },
+      "xy": [
+        19.4,
+        15.4
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C11",
+      "value": "1n C0G 50V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "ADC_PEAK_PIN",
+        "2": "GND"
+      },
+      "xy": [
+        19.4,
+        8
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "Buffered plateau input; allow settling before ADC conversion",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C12",
+      "value": "100p C0G 50V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "ADC_RAW_PIN",
+        "2": "GND"
+      },
+      "xy": [
+        19.4,
+        6
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Raw-waveform reservoir; source settling and bandwidth require measurement",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "C13",
+      "value": "1n C0G 50V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "nets": {
+        "1": "ADC_BASE_PIN",
+        "2": "GND"
+      },
+      "xy": [
+        19.4,
+        4.1
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "C"
+    },
+    {
+      "ref": "R1",
+      "value": "1k 1%",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "LED_PWR_A"
+      },
+      "xy": [
+        1.7,
+        10.5
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R2",
+      "value": "1k 1%",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "LED_RUN_A"
+      },
+      "xy": [
+        1.7,
+        13.5
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "LED1",
+      "value": "BLUE_0603_USER_STOCK",
+      "fp": "LED_SMD:LED_0603_1608Metric",
+      "nets": {
+        "1": "GND",
+        "2": "LED_PWR_A"
+      },
+      "xy": [
+        4.2,
+        10.5
+      ],
+      "angle": 0,
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "notes": "User stock blue LED, Vf 2.5..3V",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "LED"
+    },
+    {
+      "ref": "LED2",
+      "value": "BLUE_0603_USER_STOCK",
+      "fp": "LED_SMD:LED_0603_1608Metric",
+      "nets": {
+        "1": "LED_RUN",
+        "2": "LED_RUN_A"
+      },
+      "xy": [
+        4.2,
+        13.5
+      ],
+      "angle": 0,
+      "names": {
+        "1": "K",
+        "2": "A"
+      },
+      "notes": "PB12 active-low running LED; use slow heartbeat",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "LED"
+    },
+    {
+      "ref": "R3",
+      "value": "10k 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "BOOT0",
+        "2": "GND"
+      },
+      "xy": [
+        5,
+        15
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R4",
+      "value": "10k 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "NRST",
+        "2": "V3V3"
+      },
+      "xy": [
+        23.8,
+        14.5
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R5",
+      "value": "10k 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "VBUS_SENSE"
+      },
+      "xy": [
+        3.7,
+        8.6
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "PA9 FT VBUS sense; never configure output",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R6",
+      "value": "0R",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "V3V3",
+        "2": "VDDA"
+      },
+      "xy": [
+        21.5,
+        13.1
+      ],
+      "angle": 90,
+      "names": {},
+      "notes": "VDDA and VDD must have same DC potential; do not insert high-value resistor",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R7",
+      "value": "100R 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "PEAK_ADC",
+        "2": "ADC_PEAK_PIN"
+      },
+      "xy": [
+        21.6,
+        8
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R8",
+      "value": "33R 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "RAW_ADC",
+        "2": "ADC_RAW_PIN"
+      },
+      "xy": [
+        21.6,
+        6
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R9",
+      "value": "100R 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "BASE_ADC",
+        "2": "ADC_BASE_PIN"
+      },
+      "xy": [
+        21.6,
+        4.1
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Nominal0.623V BASE/reference monitor input; not per-event baseline",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R10",
+      "value": "33R 1%",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "DAC_THRESH_PIN",
+        "2": "DAC_THRESH"
+      },
+      "xy": [
+        16.5,
+        3.5
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Carrier provides low-pass/buffer; use high-Z load",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R11",
+      "value": "0R",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "USB_DM",
+        "2": "MCU_USB_DM"
+      },
+      "xy": [
+        6.7,
+        6.8
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "USB routing option; populated 0R by default, no extra pullup",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "R12",
+      "value": "0R",
+      "fp": "Resistor_SMD:R_0402_1005Metric",
+      "nets": {
+        "1": "USB_DP",
+        "2": "MCU_USB_DP"
+      },
+      "xy": [
+        6.7,
+        8.6
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Matched with R11; USB FS on-chip transceiver",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "R"
+    },
+    {
+      "ref": "SW1",
+      "value": "B3U-1000P",
+      "fp": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "nets": {
+        "1": "BOOT0",
+        "2": "V3V3"
+      },
+      "xy": [
+        3,
+        17.5
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Hold during USB power up for DFU; preserve factory nBOOT1 setting",
+      "sheet": 1,
+      "dnp": false,
+      "kind": "IC"
+    },
+    {
+      "ref": "SW2",
+      "value": "B3U-1000P",
+      "fp": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "nets": {
+        "1": "NRST",
+        "2": "GND"
+      },
+      "xy": [
+        23,
+        17.5
+      ],
+      "angle": 0,
+      "names": {},
+      "notes": "Optional local reset convenience",
+      "sheet": 1,
+      "dnp": true,
+      "kind": "IC"
+    }
+  ],
+  "sheets": [
+    {
+      "id": 1,
+      "title": "AT32 castellated core / pin contract v0.4",
+      "notes": [
+        "TOP VIEW 26x20mm; numbered clockwise. All components TOP. No assembly on bottom.",
+        "Supply 5V via module pin2; V3V3 pin6 is output. USB ESD/protection on carrier.",
+        "HOLD high=frozen, PEAK_RESET high=reset to BASE (nominal0.623V). 100k pull-ups on carrier.",
+        "Positive peak: amplitude=PEAK_ADC minus event-before RAW_ADC baseline. BASE_ADC monitors nominal0.623V reference only; TRIG uses rising edge.",
+        "USB clock uses HICK+ACC; no crystal. MCU 256KB CCT7; original firmware cannot be used unchanged.",
+        "All four VDD plus VDDA supplied; analog and digital common solid ground."
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "net": "GND",
+      "points": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "VBUS",
+      "points": [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "VBUS",
+      "points": [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "USB_DM",
+      "points": [
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "USB_DM",
+      "points": [
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "USB_DP",
+      "points": [
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "USB_DP",
+      "points": [
+        [
+          9,
+          0
+        ],
+        [
+          9,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          11,
+          0
+        ],
+        [
+          11,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "V3V3",
+      "points": [
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "V3V3",
+      "points": [
+        [
+          13,
+          0
+        ],
+        [
+          13,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "NRST",
+      "points": [
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "NRST",
+      "points": [
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "SWDIO",
+      "points": [
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "SWDIO",
+      "points": [
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "SWCLK",
+      "points": [
+        [
+          19,
+          0
+        ],
+        [
+          19,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "SWCLK",
+      "points": [
+        [
+          19,
+          0
+        ],
+        [
+          19,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "BOOT0",
+      "points": [
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "BOOT0",
+      "points": [
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          1.2
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          23,
+          20
+        ],
+        [
+          23,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          23,
+          20
+        ],
+        [
+          23,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "PEAK_ADC",
+      "points": [
+        [
+          21,
+          20
+        ],
+        [
+          21,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "PEAK_ADC",
+      "points": [
+        [
+          21,
+          20
+        ],
+        [
+          21,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          19,
+          20
+        ],
+        [
+          19,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          19,
+          20
+        ],
+        [
+          19,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "RAW_ADC",
+      "points": [
+        [
+          17,
+          20
+        ],
+        [
+          17,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "RAW_ADC",
+      "points": [
+        [
+          17,
+          20
+        ],
+        [
+          17,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "BASE_ADC",
+      "points": [
+        [
+          15,
+          20
+        ],
+        [
+          15,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "BASE_ADC",
+      "points": [
+        [
+          15,
+          20
+        ],
+        [
+          15,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          13,
+          20
+        ],
+        [
+          13,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "GND",
+      "points": [
+        [
+          13,
+          20
+        ],
+        [
+          13,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "DAC_THRESH",
+      "points": [
+        [
+          11,
+          20
+        ],
+        [
+          11,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "DAC_THRESH",
+      "points": [
+        [
+          11,
+          20
+        ],
+        [
+          11,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "TRIG",
+      "points": [
+        [
+          9,
+          20
+        ],
+        [
+          9,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "TRIG",
+      "points": [
+        [
+          9,
+          20
+        ],
+        [
+          9,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "HOLD",
+      "points": [
+        [
+          7,
+          20
+        ],
+        [
+          7,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "HOLD",
+      "points": [
+        [
+          7,
+          20
+        ],
+        [
+          7,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "PEAK_RESET",
+      "points": [
+        [
+          5,
+          20
+        ],
+        [
+          5,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "PEAK_RESET",
+      "points": [
+        [
+          5,
+          20
+        ],
+        [
+          5,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "net": "AUX",
+      "points": [
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "net": "AUX",
+      "points": [
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          18.8
+        ]
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    }
+  ]
+}

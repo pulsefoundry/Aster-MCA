@@ -11,13 +11,13 @@
 | --- | --- | --- |
 | FPGA MCA v0.1 | 12 位、10 MSPS／4096 道 | 已实测原型；有必须处理的装配勘误，见下文。 |
 | FPGA MCA v2.0 | 16 位、40 MSPS 构想 | 尚未投产，见[方案与限制](hardware/rev2.0-preliminary/README.md)。 |
-| **Nano AT32F423 + TLV9061** | 12 位、4 MS/s／2048 道 | 已保存铯源实测，见 [AT32 指南](nano/docs/at32/README.md)。 |
+| **Nano AT32F423** | 12 位／2048 道；RAW 快照最高 4 MSa/s | v0.4.1 峰保台架；低幅偏差待解决，见 [实验记录](nano/measurements/2026-11-18-peakhold/README.md)。 |
 | **Nano CH32X033F8P6** | 模拟链／ADC 诊断 | **仍在处理基线漂移和异常尖峰问题**，见 [CH32 状态](nano/docs/ch32/README.md)。 |
 
 **Nano 入口：**[中文介绍](nano/README.md) · [English](nano/README.en.md) ·
 [固件、照片、原理图和 Gerber](nano/README.md#原理图gerber-和装配) ·
 [单板成本明细](nano/docs/at32/cost.md)。
-AT32 已计价部分约 ¥17.86，外购 USB-A、SMA 和库存 LED 的实际价格另计。
+归档 v0.3 的 AT32 已计价部分约 ¥17.86，外购 USB-A、SMA 和库存 LED 的实际价格另计。
 Nano 项目原创内容采用 [MIT](nano/LICENSE)，第三方材料保留各自条款。
 
 下文保留 FPGA MCA 的说明；Nano 的使用方式和实测结果集中在 [`nano/`](nano/)。

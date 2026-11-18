@@ -1,0 +1,53 @@
+{
+  "reviewed_at_utc": "2026-11-11T17:23:33.125001+00:00",
+  "project_uuid": "046552eae5ca4c32aa83c7cad8f8930f",
+  "project_url": "https://pro.lceda.cn/editor#id=046552eae5ca4c32aa83c7cad8f8930f",
+  "project_name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB",
+  "native_export_errors": [],
+  "pcb_drc": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 0,
+    "api_result": []
+  },
+  "schematic_drc": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 5,
+    "information": 1,
+    "warning_nets": [
+      "AUX",
+      "BOOT0",
+      "NRST",
+      "SWCLK",
+      "SWDIO"
+    ],
+    "information_description": "USB connector mechanical NPTH has no schematic pin",
+    "api_summary": [
+      {
+        "type": "warn",
+        "count": 5
+      }
+    ],
+    "information_evidence": "Parent agent direct native UI observation; consistent with extra un-numbered/net-null J1 PCB-netlist entry"
+  },
+  "netlist_comparison": "42 components, 137 electrical pins all match carrier/design.json; PCB additionally has one mechanical entry",
+  "pad_connection": "U13.2 GND saved with DIRECT connection in its native footprint",
+  "audit_file": "native-final-audit.json",
+  "release_status": "Prototype engineering exports; analog bench validation pending",
+  "source_hashes_frozen": true,
+  "status": "PASS_WITH_EXPECTED_ADVISORIES",
+  "source_export": "../carrier-release-export.json",
+  "documentation_issue": {
+    "status": "RESOLVED",
+    "native_epro2_and_pdf_value": "USB data flow J1 -> D90 -> M1. IO1 and IO2 pairs of D90 internally connected.",
+    "all_source_archive_pdf_match": true
+  },
+  "reviewed_native_file_sha256": {
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip": "f2077afbc7722dfb7abd7fd5dc51a9ed908c7a0b7de7e097d4197a320431c8dc",
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Schematic.pdf": "5b4baaef1a5763e5c4c5cd0df051a371e902aa2699a070d7ae2ba6752a262268",
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-native.epro2": "9f31b643d35e76e435b264777d429850cdb78993db58d1cd700be79e990126c0",
+    "PCB-netlist.net": "3837f5cb042496a3e7cc018d21969f032a27aa1ec3f5fca893ba90f8f548a68b",
+    "Schematic-netlist.net": "b22e6bf81791694f95e1b327d134d3094b64234fa1cd7c36e390c120214ff779"
+  }
+}

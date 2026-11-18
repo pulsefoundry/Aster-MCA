@@ -1,0 +1,498 @@
+{
+  "revision": "v0.4-positive-peak-prototype",
+  "status": "engineering prototype; analog validation incomplete; not proof of energy resolution",
+  "date": "2026-11-12",
+  "signal_polarity": "negative SMA converted to positive RAW and positive held peak",
+  "supply_V": 3.3,
+  "reference_V_nominal": 0.6226415094339622,
+  "parts": [
+    {
+      "ref": "U10",
+      "value": "TLV9062IDR",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "mpn": "TLV9062IDR",
+      "pins": {
+        "1": "BASE_BUF",
+        "2": "BASE_BUF",
+        "3": "BASE_DIV",
+        "4": "GND",
+        "5": "BASE_BUF",
+        "6": "INPUT_FB",
+        "7": "RAW_OUT",
+        "8": "AV3V3"
+      },
+      "note": "A=0.623V reference follower, B=inverting signal conditioner",
+      "populate": true
+    },
+    {
+      "ref": "U11",
+      "value": "OPA2356AIDR",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "mpn": "OPA2356AIDR",
+      "pins": {
+        "1": "PEAK_DRV",
+        "2": "PEAK_FB",
+        "3": "CAPTURE_IN",
+        "4": "GND",
+        "5": "HOLD_CAP",
+        "6": "PEAK_OUT",
+        "7": "PEAK_OUT",
+        "8": "AV3V3"
+      },
+      "note": "A=positive peak driver; B=hold buffer. Low-impedance analog outputs only cross module joint.",
+      "populate": true
+    },
+    {
+      "ref": "U12",
+      "value": "TMUX1136DGSR",
+      "footprint": "Package_SO:VSSOP-10_3x3mm_P0.5mm",
+      "mpn": "TMUX1136DGSR",
+      "pins": {
+        "1": "HOLD_CTL",
+        "2": "BASE_BUF",
+        "3": "GND",
+        "4": "RESET_SOURCE",
+        "5": "RESET_CTL",
+        "6": "HOLD_CAP",
+        "7": "NC_RESET",
+        "8": "AV3V3",
+        "9": "RAW_OUT",
+        "10": "CAPTURE_IN"
+      },
+      "note": "SEL=1 selects A. HOLD=1 selects BASE, RESET=1 selects RESET_SOURCE. NC_RESET is intentionally unconnected.",
+      "populate": true
+    },
+    {
+      "ref": "U13",
+      "value": "TLV3201AIDBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "TLV3201AIDBVR",
+      "pins": {
+        "1": "TRIG_DRV",
+        "2": "GND",
+        "3": "RAW_OUT",
+        "4": "THRESH_FILT",
+        "5": "AV3V3"
+      },
+      "note": "Trigger high when positive RAW pulse exceeds threshold; 1.2mV nominal internal hysteresis. 40ns typ, not an event-count guarantee.",
+      "populate": true
+    },
+    {
+      "ref": "D10",
+      "value": "BAV199,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "BAV199,215",
+      "pins": {
+        "1": "GND",
+        "2": "AV3V3",
+        "3": "INPUT_FB"
+      },
+      "note": "Only input protection, NOT the peak-capture diode. A1=1, K2=2, series junction=3.",
+      "populate": true
+    },
+    {
+      "ref": "D11",
+      "value": "BAS316,115",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "mpn": "BAS316,115",
+      "pins": {
+        "1": "HOLD_CAP",
+        "2": "PEAK_DIODE_A"
+      },
+      "note": "Peak charging diode: pin1 cathode at capacitor, pin2 anode at driver resistor.",
+      "populate": true
+    },
+    {
+      "ref": "D12",
+      "value": "BAS70-04,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "BAS70-04,215",
+      "pins": {
+        "1": "PEAK_FB",
+        "2": "NC_D12",
+        "3": "PEAK_DRV"
+      },
+      "note": "Low-VF antisaturation diode: anode feedback, cathode driver. Must be low-capacitance Schottky for0.623V baseline; ordinary silicon diode would require a negative driver output in hold.",
+      "populate": true
+    },
+    {
+      "ref": "R100",
+      "value": "0R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "V3V3",
+        "2": "AV3V3"
+      },
+      "note": "Supply link; optional low-DCR ferrite after prototype test, do not add appreciable DC drop.",
+      "populate": true
+    },
+    {
+      "ref": "R101",
+      "value": "43k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "BASE_DIV"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R102",
+      "value": "10k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "BASE_DIV",
+        "2": "GND"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "R103",
+      "value": "1M",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "SMA_IN",
+        "2": "GND"
+      },
+      "note": "Connector-side bleed; not 50-ohm termination.",
+      "populate": true
+    },
+    {
+      "ref": "C100",
+      "value": "33n C0G 50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "pins": {
+        "1": "SMA_IN",
+        "2": "INPUT_AC"
+      },
+      "note": "AC coupling; tau approximately 33n*49.9k=1.647ms. Not a detector-HV input.",
+      "populate": true
+    },
+    {
+      "ref": "R104",
+      "value": "49.9k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "INPUT_AC",
+        "2": "INPUT_FB"
+      },
+      "note": "Input impedance about49.9k in passband; limits fault input current.",
+      "populate": true
+    },
+    {
+      "ref": "R105",
+      "value": "49.9k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "RAW_OUT",
+        "2": "INPUT_FB"
+      },
+      "note": "Signal gain -1; raw positive pulse from negative detector pulse.",
+      "populate": true
+    },
+    {
+      "ref": "C101",
+      "value": "DNP 1p-4.7p C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "RAW_OUT",
+        "2": "INPUT_FB"
+      },
+      "note": "Optional feedback compensation, must characterize with actual detector; not populated by default.",
+      "populate": false
+    },
+    {
+      "ref": "R106",
+      "value": "22R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "PEAK_DRV",
+        "2": "PEAK_DIODE_A"
+      },
+      "note": "Peak driver output isolation; physical trace short.",
+      "populate": true
+    },
+    {
+      "ref": "R107",
+      "value": "1k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "PEAK_OUT",
+        "2": "PEAK_FB"
+      },
+      "note": "Low enough to limit parasitic phase lag; keep entire loop compact.",
+      "populate": true
+    },
+    {
+      "ref": "C102",
+      "value": "470p C0G 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "HOLD_CAP",
+        "2": "GND"
+      },
+      "note": "Critical hold capacitor; separate capacitor from USB/digital routing; optional220p/1n values require fresh characterization.",
+      "populate": true
+    },
+    {
+      "ref": "C103",
+      "value": "DNP 0.5p-4.7p C0G",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "PEAK_DRV",
+        "2": "PEAK_FB"
+      },
+      "note": "Compensation tuning footprint; simulated parasitic0.1p only, explicit capacitor DNP.",
+      "populate": false
+    },
+    {
+      "ref": "R108",
+      "value": "330R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "BASE_BUF",
+        "2": "RESET_SOURCE"
+      },
+      "note": "Limits reset transient; nominal RC about157ns plus switch/amp; begin with2us reset.",
+      "populate": true
+    },
+    {
+      "ref": "R109",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "V3V3",
+        "2": "HOLD_CTL"
+      },
+      "note": "Pull high: freeze during boot/reset or unconfigured MCU.",
+      "populate": true
+    },
+    {
+      "ref": "R110",
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "V3V3",
+        "2": "RESET_CTL"
+      },
+      "note": "Pull high: capacitor reset during boot/reset.",
+      "populate": true
+    },
+    {
+      "ref": "R111",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "HOLD",
+        "2": "HOLD_CTL"
+      },
+      "note": "Digital edge damping; no nF capacitor here.",
+      "populate": true
+    },
+    {
+      "ref": "R112",
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "RESET",
+        "2": "RESET_CTL"
+      },
+      "note": "Digital edge damping.",
+      "populate": true
+    },
+    {
+      "ref": "R113",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "DAC_THRESH",
+        "2": "THRESH_FILT"
+      },
+      "note": "Isolates MCU DAC from filter; update only idle and settle at least1ms.",
+      "populate": true
+    },
+    {
+      "ref": "C104",
+      "value": "10n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "THRESH_FILT",
+        "2": "GND"
+      },
+      "note": "100us time constant; high-Z comparator load.",
+      "populate": true
+    },
+    {
+      "ref": "R114",
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "TRIG_DRV",
+        "2": "TRIG"
+      },
+      "note": "Digital edge damping at comparator.",
+      "populate": true
+    },
+    {
+      "ref": "C105",
+      "value": "10u X7R 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "pins": {
+        "1": "BASE_DIV",
+        "2": "GND"
+      },
+      "note": "Before buffer, not directly on opamp output; reference wait>=500ms after powerup.",
+      "populate": true
+    },
+    {
+      "ref": "C106",
+      "value": "100n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "BASE_DIV",
+        "2": "GND"
+      },
+      "note": "",
+      "populate": true
+    },
+    {
+      "ref": "C107",
+      "value": "10u X7R 10V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "Bulk supply capacitor.",
+      "populate": true
+    },
+    {
+      "ref": "C108",
+      "value": "100n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "At U10 supply8/4.",
+      "populate": true
+    },
+    {
+      "ref": "C109",
+      "value": "100n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "At U11 supply8/4. Route return directly, avoid hold node.",
+      "populate": true
+    },
+    {
+      "ref": "C110",
+      "value": "1u X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "Additional U11 local reservoir.",
+      "populate": true
+    },
+    {
+      "ref": "C111",
+      "value": "100n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "At U12.",
+      "populate": true
+    },
+    {
+      "ref": "C112",
+      "value": "100n X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "",
+      "pins": {
+        "1": "AV3V3",
+        "2": "GND"
+      },
+      "note": "At U13.",
+      "populate": true
+    }
+  ],
+  "ports": {
+    "SMA_IN": "External negative low-voltage shaped detector signal",
+    "RAW_OUT": "Route to module RAW_ADC (PA1), contains positive pulses around0.623V",
+    "PEAK_OUT": "Route to module PEAK_ADC (PA0), positive held maximum",
+    "BASE_BUF": "Route to module BASE_ADC (PA2), reference only; event baseline comes from pretrigger RAW",
+    "DAC_THRESH": "Module PA4 DAC, threshold around baseline+required amplitude",
+    "HOLD": "Module PA7, high=freeze",
+    "RESET": "Module PB0, high=reset",
+    "TRIG": "Module PA6, active high",
+    "V3V3": "Module regulated3.3V",
+    "GND": "Continuous common ground"
+  },
+  "sources": [
+    {
+      "name": "TLV9062",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv9062.pdf"
+    },
+    {
+      "name": "OPA2356",
+      "url": "https://www.ti.com/lit/ds/symlink/opa2356.pdf"
+    },
+    {
+      "name": "TMUX1136",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1136.pdf"
+    },
+    {
+      "name": "TLV3201",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv3201.pdf"
+    },
+    {
+      "name": "BAS70-04",
+      "url": "https://www.nexperia.com/product/BAS70-04"
+    },
+    {
+      "name": "BAS316",
+      "url": "https://assets.nexperia.com/documents/data-sheet/BAS316.pdf"
+    },
+    {
+      "name": "Peak detector reference topology",
+      "url": "https://www.ti.com/lit/an/snla140d/snla140d.pdf"
+    }
+  ],
+  "adc_isolation": "Located on core module:PEAK100R/1n;RAW33R/100p;BASE100R/1n. Do not duplicate on base."
+}

@@ -1,0 +1,57 @@
+{
+  "time": "2026-11-18T21:40:47.554923+08:00",
+  "conclusion": "缩短等待上限/重新复位后，完整新采集的铯峰重复变窄：本轮约13.0%降至1ms约9.6%、0.5ms约9.1%；同时有效入谱计数率下降。",
+  "result_is_apparent_channel_domain_width": true,
+  "no_energy_calibration_performed": true,
+  "no_detector_intrinsic_limit_claim": true,
+  "no_cause_assigned_to_specific_component": true,
+  "selected_rate_ratio_to_10ms": {
+    "10000": 1.0,
+    "1000": 0.789823016676044,
+    "500": 0.5516820844134187
+  },
+  "restore_wait_us": 10000,
+  "suggested_balanced_profile_us": 1000,
+  "suggested_resolution_priority_profile_us": 500,
+  "first_balanced_round_excluded_sensitivity": {
+    "10000": {
+      "success": true,
+      "centroid_channel": 147.98741812379413,
+      "apparent_fwhm_percent": 12.135782656114117,
+      "apparent_fwhm_statistical_se_pp": 0.4559897476129399,
+      "deviance_per_dof": 2.7300848187115982
+    },
+    "1000": {
+      "success": true,
+      "centroid_channel": 150.20390121861578,
+      "apparent_fwhm_percent": 9.361859612564196,
+      "apparent_fwhm_statistical_se_pp": 0.19593950404323093,
+      "deviance_per_dof": 3.9082648883701028
+    },
+    "500": {
+      "success": true,
+      "centroid_channel": 152.52305196573545,
+      "apparent_fwhm_percent": 9.021730537378202,
+      "apparent_fwhm_statistical_se_pp": 0.22396670179733866,
+      "deviance_per_dof": 2.3691389035751236
+    }
+  },
+  "coarse_roi_shape_test": {
+    "method": "3settings x12 fixed5channel bins120..180, Pearson independence test",
+    "statistic": 1242.3994572337551,
+    "dof": 22,
+    "pvalue": 3.94431653167603e-249,
+    "minimum_expected": 119.0423872230155
+  },
+  "report_notes_zh": [
+    "所有主结果使用各档完整6x30秒新采集；没有按旧wait_cycles挑选子集。",
+    "1ms有效入谱速率约为10ms的79%，0.5ms约为55%；它们是分批采集的墙钟计数率，不是独立测量的绝对探测效率。",
+    "六轮配对的峰宽差值区间均低于零；这类区间仍不覆盖拟合模型的系统误差。",
+    "首轮10ms对照较宽；额外去掉整个首轮的敏感性检查仍显示短等待组更窄，此检查未替换主结果。",
+    "0.5ms不同拟合区间给出约8.8%..9.6%；1ms约9.3%..10.3%；10ms约12.3%..13.6%。",
+    "峰位随设置及采集时间变化，工作档位应固定后另作能量标定，不能混用不同档位刻度。",
+    "结果支持采集工作周期会影响读出的谱；此前约12%不能直接当作这支探头的本征上限。",
+    "尚未区分保持/复位、ADC工作历史、触发选择或探头内部链路各自的作用。",
+    "当前已恢复10ms对照设置；建议1ms作效率与峰宽折中验证档，0.5ms作较窄峰优先的长时复测档。"
+  ]
+}

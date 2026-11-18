@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.5*%
+%TF.CreationDate,2026-11-12T00:38:49+08:00*%
+%TF.ProjectId,Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB,41737465-722d-44d4-9341-2d4e616e6f2d,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.5) date 2026-11-12 00:38:49*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X26000000Y0D01*
+X0Y-20000000D02*
+X0Y0D01*
+X26000000Y0D02*
+X26000000Y-20000000D01*
+X26000000Y-20000000D02*
+X0Y-20000000D01*
+M02*

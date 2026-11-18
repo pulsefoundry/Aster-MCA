@@ -11,13 +11,13 @@ Each track keeps its own hardware, firmware, measurements and validation status.
 | --- | --- | --- |
 | FPGA MCA v0.1 | 12-bit, 10 MSPS / 4096 | Measured prototype; documented assembly errata. See the sections below. |
 | FPGA MCA v2.0 | 16-bit, 40 MSPS concept | Unreleased design; [concept and limits](hardware/rev2.0-preliminary/README.md). |
-| **Nano AT32F423 + TLV9061** | 12-bit, 4 MS/s / 2048 | Archived cesium-source measurements; [AT32 guide](nano/docs/at32/README.en.md). |
+| **Nano AT32F423** | 12-bit / 2048 bins; RAW snapshots up to 4 MSa/s | v0.4.1 peak-hold bench; low-level bias unresolved. [Measurements](nano/measurements/2026-11-18-peakhold/README.en.md). |
 | **Nano CH32X033F8P6** | Analog/ADC diagnostics | **Baseline drift and abnormal spikes remain under investigation**; [CH32 status](nano/docs/ch32/README.md). |
 
 **Nano:** [English overview](nano/README.en.md) · [中文介绍](nano/README.md) ·
 [firmware, photos, schematics and Gerbers](nano/README.en.md#schematics-gerbers-and-assembly) ·
 [itemized cost](nano/docs/at32/cost.md).
-The AT32 priced subtotal is approximately CNY 17.86, excluding unpriced external
+The archived v0.3 AT32 priced subtotal is approximately CNY 17.86, excluding unpriced external
 USB-A/SMA connectors and stock LEDs. Nano original project material uses the
 [MIT license](nano/LICENSE); third-party terms are retained separately.
 

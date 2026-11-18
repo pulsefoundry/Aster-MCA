@@ -1,0 +1,49 @@
+{
+  "created": "2026-11-18T23:21:04.619191+08:00",
+  "input_nominal_ratio": 0.75,
+  "raw_peak_ratio": 0.7534435261707985,
+  "raw_area_ratio": 0.7471083484145064,
+  "earlier_peak_ratio": 0.6153846153846154,
+  "current300_over_earlier400_peak_ratio": 0.6,
+  "raw_median_codes": {
+    "300": 54.69999999999999,
+    "400": 72.60000000000002
+  },
+  "peak_median_codes": {
+    "300_earlier": 40,
+    "300_afterraw": 39.0,
+    "400_earlier": 65.0
+  },
+  "ratio_of_peak_response_to_raw_response": 0.7963436928702016,
+  "noise_record_sigma_median_code": 1.1213209848376058,
+  "noise_max_positive_excursion_code": 5.0,
+  "restored_profile": {
+    "type": "phinfo",
+    "fw": "0.4.1-fast.7",
+    "fault": 0,
+    "selftest": 15,
+    "base_code": 770,
+    "idle_peak_code": 770,
+    "dac_code": 810,
+    "threshold_offset": 40,
+    "hold": 1,
+    "reset": 1,
+    "trig": 0,
+    "timer_hz": 144000000,
+    "adc_hz": 72000000,
+    "raw_rate_hz": 500000,
+    "clock_fault": 0,
+    "ldo_mv": 1300,
+    "raw_stop_phase": "trigger",
+    "peak_sample_cycles_x2": 49,
+    "raw_timer_ticks": 288,
+    "wait_limit_us": 500
+  },
+  "notes": [
+    "Independent sequential recordings,not the same events or simultaneous two-channel acquisition.",
+    "Current300mV PEAK repeat still shows the deficit after RAW capture;earlier300mV40code became39code.",
+    "RAW peak and area scale close to nominal input ratio in these two settings;focus next on post-RAW peak-hold,trigger,andreadout behavior. Specific cause not established.",
+    "RAW snapshots4MSa/s versus trigger/PEAK operationRAW500kSa/s can themselves affect behavior;no physical loss calibration claimed.",
+    "No energy calibration or resolution estimate applied."
+  ]
+}

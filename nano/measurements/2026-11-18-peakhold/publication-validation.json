@@ -1,0 +1,259 @@
+{
+  "publication_date": "2026-11-19",
+  "bench_date": "2026-11-18",
+  "physical_hardware_access_during_publication": false,
+  "firmware": {
+    "fast.6": {
+      "rebuild_matches_validated_binary": true,
+      "sha256": "764b9cccadc55b2fc593017fef9ebe60652ceba7acb46721994054a9b3128501",
+      "bytes": 28808,
+      "host_check": "PASS: 576 host cases; all ADC/profile combinations, signed stop timing, CRC/rate rejection; index model at all timer phases",
+      "native_check": {
+        "passed": true,
+        "reports": [
+          {
+            "version": "fast5",
+            "capture_n": 1,
+            "fault": 256,
+            "post_fault_adc_reads": 7,
+            "cases": [
+              {
+                "test": "failed_prepare",
+                "fault": 256,
+                "done": 1,
+                "post_fault_reads": 7,
+                "payload_bytes": 64,
+                "hold": 1,
+                "reset": 1
+              }
+            ]
+          },
+          {
+            "version": "fast6",
+            "capture_n": 0,
+            "fault": 256,
+            "post_fault_adc_reads": 0,
+            "cases": [
+              {
+                "test": "failed_prepare",
+                "fault": 256,
+                "done": 0,
+                "post_fault_reads": 0,
+                "payload_bytes": 0,
+                "hold": 1,
+                "reset": 1
+              },
+              {
+                "test": "new_edge_dma_failure_and_clock_wrap",
+                "passed": true
+              },
+              {
+                "type": "phcapture",
+                "fw": "native-guard-test",
+                "n": 1,
+                "requested": 1,
+                "words": 16,
+                "bytes": 64,
+                "crc32": 0,
+                "timeouts": 0,
+                "baseline_rejects": 0,
+                "fault": 0,
+                "selftest": 15,
+                "window_us": 6,
+                "extra_delay_us": 1,
+                "core_hz": 144000000,
+                "adc_hz": 72000000,
+                "base_code": 770,
+                "idle_peak_code": 770,
+                "dac_code": 0,
+                "elapsed_ms": 0,
+                "baseline_method": "dma_pretrigger_mean32_guard8",
+                "raw_rate_hz": 500000,
+                "within_batch_busy_n": 0,
+                "within_batch_busy_min_cycles": 0,
+                "within_batch_busy_max_cycles": 0,
+                "within_batch_busy_mean_cycles": 0,
+                "raw_stop_phase": "hold",
+                "peak_sample_cycles_x2": 49,
+                "trigger_irq_n": 1,
+                "trigger_ignored_n": 0,
+                "dma_stop_n": 1,
+                "dma_stop_before_hold_irq_n": 1,
+                "dma_stop_minus_hold_irq_min_cycles": -570,
+                "dma_stop_minus_hold_irq_max_cycles": -570,
+                "dma_stop_minus_hold_irq_mean_cycles": -570
+              },
+              {
+                "test": "normal_capture",
+                "passed": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "fast.7": {
+      "rebuild_matches_validated_binary": true,
+      "sha256": "e6a626ad15bb9c00f59dfa1767c5bcb3f14b45d59907700ba62f99f50eca4e2e",
+      "bytes": 29688,
+      "host_check": "PASS: 576 host cases; all ADC/profile combinations, signed stop timing, CRC/rate rejection; index model at all timer phases",
+      "native_check": {
+        "passed": true,
+        "native_c_cases": 16,
+        "valid_frame_replays": 13,
+        "negative_decoder_cases": 68,
+        "cases": [
+          {
+            "case": "empty_10000",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 3,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "normal_10000",
+            "n": 2,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "empty_2000",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 3,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "normal_2000",
+            "n": 2,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "empty_1000",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 3,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "normal_1000",
+            "n": 2,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "empty_500",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 3,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "normal_500",
+            "n": 2,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "failed_prepare",
+            "n": 0,
+            "fault": 256,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "dma_failure",
+            "n": 0,
+            "fault": 32,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "inflight_deadline",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 1,
+            "pending": 1,
+            "over_limit": 0
+          },
+          {
+            "case": "completion_race",
+            "n": 1,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 1
+          },
+          {
+            "case": "counter_wrap",
+            "n": 1,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "baseline_reject",
+            "n": 0,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "adc_failure",
+            "n": 0,
+            "fault": 1,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          },
+          {
+            "case": "max128",
+            "n": 128,
+            "fault": 0,
+            "timeouts": 0,
+            "pending": 0,
+            "over_limit": 0
+          }
+        ]
+      }
+    }
+  },
+  "hardware_package_hashes_checked": 175,
+  "doc_link_check_passed": true,
+  "public_capture_paths_and_usb_ids_redacted": true,
+  "portable_replay_output_present": true,
+  "archive_verification": {
+    "passed": true,
+    "public_files": 26,
+    "archive_files": 14882,
+    "unchanged_binary_files": 14509,
+    "spectrum_runs": 36,
+    "spectrum_batches": 14402,
+    "event_records": 260420,
+    "timing_batches": 17,
+    "preserved_failed_timing_runs": 1,
+    "raw_snapshots": 90
+  },
+  "portable_replay": {
+    "fixed_pulse_300mv_median_adc_code": 40,
+    "raw300mv_local_median_adc_code": 54.7,
+    "guarded_cs600_apparent_percent": 8.665797776142227
+  }
+}

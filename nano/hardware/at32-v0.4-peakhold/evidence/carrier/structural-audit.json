@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Expected nets versus native PCB PAD_NET",
+    "Native physical pad coordinates versus KiCad readback",
+    "All symbol pin numbers mapped to footprint pad numbers"
+  ],
+  "components": 42,
+  "devices": 42,
+  "pins": 137,
+  "maximum_geometry_error_mm": 7.105427357601002e-15,
+  "errors": [],
+  "native_editor_drc": "NOT_PERFORMED_BY_THIS_SCRIPT",
+  "fabrication_release": false
+}

@@ -1,0 +1,94 @@
+{
+  "reviewed_at_utc": "2026-11-11T17:02:47.122571+00:00",
+  "project_uuid": "468318639f18467982c3c48eda5f8e33",
+  "project_url": "https://pro.lceda.cn/editor#id=468318639f18467982c3c48eda5f8e33",
+  "project_name": "Aster-MCA-Nano-AT32-Core-v0.4-20261112",
+  "native_export_errors": [],
+  "pcb_drc": {
+    "reported_clearance_findings": 44,
+    "intentional_castellation_exceptions": 44,
+    "unexpected_errors": 0,
+    "categories": [
+      {
+        "category": "Board Outline to TH Pad",
+        "count": 22,
+        "pad_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "all_22_castellated_pins_once": true
+      },
+      {
+        "category": "Board Outline to Hole",
+        "count": 22,
+        "pad_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "all_22_castellated_pins_once": true
+      }
+    ],
+    "description": "22 plated half-hole pads and their 22 holes intersect the board outline by design; this is an explicit exception, not a zero-DRC claim."
+  },
+  "schematic_drc": {
+    "fatal": 0,
+    "errors": 0,
+    "warnings": 0,
+    "information": 0,
+    "api_result": []
+  },
+  "netlist_comparison": "32 components and 131 electrical pins agree between native schematic, native PCB and core/design.json",
+  "positive_peak_pdf_text": "Confirmed amplitude = PEAK_ADC minus event-before RAW_ADC baseline; BASE_ADC nominal0.623V reference only; rising-edge TRIG; RESET to BASE.",
+  "required_silkscreen_present": [
+    "1",
+    "BOOT",
+    "PWR",
+    "RUN",
+    "USB",
+    "AT32",
+    "CORE v0.4",
+    "NRST"
+  ],
+  "audit_file": "native-final-audit.json",
+  "release_status": "Prototype engineering exports; half-hole process approval and analog bench validation remain separate"
+}

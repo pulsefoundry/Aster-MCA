@@ -1,0 +1,5 @@
+{
+  "only_changed_native_objects": "Top silkscreen STRING/POLY; two core footprint silk lines moved to documentation layer",
+  "change_count": 18,
+  "no_copper_pad_net_component_or_outline_changes": true
+}

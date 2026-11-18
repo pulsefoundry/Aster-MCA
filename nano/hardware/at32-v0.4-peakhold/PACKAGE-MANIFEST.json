@@ -1,0 +1,914 @@
+[
+  {
+    "path": "LICENSE",
+    "source": "work/aster-mca-integration-20261021/nano/LICENSE",
+    "bytes": 1079,
+    "sha256": "b84cbdcccb725c898be23707df72b4ca7aa4f4f4bfd6b194bb9af1126d2f243f"
+  },
+  {
+    "path": "README.en.md",
+    "source": "work/peak-hold-v0.4/delivery/README.en.md",
+    "bytes": 4347,
+    "sha256": "775f7618773f00974c7e3e05403398dbe30d949f621275a1606984aa3598f1e8"
+  },
+  {
+    "path": "README.md",
+    "source": "work/peak-hold-v0.4/delivery/README.md",
+    "bytes": 4766,
+    "sha256": "d84df58d99cd1014623256bb208b36f254ae204657ca5e3b25a498870c1adcf5"
+  },
+  {
+    "path": "design/analog/ANALOG-DESIGN-NOTES.txt",
+    "source": "work/peak-hold-v0.4/analog/ANALOG-DESIGN-NOTES.txt",
+    "bytes": 7812,
+    "sha256": "0d2c795a7ed89b701426f695a008a82cb18eb115f126162a2249ed9bad185266"
+  },
+  {
+    "path": "design/analog/analog-bom.csv",
+    "source": "work/peak-hold-v0.4/analog/analog-bom.csv",
+    "bytes": 4123,
+    "sha256": "f1ba51d2067b6dc428d1b53df60ff5ff6a160c8d59447c59aa528d563e0262f2"
+  },
+  {
+    "path": "design/analog/analog-design.json",
+    "source": "work/peak-hold-v0.4/analog/analog-design.json",
+    "bytes": 13119,
+    "sha256": "184e8d44c929ec95afff3481be1c40394f8066418cf4a559221d6fd4e856e0f3"
+  },
+  {
+    "path": "design/carrier/BOM.csv",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/BOM.csv",
+    "bytes": 5659,
+    "sha256": "a82da7ffb1a1b18b44b0a775741b2b6c132c37764c8d575f3dd45a8084b86e09"
+  },
+  {
+    "path": "design/carrier/assembly-mechanical.md",
+    "source": "work/peak-hold-v0.4/carrier/assembly-mechanical.md",
+    "bytes": 4509,
+    "sha256": "05aa783daa31b35768252f4d9ccd981101d36cdab1e7219756500b109d6f8772"
+  },
+  {
+    "path": "design/carrier/design.json",
+    "source": "work/peak-hold-v0.4/carrier/design.json",
+    "bytes": 38450,
+    "sha256": "a48cd44da3905c6c7ac35bb34c8e893daf436234442a8bc6d71fc436b365d1df"
+  },
+  {
+    "path": "design/carrier/merge-and-routing-notes.md",
+    "source": "work/peak-hold-v0.4/carrier/merge-and-routing-notes.md",
+    "bytes": 3331,
+    "sha256": "38985d23b719e7d87f022a45144d5b512b752a8271c2da76fa5731836bbf7f42"
+  },
+  {
+    "path": "design/core/BOM.csv",
+    "source": "work/peak-hold-v0.4/cad/core-output/BOM.csv",
+    "bytes": 3180,
+    "sha256": "31a8d5dd1eafe6d7477ce011c2ca77e77f6b6b8070caf8234ab55be0654036fc"
+  },
+  {
+    "path": "design/core/design-notes.md",
+    "source": "work/peak-hold-v0.4/core/design-notes.md",
+    "bytes": 9164,
+    "sha256": "355b69cda408a7158a879f61b8dcdb71b4d10aaa3c8c4a8f7c20885899f6eaeb"
+  },
+  {
+    "path": "design/core/design.json",
+    "source": "work/peak-hold-v0.4/core/design.json",
+    "bytes": 24552,
+    "sha256": "f2205606df4aedfcb5e4acca2f7b1d86d89a35cdc4ae6a89f11865eaf00954dc"
+  },
+  {
+    "path": "design/core/interface.csv",
+    "source": "work/peak-hold-v0.4/core/interface.csv",
+    "bytes": 1634,
+    "sha256": "49b875ee8aaeea1da78a3ae14f6640d196248644ba32f4d2ad3d4b76258e4dc7"
+  },
+  {
+    "path": "design/core/module-spec.json",
+    "source": "work/peak-hold-v0.4/core/module-spec.json",
+    "bytes": 7445,
+    "sha256": "ece88d0fcf7e532eab248528177b13cae6dbb13d6d9bafcdb077af55b100f1c9"
+  },
+  {
+    "path": "docs/ASSEMBLY.md",
+    "source": "work/peak-hold-v0.4/docs/ASSEMBLY.md",
+    "bytes": 5848,
+    "sha256": "763f44c0a43440e625fb6d0d5c5796bdaff559de13ca430e2d796cd52e1fa7fe"
+  },
+  {
+    "path": "docs/PROTOTYPE-MANUFACTURING-NOTES.md",
+    "source": "work/peak-hold-v0.4/cad/PROTOTYPE-MANUFACTURING-NOTES.md",
+    "bytes": 6305,
+    "sha256": "345e4d7203da62055cb5a4502cffc423301bbf16e5ad1b8b08d4f2b5039f606b"
+  },
+  {
+    "path": "docs/PROTOTYPE-VISUAL-REVIEW.md",
+    "source": "work/peak-hold-v0.4/cad/PROTOTYPE-VISUAL-REVIEW.md",
+    "bytes": 3341,
+    "sha256": "4f5a86181498888c5ba6c7a98130cd91785f289ef64912dcf733f1ae32f25415"
+  },
+  {
+    "path": "docs/RELEASE-STATUS.md",
+    "source": "work/peak-hold-v0.4/docs/RELEASE-STATUS.md",
+    "bytes": 4723,
+    "sha256": "def7275d4cf55cc92b0dea38b6cce023f79334c59473c094c3fcf6c4d272e7b0"
+  },
+  {
+    "path": "docs/architecture.svg",
+    "source": "work/peak-hold-v0.4/docs/architecture.svg",
+    "bytes": 8047,
+    "sha256": "8073746f9812a37677a2638dda80621a4a26f983064347d66bb51825661ad90d"
+  },
+  {
+    "path": "docs/electrical-review.md",
+    "source": "work/peak-hold-v0.4/docs/electrical-review.md",
+    "bytes": 17104,
+    "sha256": "00256413e2395315942447651ca5f2d49a1bb56b7c3977c8545954e75277b280"
+  },
+  {
+    "path": "docs/independent-review.md",
+    "source": "work/peak-hold-v0.4/docs/independent-review.md",
+    "bytes": 12868,
+    "sha256": "cbffebdb6ef439bcecb7607100cbe824a805f215a0aa4a48b945aa5f4137e9f0"
+  },
+  {
+    "path": "evidence/carrier/added-assembly-silk.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/added-assembly-silk.json",
+    "bytes": 2234,
+    "sha256": "8e3261986727379bc77774970d60ec926f3e5de4f7bd82d7ead153824864c23a"
+  },
+  {
+    "path": "evidence/carrier/copper-audit.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/copper-audit.json",
+    "bytes": 701,
+    "sha256": "3cae13467e70c6afb4aab4caf784ab22614527994e95e0419e465bf59129285e"
+  },
+  {
+    "path": "evidence/carrier/critical-route-summary.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/critical-route-summary.json",
+    "bytes": 1052,
+    "sha256": "da62cd54eb171d8e300d341a37186ef03939df4396f523f3d437259bbdfaeb4c"
+  },
+  {
+    "path": "evidence/carrier/dnp-audit.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/dnp-audit.json",
+    "bytes": 283,
+    "sha256": "87abdaa8a2a99096694a362a13dd9d793c71340d9e3bb02da2e89ed266293832"
+  },
+  {
+    "path": "evidence/carrier/expected-pin-nets.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/expected-pin-nets.json",
+    "bytes": 5751,
+    "sha256": "5d039ce24bde84703cffafe6eaf27b5143ec816ea2601997bb49590bb14af186"
+  },
+  {
+    "path": "evidence/carrier/native-check-summary.json",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/native-check-summary.json",
+    "bytes": 2245,
+    "sha256": "3daec36ab01fb45936ca5c3f1a86fec90543f1327767eacb5359de96f10553f1"
+  },
+  {
+    "path": "evidence/carrier/native-final-audit.json",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/native-final-audit.json",
+    "bytes": 3937,
+    "sha256": "3c8d1e8e61c41cc6635b1186508c919b36a53c80f516a7e79880218798120781"
+  },
+  {
+    "path": "evidence/carrier/native-mapping.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/native-mapping.json",
+    "bytes": 16524,
+    "sha256": "f24adfd476c280eb4342a792910e32b9459735c459a7b58ad41db560fbbcc60e"
+  },
+  {
+    "path": "evidence/carrier/silk-drc.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/silk-drc.json",
+    "bytes": 1106,
+    "sha256": "b2498a3ccccf55289b210adc6e8f7ee75d1262b2398308b4e426247c551a39cb"
+  },
+  {
+    "path": "evidence/carrier/silk-only-change-audit.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/silk-only-change-audit.json",
+    "bytes": 205,
+    "sha256": "0177a08e47617573a44c8ac6318034fddf3d14fa3262fb3f3ca2c6dc1fe742a6"
+  },
+  {
+    "path": "evidence/carrier/structural-audit.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/structural-audit.json",
+    "bytes": 419,
+    "sha256": "6a973689565cdce198b77bd397b8309450e3aa9c2309bd7d3790a97eb6d137d8"
+  },
+  {
+    "path": "evidence/carrier/sync-report.csv",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/sync-report.csv",
+    "bytes": 7612,
+    "sha256": "23bbba0e44aa52640287d1cb9be7e7aaa0d1b40739392a5f1dc4fb20ed9167da"
+  },
+  {
+    "path": "evidence/core/added-assembly-silk.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/added-assembly-silk.json",
+    "bytes": 1533,
+    "sha256": "2e2775a8f6b77a28bab99871b33a0429a79db2fa836ba22aca32b6a6ce5127e9"
+  },
+  {
+    "path": "evidence/core/copper-audit.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/copper-audit.json",
+    "bytes": 7273,
+    "sha256": "7bed0d911174d035cfb00137087f28a39b2aa0f365331e84327611cbb96e963a"
+  },
+  {
+    "path": "evidence/core/expected-pin-nets.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/expected-pin-nets.json",
+    "bytes": 4380,
+    "sha256": "27f0bedb1671f94ac51357198501c9b589e1df2c902a8d28c5bad1573aa353fc"
+  },
+  {
+    "path": "evidence/core/native-check-summary.json",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/native-check-summary.json",
+    "bytes": 2254,
+    "sha256": "39c3bfa4988865853a9a0289c8eb9a4ef95dfa52a4fec2d3269662d929756a8f"
+  },
+  {
+    "path": "evidence/core/native-final-audit.json",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/native-final-audit.json",
+    "bytes": 3921,
+    "sha256": "5874e2829934a8d95295789800c86012f0a31a87da4b9026cbf84ce74df02c0b"
+  },
+  {
+    "path": "evidence/core/native-mapping.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/native-mapping.json",
+    "bytes": 13766,
+    "sha256": "6de39c78c82363451b53bd0afc5119c549fbc8e7df08d40789769dfdeaf19ae9"
+  },
+  {
+    "path": "evidence/core/silk-drc.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/silk-drc.json",
+    "bytes": 19775,
+    "sha256": "c264bb9abbb79fc397b8e747c3ba5611926c09e87ae91a77981db3b0e340f2e0"
+  },
+  {
+    "path": "evidence/core/silk-only-change-audit.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/silk-only-change-audit.json",
+    "bytes": 205,
+    "sha256": "ee7253b01eaf1332dc6652c6da886dada78a8477d2109ed186963366c343b1de"
+  },
+  {
+    "path": "evidence/core/structural-audit.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/structural-audit.json",
+    "bytes": 419,
+    "sha256": "f362b6f9d78b471a45ba979035e98cbf2d22eb5551560cf885fb4d523324b9ba"
+  },
+  {
+    "path": "evidence/core/sync-report.csv",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/sync-report.csv",
+    "bytes": 4088,
+    "sha256": "5abce1bff8f331e32f3afe270844dc9eed7909c03608f916f0b01f05f655f691"
+  },
+  {
+    "path": "hardware/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_dru",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_dru",
+    "bytes": 91,
+    "sha256": "ead773812e2450fd93e2bcf866e02a271cae865c62fa87e75860a1c7509046f1"
+  },
+  {
+    "path": "hardware/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pcb",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pcb",
+    "bytes": 445924,
+    "sha256": "70c186a0c00a3ffbf5b82ca9bb5e7061dbdcb5704611b136a122765a578d7b17"
+  },
+  {
+    "path": "hardware/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pro",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pro",
+    "bytes": 9874,
+    "sha256": "a94d879fc9f06766fadb1c1fe71d897c045c0f4f17a4d7039d41892eb230a423"
+  },
+  {
+    "path": "hardware/carrier/AsterCustom.pretty/Aster_AT32_Core_22_26x20_Carrier.kicad_mod",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/AsterCustom.pretty/Aster_AT32_Core_22_26x20_Carrier.kicad_mod",
+    "bytes": 5861,
+    "sha256": "48f23f0146a92f941084e77b3196ed16fdda447c472371637c2cf6bc79752d3f"
+  },
+  {
+    "path": "hardware/carrier/AsterCustom.pretty/Aster_GSG_Wire_3P.kicad_mod",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/AsterCustom.pretty/Aster_GSG_Wire_3P.kicad_mod",
+    "bytes": 2074,
+    "sha256": "674be2e558bc3b0956469c3a41678fa45e85e4459c6d22f283b8e3c7d802fa84"
+  },
+  {
+    "path": "hardware/carrier/component-geometry.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/component-geometry.json",
+    "bytes": 41775,
+    "sha256": "4e9e2727e949dea4b26d8a0c189255380055afa4907865f7b40af8fe0aca3bf0"
+  },
+  {
+    "path": "hardware/carrier/design-manifest.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/design-manifest.json",
+    "bytes": 39576,
+    "sha256": "ce10da436b055d1b7034f3df59ffc27988ef3e4de2f6c9524c7bdbd1ca72ee89"
+  },
+  {
+    "path": "hardware/carrier/fp-lib-table",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/fp-lib-table",
+    "bytes": 153,
+    "sha256": "2ae31becb2cd74c62c4ac67bb1bf0b585441d9fd104594289b590857b036050c"
+  },
+  {
+    "path": "hardware/carrier/pcb-bottom.png",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/pcb-bottom.png",
+    "bytes": 53211,
+    "sha256": "57202dda7ae4729d27827e9ed9c94374552eab24e577502e2c737401ac06f8a7"
+  },
+  {
+    "path": "hardware/carrier/pcb-bottom.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/pcb-bottom.svg",
+    "bytes": 18294,
+    "sha256": "88f9b0e1800131fe246310dadfae996a1209e071d5c6ac0d103d9d6145a9bc89"
+  },
+  {
+    "path": "hardware/carrier/pcb-top.png",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/pcb-top.png",
+    "bytes": 100252,
+    "sha256": "1ae2551d37da780c2aea8e825b638bc03eaa3d3c45443f2f9afb20d3b2cf8617"
+  },
+  {
+    "path": "hardware/carrier/pcb-top.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/pcb-top.svg",
+    "bytes": 74242,
+    "sha256": "f0534aefa9d9fb43976fa0be1ed6d87e4c7901bd5a70670ba467da06e6b739e6"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Cu.gbl",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Cu.gbl",
+    "bytes": 65501,
+    "sha256": "99a49b8ff507122e27d7ed1605deca51aef42102726a181718a1847b2db36fbe"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Mask.gbs",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Mask.gbs",
+    "bytes": 963,
+    "sha256": "3d4704fdac8835b758e99668c780eb77d1cf831bf173a6f2e96f96940320f8b8"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo",
+    "bytes": 973,
+    "sha256": "f71a882ca16a5677603a8ba76bb38b640271ffc3b6aacde3c5bcaee0e22b27bb"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1",
+    "bytes": 656,
+    "sha256": "0e007a94dc144f5f4f1f95188dc41da771bc551d60f8fd186d3fe6ee42a1802b"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Cu.gtl",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Cu.gtl",
+    "bytes": 169169,
+    "sha256": "ec0b80e9e3588f80223435bec6c7c43d6d9ff235f2d2774b67e8f1c4673d478d"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Mask.gts",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Mask.gts",
+    "bytes": 7503,
+    "sha256": "8d0259dadc911ee351e7c14a21ddca75c305b7efa673f662b1363e542440438f"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Silkscreen.gto",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Silkscreen.gto",
+    "bytes": 43038,
+    "sha256": "12ae0b376b01c18433fe7eb99a3d2f4e54a9de826dd99823c85c105597b70089"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber.zip",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber.zip",
+    "bytes": 78925,
+    "sha256": "ba73894d524358d1f8003f550c9f89f7296f14db005bfe813b03485bc94ae61c"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+    "bytes": 23765,
+    "sha256": "743ada964a062a75cb892177f697fe7fc086a6d8972bdeef45f5e98d7d5fc356"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH.drl",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH.drl",
+    "bytes": 350,
+    "sha256": "944da744135e5024acdf0ae30404c924a96db31d6bd83a2c5f7a904262a6e723"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+    "bytes": 71880,
+    "sha256": "a94e266c4aed0712dbd81f1d04acb982252dda99b55234e9c0e87cbef1303c09"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH.drl",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH.drl",
+    "bytes": 1345,
+    "sha256": "e2af976a7057244a98c253805d4322a1ac22235c13320beac54763c0a4fbb13e"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-job.gbrjob",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-job.gbrjob",
+    "bytes": 2771,
+    "sha256": "acbd43a44885a355a301ba4566ba1503aed9f65987ca4878b55bb83675b6634b"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/CAM-FILE-SHA256.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/CAM-FILE-SHA256.json",
+    "bytes": 1577,
+    "sha256": "7aee6633ffb514c6b77cc8ee4cf4645bd716b54ef7e7563be3f3b3fd1156d5f0"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/CAM-bottom.png",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/CAM-bottom.png",
+    "bytes": 103648,
+    "sha256": "28ffc1579ec1d3c6fe74b6dca127deae70255a593c10c9d4f5a9d8f6d2138874"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/CAM-bottom.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/CAM-bottom.svg",
+    "bytes": 73062,
+    "sha256": "65da363cd15dbbf5e3563b6d7fd5df365d9ee8ccc5d2133a36ade22ef8c64e75"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/CAM-top.png",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/CAM-top.png",
+    "bytes": 233966,
+    "sha256": "9ad1b2d5024c0c2a371e127f35d7a9ca4415d4a557e25c18e3e0ab4dd0b5d847"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/CAM-top.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/CAM-top.svg",
+    "bytes": 521030,
+    "sha256": "cd5a782fa97e3bc0b38a153c1c1965164e4afaa2503fec5568d05757fa4cef99"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/README-NOT_FOR_FAB.md",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/README-NOT_FOR_FAB.md",
+    "bytes": 6305,
+    "sha256": "345e4d7203da62055cb5a4502cffc423301bbf16e5ad1b8b08d4f2b5039f606b"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/assembly-placement.png",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/assembly-placement.png",
+    "bytes": 100252,
+    "sha256": "1ae2551d37da780c2aea8e825b638bc03eaa3d3c45443f2f9afb20d3b2cf8617"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/assembly-placement.svg",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/assembly-placement.svg",
+    "bytes": 74242,
+    "sha256": "f0534aefa9d9fb43976fa0be1ed6d87e4c7901bd5a70670ba467da06e6b739e6"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/cam-readback-audit.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/cam-readback-audit.json",
+    "bytes": 549,
+    "sha256": "f2fc0abbc5e650f6e693f5ec4666162a75757f3fd8ca0837b41448a98c625d5a"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/drill-report.txt",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/drill-report.txt",
+    "bytes": 897,
+    "sha256": "3f211becf571cab49b52b5e1845294caeb53388cd8be3518c66a7a6a93545dcf"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/expected-cam.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/expected-cam.json",
+    "bytes": 46972,
+    "sha256": "6dea6d4a5b00be99b6df2bd765f1133813960b43068732bd2385d316b5b6b360"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/export-log.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/export-log.json",
+    "bytes": 3900,
+    "sha256": "ffd23ef12420b6fcb5881c8336972e7a25a9ffa4218631f709a50a75807585fc"
+  },
+  {
+    "path": "hardware/carrier/prototype-fabrication/source-hashes.json",
+    "source": "work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/source-hashes.json",
+    "bytes": 264,
+    "sha256": "dd453d090693a83e057e6cb8420e76573dfe39f052a96b883215b15f85aa9efc"
+  },
+  {
+    "path": "hardware/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB.kicad_pcb",
+    "source": "work/peak-hold-v0.4/cad/core-output/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB.kicad_pcb",
+    "bytes": 288737,
+    "sha256": "694b7404757175a67b89c8ad1436c41757b839a65538468a92963e649fd51426"
+  },
+  {
+    "path": "hardware/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB.kicad_pro",
+    "source": "work/peak-hold-v0.4/cad/core-output/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB.kicad_pro",
+    "bytes": 9850,
+    "sha256": "642384f0d6450af9d770397dd72d57da20d5abe2f571febf4b54a4de28042d3b"
+  },
+  {
+    "path": "hardware/core/AsterCustom.pretty/Aster_Castellated_22_26x20.kicad_mod",
+    "source": "work/peak-hold-v0.4/cad/core-output/AsterCustom.pretty/Aster_Castellated_22_26x20.kicad_mod",
+    "bytes": 5965,
+    "sha256": "26d8303f92f83789b033d47c604f672a117fe3026b774023f9818b2254fc952d"
+  },
+  {
+    "path": "hardware/core/component-geometry.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/component-geometry.json",
+    "bytes": 37513,
+    "sha256": "b6dc116628c8190414d3350b4b8c95008a4aba0b585f6cef2270dd4f6e9dde26"
+  },
+  {
+    "path": "hardware/core/design-manifest.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/design-manifest.json",
+    "bytes": 34000,
+    "sha256": "d88d2a05f444733665e67d99920821038219cb4f98e17e33fce6867063a83144"
+  },
+  {
+    "path": "hardware/core/fp-lib-table",
+    "source": "work/peak-hold-v0.4/cad/core-output/fp-lib-table",
+    "bytes": 153,
+    "sha256": "2ae31becb2cd74c62c4ac67bb1bf0b585441d9fd104594289b590857b036050c"
+  },
+  {
+    "path": "hardware/core/pcb-bottom.png",
+    "source": "work/peak-hold-v0.4/cad/core-output/pcb-bottom.png",
+    "bytes": 108719,
+    "sha256": "114b69ba1fd32b2a747ccd97625c133b975573a4f08238661698fd473315c4d2"
+  },
+  {
+    "path": "hardware/core/pcb-bottom.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/pcb-bottom.svg",
+    "bytes": 21254,
+    "sha256": "41b2b1940586b3000220961816f3423377463416fe78c5a79a7a5c9f040de1ae"
+  },
+  {
+    "path": "hardware/core/pcb-top.png",
+    "source": "work/peak-hold-v0.4/cad/core-output/pcb-top.png",
+    "bytes": 166505,
+    "sha256": "3d18ed1406290774716682522fa4d5143ee3af7da42edb83edae23403ffc0c13"
+  },
+  {
+    "path": "hardware/core/pcb-top.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/pcb-top.svg",
+    "bytes": 59054,
+    "sha256": "ca4180af1a8c34419689d8b8532488e1aa5756ef4ce3ab47ba3a86410514ba58"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Cu.gbl",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Cu.gbl",
+    "bytes": 32128,
+    "sha256": "2e4ca966785335f9b5a1477f5a008cbebd41605b1d959edc5732aa56d458c646"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Mask.gbs",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Mask.gbs",
+    "bytes": 973,
+    "sha256": "61e0b4d451b5932b7345ccdb54cd73ddbb303684e26e4d3430f234a61e841cc1"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo",
+    "bytes": 983,
+    "sha256": "37faba628c5246a4c7e48b6c546332bc1408e22ddfbb392345c44468d33f5305"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1",
+    "bytes": 648,
+    "sha256": "6929aad4668d1c8afc6d79e98030b53b8a7781265788df7b07e269ffc2d40478"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Cu.gtl",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Cu.gtl",
+    "bytes": 101465,
+    "sha256": "34da480c6b2b0d9b9ed9d3d98e916358e78cdc3b959ceae598861e0935235890"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Mask.gts",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Mask.gts",
+    "bytes": 5914,
+    "sha256": "5e59a33d02d739cb3f59835d5ffb38ad92d7a1d1fb068bf1aabe1628002a1855"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Silkscreen.gto",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-F_Silkscreen.gto",
+    "bytes": 24006,
+    "sha256": "a48c914c12623bdb7ed4a2212c9983c9e36e8a8685db7ed24ef7345b20f1c4bc"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber.zip",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber.zip",
+    "bytes": 47704,
+    "sha256": "a883a15ff826d844305dba2d0486660de5434955a77211306d7f028dc5c03b89"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+    "bytes": 4911,
+    "sha256": "2786661c7737009d73ab1804a4b5e38390d4d129dc47cd52e658fd173747d06c"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-NPTH.drl",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-NPTH.drl",
+    "bytes": 264,
+    "sha256": "6129be04a026f258c01885e8e45fa1645652546f2cc963bbbe9175bc97e04093"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+    "bytes": 39736,
+    "sha256": "2539929eed580e32f897a69747ec371ff1e2b057e059297d99fee00d8f1d5531"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-PTH.drl",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-PTH.drl",
+    "bytes": 1000,
+    "sha256": "3465781027a4b7bb7794dae815014e35c95992e7e4c5458cf42ab87dac90cfe6"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-job.gbrjob",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-job.gbrjob",
+    "bytes": 2703,
+    "sha256": "5f9d807400403eb75b460b51d9a1e82d6f32992bab976d60b318ea8e01359c04"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/CAM-FILE-SHA256.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/CAM-FILE-SHA256.json",
+    "bytes": 1489,
+    "sha256": "2bd74da4579a457a0668898d59c6d84487e4f5d35427efba74b85c07c4f1f9a8"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/CAM-bottom.png",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/CAM-bottom.png",
+    "bytes": 140159,
+    "sha256": "68b9f2fcd3255a24aa63cce8803099a5d5225988d6800f642b956a1d7836daec"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/CAM-bottom.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/CAM-bottom.svg",
+    "bytes": 53082,
+    "sha256": "75c91f2e9973024f6cbb1743e7b81e3437cd9623b2d555939726c92961523507"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/CAM-top.png",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/CAM-top.png",
+    "bytes": 282586,
+    "sha256": "03e668528a7f63383961655a36ebb51b6c92b36c4502720f14cac4a630ec459d"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/CAM-top.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/CAM-top.svg",
+    "bytes": 382734,
+    "sha256": "ad0355c40b621120dfddcc137dd426fbc4cc1eec9ec1a3d2e3f7c140d41d7dde"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/README-NOT_FOR_FAB.md",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/README-NOT_FOR_FAB.md",
+    "bytes": 6305,
+    "sha256": "345e4d7203da62055cb5a4502cffc423301bbf16e5ad1b8b08d4f2b5039f606b"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/assembly-placement.png",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/assembly-placement.png",
+    "bytes": 166505,
+    "sha256": "3d18ed1406290774716682522fa4d5143ee3af7da42edb83edae23403ffc0c13"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/assembly-placement.svg",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/assembly-placement.svg",
+    "bytes": 59054,
+    "sha256": "ca4180af1a8c34419689d8b8532488e1aa5756ef4ce3ab47ba3a86410514ba58"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/cam-readback-audit.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/cam-readback-audit.json",
+    "bytes": 2259,
+    "sha256": "b15f8266290a029f1a0b3df1a352d4139d4c63cf92c4143c485672e2ca5bce8a"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/drill-report.txt",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/drill-report.txt",
+    "bytes": 750,
+    "sha256": "610ae9630d442bf4aad5499a16e1c3a026ffc868a56106bc1f40d10901b55945"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/expected-cam.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/expected-cam.json",
+    "bytes": 42917,
+    "sha256": "20f6af6367f3e11aff69ca6a6142b62b270633e65375f0899ea0b3510a8b5eae"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/export-log.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/export-log.json",
+    "bytes": 3748,
+    "sha256": "2a6050faba74a5ff9813a6197e7165d5aa4187bf3ffaf00c499ae973e75e7041"
+  },
+  {
+    "path": "hardware/core/prototype-fabrication/source-hashes.json",
+    "source": "work/peak-hold-v0.4/cad/core-output/prototype-fabrication/source-hashes.json",
+    "bytes": 248,
+    "sha256": "28061bcb90cc7d9c57469905e72f5bb1025d7fa8b5e0f2e0972c8ed8645ed93d"
+  },
+  {
+    "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+    "bytes": 61279,
+    "sha256": "f2077afbc7722dfb7abd7fd5dc51a9ed908c7a0b7de7e097d4197a320431c8dc"
+  },
+  {
+    "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Schematic.pdf",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Schematic.pdf",
+    "bytes": 223689,
+    "sha256": "5b4baaef1a5763e5c4c5cd0df051a371e902aa2699a070d7ae2ba6752a262268"
+  },
+  {
+    "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-native.epro2",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-native.epro2",
+    "bytes": 194478,
+    "sha256": "9f31b643d35e76e435b264777d429850cdb78993db58d1cd700be79e990126c0"
+  },
+  {
+    "path": "native/carrier/PCB-netlist.net",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/PCB-netlist.net",
+    "bytes": 46713,
+    "sha256": "3837f5cb042496a3e7cc018d21969f032a27aa1ec3f5fca893ba90f8f548a68b"
+  },
+  {
+    "path": "native/carrier/Schematic-netlist.net",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/Schematic-netlist.net",
+    "bytes": 75070,
+    "sha256": "b22e6bf81791694f95e1b327d134d3094b64234fa1cd7c36e390c120214ff779"
+  },
+  {
+    "path": "native/carrier/schematic-preview-1.png",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/schematic-preview-1.png",
+    "bytes": 43036,
+    "sha256": "e0ebf0f8c246553a7e1d6653b29690657c5d25dbe728c789c998be9a01c9bae5"
+  },
+  {
+    "path": "native/carrier/schematic-preview-2.png",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/schematic-preview-2.png",
+    "bytes": 44430,
+    "sha256": "f7fce20d16cd618d1d8418b3c1499e9750f3af67884253cf93eea7afb7dd48ea"
+  },
+  {
+    "path": "native/carrier/schematic-preview-3.png",
+    "source": "work/peak-hold-v0.4/native-evidence/carrier-final/schematic-preview-3.png",
+    "bytes": 51213,
+    "sha256": "ad0cedabae08a96188340967a2640ac21e0a3692fccaaefe72a8ec31067aa153"
+  },
+  {
+    "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+    "bytes": 40006,
+    "sha256": "5d07b934be9370bb7b1e76e3e0c4d4bef21c799bc7a8e45c2134167a248a04cc"
+  },
+  {
+    "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Schematic.pdf",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Schematic.pdf",
+    "bytes": 182218,
+    "sha256": "c445361b3f2189c03d1251cdc81ae91ed7323b577eefd999faf3f844108d4a9c"
+  },
+  {
+    "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-native.epro2",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-native.epro2",
+    "bytes": 322042,
+    "sha256": "715499e9a109ea5f3675784a45dff6197cfb0fb259c9da5c09de2ce175369e0b"
+  },
+  {
+    "path": "native/core/PCB-netlist.net",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/PCB-netlist.net",
+    "bytes": 37216,
+    "sha256": "8a4ea55c4ceb167573d7934fb4da62450d5d63e4d3d2f99f9a23059750f15ce7"
+  },
+  {
+    "path": "native/core/Schematic-netlist.net",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/Schematic-netlist.net",
+    "bytes": 63217,
+    "sha256": "4b103feea8fd55a7e672df306cda6e6abda1f77ef51dcff5d75a19cefe1c921e"
+  },
+  {
+    "path": "native/core/schematic-preview.png",
+    "source": "work/peak-hold-v0.4/native-evidence/core-final/schematic-preview.png",
+    "bytes": 119736,
+    "sha256": "40c077162f2f16c2bd2bf0cc65ee3d69c05f3781f91475b6e6271c43cb6f5695"
+  },
+  {
+    "path": "simulation/MODEL-SOURCES.md",
+    "source": "work/peak-hold-v0.4/delivery/simulation-MODEL-SOURCES.md",
+    "bytes": 2014,
+    "sha256": "3c2c102c6d675028a7cca6b83ff58d51c73f486135070f18898892c0bd1b0063"
+  },
+  {
+    "path": "simulation/README.md",
+    "source": "work/peak-hold-v0.4/delivery/simulation-README.md",
+    "bytes": 1899,
+    "sha256": "d55521d405015d00a9c34323dc753db544481a27ce977263e432924da7eef8a3"
+  },
+  {
+    "path": "simulation/positive-candidate.cir",
+    "source": "work/peak-hold-v0.4/analog/positive-candidate.cir",
+    "bytes": 1014,
+    "sha256": "796986bb68f9acff8aae626f0cb809c8c3e0df8b3163ded2755adb35c2644d82"
+  },
+  {
+    "path": "simulation/representative.cir",
+    "source": "work/peak-hold-v0.4/analog/representative.cir",
+    "bytes": 10369,
+    "sha256": "d94333211a35941f151f5769e9c8bdb8a09b3dd16f0079232f545a0fc7f52d11"
+  },
+  {
+    "path": "simulation/simulated-peak-hold.png",
+    "source": "work/peak-hold-v0.4/analog/simulated-peak-hold.png",
+    "bytes": 107272,
+    "sha256": "77f970fe834e2a1e26bc1a83b6455ea6d3362c82efb86e8d83e319dd674aff14"
+  },
+  {
+    "path": "simulation/simulation-summary.json",
+    "source": "work/peak-hold-v0.4/analog/simulation-summary.json",
+    "bytes": 1608,
+    "sha256": "5d04598db7a915c3bcab8235fba7a77240b2ced8e599193fd62a41a4739cbd2f"
+  },
+  {
+    "path": "simulation/tolerance.cir",
+    "source": "work/peak-hold-v0.4/analog/tolerance.cir",
+    "bytes": 10371,
+    "sha256": "a0f1232d95d4686d7840b06aea78fca5d067e8f918fe7407f7654e9c23683d3f"
+  },
+  {
+    "path": "simulation/tolerance_check.json",
+    "source": "work/peak-hold-v0.4/analog/tolerance_check.json",
+    "bytes": 1512,
+    "sha256": "8ed16d41745f50de2b975d97a4cef4fded1e4e14f7e053230872bce07c089d75"
+  },
+  {
+    "path": "simulation/validate_frontend.json",
+    "source": "work/peak-hold-v0.4/analog/validate_frontend.json",
+    "bytes": 5147,
+    "sha256": "4597ba985c988fb97a0fbce939affb60a86c388c43a9814dc621847972b05b9a"
+  },
+  {
+    "path": "simulation/validate_positive.json",
+    "source": "work/peak-hold-v0.4/analog/validate_positive.json",
+    "bytes": 8252,
+    "sha256": "25b735ea48097b7ca5db5dc2eb658813e04acc7d169bd7b362cf558dc4505026"
+  },
+  {
+    "path": "tooling/README.md",
+    "source": "work/peak-hold-v0.4/delivery/tooling-README.md",
+    "bytes": 4108,
+    "sha256": "272e2fbcb4f045f3a9a5ae775e7b15efacd1dd49336423ea4784a418d122c2fa"
+  },
+  {
+    "path": "tooling/audit.py",
+    "source": "work/peak-hold-v0.4/cad/audit.py",
+    "bytes": 3830,
+    "sha256": "eceec8ac92704435c0ad162ea90016b657413eef73369539a8cad7d6863a2ca8"
+  },
+  {
+    "path": "tooling/audit_copper.py",
+    "source": "work/peak-hold-v0.4/cad/audit_copper.py",
+    "bytes": 2681,
+    "sha256": "28932254b36225f47a00b828a56b7134a8556bf882b8ce8c44fddf30981f60e8"
+  },
+  {
+    "path": "tooling/build.py",
+    "source": "work/peak-hold-v0.4/cad/build.py",
+    "bytes": 20183,
+    "sha256": "a1319e04a6f8c69c2214fc4e9f6155007499cfcace6e3f7594d798d782bcdb6b"
+  },
+  {
+    "path": "tooling/cam_audit.py",
+    "source": "work/peak-hold-v0.4/cad/cam_audit.py",
+    "bytes": 3604,
+    "sha256": "0124a4af50f1f3ccbc1c3f914b90bd32847db11311b1ade28af03dac51fa30c7"
+  },
+  {
+    "path": "tooling/cam_expected.py",
+    "source": "work/peak-hold-v0.4/cad/cam_expected.py",
+    "bytes": 1868,
+    "sha256": "b61af9ed6a0c62553d359546fa9b4581ba278027ce13e7ef60d1062eadc1fbe1"
+  },
+  {
+    "path": "tooling/native_base.py",
+    "source": "work/peak-hold-v0.4/cad/native_base.py",
+    "bytes": 5585,
+    "sha256": "031443a4d8e675027935d783d02bd0a69e1782424c13c9e33eff37de444968d5"
+  },
+  {
+    "path": "tooling/package_delivery.py",
+    "source": "work/peak-hold-v0.4/package_delivery.py",
+    "bytes": 11301,
+    "sha256": "b6a5caf81b92fe1f2c0c00a54efb2fedca1f11952e87db04a807f6d15d54f7cb"
+  },
+  {
+    "path": "tooling/preview.py",
+    "source": "work/peak-hold-v0.4/cad/preview.py",
+    "bytes": 2845,
+    "sha256": "7d3fd7a56205d9023743cd088086a3c9b2d91a97b3ba4d64392ad7d11ce6ece4"
+  },
+  {
+    "path": "tooling/protect_routes.py",
+    "source": "work/peak-hold-v0.4/cad/protect_routes.py",
+    "bytes": 1650,
+    "sha256": "3084b61413f73455e40734a8cf30eccfe0d8d9bff65fb8cfa626d78f38b76810"
+  }
+]

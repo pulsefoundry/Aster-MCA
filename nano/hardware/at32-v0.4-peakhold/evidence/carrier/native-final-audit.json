@@ -1,0 +1,110 @@
+{
+  "reviewed_at_utc": "2026-11-11T17:23:33.125001+00:00",
+  "status": "PASS_WITH_EXPECTED_ADVISORIES",
+  "scope": "Readback of native final exports against carrier/design.json; no CAD edits or bench validation",
+  "project_uuid": "046552eae5ca4c32aa83c7cad8f8930f",
+  "project_url": "https://pro.lceda.cn/editor#id=046552eae5ca4c32aa83c7cad8f8930f",
+  "source_export": "../carrier-release-export.json",
+  "source_design": "../../carrier/design.json",
+  "native_pcb_drc": [],
+  "native_schematic_drc_api": [
+    {
+      "type": "warn",
+      "count": 5
+    }
+  ],
+  "netlists": {
+    "schematic": {
+      "component_count": 42,
+      "total_pin_entries": 137,
+      "electrical_pin_count": 137,
+      "mechanical_entries_excluded": [],
+      "design_net_mismatches": []
+    },
+    "pcb": {
+      "component_count": 42,
+      "total_pin_entries": 138,
+      "electrical_pin_count": 137,
+      "mechanical_entries_excluded": [
+        {
+          "ref": "J1",
+          "pin_number": "",
+          "net": null,
+          "kind": "un-numbered mechanical pad entry"
+        }
+      ],
+      "design_net_mismatches": []
+    }
+  },
+  "schematic_and_pcb_electrical_nets_equal": true,
+  "single_pin_reserved_nets": {
+    "NRST": [
+      "M1.7"
+    ],
+    "SWDIO": [
+      "M1.8"
+    ],
+    "SWCLK": [
+      "M1.9"
+    ],
+    "BOOT0": [
+      "M1.10"
+    ],
+    "AUX": [
+      "M1.22"
+    ]
+  },
+  "U13_ground_pad": {
+    "component_id": "n148",
+    "footprint_uuid": "91885815ee8159ca",
+    "pad_number": "2",
+    "net": "GND",
+    "native_footprint_connect_mode": "DIRECT",
+    "verified_in": "*-native.epro2 / FOOTPRINT / PAD 2",
+    "direct_connection_confirmed": true
+  },
+  "top_silkscreen_strings": [
+    "1",
+    "M1: CORE TOP UP",
+    "BOOT / LED AT LEFT",
+    "PEAK HOLD v0.4",
+    "U11",
+    "U12",
+    "U10",
+    "G",
+    "U13",
+    "S",
+    "G",
+    "USB",
+    "USB SIDE",
+    "SMA"
+  ],
+  "pin_1_marker": "1",
+  "required_orientation_markers_present": true,
+  "notes": [
+    "Final release export readback confirms 42 components and 137 electrical pins match carrier/design.json and both native netlists. PCB contains one additional un-numbered/net-null USB mechanical pad entry.",
+    "Five single-pin reserve nets are AUX, BOOT0, NRST, SWCLK and SWDIO; schematic API returns warn=5.",
+    "One USB mechanical NPTH info was observed in native UI by the parent agent; it is consistent with the extra mechanical PCB-netlist entry.",
+    "U13 footprint 91885815ee8159ca pad2 is GND with connectMode DIRECT in the final native epro2.",
+    "Final archive mechanical-page n9 and the PDF both contain D90; prior stale D10 note is resolved.",
+    "No claim that native Gerbers equal KiCad Gerbers, or that analog performance has been bench validated."
+  ],
+  "source_hashes_frozen": true,
+  "documentation_issue": {
+    "status": "RESOLVED",
+    "page_uuid": "732e5b2db3185847",
+    "text_object_id": "n9",
+    "source_api_value": "USB data flow J1 -> D90 -> M1. IO1 and IO2 pairs of D90 internally connected.",
+    "native_epro2_value": "USB data flow J1 -> D90 -> M1. IO1 and IO2 pairs of D90 internally connected.",
+    "pdf_value": "USB data flow J1 -> D90 -> M1. IO1 and IO2 pairs of D90 internally connected.",
+    "all_three_values_match": true
+  },
+  "native_export_errors": [],
+  "reviewed_native_file_sha256": {
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip": "f2077afbc7722dfb7abd7fd5dc51a9ed908c7a0b7de7e097d4197a320431c8dc",
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Schematic.pdf": "5b4baaef1a5763e5c4c5cd0df051a371e902aa2699a070d7ae2ba6752a262268",
+    "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-native.epro2": "9f31b643d35e76e435b264777d429850cdb78993db58d1cd700be79e990126c0",
+    "PCB-netlist.net": "3837f5cb042496a3e7cc018d21969f032a27aa1ec3f5fca893ba90f8f548a68b",
+    "Schematic-netlist.net": "b22e6bf81791694f95e1b327d134d3094b64234fa1cd7c36e390c120214ff779"
+  }
+}

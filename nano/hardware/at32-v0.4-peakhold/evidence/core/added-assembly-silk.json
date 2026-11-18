@@ -1,0 +1,115 @@
+{
+  "labels": [
+    {
+      "text": "1",
+      "xy": [
+        1.9,
+        1.7
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "BOOT",
+      "xy": [
+        2.7,
+        15.45
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "PWR",
+      "xy": [
+        4.2,
+        9.45
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "RUN",
+      "xy": [
+        4.2,
+        12.25
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "USB",
+      "xy": [
+        5.1,
+        2.0
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "AT32",
+      "xy": [
+        13.0,
+        9.4
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "CORE v0.4",
+      "xy": [
+        13.0,
+        10.7
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    },
+    {
+      "text": "NRST",
+      "xy": [
+        21.9,
+        15.3
+      ],
+      "size": 0.8,
+      "angle": 0.0
+    }
+  ],
+  "pin1_marker_segments": [
+    {
+      "start": [
+        2.7,
+        1.8
+      ],
+      "end": [
+        3.3,
+        1.8
+      ],
+      "width": 0.12
+    },
+    {
+      "start": [
+        3.0,
+        1.35
+      ],
+      "end": [
+        2.7,
+        1.8
+      ],
+      "width": 0.12
+    },
+    {
+      "start": [
+        3.3,
+        1.8
+      ],
+      "end": [
+        3.0,
+        1.35
+      ],
+      "width": 0.12
+    }
+  ],
+  "core_footprint_doc_layer_changes": [
+    "LED1 top silk segment",
+    "R5 bottom silk segment"
+  ]
+}

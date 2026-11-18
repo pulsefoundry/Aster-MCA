@@ -1,0 +1,14 @@
+{
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Cu.gbl": "99a49b8ff507122e27d7ed1605deca51aef42102726a181718a1847b2db36fbe",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Mask.gbs": "3d4704fdac8835b758e99668c780eb77d1cf831bf173a6f2e96f96940320f8b8",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo": "f71a882ca16a5677603a8ba76bb38b640271ffc3b6aacde3c5bcaee0e22b27bb",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1": "0e007a94dc144f5f4f1f95188dc41da771bc551d60f8fd186d3fe6ee42a1802b",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Cu.gtl": "ec0b80e9e3588f80223435bec6c7c43d6d9ff235f2d2774b67e8f1c4673d478d",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Mask.gts": "8d0259dadc911ee351e7c14a21ddca75c305b7efa673f662b1363e542440438f",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Silkscreen.gto": "12ae0b376b01c18433fe7eb99a3d2f4e54a9de826dd99823c85c105597b70089",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH.drl": "944da744135e5024acdf0ae30404c924a96db31d6bd83a2c5f7a904262a6e723",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH.drl": "e2af976a7057244a98c253805d4322a1ac22235c13320beac54763c0a4fbb13e",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-job.gbrjob": "acbd43a44885a355a301ba4566ba1503aed9f65987ca4878b55bb83675b6634b",
+  "README-NOT_FOR_FAB.md": "345e4d7203da62055cb5a4502cffc423301bbf16e5ad1b8b08d4f2b5039f606b",
+  "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber.zip": "ba73894d524358d1f8003f550c9f89f7296f14db005bfe813b03485bc94ae61c"
+}

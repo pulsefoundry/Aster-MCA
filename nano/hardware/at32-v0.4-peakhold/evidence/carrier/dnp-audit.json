@@ -1,0 +1,17 @@
+[
+  {
+    "ref": "J3",
+    "value": "G-S-G_WIRE_PADS_2.54",
+    "native_add_into_bom": "no"
+  },
+  {
+    "ref": "C101",
+    "value": "DNP 1p-4.7p C0G",
+    "native_add_into_bom": "no"
+  },
+  {
+    "ref": "C103",
+    "value": "DNP 0.5p-4.7p C0G",
+    "native_add_into_bom": "no"
+  }
+]

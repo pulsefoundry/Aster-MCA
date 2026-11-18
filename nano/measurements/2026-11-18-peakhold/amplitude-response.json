@@ -1,0 +1,94 @@
+{
+  "points": [
+    {
+      "run": "250mv",
+      "nominal_mvpp": 250,
+      "nominal_offset_mv": -125.0,
+      "received": 3612,
+      "selected": 3541,
+      "flagged": 71,
+      "wall_seconds": 4.996525208000094,
+      "median_channel": 16.75,
+      "median_adc_code": 33.5
+    },
+    {
+      "run": "300mv",
+      "nominal_mvpp": 300,
+      "nominal_offset_mv": -150.0,
+      "received": 3519,
+      "selected": 3482,
+      "flagged": 37,
+      "wall_seconds": 4.997841499745846,
+      "median_channel": 20.0,
+      "median_adc_code": 40.0
+    },
+    {
+      "run": "400mv",
+      "nominal_mvpp": 400,
+      "nominal_offset_mv": -200.0,
+      "received": 3626,
+      "selected": 3606,
+      "flagged": 20,
+      "wall_seconds": 4.997741874773055,
+      "median_channel": 32.5,
+      "median_adc_code": 65.0
+    },
+    {
+      "run": "500mv",
+      "nominal_mvpp": 500,
+      "nominal_offset_mv": -250.0,
+      "received": 3495,
+      "selected": 3495,
+      "flagged": 0,
+      "wall_seconds": 4.992587416898459,
+      "median_channel": 41.375,
+      "median_adc_code": 82.75
+    },
+    {
+      "run": "500mv-return",
+      "nominal_mvpp": 500,
+      "nominal_offset_mv": -250.0,
+      "received": 3522,
+      "selected": 3522,
+      "flagged": 0,
+      "wall_seconds": 4.99356724973768,
+      "median_channel": 40.5,
+      "median_adc_code": 81.0
+    },
+    {
+      "run": "750mv",
+      "nominal_mvpp": 750,
+      "nominal_offset_mv": -375.0,
+      "received": 3446,
+      "selected": 3446,
+      "flagged": 0,
+      "wall_seconds": 4.9964078748598695,
+      "median_channel": 64.25,
+      "median_adc_code": 128.5
+    },
+    {
+      "run": "1000mv",
+      "nominal_mvpp": 1000,
+      "nominal_offset_mv": -500.0,
+      "received": 3481,
+      "selected": 3481,
+      "flagged": 0,
+      "wall_seconds": 4.99642329197377,
+      "median_channel": 84.375,
+      "median_adc_code": 168.75
+    },
+    {
+      "run": "300mv-afterraw",
+      "nominal_mvpp": 300,
+      "nominal_offset_mv": -150.0,
+      "received": 3475,
+      "selected": 3448,
+      "flagged": 27,
+      "wall_seconds": 4.993355042301118,
+      "median_channel": 19.5,
+      "median_adc_code": 39.0
+    }
+  ],
+  "voltage_independently_measured": false,
+  "note": "Sequential recordings; repeated 500mV median differed by2.1%; no energy calibration."
+}

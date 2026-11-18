@@ -1,0 +1,68 @@
+{
+  "core": {
+    "project_url": "https://pro.lceda.cn/editor#id=c6272f473a3b4635be2af605c1985002",
+    "size_mm": [
+      26,
+      23
+    ],
+    "native_pcb_drc": [],
+    "native_sch_drc": [],
+    "pin_net_count": 131,
+    "electrical_nets_unchanged": true,
+    "pcb_schematic_match": true,
+    "interface_pth_count": 22,
+    "interface_drill_mm": 0.8,
+    "pitch_mm": 2,
+    "cam_outline_mm": [
+      0.0,
+      -21.5,
+      26.0,
+      1.5
+    ],
+    "cam_unique_round_drill_diameters": {
+      "0.3": 27,
+      "0.8": 22
+    },
+    "via_drill_file": "Native supplemental subset of the main PTH drill file; not double-counted",
+    "no_halfholes": true,
+    "sync_ui": "Import changes comparison empty; no pending changes"
+  },
+  "carrier": {
+    "project_url": "https://pro.lceda.cn/editor#id=92f59a72e90643bdbdeead96785b24e1",
+    "size_mm": [
+      60,
+      32
+    ],
+    "native_pcb_drc": [],
+    "native_sch_drc": [
+      {
+        "type": "warn",
+        "count": 5
+      }
+    ],
+    "pin_net_count": 137,
+    "electrical_nets_unchanged": true,
+    "pcb_schematic_match": true,
+    "interface_pth_count": 22,
+    "interface_drill_mm": 0.8,
+    "pitch_mm": 2,
+    "cam_outline_mm": [
+      0.0,
+      -32.0,
+      60.0,
+      0.0
+    ],
+    "cam_unique_round_drill_diameters": {
+      "1.1": 2,
+      "0.3": 46,
+      "0.8": 22,
+      "0.9": 3,
+      "1.5": 1,
+      "1.7": 4
+    },
+    "via_drill_file": "Native supplemental subset of the main PTH drill file; not double-counted",
+    "no_halfholes": true,
+    "sync_ui": "Import changes comparison empty; no pending changes"
+  },
+  "interface_centers_match_without_mirroring": true
+}

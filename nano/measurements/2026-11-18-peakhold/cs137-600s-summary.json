@@ -1,0 +1,226 @@
+{
+  "firmware": "0.4.1-fast.7",
+  "wait_limit_us": 500,
+  "wall_seconds": 599.9970101667568,
+  "input_condition": "User requests600second continuation of preceding original powered negative-pulse detector/Cs137 setup; no source,wiring,HV or gain changes reported,scope remains removed. R105single10k,C101100pF. fast.7,wait500us,window6us,PEAK24.5cycles,RAW500k,EARLY.",
+  "totals": {
+    "received": 102346,
+    "binned": 101288,
+    "flagged": 1058,
+    "clipped": 0,
+    "underflow": 0,
+    "overflow": 0,
+    "firmware_timeouts": 976323,
+    "firmware_baseline_rejects": 566,
+    "attempts": 1079235,
+    "batches": 8466,
+    "trigger_irq_n": 104954,
+    "trigger_ignored_n": 0,
+    "dma_stop_n": 102912,
+    "dma_stop_before_hold_irq_n": 102912
+  },
+  "valid_range_selected": 101287,
+  "valid_range_wall_cps": 168.81250786874648,
+  "primary": {
+    "success": true,
+    "bound_warning": false,
+    "roi_channels": [
+      120,
+      180
+    ],
+    "centroid_channel": 152.0122373470169,
+    "bin_width_channels": 1,
+    "bin_width_adc_codes": 2,
+    "centroid_statistical_se": 0.06864439606305509,
+    "sigma_channels": 5.59408907329422,
+    "fwhm_channels": 13.173073083481837,
+    "apparent_fwhm_percent": 8.665797776142227,
+    "apparent_fwhm_statistical_se_pp": 0.1021763201274638,
+    "fitted_gaussian_events": 14647.746769956248,
+    "observed_roi_counts": 33984,
+    "fitted_area_statistical_se": 179.735707093878,
+    "fitted_area_signal_to_stat_noise": 81.49603107136393,
+    "deviance": 403.4401327463264,
+    "dof": 55,
+    "model_parameters": [
+      14647.746769956248,
+      152.0122373470169,
+      5.59408907329422,
+      640.6403442592841,
+      3.9015729945600137
+    ],
+    "deviance_per_dof": 7.335275140842298,
+    "model_misfit_warning": true
+  },
+  "roi_sensitivity_range_percent": [
+    8.386696670743806,
+    9.073339917064176
+  ],
+  "drift": {
+    "centroid_min": 151.74408711567526,
+    "centroid_max": 152.52764320739172,
+    "centroid_range_percent_of_mean": 0.5154806967260135,
+    "weighted_linear_slope_channel_per_minute": -0.055100117220796996,
+    "slope_statistical_se": 0.02360466187662401,
+    "first_to_last_percent": -0.21680502137355115,
+    "segment_fwhm_percent_range": [
+      8.164360544091453,
+      9.109743676137091
+    ]
+  },
+  "quality": {
+    "all_payload_crcs_and_histograms_verified": true,
+    "received": 102346,
+    "selected": 101287,
+    "batches": 8466,
+    "max_peak_code": 2107,
+    "max_peak_nominal_v": 1.6979487179487178,
+    "records_above_nominal_1p65v": 1,
+    "analog_high_records": [
+      {
+        "file": "batch-001757.bin",
+        "record_id": 39,
+        "peak_code": 2107,
+        "nominal_peak_v": 1.6979487179487178,
+        "amplitude_channel": 669.0,
+        "flags": 0
+      }
+    ],
+    "mcu_batch_seconds": 555.32,
+    "longest_approx_batch_seconds": 0.0808718638783148,
+    "baseline_by_segment": [
+      {
+        "segment": 0,
+        "selected": 10196,
+        "mean_baseline_code": 771.9141820321695,
+        "baseline_rms_code": 0.8006414943515149,
+        "mean_reset_minus_baseline_code": -1.1879168301294625
+      },
+      {
+        "segment": 1,
+        "selected": 10199,
+        "mean_baseline_code": 771.912344347485,
+        "baseline_rms_code": 0.9110684253899045,
+        "mean_reset_minus_baseline_code": -1.1348171389351898
+      },
+      {
+        "segment": 2,
+        "selected": 10198,
+        "mean_baseline_code": 771.990096097274,
+        "baseline_rms_code": 0.9269239705810257,
+        "mean_reset_minus_baseline_code": -1.1873896842518141
+      },
+      {
+        "segment": 3,
+        "selected": 10193,
+        "mean_baseline_code": 772.0131462768567,
+        "baseline_rms_code": 0.8052997221179775,
+        "mean_reset_minus_baseline_code": -1.136466202295693
+      },
+      {
+        "segment": 4,
+        "selected": 10085,
+        "mean_baseline_code": 772.059494298463,
+        "baseline_rms_code": 0.8589292097451542,
+        "mean_reset_minus_baseline_code": -1.1482399603371343
+      },
+      {
+        "segment": 5,
+        "selected": 10107,
+        "mean_baseline_code": 772.0027703571782,
+        "baseline_rms_code": 0.8012013853874502,
+        "mean_reset_minus_baseline_code": -1.1640447214801624
+      },
+      {
+        "segment": 6,
+        "selected": 9949,
+        "mean_baseline_code": 771.971052367072,
+        "baseline_rms_code": 0.9748914897166033,
+        "mean_reset_minus_baseline_code": -1.159513518946628
+      },
+      {
+        "segment": 7,
+        "selected": 10111,
+        "mean_baseline_code": 771.9501532983879,
+        "baseline_rms_code": 0.7915385067070363,
+        "mean_reset_minus_baseline_code": -1.1563643556522598
+      },
+      {
+        "segment": 8,
+        "selected": 10176,
+        "mean_baseline_code": 771.9794614779875,
+        "baseline_rms_code": 0.8179820771142716,
+        "mean_reset_minus_baseline_code": -1.1593946540880504
+      },
+      {
+        "segment": 9,
+        "selected": 10074,
+        "mean_baseline_code": 771.9836212030971,
+        "baseline_rms_code": 0.8985847683511208,
+        "mean_reset_minus_baseline_code": -1.1485010919197935
+      }
+    ],
+    "original_base_selected": 101288,
+    "additionally_excluded_analog_high": 1,
+    "all_internal_timing_sums_verified": true,
+    "baseline_summary_selection": "Baseline diagnostics retain the original base quality selection; peak/count histograms apply the extra analog guard."
+  },
+  "internal_timing_sums": {
+    "armed_observed_cycles": 43358851264,
+    "prepare_cycles": 32381413240,
+    "read_reset_cycles": 258995313,
+    "batch_work_cycles": 79967556383,
+    "armed_attempts": 1079235,
+    "idle_low_timeouts": 0,
+    "wait_timeouts": 976323,
+    "deadline_pending_n": 2253,
+    "completed_over_limit_n": 233
+  },
+  "armed_observed_seconds": 301.10313377777777,
+  "true_live_time_measured": false,
+  "preceding_same_setting": {
+    "wall_seconds": 179.97680303966627,
+    "selected": 30300,
+    "primary_fit": {
+      "success": true,
+      "bound_warning": false,
+      "roi_channels": [
+        120,
+        180
+      ],
+      "centroid_channel": 151.96312403205715,
+      "bin_width_channels": 1,
+      "bin_width_adc_codes": 2,
+      "centroid_statistical_se": 0.1359872374635842,
+      "sigma_channels": 5.844782803377902,
+      "fwhm_channels": 13.76341170424647,
+      "apparent_fwhm_percent": 9.057073412983423,
+      "apparent_fwhm_statistical_se_pp": 0.20478616587398002,
+      "fitted_gaussian_events": 4277.701481853998,
+      "observed_roi_counts": 10255,
+      "fitted_area_statistical_se": 100.74632552601265,
+      "fitted_area_signal_to_stat_noise": 42.4601240741976,
+      "deviance": 149.74841764067133,
+      "dof": 55,
+      "model_parameters": [
+        4277.701481853998,
+        151.96312403205715,
+        5.844782803377902,
+        198.9508981844694,
+        0.29250463255653136
+      ],
+      "deviance_per_dof": 2.7226985025576607,
+      "model_misfit_warning": true
+    },
+    "wall_cps": 168.3550295830179
+  },
+  "limitations": [
+    "FWHM/centroid is an apparent channel-domain ratio, assuming negligible energy intercept and linear response; no multipoint energy calibration.",
+    "Fit uses unsmoothed gross-source counts with a bin-integrated Gaussian and nonnegative linear continuum. No source-removed detector background measured in this configuration.",
+    "Fit-window sensitivity and deviance indicate model dependence; bootstrap intervals do not include it.",
+    "Adjacent-bin regrouping is a fit sensitivity check with Gaussian bin integration, not smoothing or an improved detector resolution. Native histogram is unchanged.",
+    "Minute boundaries approximate wall time by normalizing cumulative batch roundtrip durations; events within a boundary batch are assigned together. This is not live time.",
+    "Whole-chain drift does not identify detector versus MCA causes. R10510k/C101100pF pulse response remains experimental.",
+    "Additional analog guard is applied only to the analysis copy; native spectrum/frames unchanged. Armed-observed seconds include capture/IRQ latency and are not true live time."
+  ]
+}

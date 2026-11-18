@@ -1,0 +1,543 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T00:36:53",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 1 [GND]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 0.0
+                    },
+                    "uuid": "27318122-efb9-4fc9-81c4-ec45d92efaa9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 2 [VBUS]",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 0.0
+                    },
+                    "uuid": "0c1f29ee-1512-4ce1-bd08-9dea9ed1da35"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 3 [USB_DM]",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a0acebda-06eb-4012-86d0-b1b6298a0483"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 4 [USB_DP]",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 0.0
+                    },
+                    "uuid": "39b06af1-14d6-4071-aa7c-e358be61d538"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 5 [GND]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 0.0
+                    },
+                    "uuid": "608d4b2e-b67b-4ba0-8caa-99027eb01be5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 6 [V3V3]",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 0.0
+                    },
+                    "uuid": "8728c263-a043-459e-acd5-187865887c42"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 7 [NRST]",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 0.0
+                    },
+                    "uuid": "c4a30e0e-af6c-4292-8473-18fa5c9f978e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 8 [SWDIO]",
+                    "pos": {
+                        "x": 17.0,
+                        "y": 0.0
+                    },
+                    "uuid": "72387ac7-f507-4d97-8210-2b448c3a906e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 9 [SWCLK]",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 0.0
+                    },
+                    "uuid": "fac8606b-3704-49b1-82d3-f6072f2293a9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 10 [BOOT0]",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 0.0
+                    },
+                    "uuid": "831a0a0a-d6c3-4ecd-903d-a09b2c4a0a49"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "5a9d7a10-b09e-43b6-8239-18b4afd6c975"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 11 [GND]",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 0.0
+                    },
+                    "uuid": "a898d110-9053-42c3-a8c8-9250dc70f87e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 12 [GND]",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 20.0
+                    },
+                    "uuid": "e42ea9c1-0494-435b-90a0-a0255e2287ab"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 13 [PEAK_ADC]",
+                    "pos": {
+                        "x": 21.0,
+                        "y": 20.0
+                    },
+                    "uuid": "9eaf3f16-159a-4b17-9ea2-cda5cc25ff2e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 14 [GND]",
+                    "pos": {
+                        "x": 19.0,
+                        "y": 20.0
+                    },
+                    "uuid": "646ba21b-ba2d-47bc-b0e7-0ec565528ed3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 15 [RAW_ADC]",
+                    "pos": {
+                        "x": 17.0,
+                        "y": 20.0
+                    },
+                    "uuid": "46a5de2e-01e4-4c4d-9115-526368199d81"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 16 [BASE_ADC]",
+                    "pos": {
+                        "x": 15.0,
+                        "y": 20.0
+                    },
+                    "uuid": "c0c6fa35-2315-4c5e-ac44-276e3d9a9907"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 17 [GND]",
+                    "pos": {
+                        "x": 13.0,
+                        "y": 20.0
+                    },
+                    "uuid": "835a5911-afd3-43c0-825b-bfa50e84a57f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 18 [DAC_THRESH]",
+                    "pos": {
+                        "x": 11.0,
+                        "y": 20.0
+                    },
+                    "uuid": "9e3bfb24-7655-4ca3-9b64-69e0efce8bfb"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 19 [TRIG]",
+                    "pos": {
+                        "x": 9.0,
+                        "y": 20.0
+                    },
+                    "uuid": "c927f9a8-2a03-49a7-8cb4-c4c7deeccaed"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 20 [HOLD]",
+                    "pos": {
+                        "x": 7.0,
+                        "y": 20.0
+                    },
+                    "uuid": "7da225e3-59ce-4f74-9854-d40131de2aac"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 21 [PEAK_RESET]",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 20.0
+                    },
+                    "uuid": "55eac880-3c96-4be7-8505-9d1f7ef13d7e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "电路板边缘间距违规 (<电路板配置> 中的 \"板边\" 约束 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 26.0,
+                        "y": 20.0
+                    },
+                    "uuid": "034c1205-5a35-47c9-93b4-2232628d17c9"
+                },
+                {
+                    "description": "J1 的PTH 焊盘 22 [AUX]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 20.0
+                    },
+                    "uuid": "ccc49d05-3c19-4667-8f80-6be465a40681"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        }
+    ]
+}

@@ -1,0 +1,3064 @@
+{
+  "board_thickness_mm": 1.6,
+  "copper_layers": 2,
+  "pads": [
+    {
+      "ref": "C6",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        15.32,
+        -16.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C6",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        16.28,
+        -16.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R3",
+      "num": "1",
+      "net": "BOOT0",
+      "xy": [
+        4.49,
+        -15.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R3",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        5.51,
+        -15.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R5",
+      "num": "1",
+      "net": "VBUS",
+      "xy": [
+        3.19,
+        -8.6
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R5",
+      "num": "2",
+      "net": "VBUS_SENSE",
+      "xy": [
+        4.21,
+        -8.6
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R10",
+      "num": "1",
+      "net": "DAC_THRESH_PIN",
+      "xy": [
+        15.99,
+        -3.5
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R10",
+      "num": "2",
+      "net": "DAC_THRESH",
+      "xy": [
+        17.01,
+        -3.5
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R6",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        21.5,
+        -13.61
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R6",
+      "num": "2",
+      "net": "VDDA",
+      "xy": [
+        21.5,
+        -12.59
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C7",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        7.22,
+        -4.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C7",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        8.18,
+        -4.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C8",
+      "num": "1",
+      "net": "VDDA",
+      "xy": [
+        19.3,
+        -11.28
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C8",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.3,
+        -10.32
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "LED2",
+      "num": "1",
+      "net": "LED_RUN",
+      "xy": [
+        3.4125,
+        -13.5
+      ],
+      "size": [
+        0.875,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "LED2",
+      "num": "2",
+      "net": "LED_RUN_A",
+      "xy": [
+        4.9875,
+        -13.5
+      ],
+      "size": [
+        0.875,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R2",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        1.7,
+        -14.325
+      ],
+      "size": [
+        0.8,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R2",
+      "num": "2",
+      "net": "LED_RUN_A",
+      "xy": [
+        1.7,
+        -12.675
+      ],
+      "size": [
+        0.8,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C4",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        9.72,
+        -4.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C4",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        10.68,
+        -4.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R8",
+      "num": "1",
+      "net": "RAW_ADC",
+      "xy": [
+        21.09,
+        -6.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R8",
+      "num": "2",
+      "net": "ADC_RAW_PIN",
+      "xy": [
+        22.11,
+        -6.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C3",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        19.4,
+        -13.58
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C3",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.4,
+        -12.62
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R9",
+      "num": "1",
+      "net": "BASE_ADC",
+      "xy": [
+        21.09,
+        -4.1
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R9",
+      "num": "2",
+      "net": "ADC_BASE_PIN",
+      "xy": [
+        22.11,
+        -4.1
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C1",
+      "num": "1",
+      "net": "VBUS",
+      "xy": [
+        1.6,
+        -5.275
+      ],
+      "size": [
+        0.9,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C1",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        1.6,
+        -3.725
+      ],
+      "size": [
+        0.9,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C9",
+      "num": "1",
+      "net": "VDDA",
+      "xy": [
+        21.5,
+        -11.28
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C9",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        21.5,
+        -10.32
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C2",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        2.925,
+        -7.0
+      ],
+      "size": [
+        0.9,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C2",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        4.475,
+        -7.0
+      ],
+      "size": [
+        0.9,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R4",
+      "num": "1",
+      "net": "NRST",
+      "xy": [
+        23.8,
+        -15.01
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R4",
+      "num": "2",
+      "net": "V3V3",
+      "xy": [
+        23.8,
+        -13.99
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C10",
+      "num": "1",
+      "net": "NRST",
+      "xy": [
+        19.4,
+        -15.88
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C10",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.4,
+        -14.92
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R1",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        1.7,
+        -11.325
+      ],
+      "size": [
+        0.8,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R1",
+      "num": "2",
+      "net": "LED_PWR_A",
+      "xy": [
+        1.7,
+        -9.675
+      ],
+      "size": [
+        0.8,
+        0.95
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C11",
+      "num": "1",
+      "net": "ADC_PEAK_PIN",
+      "xy": [
+        19.4,
+        -8.48
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C11",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.4,
+        -7.52
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        17.1625,
+        -12.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "2",
+      "net": "",
+      "xy": [
+        17.1625,
+        -12.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "3",
+      "net": "",
+      "xy": [
+        17.1625,
+        -11.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "4",
+      "net": "",
+      "xy": [
+        17.1625,
+        -11.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "5",
+      "net": "",
+      "xy": [
+        17.1625,
+        -10.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "6",
+      "net": "",
+      "xy": [
+        17.1625,
+        -10.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "7",
+      "net": "NRST",
+      "xy": [
+        17.1625,
+        -9.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "8",
+      "net": "GND",
+      "xy": [
+        17.1625,
+        -9.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "9",
+      "net": "VDDA",
+      "xy": [
+        17.1625,
+        -8.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "10",
+      "net": "ADC_PEAK_PIN",
+      "xy": [
+        17.1625,
+        -8.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "11",
+      "net": "ADC_RAW_PIN",
+      "xy": [
+        17.1625,
+        -7.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "12",
+      "net": "ADC_BASE_PIN",
+      "xy": [
+        17.1625,
+        -7.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "13",
+      "net": "",
+      "xy": [
+        15.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "14",
+      "net": "DAC_THRESH_PIN",
+      "xy": [
+        15.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "15",
+      "net": "",
+      "xy": [
+        14.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "16",
+      "net": "TRIG",
+      "xy": [
+        14.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "17",
+      "net": "HOLD",
+      "xy": [
+        13.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "18",
+      "net": "PEAK_RESET",
+      "xy": [
+        13.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "19",
+      "net": "AUX",
+      "xy": [
+        12.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "20",
+      "net": "",
+      "xy": [
+        12.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "21",
+      "net": "",
+      "xy": [
+        11.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "22",
+      "net": "",
+      "xy": [
+        11.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "23",
+      "net": "",
+      "xy": [
+        10.75,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "24",
+      "net": "V3V3",
+      "xy": [
+        10.25,
+        -5.8375
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "25",
+      "net": "LED_RUN",
+      "xy": [
+        8.8375,
+        -7.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "26",
+      "net": "",
+      "xy": [
+        8.8375,
+        -7.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "27",
+      "net": "",
+      "xy": [
+        8.8375,
+        -8.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "28",
+      "net": "",
+      "xy": [
+        8.8375,
+        -8.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "29",
+      "net": "",
+      "xy": [
+        8.8375,
+        -9.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "30",
+      "net": "VBUS_SENSE",
+      "xy": [
+        8.8375,
+        -9.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "31",
+      "net": "",
+      "xy": [
+        8.8375,
+        -10.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "32",
+      "net": "MCU_USB_DM",
+      "xy": [
+        8.8375,
+        -10.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "33",
+      "net": "MCU_USB_DP",
+      "xy": [
+        8.8375,
+        -11.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "34",
+      "net": "SWDIO",
+      "xy": [
+        8.8375,
+        -11.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "35",
+      "net": "",
+      "xy": [
+        8.8375,
+        -12.25
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "36",
+      "net": "V3V3",
+      "xy": [
+        8.8375,
+        -12.75
+      ],
+      "size": [
+        1.475,
+        0.3
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "37",
+      "net": "SWCLK",
+      "xy": [
+        10.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "38",
+      "net": "",
+      "xy": [
+        10.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "39",
+      "net": "",
+      "xy": [
+        11.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "40",
+      "net": "",
+      "xy": [
+        11.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "41",
+      "net": "",
+      "xy": [
+        12.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "42",
+      "net": "",
+      "xy": [
+        12.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "43",
+      "net": "",
+      "xy": [
+        13.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "44",
+      "net": "BOOT0",
+      "xy": [
+        13.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "45",
+      "net": "",
+      "xy": [
+        14.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "46",
+      "net": "",
+      "xy": [
+        14.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "47",
+      "net": "GND",
+      "xy": [
+        15.25,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U1",
+      "num": "48",
+      "net": "V3V3",
+      "xy": [
+        15.75,
+        -14.1625
+      ],
+      "size": [
+        0.3,
+        1.475
+      ],
+      "angle": 180.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C13",
+      "num": "1",
+      "net": "ADC_BASE_PIN",
+      "xy": [
+        18.92,
+        -4.1
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C13",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.88,
+        -4.1
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "SW1",
+      "num": "1",
+      "net": "BOOT0",
+      "xy": [
+        1.3,
+        -17.5
+      ],
+      "size": [
+        0.9,
+        1.7
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "SW1",
+      "num": "2",
+      "net": "V3V3",
+      "xy": [
+        4.7,
+        -17.5
+      ],
+      "size": [
+        0.9,
+        1.7
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C5",
+      "num": "1",
+      "net": "V3V3",
+      "xy": [
+        6.7,
+        -13.28
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C5",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        6.7,
+        -12.32
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 90.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "1",
+      "net": "GND",
+      "xy": [
+        3.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "2",
+      "net": "VBUS",
+      "xy": [
+        5.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "3",
+      "net": "USB_DM",
+      "xy": [
+        7.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "4",
+      "net": "USB_DP",
+      "xy": [
+        9.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "5",
+      "net": "GND",
+      "xy": [
+        11.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "6",
+      "net": "V3V3",
+      "xy": [
+        13.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "7",
+      "net": "NRST",
+      "xy": [
+        15.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "8",
+      "net": "SWDIO",
+      "xy": [
+        17.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "9",
+      "net": "SWCLK",
+      "xy": [
+        19.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "10",
+      "net": "BOOT0",
+      "xy": [
+        21.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "11",
+      "net": "GND",
+      "xy": [
+        23.0,
+        -0.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "12",
+      "net": "GND",
+      "xy": [
+        23.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "13",
+      "net": "PEAK_ADC",
+      "xy": [
+        21.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "14",
+      "net": "GND",
+      "xy": [
+        19.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "15",
+      "net": "RAW_ADC",
+      "xy": [
+        17.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "16",
+      "net": "BASE_ADC",
+      "xy": [
+        15.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "17",
+      "net": "GND",
+      "xy": [
+        13.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "18",
+      "net": "DAC_THRESH",
+      "xy": [
+        11.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "19",
+      "net": "TRIG",
+      "xy": [
+        9.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "20",
+      "net": "HOLD",
+      "xy": [
+        7.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "21",
+      "net": "PEAK_RESET",
+      "xy": [
+        5.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "J1",
+      "num": "22",
+      "net": "AUX",
+      "xy": [
+        3.0,
+        -20.0
+      ],
+      "size": [
+        1.4,
+        2.0
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top",
+        "bottom"
+      ],
+      "mask_layers": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "ref": "U2",
+      "num": "1",
+      "net": "GND",
+      "xy": [
+        3.5625,
+        -3.55
+      ],
+      "size": [
+        1.475,
+        0.6
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U2",
+      "num": "2",
+      "net": "V3V3",
+      "xy": [
+        3.5625,
+        -5.45
+      ],
+      "size": [
+        1.475,
+        0.6
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "U2",
+      "num": "3",
+      "net": "VBUS",
+      "xy": [
+        5.4375,
+        -4.5
+      ],
+      "size": [
+        1.475,
+        0.6
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R7",
+      "num": "1",
+      "net": "PEAK_ADC",
+      "xy": [
+        21.09,
+        -8.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R7",
+      "num": "2",
+      "net": "ADC_PEAK_PIN",
+      "xy": [
+        22.11,
+        -8.0
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R12",
+      "num": "1",
+      "net": "USB_DP",
+      "xy": [
+        6.19,
+        -8.6
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R12",
+      "num": "2",
+      "net": "MCU_USB_DP",
+      "xy": [
+        7.21,
+        -8.6
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "LED1",
+      "num": "1",
+      "net": "GND",
+      "xy": [
+        3.4125,
+        -10.5
+      ],
+      "size": [
+        0.875,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "LED1",
+      "num": "2",
+      "net": "LED_PWR_A",
+      "xy": [
+        4.9875,
+        -10.5
+      ],
+      "size": [
+        0.875,
+        0.95
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R11",
+      "num": "1",
+      "net": "USB_DM",
+      "xy": [
+        6.19,
+        -6.8
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "R11",
+      "num": "2",
+      "net": "MCU_USB_DM",
+      "xy": [
+        7.21,
+        -6.8
+      ],
+      "size": [
+        0.54,
+        0.64
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C12",
+      "num": "1",
+      "net": "ADC_RAW_PIN",
+      "xy": [
+        18.92,
+        -6.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "C12",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        19.88,
+        -6.0
+      ],
+      "size": [
+        0.56,
+        0.62
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "SW2",
+      "num": "1",
+      "net": "NRST",
+      "xy": [
+        21.3,
+        -17.5
+      ],
+      "size": [
+        0.9,
+        1.7
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    },
+    {
+      "ref": "SW2",
+      "num": "2",
+      "net": "GND",
+      "xy": [
+        24.7,
+        -17.5
+      ],
+      "size": [
+        0.9,
+        1.7
+      ],
+      "angle": 0.0,
+      "copper_layers": [
+        "top"
+      ],
+      "mask_layers": [
+        "top"
+      ]
+    }
+  ],
+  "drills": [
+    [
+      "PTH",
+      3.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      5.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      7.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      9.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      11.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      13.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      15.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      17.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      19.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      21.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      23.0,
+      -0.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      23.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      21.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      19.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      17.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      15.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      13.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      11.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      9.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      7.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      5.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      3.0,
+      -20.0,
+      0.8,
+      0.0,
+      0.0
+    ],
+    [
+      "PTH",
+      13.0,
+      -2.6579,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      21.9524,
+      -5.05,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      20.2384,
+      -10.4385,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      5.0816,
+      -12.1395,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      5.3025,
+      -6.209,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      14.1291,
+      -12.9154,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      8.2444,
+      -15.203,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      6.9996,
+      -15.8723,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      5.0,
+      -3.6803,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      4.9974,
+      -8.5845,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      10.1039,
+      -9.75,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      16.9741,
+      -4.3442,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      8.2116,
+      -6.5925,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      3.6784,
+      -14.4898,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      21.5234,
+      -6.7952,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      20.0275,
+      -4.9352,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      15.628,
+      -2.5775,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      12.6966,
+      -8.6461,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      14.7769,
+      -7.1489,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      13.3628,
+      -10.5872,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      11.4596,
+      -7.4563,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      12.7174,
+      -4.5782,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      10.1345,
+      -11.8965,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      9.5761,
+      -14.1625,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      7.1919,
+      -5.8448,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      6.19,
+      -7.7536,
+      0.3,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      22.3886,
+      -11.3009,
+      0.3,
+      0,
+      0
+    ]
+  ]
+}

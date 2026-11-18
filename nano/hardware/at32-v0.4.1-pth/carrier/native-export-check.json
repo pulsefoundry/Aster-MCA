@@ -1,0 +1,122 @@
+{
+  "errors": [],
+  "project": {
+    "itemType": "Project",
+    "uuid": "92f59a72e90643bdbdeead96785b24e1",
+    "friendlyName": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+    "name": "liueee/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+    "teamUuid": "b3e4ba8006e041e9adf1e7fd5e98fc95",
+    "description": "",
+    "data": [
+      {
+        "itemType": "Board",
+        "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+        "schematic": {
+          "itemType": "Schematic",
+          "uuid": "53a2decb913958a8",
+          "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+          "page": [
+            {
+              "itemType": "Schematic Page",
+              "uuid": "920e74ba26e45b17",
+              "name": "Negative input to positive RAW / reference / trigger",
+              "parentSchematicUuid": "53a2decb913958a8",
+              "showTitleBlock": true,
+              "titleBlockData": {}
+            },
+            {
+              "itemType": "Schematic Page",
+              "uuid": "5b6f911055e95007",
+              "name": "Positive precision peak capture / freeze / reset",
+              "parentSchematicUuid": "53a2decb913958a8",
+              "showTitleBlock": true,
+              "titleBlockData": {}
+            },
+            {
+              "itemType": "Schematic Page",
+              "uuid": "732e5b2db3185847",
+              "name": "USB, AT32 module and physical interfaces",
+              "parentSchematicUuid": "53a2decb913958a8",
+              "showTitleBlock": true,
+              "titleBlockData": {}
+            }
+          ],
+          "parentProjectUuid": "92f59a72e90643bdbdeead96785b24e1",
+          "parentBoardName": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB"
+        },
+        "pcb": {
+          "itemType": "PCB",
+          "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+          "uuid": "29265cf47cda5ea2",
+          "parentBoardName": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+          "parentProjectUuid": "92f59a72e90643bdbdeead96785b24e1"
+        },
+        "parentProjectUuid": "92f59a72e90643bdbdeead96785b24e1"
+      }
+    ]
+  },
+  "pcbs": [
+    {
+      "itemType": "PCB",
+      "uuid": "29265cf47cda5ea2",
+      "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB",
+      "parentProjectUuid": "92f59a72e90643bdbdeead96785b24e1",
+      "parentBoardName": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB"
+    }
+  ],
+  "pcbDrc": [],
+  "pageInfo": [
+    {
+      "titleBlockData": {},
+      "showTitleBlock": true,
+      "itemType": "Schematic Page",
+      "uuid": "920e74ba26e45b17",
+      "name": "Negative input to positive RAW / reference / trigger",
+      "parentSchematicUuid": "53a2decb913958a8"
+    },
+    {
+      "titleBlockData": {},
+      "showTitleBlock": true,
+      "itemType": "Schematic Page",
+      "uuid": "5b6f911055e95007",
+      "name": "Positive precision peak capture / freeze / reset",
+      "parentSchematicUuid": "53a2decb913958a8"
+    },
+    {
+      "titleBlockData": {},
+      "showTitleBlock": true,
+      "itemType": "Schematic Page",
+      "uuid": "732e5b2db3185847",
+      "name": "USB, AT32 module and physical interfaces",
+      "parentSchematicUuid": "53a2decb913958a8"
+    }
+  ],
+  "schDrc": [
+    {
+      "type": "warn",
+      "count": 5
+    }
+  ],
+  "native_export_files": [
+    {
+      "name": "PCB-netlist.net",
+      "size_bytes": 46803
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+      "size_bytes": 65243
+    },
+    {
+      "name": "Schematic-netlist.net",
+      "size_bytes": 75160
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB-Schematic.pdf",
+      "size_bytes": 223803
+    },
+    {
+      "name": "Aster-MCA-Nano-AT32-Peak-Carrier-v0.4.1-PTH-NOT_FOR_FAB-native.epro2",
+      "size_bytes": 192308
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+number,net,mcu_pin,mcu_package_pin,x_mm,y_mm,direction,note
+1,GND,,,3,0,power,Common ground
+2,VBUS,,,5,0,power_in,USB 5 V input; only normal supply source
+3,USB_DM,PA11,32,7,0,usb,USB D-
+4,USB_DP,PA12,33,9,0,usb,USB D+
+5,GND,,,11,0,power,USB return
+6,V3V3,,,13,0,power_out,Regulated 3.3 V output; do not drive externally with USB attached
+7,NRST,NRST,7,15,0,bidirectional,"Active-low reset; 10k pull-up, 100nF to ground on module"
+8,SWDIO,PA13,34,17,0,debug,3.3 V SWD data
+9,SWCLK,PA14,37,19,0,debug,3.3 V SWD clock
+10,BOOT0,BOOT0,44,21,0,input,10k pull-down; BOOT button to 3.3 V
+11,GND,,,23,0,power,Debug return
+12,GND,,,23,20,power,Analog return
+13,PEAK_ADC,PA0,10,21,20,analog_in,Buffered positive held peak; amplitude=PEAK_ADC minus event-before RAW_ADC baseline; input remains within0..VDDA
+14,GND,,,19,20,power,Guard/return between PEAK and RAW
+15,RAW_ADC,PA1,11,17,20,analog_in,Buffered positive-going RAW pulses from negative SMA input; baseline nominal0.623V; event-before baseline must be measured
+16,BASE_ADC,PA2,12,15,20,analog_in,Buffered nominal0.623V reference monitor; NOT the event-before baseline; obtain event baseline from RAW_ADC
+17,GND,,,13,20,power,Analog return
+18,DAC_THRESH,PA4,14,11,20,analog_out,DAC1 threshold command; buffer/filter on carrier
+19,TRIG,PA6,16,9,20,digital_in,"Active-high comparator event, use rising edge; TMR3_CH1 / EXINT6"
+20,HOLD,PA7,17,7,20,digital_out,High freezes detector; carrier 100k pull-up
+21,PEAK_RESET,PB0,18,5,20,digital_out,"High resets storage to BASE, nominal0.623V; carrier100k pull-up"
+22,AUX,PB1,19,3,20,bidirectional,Spare TMR3_CH4 / ADC1_IN9

@@ -1,0 +1,200 @@
+{
+  "status": "NOT_FOR_FAB",
+  "audit_scope": "Independent CAM outline/drill geometry and copper-pad center readback; no native or physical validation claim",
+  "outline_mm": [
+    26,
+    20
+  ],
+  "outline_closed": true,
+  "copper_layers": 2,
+  "board_thickness_mm": 1.6,
+  "expected_drill_count": 49,
+  "cam_drill_count": 49,
+  "drill_geometry_matches": true,
+  "pth_count": 49,
+  "npth_count": 0,
+  "plated_slots": 0,
+  "halfholes": [
+    [
+      "PTH",
+      3.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      3.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      5.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      5.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      7.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      7.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      9.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      9.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      11.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      11.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      13.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      13.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      15.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      15.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      17.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      17.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      19.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      19.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      21.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      21.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      23.0,
+      0.0,
+      0.8,
+      0,
+      0
+    ],
+    [
+      "PTH",
+      23.0,
+      -20.0,
+      0.8,
+      0,
+      0
+    ]
+  ],
+  "copper_pad_centers_checked": {
+    "top": 131,
+    "bottom": 22
+  },
+  "frozen_sources_unchanged": true
+}

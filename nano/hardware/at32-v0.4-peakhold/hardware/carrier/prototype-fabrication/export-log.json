@@ -1,0 +1,52 @@
+[
+  {
+    "args": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--output",
+      "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication",
+      "--layers",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "--subtract-soldermask",
+      "--precision",
+      "6",
+      "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Cu.gtl'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Cu.gbl'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Silkscreen.gto'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Silkscreen.gbo'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-F_Mask.gts'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-B_Mask.gbs'\u3002\n\u7ed8\u5236\u5230 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Edge_Cuts.gm1'\u3002\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--output",
+      "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication",
+      "--format",
+      "excellon",
+      "--drill-origin",
+      "absolute",
+      "--excellon-zeros-format",
+      "decimal",
+      "--excellon-oval-format",
+      "route",
+      "--excellon-units",
+      "mm",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--generate-report",
+      "--report-path",
+      "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/drill-report.txt",
+      "--map-format",
+      "svg",
+      "/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB.kicad_pcb"
+    ],
+    "returncode": 0,
+    "stdout": "\u5df2\u521b\u5efa\u6587\u4ef6 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH.drl'\n\u5df2\u521b\u5efa\u6587\u4ef6 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH.drl'\n\u521b\u5efa\u6587\u4ef6 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH-drl_map.svg'\u3002\n\u521b\u5efa\u6587\u4ef6 '/Users/liu/Documents/Codex/2026-10-09/ch32x033f8p6/work/peak-hold-v0.4/cad/carrier-output/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg'\u3002\n\u5b8c\u6210\u3002\n",
+    "stderr": ""
+  }
+]

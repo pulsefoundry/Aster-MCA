@@ -2,7 +2,9 @@
 
 [中文](README.md) | English | [Project overview](../../README.en.md)
 
-The current measured configuration is **AT32F423CCT7 + TLV9061, firmware v0.8.2, 4 MS/s and 2048 channels**. It accepts amplified/shaped low-voltage negative pulses. Normal acquisition continuously samples and accumulates a pulse-height histogram on the MCU, stops after the requested duration, then transfers the final spectrum.
+The archived v0.3 configuration is **AT32F423CCT7 + TLV9061, firmware v0.8.2, 4 MS/s and 2048 channels**. It accepts amplified/shaped low-voltage negative pulses. Normal acquisition continuously samples and accumulates a pulse-height histogram on the MCU, stops after the requested duration, then transfers the final spectrum.
+
+Latest: [2026-11-19 peak-hold checkpoint](../../measurements/2026-11-18-peakhold/README.en.md), v0.4.1 PTH core/carrier with fast.7. Electrical-pulse and Cs measurements are archived; low-level mapping bias remains unresolved. [Source and validated binaries](../../firmware/at32-peakhold-fast7). The v0.3 firmware, spectra and cost below are historical; its desktop protocol is not compatible with fast.7.
 
 ## Hardware downloads
 

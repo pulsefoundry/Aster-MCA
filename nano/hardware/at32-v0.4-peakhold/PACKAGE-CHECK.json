@@ -1,0 +1,232 @@
+{
+  "status": "COMPLETE_COPY",
+  "note": "Copy completeness is not fabrication approval or bench validation.",
+  "generated_utc": "2026-11-11T17:24:52.723811+00:00",
+  "copied_files": 152,
+  "copied_bytes": 6563396,
+  "missing_required_sources": [],
+  "broken_local_markdown_links": [],
+  "unexpected_existing_files_not_deleted": [],
+  "container_and_image_checks": [
+    {
+      "path": "docs/architecture.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/pcb-bottom.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        635
+      ]
+    },
+    {
+      "path": "hardware/carrier/pcb-bottom.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/pcb-top.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        635
+      ]
+    },
+    {
+      "path": "hardware/carrier/pcb-top.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber.zip",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/CAM-bottom.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1600,
+        878
+      ]
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/CAM-bottom.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/CAM-top.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1600,
+        878
+      ]
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/CAM-top.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/assembly-placement.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        635
+      ]
+    },
+    {
+      "path": "hardware/carrier/prototype-fabrication/assembly-placement.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/pcb-bottom.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        916
+      ]
+    },
+    {
+      "path": "hardware/core/pcb-bottom.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/pcb-top.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        916
+      ]
+    },
+    {
+      "path": "hardware/core/pcb-top.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber.zip",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-NPTH-drl_map.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-PTH-drl_map.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/CAM-bottom.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1600,
+        1258
+      ]
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/CAM-bottom.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/CAM-top.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1600,
+        1258
+      ]
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/CAM-top.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/assembly-placement.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1100,
+        916
+      ]
+    },
+    {
+      "path": "hardware/core/prototype-fabrication/assembly-placement.svg",
+      "check": "SVG XML parsed"
+    },
+    {
+      "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-Schematic.pdf",
+      "check": "PDF signature"
+    },
+    {
+      "path": "native/carrier/Aster-MCA-Nano-AT32-Peak-Carrier-v0.4-NOT_FOR_FAB-native.epro2",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "native/carrier/schematic-preview-1.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1400,
+        1188
+      ]
+    },
+    {
+      "path": "native/carrier/schematic-preview-2.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1400,
+        1124
+      ]
+    },
+    {
+      "path": "native/carrier/schematic-preview-3.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1400,
+        882
+      ]
+    },
+    {
+      "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Gerber-PROTOTYPE.zip",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-Schematic.pdf",
+      "check": "PDF signature"
+    },
+    {
+      "path": "native/core/Aster-MCA-Nano-AT32-Core-v0.4-NOT_FOR_FAB-native.epro2",
+      "check": "ZIP CRC passed"
+    },
+    {
+      "path": "native/core/schematic-preview.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1750,
+        2800
+      ]
+    },
+    {
+      "path": "simulation/simulated-peak-hold.png",
+      "check": "PNG signature/dimensions",
+      "pixels": [
+        1800,
+        1080
+      ]
+    }
+  ],
+  "exclusions": [
+    "old native exports",
+    "placement-only CAD checkpoints",
+    "old DRC reports",
+    "vendor models/LIB/ZIP/PDF",
+    "historical analog sweeps",
+    "firmware binaries"
+  ]
+}

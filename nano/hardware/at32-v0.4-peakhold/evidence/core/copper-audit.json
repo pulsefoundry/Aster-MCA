@@ -1,0 +1,455 @@
+{
+  "copper_records_match": true,
+  "missing": [],
+  "extra": [],
+  "copper_layers": 2,
+  "tracks_and_vias": 366,
+  "halfholes": [
+    {
+      "reference": "J1",
+      "number": "1",
+      "xy_mm": [
+        3.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "2",
+      "xy_mm": [
+        5.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "3",
+      "xy_mm": [
+        7.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "4",
+      "xy_mm": [
+        9.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "5",
+      "xy_mm": [
+        11.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "6",
+      "xy_mm": [
+        13.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "7",
+      "xy_mm": [
+        15.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "8",
+      "xy_mm": [
+        17.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "9",
+      "xy_mm": [
+        19.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "10",
+      "xy_mm": [
+        21.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "11",
+      "xy_mm": [
+        23.0,
+        0.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "12",
+      "xy_mm": [
+        23.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "13",
+      "xy_mm": [
+        21.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "14",
+      "xy_mm": [
+        19.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "15",
+      "xy_mm": [
+        17.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "16",
+      "xy_mm": [
+        15.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "17",
+      "xy_mm": [
+        13.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "18",
+      "xy_mm": [
+        11.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "19",
+      "xy_mm": [
+        9.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "20",
+      "xy_mm": [
+        7.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "21",
+      "xy_mm": [
+        5.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    },
+    {
+      "reference": "J1",
+      "number": "22",
+      "xy_mm": [
+        3.0,
+        20.0
+      ],
+      "drill_mm": [
+        0.8,
+        0.8
+      ],
+      "size_mm": [
+        1.4,
+        2.0
+      ],
+      "plated": true,
+      "on_both_copper_layers": true,
+      "paste": false
+    }
+  ],
+  "usb_routes": {
+    "USB_DP": {
+      "length_mm": 9.113940110268397,
+      "vias": 1
+    },
+    "USB_DM": {
+      "length_mm": 6.671844377398177,
+      "vias": 1
+    },
+    "USB_DP_CONN": {
+      "length_mm": 0,
+      "vias": 0
+    },
+    "USB_DM_CONN": {
+      "length_mm": 0,
+      "vias": 0
+    },
+    "MCU_USB_DP": {
+      "length_mm": 4.248503571337468,
+      "vias": 0
+    },
+    "MCU_USB_DM": {
+      "length_mm": 5.208688858870101,
+      "vias": 0
+    }
+  },
+  "usb_impedance_or_signal_integrity_validated": false,
+  "native_editor_DRC": "separate gate"
+}
