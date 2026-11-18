@@ -6,7 +6,19 @@
 
 最新：[2026-11-19 峰值保持检查点](../../measurements/2026-11-18-peakhold/README.md)，采用 v0.4.1 普通通孔核心＋峰保底板与 fast.7。已完成铯谱和固定脉冲诊断，低幅映射偏差尚未解决；[源码与已验证二进制](../../firmware/at32-peakhold-fast7)。下文保留 v0.3 的历史固件、谱和成本；旧桌面协议不适用于 fast.7。
 
-## 硬件和装配
+## 当前 v0.4.1 双板资料
+
+![已装配的 AT32 通孔核心＋峰保底板](photos/IMG_1482.JPG)
+
+<img src="photos/IMG_1483.JPG" width="280" alt="未装元件的通孔核心 PCB">
+
+核心板 26 × 23 mm，底板 60 × 32 mm；[当前合并 BOM（CSV／Excel）与定位图](peakhold-assembly/README.md) · **[装配勘误与实测改焊](peakhold-assembly/errata.md)** · [原生工程、原理图和 Gerber](../../hardware/at32-v0.4.1-pth/README.md)。BOM 同时列出原设计与台架配置；R105 单颗 10 kΩ、C101 补装 100 pF 不会自动反映在冻结的 Gerber／CAD 内。
+
+![峰保双板十分钟铯源谱及拟合](../../measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png)
+
+图中 8.67% 是未标定道数域 FWHM／峰位。低幅映射偏差仍待解决；[幅度扫描、RAW 及停止时机测量图](../../measurements/2026-11-18-peakhold/README.md)。下文为 v0.3 的历史说明。
+
+## v0.3 硬件和装配归档
 
 ![AT32 PCB 顶层](../../outputs/Aster-MCA-Nano-AT32-v0.3-USB-A-LED/pcb-top.png)
 
@@ -20,11 +32,11 @@
 
 原工程使用 AT32F423CBT7，因备货改用 CCT7；本仓库的当前实测对象为 CCT7。SMA 接低压信号输出，不接探测器高压端。外购连接器需自行核对机械尺寸和 1.6 mm 板厚。
 
-## 固件下载
+## v0.3 固件归档
 
 | 内容 | 入口 |
 |---|---|
-| 当前 v0.8.2 源码 | [at32-peak-scope](../../firmware/at32-peak-scope) |
+| v0.3 已验证 v0.8.2 源码 | [at32-peak-scope](../../firmware/at32-peak-scope) |
 | 已通过实物回读的 v0.8.2 BIN | [aster-at32-peak-v0.8.2.bin](../../outputs/Aster-MCA-Nano-AT32-波形诊断-v0.8.2-20261018/aster-at32-peak-v0.8.2.bin) |
 | v0.8.2 协议、时序和诊断限制 | [固件说明](../../firmware/at32-peak-scope/README.txt) |
 | 原整数取峰基线 v0.8.0 | [at32-peak](../../firmware/at32-peak) |

@@ -1,0 +1,13 @@
+{
+  "note": "Unchanged top-view aids for existing v0.4.1 boards; the source folder name does not imply a released v0.4.2 manufacture package.",
+  "files": {
+    "core-locator.png": {
+      "source_filename": "已有板-顶视焊接定位.png",
+      "sha256": "442c2a23bc9073eebde627c6543b8f7ec17f5070c05c85e7422342adf89faf33"
+    },
+    "carrier-locator.png": {
+      "source_filename": "已有板-顶视焊接定位.png",
+      "sha256": "efc60e3239314a08534ce2f805c8650f5b86a693e800b915ee5a5ffb484cb27c"
+    }
+  }
+}

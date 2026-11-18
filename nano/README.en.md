@@ -2,7 +2,7 @@
 
 [中文](README.md) | English
 
-A low-cost, **32 × 18 mm USB multichannel pulse-height analyzer prototype**, with separate AT32 and CH32 development tracks. It accepts the low-voltage output of a detector's existing amplifier/shaper. The board samples pulses and accumulates a pulse-height histogram; the computer displays and saves the result.
+A low-cost USB multichannel pulse-height analyzer project with separate AT32 and CH32 development tracks. It accepts the low-voltage output of a detector's existing amplifier/shaper. The current AT32 bench uses a **v0.4.1 PTH core plus peak-hold carrier**, with event readout and host-side binning, display and storage. The earlier v0.3 32 × 18 mm single-board design remains archived.
 
 Nano is the MCU-based subproject of the [Aster MCA family](../README.md).
 
@@ -17,7 +17,34 @@ Nano is the MCU-based subproject of the [Aster MCA family](../README.md).
 
 This directory is maintained at `Aster-MCA/nano/`, with separate documentation and firmware directories for AT32 and CH32. The original Nano main-branch history was imported without squashing; the former repository retains historical entry points. See the [migration record](docs/repository-migration-2026-10-21.md). The v0.3 documentation dates from 2026-10-21; see the 2026-11-19 checkpoint above for current bench status.
 
-## AT32 prototype
+## AT32 v0.4.1 photos, BOM and measurements
+
+<p>
+  <img src="docs/at32/photos/IMG_1482.JPG" width="650" alt="Hand-soldered AT32 PTH core mounted on the peak-hold carrier">
+  <img src="docs/at32/photos/IMG_1483.JPG" width="260" alt="Bare v0.4.1 PTH core PCB before assembly">
+</p>
+
+The photos show the assembled board pair and a bare core PCB, respectively. Core: **26 × 23 mm**; carrier: **60 × 32 mm**; board thickness: 1.6 mm. The 22-hole interface has 2.0 mm pitch and 0.8 mm drills. The design uses AT32F423CCT7, TLV9062, OPA2356, TMUX1136 and TLV3201. Published photos retain original pixels, ICC color information and display orientation while removing location and other personal metadata; see [photo provenance](docs/at32/photos/peakhold-photo-provenance.json).
+
+- **[Combined BOM and assembly guide](docs/at32/peakhold-assembly/README.en.md)**: [CSV](docs/at32/peakhold-assembly/BOM-v0.4.1-bench.csv) · [Excel](docs/at32/peakhold-assembly/BOM-v0.4.1-bench.xlsx), one core plus one carrier, with recorded LCSC numbers.
+- **[Errata and bench rework](docs/at32/peakhold-assembly/errata.en.md)**: reference/pin-1 markings, D11 pads, the single 10 kΩ R105 replacement, fitted 100 pF C101 and unresolved low-level bias.
+- [Core placement aid](docs/at32/peakhold-assembly/core-locator.png) · [Carrier placement aid](docs/at32/peakhold-assembly/carrier-locator.png) · [Schematics, Gerbers and native CAD](hardware/at32-v0.4.1-pth/README.md) · [fast.7 firmware](firmware/at32-peakhold-fast7).
+
+### Ten-minute cesium spectrum
+
+![v0.4.1 peak-hold 600-second cesium spectrum and peak fit](measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png)
+
+Approximately 600 seconds, with 101,287 events used in the analysis. Centroid: 152.012 channels; FWHM: 13.173 channels; **channel-domain ratio: 8.67%**. Fit-window sensitivity is about 8.39–9.07%, with model mismatch. Energy calibration is incomplete; this is not a validated calibrated resolution at 662 keV.
+
+### Fixed-pulse response and amplitude bias
+
+![Nominal negative-pulse amplitude versus held readout](measurements/2026-11-18-peakhold/plots/amplitude-response.png)
+
+![RAW waveform and held-amplitude ratios at 300 and 400 mV](measurements/2026-11-18-peakhold/plots/raw-comparison.png)
+
+The test negative pulse is about 4 µs wide overall. For 300/400 mV inputs, RAW peak/area ratios are about 75.3%/74.7%, while held-amplitude ratios are about 60–61.5%. Low-level bias remains unresolved. The [full measurement record, plots, raw data and offline checks](measurements/2026-11-18-peakhold/README.en.md) also cover wait deadlines, centroid drift and EARLY/LATE timing comparisons.
+
+## Archived AT32 v0.3 prototype
 
 <p>
   <img src="docs/at32/photos/IMG_1201.JPG" width="300" alt="Hand-soldered AT32 MCA Nano beside a fingertip for scale">

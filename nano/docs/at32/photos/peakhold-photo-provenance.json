@@ -1,0 +1,30 @@
+{
+  "published": "2026-11-19",
+  "method": "Lossless JPEG marker filtering: retain only EXIF Orientation; remove other APP1, APP13 and comments; retain ICC and compressed image stream.",
+  "photos": [
+    {
+      "filename": "IMG_1482.JPG",
+      "source_sha256": "94c3db841dfbd7531d39b513f99c5f2ec673adfe2c073acce4ad9cd9fc5283b3",
+      "published_sha256": "2d15676c64a4c3b4db5fc9435862cc713a4fb493324c80a75e22c9da385749c3",
+      "stored_dimensions": [
+        4032,
+        3024
+      ],
+      "exif_orientation": 3,
+      "decoded_pixels_identical": true,
+      "icc_profile_retained": true
+    },
+    {
+      "filename": "IMG_1483.JPG",
+      "source_sha256": "e3dd2548935612d1f53f539f7ad3cc5d8382b8f59fc336baf3f4eba356b9e72f",
+      "published_sha256": "a70e6d6f0cdbf2b83bcf0ec91eea15ed2269b1d60752fda00385457af7fb52ac",
+      "stored_dimensions": [
+        4032,
+        3024
+      ],
+      "exif_orientation": 6,
+      "decoded_pixels_identical": true,
+      "icc_profile_retained": true
+    }
+  ]
+}

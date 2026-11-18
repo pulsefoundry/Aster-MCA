@@ -16,7 +16,17 @@ Each track keeps its own hardware, firmware, measurements and validation status.
 
 **Nano:** [English overview](nano/README.en.md) · [中文介绍](nano/README.md) ·
 [firmware, photos, schematics and Gerbers](nano/README.en.md#schematics-gerbers-and-assembly) ·
-[itemized cost](nano/docs/at32/cost.md).
+[v0.4.1 BOM and assembly](nano/docs/at32/peakhold-assembly/README.en.md) ·
+[Nano errata](nano/docs/at32/peakhold-assembly/errata.en.md) ·
+[archived v0.3 itemized cost](nano/docs/at32/cost.md).
+
+<p>
+  <img src="nano/docs/at32/photos/IMG_1482.JPG" width="440" alt="Assembled Nano v0.4.1 core and peak-hold carrier">
+  <img src="nano/measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png" width="520" alt="Nano 600-second cesium spectrum and channel-domain fit">
+</p>
+
+The latest Nano [photos, plots and data](nano/README.en.md#at32-v041-photos-bom-and-measurements) show the board-pair prototype. The 8.67% fit is an **uncalibrated channel-domain ratio**, with unresolved low-level mapping bias.
+
 The archived v0.3 AT32 priced subtotal is approximately CNY 17.86, excluding unpriced external
 USB-A/SMA connectors and stock LEDs. Nano original project material uses the
 [MIT license](nano/LICENSE); third-party terms are retained separately.

@@ -16,7 +16,17 @@
 
 **Nano 入口：**[中文介绍](nano/README.md) · [English](nano/README.en.md) ·
 [固件、照片、原理图和 Gerber](nano/README.md#原理图gerber-和装配) ·
-[单板成本明细](nano/docs/at32/cost.md)。
+[v0.4.1 BOM 与装配](nano/docs/at32/peakhold-assembly/README.md) ·
+[Nano 勘误](nano/docs/at32/peakhold-assembly/errata.md) ·
+[v0.3 归档成本](nano/docs/at32/cost.md)。
+
+<p>
+  <img src="nano/docs/at32/photos/IMG_1482.JPG" width="440" alt="已手焊装配的 Nano v0.4.1 核心和峰值保持底板">
+  <img src="nano/measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png" width="520" alt="Nano 十分钟铯源谱和道数域峰拟合">
+</p>
+
+最新 Nano [实物照片、测量图和数据](nano/README.md#at32-v041-实物bom-与测量)对应双板原型。图中 8.67% 为**未标定的道数域比值**，低幅映射偏差仍待解决。
+
 归档 v0.3 的 AT32 已计价部分约 ¥17.86，外购 USB-A、SMA 和库存 LED 的实际价格另计。
 Nano 项目原创内容采用 [MIT](nano/LICENSE)，第三方材料保留各自条款。
 

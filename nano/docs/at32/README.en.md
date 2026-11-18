@@ -6,7 +6,19 @@ The archived v0.3 configuration is **AT32F423CCT7 + TLV9061, firmware v0.8.2, 4 
 
 Latest: [2026-11-19 peak-hold checkpoint](../../measurements/2026-11-18-peakhold/README.en.md), v0.4.1 PTH core/carrier with fast.7. Electrical-pulse and Cs measurements are archived; low-level mapping bias remains unresolved. [Source and validated binaries](../../firmware/at32-peakhold-fast7). The v0.3 firmware, spectra and cost below are historical; its desktop protocol is not compatible with fast.7.
 
-## Hardware downloads
+## Current v0.4.1 board-pair resources
+
+![Assembled AT32 PTH core and peak-hold carrier](photos/IMG_1482.JPG)
+
+<img src="photos/IMG_1483.JPG" width="280" alt="Bare PTH core PCB before assembly">
+
+Core: 26 × 23 mm; carrier: 60 × 32 mm. [Combined CSV/Excel BOM and placement aids](peakhold-assembly/README.en.md) · **[Assembly errata and bench rework](peakhold-assembly/errata.en.md)** · [Native CAD, schematics and Gerbers](../../hardware/at32-v0.4.1-pth/README.md). The BOM distinguishes original values from the bench configuration. The single 10 kΩ R105 replacement and fitted 100 pF C101 are not incorporated into the frozen CAD/Gerbers.
+
+![Ten-minute peak-hold cesium spectrum and fit](../../measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png)
+
+The 8.67% value is uncalibrated channel-domain FWHM/centroid. Low-level bias remains unresolved; see [amplitude, RAW and stop-phase measurement figures](../../measurements/2026-11-18-peakhold/README.en.md). The sections below document historical v0.3 hardware.
+
+## Archived v0.3 hardware downloads
 
 ![AT32 top-side PCB view](../../outputs/Aster-MCA-Nano-AT32-v0.3-USB-A-LED/pcb-top.png)
 

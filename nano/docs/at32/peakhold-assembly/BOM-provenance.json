@@ -1,0 +1,39 @@
+{
+  "published": "2026-11-19",
+  "scope": "One core + one carrier; default population plus confirmed bench rework; not a photo-inferred complete as-built inventory.",
+  "sources": {
+    "S1": {
+      "filename": "Aster-MCA-Nano-v0.4.1-1套-焊接位号对照.csv",
+      "sha256": "c518b77f4765a26818a908b022a0b05811ded46d18ad6d39fee6a25c9f8daaa8",
+      "data_rows": 43,
+      "row_numbering": "1-based data row, header excluded; procurement and personal inventory notes omitted."
+    },
+    "B1": {
+      "record": "../../../measurements/2026-11-18-peakhold/README.md",
+      "confirmed_rework": {
+        "R104": "49.9kΩ",
+        "R105": "single 10kΩ",
+        "C101": "100pF",
+        "C102": "470pF"
+      }
+    }
+  },
+  "references_checked": {
+    "Core": 32,
+    "Carrier": 42
+  },
+  "public_rows": 44,
+  "missing_part_numbers": [
+    "Core U1",
+    "Core LED1/LED2",
+    "Carrier U11",
+    "Carrier R105 replacement",
+    "Carrier C101 fitted capacitor",
+    "USB-A/SMA/header substitutes"
+  ],
+  "package_units": "0402 / 0603 / 0805 are imperial; quantities use pcs except the two header strips.",
+  "published_files_sha256": {
+    "BOM-v0.4.1-bench.csv": "4b8cda69d6ca6af33d85fa98c140a89ca5ab7d6bc1ef35d3abe66462d802386b",
+    "BOM-v0.4.1-bench.xlsx": "da97725013224a3ef0d28bfa505c6535df69d7dd71d54b2b870ddc39dad69ce3"
+  }
+}

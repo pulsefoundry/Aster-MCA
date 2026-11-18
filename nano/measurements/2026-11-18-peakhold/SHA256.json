@@ -1,7 +1,7 @@
 {
   "files": {
-    "README.en.md": "8045a5c0b28824aea6a5a847cf8a1641f743df3e81f5c17d37da2a6bedfacbfe",
-    "README.md": "dc30d26ab6cb054a30b1da35c894a71c83d4beb691fbafe2571e1f2b62cab833",
+    "README.en.md": "b4cf15d6e0e949f3ecda98598465d09b79c9d34e47df17b69bae13693f339559",
+    "README.md": "bd4095f99de88391165e9e269dcd9b54d593777730a92b1b8f6f55fd120b31e0",
     "amplitude-response.json": "e46147b646a662dcded6ff1d639a991f8dbd8ec61fb207dfef1270048384e8c3",
     "archive-index.json": "00d263e44cdbafc2f48f3f6b25d9913046b19ca788b9cbccaa2b6bbd354a285d",
     "awg-bench.zip": "dfe56ed0d202a1fd7533a3046a08efe560581a135ed56dcb8b7d29a5a522b5e3",
@@ -25,6 +25,6 @@
     "waveform/N61118A.bin": "694b1d1c8fba6a53dd2dfc7ceef1cc5676572c86e490f4c379f8348ff12123d2",
     "waveform/waveform-preview.png": "dba428aea4dbb76dde829554cb2ce2a9955ebbd8b75c1ed124d36fdc79ef4711",
     "waveform/waveform-settings.json": "06098f403abe50acc83e97012f2b1fd9981cebcf39bea19fe64a8d4ea536cf30",
-    "waveform/\u4f7f\u7528\u8bf4\u660e.txt": "6de6b0dfa785719ce9feedb87fd1ecda78bda82ab08d13423d17226d2bfef689"
+    "waveform/使用说明.txt": "6de6b0dfa785719ce9feedb87fd1ecda78bda82ab08d13423d17226d2bfef689"
   }
 }

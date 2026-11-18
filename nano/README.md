@@ -2,7 +2,7 @@
 
 中文 | [English](README.en.md)
 
-低成本、**32 × 18 mm** 的 USB 多道脉冲幅度分析器原型。接收探测器已有放大／整形电路的低压输出，板上完成 ADC 采样和脉冲幅度直方图累计，电脑负责显示和保存。
+低成本 USB 多道脉冲幅度分析器项目，接收探测器已有放大／整形电路的低压输出。当前 AT32 台架为 **v0.4.1 通孔核心板＋峰值保持底板**，读取事件后由电脑分箱、显示和保存。早期 v0.3 为 32 × 18 mm 单板方案，资料继续归档。
 
 Nano 是 [Aster MCA 系列](../README.zh-CN.md)中的 MCU 子项目，分为 **AT32 与 CH32 两条开发主线**。
 
@@ -15,7 +15,34 @@ Nano 是 [Aster MCA 系列](../README.zh-CN.md)中的 MCU 子项目，分为 **A
 
 本目录位于 `Aster-MCA/nano/`，两条主线分别保留文档和固件目录。Nano 原主分支提交历史已完整导入，原独立仓库保留历史入口；详见[迁移说明](docs/repository-migration-2026-10-21.md)。v0.3 历史文档整理于 2026-10-21；最新台架检查点见上方 2026-11-19 入口。
 
-## AT32 实物
+## AT32 v0.4.1 实物、BOM 与测量
+
+<p>
+  <img src="docs/at32/photos/IMG_1482.JPG" width="650" alt="已手焊装配的 AT32 通孔核心板和峰值保持底板">
+  <img src="docs/at32/photos/IMG_1483.JPG" width="260" alt="未装元件的 v0.4.1 通孔核心 PCB">
+</p>
+
+两张照片依次为手焊双板实物和未装元件的核心 PCB。核心板 **26 × 23 mm**，底板 **60 × 32 mm**；板厚 1.6 mm，22 孔接口为 2.0 mm 节距、0.8 mm 孔径。使用 AT32F423CCT7、TLV9062、OPA2356、TMUX1136 和 TLV3201。照片公开副本移除位置等元数据，保留原始像素、ICC 色彩信息和显示方向；[照片处理记录](docs/at32/photos/peakhold-photo-provenance.json)。
+
+- **[合并 BOM 与装配说明](docs/at32/peakhold-assembly/README.md)**：[CSV](docs/at32/peakhold-assembly/BOM-v0.4.1-bench.csv) · [Excel](docs/at32/peakhold-assembly/BOM-v0.4.1-bench.xlsx)，一套为核心板和底板各一块，附已知立创料号。
+- **[勘误与实测改焊](docs/at32/peakhold-assembly/errata.md)**：位号／芯片 1 脚、D11 小焊盘、R105 单颗 10 kΩ、C101 补装 100 pF，以及尚未解决的低幅偏差。
+- [核心板定位图](docs/at32/peakhold-assembly/core-locator.png) · [底板定位图](docs/at32/peakhold-assembly/carrier-locator.png) · [原理图、Gerber 和原生工程](hardware/at32-v0.4.1-pth/README.md) · [fast.7 固件](firmware/at32-peakhold-fast7)。
+
+### 十分钟铯谱
+
+![v0.4.1 峰保双板 600 秒铯源谱及峰拟合](measurements/2026-11-18-peakhold/plots/cs137-spectrum-and-fit.png)
+
+约 600 秒，分析使用 101,287 个事件；峰位 152.012 道、FWHM 13.173 道，**道数域比值为 8.67%**。拟合区间敏感性约 8.39%～9.07%，且存在模型失配；尚未完成能量标定，不能当作已验证的 662 keV 能量分辨率。
+
+### 固定脉冲与幅度偏差
+
+![名义负脉冲输入幅度与保持读数的对照](measurements/2026-11-18-peakhold/plots/amplitude-response.png)
+
+![300 与 400 mV 的 RAW 波形和保持读数比例](measurements/2026-11-18-peakhold/plots/raw-comparison.png)
+
+负脉冲总宽约 4 µs。300／400 mV 的 RAW 峰值与面积比约 75.3%／74.7%，保持读数比约 60%～61.5%；低幅映射偏差仍待解决。[完整测量图、原始数据与离线复核](measurements/2026-11-18-peakhold/README.md)还包括等待上限、峰位漂移和 EARLY／LATE 时序对照。
+
+## AT32 v0.3 实物归档
 
 <p>
   <img src="docs/at32/photos/IMG_1201.JPG" width="300" alt="手焊 AT32 MCA Nano，与手指对比大小">
@@ -38,7 +65,7 @@ Nano 是 [Aster MCA 系列](../README.zh-CN.md)中的 MCU 子项目，分为 **A
 
 上位机目前在重连后会回填门限 20，使用改焊板需手动确认 **100**。[构建、使用和离线复核](docs/development.md)说明 SDK、工具链和软件检查；[AT32 指南](docs/at32/README.md)说明固件适用配置及烧录工具限制。
 
-## 已保存的铯源谱
+## AT32 v0.3 铯源谱归档
 
 ![AT32 最新 60 秒铯源完整 2048 道谱及局部视图](docs/at32/cs137-60s-spectrum.png)
 

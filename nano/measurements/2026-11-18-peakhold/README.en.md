@@ -4,6 +4,10 @@
 
 The v0.4.1 PTH core and peak-hold carrier have now produced electrical-pulse captures and Cs-137 spectra. **Amplitude-dependent low-level readout bias remains unresolved. The reported 8.67% is an uncalibrated channel-domain FWHM/centroid ratio, not a validated energy-resolution specification.** The measurements date from November 18; this publication checkpoint was assembled on November 19, 2026.
 
+![Assembled v0.4.1 core and peak-hold carrier](../../docs/at32/photos/IMG_1482.JPG)
+
+[Current BOM and placement aids](../../docs/at32/peakhold-assembly/README.en.md) · [Errata and rework](../../docs/at32/peakhold-assembly/errata.en.md) · [More photographs](../../README.en.md#at32-v041-photos-bom-and-measurements)
+
 ## Hardware and acquisition profile
 
 Hardware: [v0.4.1 PTH core/carrier](../../hardware/at32-v0.4.1-pth/README.en.md), AT32F423CCT7, TLV9062, OPA2356, TMUX1136 and TLV3201. The measured assembly uses R104 = 49.9 kΩ, **one 10 kΩ R105 and a fitted 100 pF C101**; C102 remains 470 pF. These reworks differ from the frozen original candidate CAD.
@@ -77,6 +81,20 @@ Attempt-01 had no input signal: zero triggers and only RAW noise. It is retained
 At the end of the bench session the operator confirmed generator output OFF. A subsequent approximately one-second check had zero triggers. The saved profile is fast.7, EARLY, RAW 500 kSa/s, PEAK 24.5 cycles, PHWAIT 500 µs, HOLD/RESET = 1/1, fault = 0 and self-test = 15. Hardware was not accessed during publication.
 
 Pending: balanced 2/4/6/10 µs capture-window tests at 300 mVpp/−150 mV, and simultaneous scope observation of RAW and the **buffered** PEAK output to distinguish incomplete acquisition from subsequent decay. Probe loading on the storage capacitor itself changes the circuit. These tests have **not** been performed.
+
+## Additional measurement figures
+
+![Peak-width and rate comparison for 10 ms, 1 ms and 0.5 ms wait deadlines](plots/wait-deadline-comparison.png)
+
+Waiting-deadline comparison using the acquisition definitions above; wall-clock rate is not absolute detection efficiency.
+
+![Centroid and event-rate changes within the ten-minute cesium record](plots/cs137-drift.png)
+
+Segmented checks of the same ten-minute record show centroid and rate over time.
+
+![Outbound and return held-amplitude measurements at 500 mV](plots/500mv-return.png)
+
+The 500 mV return median differs from the outbound measurement by about −2.1%.
 
 ## Archives and reproduction
 

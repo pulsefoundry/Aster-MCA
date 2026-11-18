@@ -11,3 +11,6 @@ hardware/**/native/** -text -diff
 hardware/**/prototype-fabrication/** -text -diff
 hardware/** -text -diff
 hardware/**/README*.md text diff
+
+# Keep the public assembly CSV's UTF-8 BOM and CRLF rows intact.
+docs/at32/peakhold-assembly/*.csv -text whitespace=cr-at-eol

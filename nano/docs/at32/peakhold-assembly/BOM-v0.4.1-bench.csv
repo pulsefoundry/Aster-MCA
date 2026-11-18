@@ -1,0 +1,45 @@
+﻿Board / 板别,References / 位号,Qty / 数量,Unit / 单位,Original design / 原设计,Bench configuration / 台架配置,Package / 封装,LCSC / 立创料号,Assembly notes / 装配说明,Source / 来源
+Carrier,Carrier: R108,1,pcs,330Ω 1%,330Ω 1%,0402 (imperial),C71626,Non-polar; check value and imperial package.,S1:r1
+Carrier,"Carrier: R109, R110",2,pcs,100kΩ 1%,100kΩ 1%,0402 (imperial),C192169,Non-polar; check value and imperial package.,S1:r2
+Carrier,Carrier: C104,1,pcs,10nF X7R ≥10V ±10%,10nF X7R ≥10V ±10%,0402 (imperial),C36911350,Non-polar; check value and imperial package.,S1:r3
+Carrier,Carrier: D10,1,pcs,"BAV199,215","BAV199,215",SOT-23,C40919,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r4
+Carrier,Carrier: D11,1,pcs,"BAS316,115","BAS316,115",SOD-323,C109218,"Small hand-solder pads. Pin 1 = K, HOLD_CAP; pin 2 = A, PEAK_DIODE_A. See errata.",S1:r5
+Core + Carrier,"Core: R8, R10; Carrier: R114",3,pcs,33Ω 1%,33Ω 1%,0402 (imperial),C427231,Non-polar; check value and imperial package.,S1:r6
+Carrier,Carrier: R101,1,pcs,43kΩ 0.1%,43kΩ 0.1%,0603 (imperial),C445638,Non-polar; check value and imperial package.,S1:r7
+Carrier,Carrier: R106,1,pcs,22Ω 1%,22Ω 1%,0402 (imperial),C482106,Non-polar; check value and imperial package.,S1:r8
+Carrier,Carrier: R104,1,pcs,49.9kΩ 0.1%,49.9kΩ 0.1%,0603 (imperial),C491136,Input resistor retained at 49.9 kohm.,S1:r9
+Carrier,Carrier: R105,1,pcs,49.9kΩ 0.1%,10kΩ (tolerance not recorded),0603 (imperial),,"Confirmed single 10 kohm replacement, not parallel. Actual part number unrecorded.",S1:r9; B1
+Carrier,Carrier: U10,1,pcs,TLV9062IDR,TLV9062IDR,SOIC-8,C398355,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r10
+Carrier,Carrier: U12,1,pcs,TMUX1136DGSR,TMUX1136DGSR,VSSOP-10 / 0.5mm,C2673301,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r11
+Carrier,Carrier: C100,1,pcs,33nF C0G 50V ±5%,33nF C0G 50V ±5%,0805 (imperial),C76628,Non-polar; check value and imperial package.,S1:r12
+Carrier,Carrier: U13,1,pcs,TLV3201AIDBVR,TLV3201AIDBVR,SOT-23-5,C105188,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r13
+Core + Carrier,"Core: C7, C9; Carrier: C110",3,pcs,1µF X7R 10V ±10%,1µF X7R 10V ±10%,0402 (imperial),C54938484,Non-polar; check value and imperial package.,S1:r14
+Carrier,Carrier: D12,1,pcs,"BAS70-04,215","BAS70-04,215",SOT-23,C389351,Pin 1 = A / PEAK_FB; pin 3 = K / PEAK_DRV; pin 2 NC.,S1:r15
+Carrier,Carrier: U11,1,pcs,OPA2356AIDR,OPA2356AIDR,SOIC-8,,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r16
+Core,Core: U1,1,pcs,AT32F423CCT7,AT32F423CCT7,LQFP-48 / 7×7mm,,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r17
+Core,Core: U2,1,pcs,XC6206P332MR-G,XC6206P332MR-G,SOT-23,C5446,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r18
+Carrier,Carrier: D90,1,pcs,USBLC6-2SC6,USBLC6-2SC6,SOT-23-6,C7519,Check pin 1 against the top-view locator; do not mirror the drawing.,S1:r19
+Core,Core: SW1,1,pcs,B3U-1000P,B3U-1000P,SMD 3×2.5mm,C231329,Use locator and package pin 1 / polarity marks.,S1:r20
+Core,"Core: LED1, LED2",2,pcs,"Blue LED, Vf 2.5–3V","Blue LED, Vf 2.5–3V",0603 (imperial),,"Blue 0603 LED, Vf 2.5-3 V; K = cathode in core locator.",S1:r21
+Core + Carrier,"Core: R6, R11, R12; Carrier: R100",4,pcs,0Ω,0Ω,0402 (imperial),C2906858,Non-polar; check value and imperial package.,S1:r22
+Core + Carrier,"Core: R7, R9; Carrier: R111, R112",4,pcs,100Ω 1%,100Ω 1%,0402 (imperial),C413063,Non-polar; check value and imperial package.,S1:r23
+Core + Carrier,"Core: R3, R4, R5; Carrier: R113",4,pcs,10kΩ 1%,10kΩ 1%,0402 (imperial),C191123,Non-polar; check value and imperial package.,S1:r24
+Carrier,Carrier: R107,1,pcs,1kΩ (1% or better),1kΩ (1% or better),0402 (imperial),C843869,Non-polar; check value and imperial package.,S1:r25
+Core,"Core: R1, R2",2,pcs,1kΩ 1%,1kΩ 1%,0603 (imperial),C21190,Non-polar; check value and imperial package.,S1:r26
+Carrier,Carrier: R102,1,pcs,10kΩ 0.1%,10kΩ 0.1%,0603 (imperial),C190610,Non-polar; check value and imperial package.,S1:r27
+Carrier,Carrier: R103,1,pcs,1MΩ 1%,1MΩ 1%,0603 (imperial),C844922,Non-polar; check value and imperial package.,S1:r28
+Core + Carrier,"Core: C3, C4, C5, C6, C8, C10; Carrier: C106, C108, C109, C111, C112",11,pcs,100nF X7R 10V ±10%,100nF X7R 10V ±10%,0402 (imperial),C22435935,Non-polar; check value and imperial package.,S1:r29
+Core,Core: C12,1,pcs,100pF C0G 50V ±5%,100pF C0G 50V ±5%,0402 (imperial),C1546,Non-polar; check value and imperial package.,S1:r30
+Core,"Core: C11, C13",2,pcs,1nF C0G 50V ±5%,1nF C0G 50V ±5%,0402 (imperial),C307441,Non-polar; check value and imperial package.,S1:r31
+Carrier,Carrier: C91,1,pcs,100nF X7R 10V ±10%,100nF X7R 10V ±10%,0603 (imperial),C36911391,Non-polar; check value and imperial package.,S1:r32
+Core + Carrier,Core: C1; Carrier: C90,2,pcs,1µF X7R 10V ±10%,1µF X7R 10V ±10%,0603 (imperial),C167338,Non-polar; check value and imperial package.,S1:r33
+Core,Core: C2,1,pcs,4.7µF X7R 10V ±10%,4.7µF X7R 10V ±10%,0603 (imperial),C18185770,Non-polar; check value and imperial package.,S1:r34
+Carrier,Carrier: C102,1,pcs,470pF C0G 50V ±5%,470pF C0G 50V ±5%,0603 (imperial),C36252,470 pF hold capacitor; unchanged in this bench configuration.,S1:r35
+Carrier,"Carrier: C105, C107",2,pcs,10µF X7R 10V ±10%,10µF X7R 10V ±10%,0805 (imperial),C1952580,Non-polar; check value and imperial package.,S1:r36
+Carrier,Carrier: J1,1,pcs,"USB-A male, horizontal","USB-A male, horizontal",USB-A male footprint,,Externally sourced; verify footprint and solder every USB signal pin.,S1:r37
+Carrier,Carrier: J2,1,pcs,"SMA female, 5-pin PTH","SMA female, 5-pin PTH",Ground pins: 5.08mm square,,Externally sourced; match five-hole footprint and 5.08 mm ground-pin square.,S1:r38
+Core + Carrier,Core: J1; Carrier: M1,2,strips,Straight header 1×11Pin / 2.0mm,Straight header 1×11Pin / 2.0mm,0.5mm square pins,,"Two 1x11 strips, 2.0 mm pitch, 0.5 mm square pins; serves both footprints. Not 2.54 mm.",S1:r39
+Core,Core: SW2,0,pcs,DNP; B3U-1000P (optional reset),DNP,SMD 3×2.5mm,C231329,"Optional reset switch; quantity 0 follows default record, not a claim about every photo.",S1:r40
+Carrier,Carrier: C101,1,pcs,DNP; 1–4.7pF C0G tuning capacitor,100pF (actual dielectric not recorded),0603 (imperial),,Confirmed fitted. Prefer C0G/NP0 for reproduction; actual part number unrecorded. Not core C12 / C1546.,S1:r41; B1
+Carrier,Carrier: C103,0,pcs,DNP; 0.5–4.7pF C0G tuning capacitor,DNP,0402 (imperial),,Optional / DNP in default assembly; not included in fitted quantity.,S1:r42
+Carrier,Carrier: J3,0,pcs,DNP; G-S-G wire pads,DNP,2.54mm,,Alternative G-S-G wire pads only; do not buy a separate connector by default.,S1:r43
